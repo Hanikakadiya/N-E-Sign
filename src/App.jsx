@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import NavBar from "./Component/NavBar";
+import { Route, Routes } from "react-router-dom";
+import HeroSection from "./Component/Home/HeroSection"; 
 
 export default function App() {
   return (
-    <div>
-      <h1>hello world</h1>iuyhgfdssdfhgrefrgtrf
-    </div>
-  )
+    <>
+      <NavBar />
+      <HeroSection />
+    </>
+  );
 }
