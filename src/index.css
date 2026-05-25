@@ -5,7 +5,7 @@
   --color-primary: #EFB451;
   --color-dark-orange:#F79C29;
   --animate-trail-fade: trailFade 1s forwards ease-out;
-
+}
   @keyframes trailFade {
     0% {
       opacity: 0;
@@ -21,13 +21,3 @@
     }
   }
 
-  --animate-bounce-x: bounce-x 1.5s ease-in-out infinite;
-  @keyframes bounce-x {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(35%);
-    }
-  }
-}
