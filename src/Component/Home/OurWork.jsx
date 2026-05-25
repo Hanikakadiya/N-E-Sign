@@ -117,10 +117,17 @@ export default function OurWork() {
       <section className="bg-black w-full">
         
         <div className="w-full">
-          <div className="">
+          <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 py-8 sm:py-12 md:py-16 lg:py-20">
             <div className="relative inline-block">
               <h1 className="text-[#F79C29] text-[24px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-poppins font-bold ">OUR WORK</h1>
             </div>
+          </div>
+          <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 py-8 sm:py-12 md:py-16 lg:py-20">
+                <div className="w-full h-[500px] bg-primary/20 blur-[100px] md:blur-[110px] rounded-full pointer-events-none">
+                        <div>
+                            <img src="" alt="" />
+                        </div>
+                </div>
           </div>
         </div>
       </section>
