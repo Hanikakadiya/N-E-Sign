@@ -1,17 +1,90 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
+
+import img1 from "../../assets/Image/Herosection/Hero-cursor-img-1.png";
+import img2 from "../../assets/Image/Herosection/Hero-cursor-img-2.png";
+import img3 from "../../assets/Image/Herosection/Hero-cursor-img-3.png";
+import img4 from "../../assets/Image/Herosection/Hero-cursor-img-4.png";
+import img5 from "../../assets/Image/Herosection/Hero-cursor-img-5.png";
+
+const TRAIL_IMAGES = [img1, img2, img3, img4, img5];
 
 export default function HeroSection() {
+  const [trail, setTrail] = useState([]);
+  const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
+  const [isHovered, setIsHovered] = useState(false);
+  const lastPos = useRef({ x: 0, y: 0 });
+  const imageIndex = useRef(0);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    setCursorPos({ x, y });
+
+    const dx = x - lastPos.current.x;
+    const dy = y - lastPos.current.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    // Spawn a new image if the mouse has moved more than 60px
+    if (distance > 60) {
+      const newImage = {
+        id: Date.now() + Math.random(),
+        x,
+        y,
+        src: TRAIL_IMAGES[imageIndex.current % TRAIL_IMAGES.length],
+      };
+      
+      imageIndex.current += 1;
+      lastPos.current = { x, y };
+
+      setTrail((prev) => [...prev, newImage]);
+
+      // Remove the image after the animation finishes (1 second)
+      setTimeout(() => {
+        setTrail((prev) => prev.filter((img) => img.id !== newImage.id));
+      }, 1000);
+    }
+  };
+
   return (
     <>
-        <section className='bg-black w-full h-[80vh]'>
-            <div className=''>
-                
-            </div>
-            <div className=''>
-            </div>
-            <div className='text-center pt-[20vh]'>
-                <h1 className='text-white text-[52px] font-poppins font-extrabold'><span className=" bg-linear-to-r from-primary to-primary bg-clip-text text-transparent">N.E Sign </span> Printing & Marketing </h1>
-                <p className='text-gray-500 font-poppins font-normal text-[16px]'>Lowest Price Guaranteed</p>
+        <section 
+          className='relative bg-black w-full h-[80vh] overflow-hidden text-center flex items-center justify-center cursor-none'
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+            {/* Custom Dot Cursor */}
+            <div 
+              className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none  transition-opacity duration-200 mix-blend-difference ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+              style={{
+                left: `${cursorPos.x}px`,
+                top: `${cursorPos.y}px`,
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></div>
+
+            {/* Trail Images */}
+            {trail.map((img) => (
+              <img
+                key={img.id}
+                src={img.src}
+                alt="trail"
+                className="absolute pointer-events-none object-cover rounded-xl shadow-lg w-[190px] h-[240px] animate-trail-fade z-20 border border-white/20"
+                style={{
+                  left: `${img.x}px`,
+                  top: `${img.y}px`,
+                }}
+              />
+            ))}
+
+            {/* Top Right Glow Spot */}
+            <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[130px] rounded-full pointer-events-none"></div>
+
+            <div className='text-center pt-[10vh] md:pt-[15vh] lg:pt-[20vh] relative z-10'>
+                <h1 className='text-white text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-poppins font-extrabold'><span className="text-primary">N.E Sign </span> Printing & Marketing </h1>
+                <p className='text-white font-poppins font-normal text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px]'>Lowest Price Guaranteed</p>
             </div>
         </section>
     </>
