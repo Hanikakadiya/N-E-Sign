@@ -23,7 +23,7 @@ export default function ServiceHeroSection() {
             <img
               src={CoffeeImage}
               alt="Coffee Signage"
-              className="w-full h-full object-cover transition-transform duration-700 ease-in-out scale-[1.05] hover:scale-100 cursor-pointer"
+              className="w-full h-full object-cover transition-transform duration-700 ease-in-out scale-[1.05] hover:scale-100"
             />
           </div>
 
@@ -34,7 +34,7 @@ export default function ServiceHeroSection() {
               <img
                 src={PrintImage}
                 alt="Printing Services"
-                className="w-full h-full object-cover opacity-90 transition-transform duration-700 ease-in-out scale-[1.09] hover:scale-100 cursor-pointer"
+                className="w-full h-full object-cover opacity-90 transition-transform duration-700 ease-in-out scale-[1.09] hover:scale-100"
               />
             </div>
 
@@ -44,7 +44,7 @@ export default function ServiceHeroSection() {
                 <img
                   src={LightImage}
                   alt="Creative Idea"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out scale-[1.05] hover:scale-100 cursor-pointer"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out scale-[1.05] hover:scale-100"
                 />
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function ServiceHeroSection() {
               <Link
                 to={service.link}
                 key={index}
-                className="border-b border-primary py-6 flex items-center group cursor-pointer transition-all duration-300 hover:border-gray-500"
+                className="border-b border-primary py-6 flex items-center group cursor-pointer transition-all duration-300"
               >
                 <span className="text-white font-semibold text-[18px] tracking-wide group-hover:text-primary transition-colors">
                   {service.name}

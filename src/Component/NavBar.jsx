@@ -7,7 +7,7 @@ export default function NavBar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const location = useLocation();
-  
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -30,8 +30,8 @@ export default function NavBar() {
         { name: "Printing", href: "/services/printing" },
         { name: "Direct Mailing", href: "/services/direct-mailing" },
         { name: "Web Designing", href: "/services/web-designing" },
-        { name: "SEO", href: "/services/seo" }
-      ]
+        { name: "SEO", href: "/services/seo" },
+      ],
     },
     { name: "Apparel", href: "/apparel" },
     { name: "Promotional products", href: "/promotional-products" },
@@ -41,7 +41,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed w-full h-[100px] z-50 top-0 left-0 bg-[#000000]/70 border-b border-[#333333] backdrop-blur-md ">
+      <nav className="fixed w-full h-[100px] z-50 top-0 left-0 bg-[#000000]/10 border-b border-[#333333] backdrop-blur-sm">
         <div className=" mx-auto px-4 sm:px- flex items-center justify-between ">
           {/* Left: Logo */}
           <div className=" z-50">
@@ -61,7 +61,9 @@ export default function NavBar() {
                 <Link
                   to={link.href}
                   className={`font-poppins font-normal md-text-sm xl:text-[18px] transition duration-300 whitespace-nowrap flex items-center gap-1 ${
-                    location.pathname === link.href || (link.dropdown && link.dropdown.some(d => location.pathname === d.href))
+                    location.pathname === link.href ||
+                    (link.dropdown &&
+                      link.dropdown.some((d) => location.pathname === d.href))
                       ? "text-primary"
                       : "text-white hover:text-primary"
                   }`}
@@ -192,7 +194,9 @@ export default function NavBar() {
                       if (!link.dropdown) setIsOpen(false);
                     }}
                     className={`font-poppins font-normal text-[18px] transition duration-300 ${
-                      location.pathname === link.href || (link.dropdown && link.dropdown.some(d => location.pathname === d.href))
+                      location.pathname === link.href ||
+                      (link.dropdown &&
+                        link.dropdown.some((d) => location.pathname === d.href))
                         ? "text-primary"
                         : "text-gray-300 hover:text-primary"
                     }`}
