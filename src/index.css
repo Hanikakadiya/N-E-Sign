@@ -3,14 +3,15 @@
 
 @theme {
   --color-primary: #EFB451;
+  --color-dark-orange:#F79C29;
   --animate-trail-fade: trailFade 1s forwards ease-out;
 
   @keyframes trailFade {
     0% {
       opacity: 0;
-      transform: translate(-50%, -50%) scale(0.5);
+      transform: translate(-50%, -50%) scale(0.6);
     }
-    20% {
+    50% {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1);
     }
