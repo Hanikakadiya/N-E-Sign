@@ -50,14 +50,14 @@ export default function HeroSection() {
   return (
     <>
         <section 
-          className='relative bg-black w-full h-[80vh] overflow-hidden text-center flex items-center justify-center cursor-none'
+          className='relative bg-black w-full h-[100vh] overflow-hidden text-center flex items-center justify-center cursor-none'
           onMouseMove={handleMouseMove}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
             {/* Custom Dot Cursor */}
             <div 
-              className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none  transition-opacity duration-200 mix-blend-difference ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+              className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none z-[100] transition-opacity duration-200 mix-blend-difference ${isHovered ? 'opacity-100' : 'opacity-0'}`}
               style={{
                 left: `${cursorPos.x}px`,
                 top: `${cursorPos.y}px`,
