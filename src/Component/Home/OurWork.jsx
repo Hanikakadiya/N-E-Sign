@@ -22,7 +22,7 @@ export default function OurWork() {
         </div>
 
         {/* Text Container */}
-        <div className="relative inline-block px-10 sm:px-16 md:px-24 z-10 w-full max-w-[1720px] mx-auto flex flex-col items-center">
+        <div className="relative inline-block px-10 sm:px-16 md:px-24 z-10 w-full mx-auto flex flex-col items-center">
           
           <div className="relative inline-block w-full max-w-max">
             {/* Top Left Quote */}
@@ -39,7 +39,7 @@ export default function OurWork() {
             </h1>
             
             {/* Sub Heading (Outline Text) */}
-            <div className="flex justify-center  float-right mt-2 sm:mt-4 md:pr-[2%]">
+            <div className="flex justify-center  float-right mt-2 sm:mt-4 ">
               <h2 
                 className="text-transparent font-poppins text-6xl md:text-7xl lg:text-8xl tracking-wider float-right "
                 style={{ WebkitTextStroke: "1px white" }}
@@ -49,7 +49,7 @@ export default function OurWork() {
             </div>
 
             {/* Bottom Right Quote */}
-            <div className="absolute -bottom-8 -right-2 sm:-bottom-12 sm:-right-8 md:-bottom-16 md:-right-16">
+            <div className="absolute -bottom-8 sm:-bottom-12 md:-bottom-16 md:-right-70">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#8B7355" className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 opacity-90 rotate-180">
                 <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
               </svg>

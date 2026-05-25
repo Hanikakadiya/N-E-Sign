@@ -42,7 +42,7 @@ export default function NavBar() {
   return (
     <>
       <nav className="fixed w-full h-[100px] z-50 top-0 left-0 bg-[#000000]/70 border-b border-[#333333] backdrop-blur-md ">
-        <div className="max-w-[1720px] mx-auto px-4 sm:px- flex items-center justify-between ">
+        <div className=" mx-auto px-4 sm:px- flex items-center justify-between ">
           {/* Left: Logo */}
           <div className=" z-50">
             <Link to="/">
