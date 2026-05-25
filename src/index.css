@@ -3,9 +3,11 @@
 
 @theme {
   --color-primary: #EFB451;
-  --color-dark-orange:#F79C29;
+  --color-dark-orange: #F79C29;
   --animate-trail-fade: trailFade 1s forwards ease-out;
 }
+
+.text-dark-orange { color: var(--color-dark-orange); }
   @keyframes trailFade {
     0% {
       opacity: 0;

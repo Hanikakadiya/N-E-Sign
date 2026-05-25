@@ -50,7 +50,7 @@ export default function HeroSection() {
   return (
     <>
         <section 
-          className='relative bg-black w-full h-[100vh] overflow-hidden text-center flex items-center justify-center cursor-none'
+          className='relative bg-black w-full h-[80vh] overflow-hidden text-center flex items-center justify-center cursor-none'
           onMouseMove={handleMouseMove}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -80,7 +80,7 @@ export default function HeroSection() {
             ))}
 
             {/* Top Right Glow Spot */}
-            <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[130px] rounded-full pointer-events-none"></div>
+            <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[120px] rounded-full pointer-events-none"></div>
 
             <div className='text-center pt-[10vh] md:pt-[15vh] lg:pt-[20vh] relative z-10'>
                 <h1 className='text-white text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-poppins font-extrabold'><span className="text-primary">N.E Sign </span> Printing & Marketing </h1>
