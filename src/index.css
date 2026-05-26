@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #EFB451;
+:root {
+  --color-primary: #EDBC5A;
   --color-dark-orange: #F79C29;
   --animate-trail-fade: trailFade 1s forwards ease-out;
 }
-
+body {
+  background-color: #000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
 .text-dark-orange { color: var(--color-dark-orange); }
   @keyframes trailFade {
     0% {

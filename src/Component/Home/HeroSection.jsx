@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef } from "react";
+// Container import removed; layout handled inline
 
 import img1 from "../../assets/Image/Herosection/Hero-cursor-img-1.png";
 import img2 from "../../assets/Image/Herosection/Hero-cursor-img-2.png";
@@ -34,7 +35,7 @@ export default function HeroSection() {
         y,
         src: TRAIL_IMAGES[imageIndex.current % TRAIL_IMAGES.length],
       };
-      
+
       imageIndex.current += 1;
       lastPos.current = { x, y };
 
@@ -49,44 +50,54 @@ export default function HeroSection() {
 
   return (
     <>
-        <section 
-          className='relative bg-black w-full h-[80vh] overflow-hidden text-center flex items-center justify-center cursor-none'
-          onMouseMove={handleMouseMove}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+      <section
+        className="relative w-full h-[80vh] overflow-hidden text-center flex items-center justify-center cursor-none"
+        onMouseMove={handleMouseMove}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="mx-auto max-w-[1720px] px-4 sm:px-4 flex flex-col items-center">
+        {/* Custom Dot Cursor */}
+        <div
+          className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none z-[100] transition-opacity duration-200 mix-blend-difference ${isHovered ? "opacity-100" : "opacity-0"}`}
+          style={{
+            left: `${cursorPos.x}px`,
+            top: `${cursorPos.y}px`,
+            transform: "translate(-50%, -50%)",
+          }}
         >
-            {/* Custom Dot Cursor */}
-            <div 
-              className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none z-[100] transition-opacity duration-200 mix-blend-difference ${isHovered ? 'opacity-100' : 'opacity-0'}`}
-              style={{
-                left: `${cursorPos.x}px`,
-                top: `${cursorPos.y}px`,
-                transform: 'translate(-50%, -50%)'
-              }}
-            ></div>
+        </div>
 
-            {/* Trail Images */}
-            {trail.map((img) => (
-              <img
-                key={img.id}
-                src={img.src}
-                alt="trail"
-                className="absolute pointer-events-none object-cover rounded-xl shadow-lg w-[190px] h-[240px] animate-trail-fade z-20 border border-white/20"
-                style={{
-                  left: `${img.x}px`,
-                  top: `${img.y}px`,
-                }}
-              />
-            ))}
+        {/* Trail Images */}
+        {trail.map((img) => (
+          <img
+            key={img.id}
+            src={img.src}
+            alt="trail"
+            className="absolute pointer-events-none object-cover rounded-xl shadow-lg w-[190px] h-[240px] animate-trail-fade z-20 border border-white/20"
+            style={{
+              left: `${img.x}px`,
+              top: `${img.y}px`,
+            }}
+          />
+        ))}
 
-            {/* Top Right Glow Spot */}
-            <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[120px] rounded-full pointer-events-none"></div>
+        {/* Top Right Glow Spot */}
+        <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[120px] rounded-full pointer-events-none"></div>
 
-            <div className='text-center pt-[10vh] md:pt-[15vh] lg:pt-[20vh] relative z-10'>
-                <h1 className='text-white text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-poppins font-extrabold'><span className="text-primary">N.E Sign </span> Printing & Marketing </h1>
-                <p className='text-white font-poppins font-normal text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px]'>Lowest Price Guaranteed</p>
-            </div>
+        <div className="text-center pt-[10vh] md:pt-[15vh] lg:pt-[20vh] relative z-10">
+          <h1 className="text-white text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-poppins font-extrabold">
+            <span className="text-primary">N.E Sign </span> Printing &
+            Marketing{" "}
+          </h1>
+          <p className="text-white font-poppins font-normal text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px]">
+            Lowest Price Guaranteed
+          </p>
+        </div>
+                
+      </div>
         </section>
+        
     </>
-  )
+  );
 }
