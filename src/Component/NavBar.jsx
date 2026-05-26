@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+// Container import removed; layout handled inline
 import NavLogo from "../assets/Image/NavBar/NE_Sign_Logo.png";
+import LowestPriceLogo from "../assets/Image/NavBar/Lowest-Price-Logo.png";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,8 +43,8 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed w-full h-[100px] z-50 top-0 left-0 bg-[#000000]/10 border-b border-[#333333] backdrop-blur-sm">
-        <div className=" mx-auto px-4 sm:px- flex items-center justify-between ">
+      <nav className="fixed w-full h-[100px] z-50 top-0 left-0  border-b border-[#333333] backdrop-blur-sm">
+        <div className="flex items-center justify-around bg-primary">
           {/* Left: Logo */}
           <div className=" z-50">
             <Link to="/">
@@ -81,7 +83,7 @@ export default function NavBar() {
                           className={`block px-4 py-2 text-[15px] font-poppins transition-colors ${
                             location.pathname === dropLink.href
                               ? "text-primary bg-[#222222]"
-                              : "text-gray-300 hover:text-primary hover:bg-[#222222]"
+                              : "text-gray-400 hover:text-primary hover:bg-[#222222]"
                           }`}
                         >
                           {dropLink.name}
@@ -113,9 +115,9 @@ export default function NavBar() {
             {/* Lowest Price Badge */}
             <div className="">
               <img
-                src="/src/assets/Image/NavBar/Lowest-Price-Logo.png"
+                src={LowestPriceLogo}
                 alt="Lowest Price Guarantee"
-                className="w-[70px] xl:w-[85px] h-[70px] xl:h-[85px] object-contain"
+                className="w-[97px] object-contain"
               />
             </div>
           </div>
@@ -124,7 +126,7 @@ export default function NavBar() {
           <div className="flex lg:hidden items-center space-x-4 z-50">
             {/* Lowest Price Badge on Mobile */}
             <img
-              src="/src/assets/Image/NavBar/Lowest-Price-Logo.png"
+              src={LowestPriceLogo}
               alt="Lowest Price"
               className="w-[55px] h-[55px] sm:w-[65px] sm:h-[65px] object-contain"
             />
@@ -132,7 +134,7 @@ export default function NavBar() {
             {/* Hamburger Button */}
             <button
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-white focus:outline-none p-2"
+              className="text-gray-300 hover:text-primary focus:outline-none p-2"
             >
               <svg
                 className="w-8 h-8"
@@ -194,12 +196,12 @@ export default function NavBar() {
                       if (!link.dropdown) setIsOpen(false);
                     }}
                     className={`font-poppins font-normal text-[18px] transition duration-300 ${
-                      location.pathname === link.href ||
-                      (link.dropdown &&
-                        link.dropdown.some((d) => location.pathname === d.href))
-                        ? "text-primary"
-                        : "text-gray-300 hover:text-primary"
-                    }`}
+                       location.pathname === link.href ||
+                       (link.dropdown &&
+                         link.dropdown.some((d) => location.pathname === d.href))
+                         ? "text-primary"
+                         : "text-gray-300 hover:text-primary"
+                     }`}
                   >
                     {link.name}
                   </Link>
@@ -222,7 +224,7 @@ export default function NavBar() {
                         className={`font-poppins text-[16px] transition duration-300 ${
                           location.pathname === dropLink.href
                             ? "text-primary"
-                            : "text-gray-400 hover:text-primary"
+                            : "text-gray-400 hover:text-[var(--color-primary)]"
                         }`}
                       >
                         {dropLink.name}
