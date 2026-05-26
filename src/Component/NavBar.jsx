@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 // Container import removed; layout handled inline
 import NavLogo from "../assets/Image/NavBar/NE_Sign_Logo.png";
 import LowestPriceLogo from "../assets/Image/NavBar/Lowest-Price-Logo.png";
+import { Icons } from "./Icons/icons";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,13 +106,9 @@ export default function NavBar() {
                 placeholder="Search here"
                 className="bg-transparent text-[#ffffff] w-full font-poppins font-normal text-[13px] outline-none placeholder-gray-400"
               />
-              <img
-                src="/src/assets/Image/NavBar/coolicon.svg"
-                alt="Search"
-                className="w-[14px] h-[14px] ml-2 opacity-70 group-focus-within:opacity-100 transition-opacity"
-              />
+              <Icons.Search color="white" className="ml-2" />
             </div>
-
+            <Icons.Profile color="white" />
             {/* Lowest Price Badge */}
             <div className="">
               <img
@@ -196,12 +193,12 @@ export default function NavBar() {
                       if (!link.dropdown) setIsOpen(false);
                     }}
                     className={`font-poppins font-normal text-[18px] transition duration-300 ${
-                       location.pathname === link.href ||
-                       (link.dropdown &&
-                         link.dropdown.some((d) => location.pathname === d.href))
-                         ? "text-[var(--color-primary)]"
-                         : "text-gray-300 hover:text-[var(--color-primary)]"
-                     }`}
+                      location.pathname === link.href ||
+                      (link.dropdown &&
+                        link.dropdown.some((d) => location.pathname === d.href))
+                        ? "text-[var(--color-primary)]"
+                        : "text-gray-300 hover:text-[var(--color-primary)]"
+                    }`}
                   >
                     {link.name}
                   </Link>
