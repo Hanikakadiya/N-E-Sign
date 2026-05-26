@@ -66,8 +66,8 @@ export default function NavBar() {
                     location.pathname === link.href ||
                     (link.dropdown &&
                       link.dropdown.some((d) => location.pathname === d.href))
-                      ? "text-primary"
-                      : "text-white hover:text-primary"
+                      ? "text-[var(--color-primary)]"
+                      : "text-white hover:text-[var(--color-primary)]"
                   }`}
                 >
                   {link.name}{" "}
@@ -82,8 +82,8 @@ export default function NavBar() {
                           to={dropLink.href}
                           className={`block px-4 py-2 text-[15px] font-poppins transition-colors ${
                             location.pathname === dropLink.href
-                              ? "text-primary bg-[#222222]"
-                              : "text-gray-400 hover:text-primary hover:bg-[#222222]"
+                              ? "text-[var(--color-primary)] bg-[#222222]"
+                              : "text-gray-400 hover:text-[var(--color-primary)] hover:bg-[#222222]"
                           }`}
                         >
                           {dropLink.name}
@@ -134,7 +134,7 @@ export default function NavBar() {
             {/* Hamburger Button */}
             <button
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-primary focus:outline-none p-2"
+              className="text-gray-300 hover:text-[var(--color-primary)] focus:outline-none p-2"
             >
               <svg
                 className="w-8 h-8"
@@ -199,8 +199,8 @@ export default function NavBar() {
                        location.pathname === link.href ||
                        (link.dropdown &&
                          link.dropdown.some((d) => location.pathname === d.href))
-                         ? "text-primary"
-                         : "text-gray-300 hover:text-primary"
+                         ? "text-[var(--color-primary)]"
+                         : "text-gray-300 hover:text-[var(--color-primary)]"
                      }`}
                   >
                     {link.name}
@@ -208,7 +208,7 @@ export default function NavBar() {
                   {link.dropdown && (
                     <button
                       onClick={() => toggleDropdown(index)}
-                      className="text-gray-300 hover:text-primary text-2xl leading-none px-2 focus:outline-none"
+                      className="text-gray-300 hover:text-[var(--color-primary)] text-2xl leading-none px-2 focus:outline-none"
                     >
                       {activeDropdown === index ? "-" : "+"}
                     </button>
@@ -223,7 +223,7 @@ export default function NavBar() {
                         onClick={() => setIsOpen(false)}
                         className={`font-poppins text-[16px] transition duration-300 ${
                           location.pathname === dropLink.href
-                            ? "text-primary"
+                            ? "text-[var(--color-primary)]"
                             : "text-gray-400 hover:text-[var(--color-primary)]"
                         }`}
                       >

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../index.css";
 import CoffeeImage from "../../assets/Image/Services/service-hero-coffee.png";
 import LightImage from "../../assets/Image/Services/service-hero-light.png";
 import PrintImage from "../../assets/Image/Services/service-hero-print.jpg";
@@ -30,7 +31,7 @@ export default function ServiceHeroSection() {
           {/* Bottom Printer & Lightbulb */}
           <div className="w-full relative">
             {/* Printer Image */}
-            <div className="w-full h-[510px] rounded-[32px] overflow-hidden bg-[#111]">
+            <div className="w-full h-[510px] rounded-[32px] overflow-hidden">
               <img
                 src={PrintImage}
                 alt="Printing Services"
@@ -55,7 +56,7 @@ export default function ServiceHeroSection() {
                 to="/contact"
                 className="flex items-center gap-3 px-7 py-3 border border-[#333] rounded-full transition-colors duration-300"
               >
-                <span className="text-sm font-medium text-primary">
+                <span className="text-sm font-medium text-[var(--color-primary)]">
                   Get in Touch
                 </span>
                 <svg
@@ -79,7 +80,7 @@ export default function ServiceHeroSection() {
         {/* Right Column - Content */}
         <div className="w-full lg:w-1/2 flex flex-col">
           {/* Section Subtitle */}
-          <div className="flex items-center gap-2 text-primary mb-6">
+          <div className="flex items-center gap-2 text-[var(--color-primary)] mb-6">
             <span className="text-[13px] font-semibold tracking-[0.2em] uppercase">
               Our Services
             </span>
@@ -102,7 +103,7 @@ export default function ServiceHeroSection() {
           {/* Section Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-16 tracking-tight">
             Professional Services <br />
-            with <span className="text-primary">Unmatched Quality</span>
+            with <span className="text-[var(--color-primary)]">Unmatched Quality</span>
           </h1>
 
           {/* Services List Grid */}
@@ -111,9 +112,9 @@ export default function ServiceHeroSection() {
               <Link
                 to={service.link}
                 key={index}
-                className="border-b border-primary py-6 flex items-center group cursor-pointer transition-all duration-300"
+                className="border-b border-[var(--color-primary)] py-6 flex items-center group cursor-pointer transition-all duration-300"
               >
-                <span className="text-white font-semibold text-[18px] tracking-wide group-hover:text-primary transition-colors">
+                <span className="text-white font-semibold text-[18px] tracking-wide group-hover:text-[var(--color-primary)] transition-colors">
                   {service.name}
                 </span>
                 <svg
@@ -122,7 +123,7 @@ export default function ServiceHeroSection() {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="w-4 h-4 ml-5 text-gray-500 group-hover:text-primary transition-colors animate-bounce-x"
+                  className="w-4 h-4 ml-5 text-gray-500 group-hover:text-[var(--color-primary)] transition-colors animate-bounce-x"
                 >
                   <path
                     strokeLinecap="round"

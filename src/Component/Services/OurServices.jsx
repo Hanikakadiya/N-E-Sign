@@ -7,6 +7,39 @@ import WebDesigning from "../../assets/Image/Services/services-Web Designing.png
 import Seo from "../../assets/Image/Services/services-seo.png";
 
 export default function OurServices() {
+  const servicesData = [
+    {
+      title: "Signage",
+      description:
+        "We provide custom signage solutions that improve visibility, enhance communication, and support your brand growth.",
+      image: Signage,
+    },
+    {
+      title: "Printing",
+      description:
+        "We provide printing solutions that enhance visibility, communicate your message clearly, and support your brand growth.",
+      image: Printing,
+    },
+    {
+      title: "Direct Mailing",
+      description:
+        "We provide direct mailing solutions that enhance reach, communicate your message clearly, and support your brand growth.",
+      image: DirectMailing,
+    },
+    {
+      title: "Web Designing",
+      description:
+        "We provide web design solutions that enhance user experience, your message clearly, and support your brand growth.",
+      image: WebDesigning,
+    },
+    {
+      title: "SEO",
+      description:
+        "We provide SEO solutions that improve search visibility, communicate your message clearly, and support your brand growth.",
+      image: Seo,
+    },
+  ];
+
   return (
     <section className="w-full bg-black py-24 md:py-32 relative overflow-hidden font-poppins">
       {/* Right side background glow */}
@@ -58,38 +91,7 @@ export default function OurServices() {
 
       {/* Services Cards Grid */}
       <div className="mt-20 flex flex-wrap justify-center gap-6">
-        {[
-          {
-            title: "Signage",
-            description:
-              "We provide custom signage solutions that improve visibility, enhance communication, and support your brand growth.",
-            image: Signage,
-          },
-          {
-            title: "Printing",
-            description:
-              "We provide printing solutions that enhance visibility, communicate your message clearly, and support your brand growth.",
-            image: Printing,
-          },
-          {
-            title: "Direct Mailing",
-            description:
-              "We provide direct mailing solutions that enhance reach, communicate your message clearly, and support your brand growth.",
-            image: DirectMailing,
-          },
-          {
-            title: "Web Designing",
-            description:
-              "We provide web design solutions that enhance user experience, your message clearly, and support your brand growth.",
-            image: WebDesigning,
-          },
-          {
-            title: "SEO",
-            description:
-              "We provide SEO solutions that improve search visibility, communicate your message clearly, and support your brand growth.",
-            image: Seo,
-          },
-        ].map((service, index) => (
+        {servicesData.map((service, index) => (
           <Link
             to={`/services/${service.title.toLowerCase().replace(" ", "-")}`}
             key={index}
