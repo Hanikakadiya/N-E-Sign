@@ -60,7 +60,7 @@ export default function ServiceHeroSection() {
                   Get in Touch
                 </span>
                 <svg
-                  className="w-4 h-4 text-white"
+                  className="w-4 h-4 text-white animate-bounce-x"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -103,7 +103,10 @@ export default function ServiceHeroSection() {
           {/* Section Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-16 tracking-tight">
             Professional Services <br />
-            with <span className="text-[var(--color-primary)]">Unmatched Quality</span>
+            with{" "}
+            <span className="text-[var(--color-primary)]">
+              Unmatched Quality
+            </span>
           </h1>
 
           {/* Services List Grid */}

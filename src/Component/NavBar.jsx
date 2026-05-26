@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import NavLogo from "../assets/Image/NavBar/NE_Sign_Logo.png";
 import LowestPriceLogo from "../assets/Image/NavBar/Lowest-Price-Logo.png";
 import { Icons } from "./Icons/icons";
+import { Icon } from "@iconify/react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +30,19 @@ export default function NavBar() {
       name: "Services",
       href: "/services",
       dropdown: [
-        { name: "Signage", href: "/services/signage" },
-        { name: "Printing", href: "/services/printing" },
-        { name: "Direct Mailing", href: "/services/direct-mailing" },
-        { name: "Web Designing", href: "/services/web-designing" },
-        { name: "SEO", href: "/services/seo" },
+        { name: "Signage", href: "/services/signage", icon: Icons.Signage },
+        { name: "Printing", href: "/services/printing", icon: Icons.Printing },
+        {
+          name: "Direct Mailing",
+          href: "/services/direct-mailing",
+          icon: Icons.DirectMailing,
+        },
+        {
+          name: "Web Designing",
+          href: "/services/web-designing",
+          icon: Icons.WebDesigning,
+        },
+        { name: "SEO", href: "/services/seo", icon: Icons.SEO },
       ],
     },
     { name: "Apparel", href: "/apparel" },
@@ -75,21 +84,33 @@ export default function NavBar() {
                   {link.dropdown && <span className="text-sm">+</span>}
                 </Link>
                 {link.dropdown && (
-                  <div className="absolute left-0 top-full pt-4 hidden group-hover:block w-56 z-50">
-                    <div className="bg-[#111111] border border-white shadow-lg py-2 rounded-md">
-                      {link.dropdown.map((dropLink) => (
-                        <Link
-                          key={dropLink.name}
-                          to={dropLink.href}
-                          className={`block px-4 py-2 text-[15px] font-poppins transition-colors ${
-                            location.pathname === dropLink.href
-                              ? "text-[var(--color-primary)] bg-[#222222]"
-                              : "text-gray-400 hover:text-[var(--color-primary)] hover:bg-[#222222]"
-                          }`}
-                        >
-                          {dropLink.name}
-                        </Link>
-                      ))}
+                  <div className="absolute left-0 top-full pt-4 hidden group-hover:block w-[280px] z-50">
+                    <div className="bg-[#0a0a0a] border border-[#222] shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-2 rounded-2xl flex flex-col gap-1">
+                      {link.dropdown.map((dropLink) => {
+                        const isActive = location.pathname === dropLink.href;
+                        return (
+                          <Link
+                            key={dropLink.name}
+                            to={dropLink.href}
+                            className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-300 group/item ${
+                              isActive
+                                ? "bg-[var(--color-primary)] text-white"
+                                : "text-gray-300 hover:bg-[#1a1a1a] hover:text-white"
+                            }`}
+                          >
+                            <div className="flex items-center gap-3">
+                              {dropLink.icon && (
+                                <dropLink.icon
+                                  className={`text-[20px] transition-colors ${isActive ? "text-white" : "text-gray-400 group-hover/item:text-white"}`}
+                                />
+                              )}
+                              <span className="text-[15px] font-medium font-poppins">
+                                {dropLink.name}
+                              </span>
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 )}

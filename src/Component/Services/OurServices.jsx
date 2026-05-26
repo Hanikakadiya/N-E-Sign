@@ -46,7 +46,7 @@ export default function OurServices() {
 
       {/* Right side SVG Ring Graphic */}
       <div className="absolute right-12 xl:right-32 top-[15%] -translate-y-1/2 opacity-70 hidden lg:block pointer-events-none">
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[100px] sm:blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[100px] sm:blur-[150px] rounded-full pointer-events-none"></div>
         <svg viewBox="0 0 100 100" className="w-full h-auto">
           <defs>
             <pattern
@@ -95,43 +95,45 @@ export default function OurServices() {
           <Link
             to={`/services/${service.title.toLowerCase().replace(" ", "-")}`}
             key={index}
-            className="block w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] bg-[#111] border border-[#222] rounded-2xl p-4 sm:p-5 hover:border-[#444] transition-colors cursor-pointer group"
+            className="block w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] p-[1px] bg-gradient-to-b from-transparent to-white transition-all duration-500 cursor-pointer group"
           >
-            <div className="w-full h-[220px] rounded-xl overflow-hidden mb-6 relative">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
+            <div className="bg-[#050505] w-full h-full p-4 sm:p-5 flex flex-col">
+              <div className="w-full h-[220px] rounded-xl overflow-hidden mb-6 relative shrink-0">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
 
-            <h4 className="text-xl sm:text-[24px] font-bold text-white mb-3 group-hover:text-primary transition-colors duration-300">
-              {service.title}
-            </h4>
+              <h4 className="text-xl sm:text-[24px] font-bold text-white mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300">
+                {service.title}
+              </h4>
 
-            <p className="text-white text-[18px] font-bold leading-[1.5] mb-8">
-              {service.description}
-            </p>
+              <p className="text-gray-300 text-[15px] font-normal leading-[1.6] mb-8 grow">
+                {service.description}
+              </p>
 
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-[1px] bg-[#333] group-hover:bg-primary transition-colors duration-300"></div>
-              <div className="flex items-center group-hover:translate-x-4 duration-300">
-                <span className="text-primary font-medium transition-all">
-                  Read More
-                </span>
-                <svg
-                  className="w-3.5 h-3.5 text-primary transition-transform ml-1 group-hover:translate-x-2 duration-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-10 h-[1px] bg-[#333] group-hover:bg-[var(--color-primary)] transition-colors duration-300"></div>
+                <div className="flex items-center group-hover:translate-x-4 duration-300">
+                  <span className="text-[var(--color-primary)] font-medium transition-all">
+                    Read More
+                  </span>
+                  <svg
+                    className="w-3.5 h-3.5 text-[var(--color-primary)] transition-transform ml-1 group-hover:translate-x-2 duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </Link>

@@ -23,4 +23,11 @@ export const Icons = {
   // Utilities
   Check: (props) => <Iconify icon="ph:check-circle" width="1.5em" {...props} />,
   Star: (props) => <Iconify icon="ph:star-fill" width="1.5em" {...props} />,
+
+  // Services
+  Signage: (props) => <Iconify icon="ph:squares-four" width="1em" {...props} />,
+  Printing: (props) => <Iconify icon="ph:printer" width="1em" {...props} />,
+  DirectMailing: (props) => <Iconify icon="ph:envelope-simple" width="1em" {...props} />,
+  WebDesigning: (props) => <Iconify icon="ph:globe" width="1em" {...props} />,
+  SEO: (props) => <Iconify icon="ph:magnifying-glass" width="1em" {...props} />,
 };
