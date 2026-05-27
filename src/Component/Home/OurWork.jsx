@@ -83,7 +83,7 @@ export default function OurWork() {
               <h1 className="text-[var(--color-dark-orange)] text-5xl sm:text-6xl md:text-[80px] font-bold mb-2">
                 150+
               </h1>
-              <p className="text-white text-lg sm:text-xl md:text-2xl font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase whitespace-normal md:whitespace-nowrap">
+              <p className=" text-lg sm:text-xl md:text-5xl font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase whitespace-normal md:whitespace-nowrap">
                 PROJECT DONE
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function OurWork() {
             </div>
           </div>
         </div> <div className="w-full px-4 sm:px-8 lg:px-0">
-              <p className="text-gray-300 text-sm sm:text-base md:text-lg mt-[20px] leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg mt-[20px] leading-relaxed">
                 Over The Years, We've Turned Countless Ideas Into High-Quality
                 Prints That Leave A Lasting Impression. From Small Personal
                 Projects To Large Corporate Campaigns, Our Team Blends

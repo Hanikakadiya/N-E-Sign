@@ -58,7 +58,7 @@ export default function BrandStatement() {
                 viewport={{ once: true, amount: 0.7 }}
               >
                 <span
-                  className="text-white mr-3 md:mr-5 whitespace-nowrap mb-4 md:mb-0 block md:inline-block"
+                  className="mr-3 md:mr-5 whitespace-nowrap mb-4 md:mb-0 block md:inline-block"
                   style={{ textShadow: "0 4px 20px rgba(255,255,255,0.4)" }}
                 >
                   PRINT THAT MAKES
