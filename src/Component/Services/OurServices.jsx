@@ -1,42 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Signage from "../../assets/Image/Services/services-Signage.png";
-import Printing from "../../assets/Image/Services/services-Printing.png";
-import DirectMailing from "../../assets/Image/Services/services-Direct Mailing.png";
-import WebDesigning from "../../assets/Image/Services/services-Web Designing.png";
-import Seo from "../../assets/Image/Services/services-seo.png";
-
 export default function OurServices() {
   const servicesData = [
     {
       title: "Signage",
       description:
         "We provide custom signage solutions that improve visibility, enhance communication, and support your brand growth.",
-      image: Signage,
+      image: "../../assets/Image/Services/services-Signage.png",
     },
     {
       title: "Printing",
       description:
         "We provide printing solutions that enhance visibility, communicate your message clearly, and support your brand growth.",
-      image: Printing,
+      image: "../../assets/Image/Services/services-Printing.png",
     },
     {
       title: "Direct Mailing",
       description:
         "We provide direct mailing solutions that enhance reach, communicate your message clearly, and support your brand growth.",
-      image: DirectMailing,
+      image: "../../assets/Image/Services/services-Direct Mailing.png",
     },
     {
       title: "Web Designing",
       description:
         "We provide web design solutions that enhance user experience, your message clearly, and support your brand growth.",
-      image: WebDesigning,
+      image: "../../assets/Image/Services/services-Web Designing.png",
     },
     {
       title: "SEO",
       description:
         "We provide SEO solutions that improve search visibility, communicate your message clearly, and support your brand growth.",
-      image: Seo,
+      image: "../../assets/Image/Services/services-seo.png",
     },
   ];
 

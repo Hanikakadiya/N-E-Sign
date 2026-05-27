@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import AestheticImg from "../../../assets/Image/signage/signage-aesthetic.jpg";
-import BurgersImg from "../../../assets/Image/signage/signage-burgers.jpg";
-import DigitalBoardImg from "../../../assets/Image/signage/signage-digital-board.jpg";
-import NeonSignsImg from "../../../assets/Image/signage/signage-neon-signs.jpg";
-import VehicleGraphicsImg from "../../../assets/Image/signage/signage-vehicle-graphics.jpg";
-import WallGraphicsImg from "../../../assets/Image/signage/signage-wall-graphics.jpg";
 
 export default function SignageHeroSection() {
   const signageCards = [
-    { src: AestheticImg, title: "Exterior Sign" },
-    { src: BurgersImg, title: "Restaurant Signs" },
-    { src: DigitalBoardImg, title: "Digital Boards" },
-    { src: NeonSignsImg, title: "Neon Signs" },
-    { src: WallGraphicsImg, title: "Wall Graphics" },
-    { src: VehicleGraphicsImg, title: "Vehicle Graphics" },
+    { src: "../../../assets/Image/signage/signage-aesthetic.jpg", title: "Exterior Sign" },
+    { src: "../../../assets/Image/signage/signage-burgers.jpg", title: "Restaurant Signs" },
+    { src: "../../../assets/Image/signage/signage-digital-board.jpg", title: "Digital Boards" },
+    { src: "../../../assets/Image/signage/signage-neon-signs.jpg", title: "Neon Signs" },
+    { src: "../../../assets/Image/signage/signage-wall-graphics.jpg", title: "Wall Graphics" },
+    { src: "../../../assets/Image/signage/signage-vehicle-graphics.jpg", title: "Vehicle Graphics" },
   ];
 
   const [activeCard, setActiveCard] = useState(0);
@@ -23,7 +17,7 @@ export default function SignageHeroSection() {
       <div className="max-w-[98%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
-          <div className="flex flex-col items-start max-w-[800px]">
+          <div className="flex flex-col items-start max-w-[700px]">
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[1px] w-20 bg-[var(--color-primary)]"></div>
               <span className="text-[var(--color-primary)] tracking-[0.15em] text-[14px] uppercase">
@@ -31,17 +25,17 @@ export default function SignageHeroSection() {
               </span>
             </div>
 
-            <h1 className="text-[40px] sm:text-[48px] lg:text-[52px] xl:text-[56px] font-medium font-poppins text-white leading-[1.3] mb-8">
+            <h1 className="text-[40px] sm:text-[48px] lg:text-[50px] xl:text-[52px] font-medium font-poppins leading-[1.2] mb-8">
               Get your Business Signage in Best Price.
             </h1>
 
-            <p className="text-gray-400 font-normal text-[16px] sm:text-[18px] leading-[1.3] mb-6">
+            <p className="text-gray-400 font-normal text-[16px] sm:text-[19px] leading-[1.3] mb-6">
               Get high-quality business signage designed to attract attention
               and build trust. We offer durable, visually striking signs at the
               best prices, tailored to fit your brand and business needs.
             </p>
 
-            <p className="text-gray-400 font-normal text-[15px] sm:text-[18px] leading-[1.3]">
+            <p className="text-gray-400 font-normal text-[16px] sm:text-[19px] leading-[1.3]">
               Make your business stand out with affordable, eye-catching
               signage. From design to installation, we deliver quality signs
               that fit your budget without compromising on style.
