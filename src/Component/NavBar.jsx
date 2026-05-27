@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 // Container import removed; layout handled inline
-import NavLogo from "../assets/Image/NavBar/NE_Sign_Logo.png";
-import LowestPriceLogo from "../assets/Image/NavBar/Lowest-Price-Logo.png";
 import { Icons } from "./Icons/icons";
 import { Icon } from "@iconify/react";
 
@@ -53,13 +51,13 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed w-full h-[100px] z-50 top-0 left-0  border-b border-[#333333] backdrop-blur-sm">
-        <div className="flex items-center justify-around bg-primary">
+      <nav className="fixed w-full h-[100px] z-50 top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
+        <div className="flex items-center justify-between max-w-[1720px] mx-auto w-full h-full px-4">
           {/* Left: Logo */}
           <div className=" z-50">
             <Link to="/">
               <img
-                src={NavLogo}
+                src="/Image/NavBar/NE_Sign_Logo.png"
                 alt="NE-Sign Logo"
                 className="w-[155px] h-auto object-contain"
               />
@@ -133,7 +131,7 @@ export default function NavBar() {
             {/* Lowest Price Badge */}
             <div className="">
               <img
-                src={LowestPriceLogo}
+                src="/Image/NavBar/Lowest-Price-Logo.png"
                 alt="Lowest Price Guarantee"
                 className="w-[97px] object-contain"
               />
@@ -144,7 +142,7 @@ export default function NavBar() {
           <div className="flex lg:hidden items-center space-x-4 z-50">
             {/* Lowest Price Badge on Mobile */}
             <img
-              src={LowestPriceLogo}
+              src="/Image/NavBar/Lowest-Price-Logo.png"
               alt="Lowest Price"
               className="w-[55px] h-[55px] sm:w-[65px] sm:h-[65px] object-contain"
             />
@@ -195,7 +193,7 @@ export default function NavBar() {
                 className="bg-transparent text-[#ffffff] w-full font-poppins font-normal text-[14px] outline-none placeholder-gray-400"
               />
               <img
-                src="/src/assets/Image/NavBar/coolicon.svg"
+                src="/Image/NavBar/coolicon.svg"
                 alt="Search"
                 className="w-[16px] h-[16px] ml-2 opacity-70"
               />

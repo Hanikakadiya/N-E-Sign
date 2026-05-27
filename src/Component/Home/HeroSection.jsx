@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react";
 // Container import removed; layout handled inline
 
-import img1 from "../../assets/Image/Herosection/Hero-cursor-img-1.png";
-import img2 from "../../assets/Image/Herosection/Hero-cursor-img-2.png";
-import img3 from "../../assets/Image/Herosection/Hero-cursor-img-3.png";
-import img4 from "../../assets/Image/Herosection/Hero-cursor-img-4.png";
-import img5 from "../../assets/Image/Herosection/Hero-cursor-img-5.png";
-
-const TRAIL_IMAGES = [img1, img2, img3, img4, img5];
+const TRAIL_IMAGES = [
+  "/Image/Herosection/Hero-cursor-img-1.png",
+  "/Image/Herosection/Hero-cursor-img-2.png",
+  "/Image/Herosection/Hero-cursor-img-3.png",
+  "/Image/Herosection/Hero-cursor-img-4.png",
+  "/Image/Herosection/Hero-cursor-img-5.png",
+];
 
 export default function HeroSection() {
   const [trail, setTrail] = useState([]);

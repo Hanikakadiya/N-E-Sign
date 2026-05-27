@@ -2,12 +2,18 @@ import React, { useState } from "react";
 
 export default function SignageHeroSection() {
   const signageCards = [
-    { src: "../../../assets/Image/signage/signage-aesthetic.jpg", title: "Exterior Sign" },
-    { src: "../../../assets/Image/signage/signage-burgers.jpg", title: "Restaurant Signs" },
-    { src: "../../../assets/Image/signage/signage-digital-board.jpg", title: "Digital Boards" },
-    { src: "../../../assets/Image/signage/signage-neon-signs.jpg", title: "Neon Signs" },
-    { src: "../../../assets/Image/signage/signage-wall-graphics.jpg", title: "Wall Graphics" },
-    { src: "../../../assets/Image/signage/signage-vehicle-graphics.jpg", title: "Vehicle Graphics" },
+    { src: "/Image/signage/signage-aesthetic.jpg", title: "Exterior Sign" },
+    { src: "/Image/signage/signage-burgers.jpg", title: "Restaurant Signs" },
+    {
+      src: "/Image/signage/signage-digital-board.jpg",
+      title: "Digital Boards",
+    },
+    { src: "/Image/signage/signage-neon-signs.jpg", title: "Neon Signs" },
+    { src: "/Image/signage/signage-wall-graphics.jpg", title: "Wall Graphics" },
+    {
+      src: "/Image/signage/signage-vehicle-graphics.jpg",
+      title: "Vehicle Graphics",
+    },
   ];
 
   const [activeCard, setActiveCard] = useState(0);

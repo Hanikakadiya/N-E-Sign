@@ -4,37 +4,37 @@ export default function SignageCategorySection() {
   const categories = [
     {
       title: "Exterior sign",
-      image: "../../../assets/Image/signage/Exterior-sign-01.png",
+      image: "/Image/signage/Exterior-sign-01.png",
       gradient: "from-[#CF414B]/80 to-[#852170]/80",
       number: "01",
     },
     {
       title: "Interior sign",
-      image: "../../../assets/Image/signage/Interior-sign-02.png",
+      image: "/Image/signage/Interior-sign-02.png",
       gradient: "from-[#4FE6F1]/80 to-[#ED90CF]/80",
       number: "02",
     },
     {
       title: "LED Digital Board",
-      image: "../../../assets/Image/signage/Digital-Board-03.png",
+      image: "/Image/signage/Digital-Board-03.png",
       gradient: "from-[#ADFDA2]/80 to-[#05A5BF]/80",
       number: "03",
     },
     {
       title: "LED Neon Signs",
-      image: "../../../assets/Image/signage/LED-Neon-04.png",
+      image: "/Image/signage/LED-Neon-04.png",
       gradient: "from-[#8711C1]/80 to-[#2472FC]/80",
       number: "04",
     },
     {
       title: "Window & Wall Graphics",
-      image: "../../../assets/Image/signage/Wall-Graphics-05.png",
+      image: "/Image/signage/Wall-Graphics-05.png",
       gradient: "from-[#F79C29]/80 to-[#EDBC5A]/80",
       number: "05",
     },
     {
       title: "Vehicle Graphics",
-      image: "../../../assets/Image/signage/Vehicle-Graphics-06.png",
+      image: "/Image/signage/Vehicle-Graphics-06.png",
       gradient: "from-[#05A5BF]/80 to-[#CF414B]/80",
       number: "06",
     },

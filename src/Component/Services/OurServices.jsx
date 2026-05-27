@@ -6,31 +6,31 @@ export default function OurServices() {
       title: "Signage",
       description:
         "We provide custom signage solutions that improve visibility, enhance communication, and support your brand growth.",
-      image: "../../assets/Image/Services/services-Signage.png",
+      image: "/Image/Services/services-Signage.png",
     },
     {
       title: "Printing",
       description:
         "We provide printing solutions that enhance visibility, communicate your message clearly, and support your brand growth.",
-      image: "../../assets/Image/Services/services-Printing.png",
+      image: "/Image/Services/services-Printing.png",
     },
     {
       title: "Direct Mailing",
       description:
         "We provide direct mailing solutions that enhance reach, communicate your message clearly, and support your brand growth.",
-      image: "../../assets/Image/Services/services-Direct Mailing.png",
+      image: "/Image/Services/services-Direct Mailing.png",
     },
     {
       title: "Web Designing",
       description:
         "We provide web design solutions that enhance user experience, your message clearly, and support your brand growth.",
-      image: "../../assets/Image/Services/services-Web Designing.png",
+      image: "/Image/Services/services-Web Designing.png",
     },
     {
       title: "SEO",
       description:
         "We provide SEO solutions that improve search visibility, communicate your message clearly, and support your brand growth.",
-      image: "../../assets/Image/Services/services-seo.png",
+      image: "/Image/Services/services-seo.png",
     },
   ];
 

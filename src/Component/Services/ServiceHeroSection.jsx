@@ -19,7 +19,7 @@ export default function ServiceHeroSection() {
           {/* Top Coffee Image */}
           <div className="w-full h-[240px] rounded-[32px] overflow-hidden">
             <img
-              src="../../assets/Image/Services/service-hero-coffee.png"
+              src="/Image/Services/service-hero-coffee.png"
               alt="Coffee Signage"
               className="w-full h-full object-cover transition-transform duration-700 ease-in-out scale-[1.05] hover:scale-100"
             />
@@ -30,7 +30,7 @@ export default function ServiceHeroSection() {
             {/* Printer Image */}
             <div className="w-full h-[510px] rounded-[32px] overflow-hidden">
               <img
-                src="../../assets/Image/Services/service-hero-print.jpg"
+                src="/Image/Services/service-hero-print.jpg"
                 alt="Printing Services"
                 className="w-full h-full object-cover opacity-90 transition-transform duration-700 ease-in-out scale-[1.09] hover:scale-100"
               />
@@ -40,7 +40,7 @@ export default function ServiceHeroSection() {
             <div className="absolute bottom-[-10px] left-[-20px] sm:left-[-50px] bg-black pt-6 pr-6 pb-4 rounded-tr-[40px] z-10">
               <div className="w-[180px] h-[180px] sm:w-[290px] sm:h-[290px] rounded-[28px] overflow-hidden">
                 <img
-                  src="../../assets/Image/Services/service-hero-light.png"
+                  src="/Image/Services/service-hero-light.png"
                   alt="Creative Idea"
                   className="w-full h-full object-cover transition-transform duration-700 ease-in-out scale-[1.05] hover:scale-100"
                 />
