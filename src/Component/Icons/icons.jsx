@@ -1,33 +1,38 @@
 import React from "react";
 import { Icon as Iconify } from "@iconify/react";
 
-// Centralized Icon Library using Iconify
-// You can easily add more icons here from https://icones.js.org/
+// Helper function to generate icons and reduce repetitive code
+const createIcon = (iconName, defaultWidth = "1.5em") => {
+  return (props) => <Iconify icon={iconName} width={defaultWidth} {...props} />;
+};
+
 export const Icons = {
   // Navigation & UI
-  Search: (props) => <Iconify icon="ph:magnifying-glass" width="1.5em" {...props} />,
-  Profile: (props) => <Iconify icon="iconamoon:profile-thin" width="1.5em" {...props} />,
-  Menu: (props) => <Iconify icon="heroicons:bars-3" width="1.5em" {...props} />,
-  Close: (props) => <Iconify icon="heroicons:x-mark" width="1.5em" {...props} />,
+  Search: createIcon("ph:magnifying-glass"),
+  Profile: createIcon("iconamoon:profile-thin"),
+  Menu: createIcon("heroicons:bars-3"),
+  Close: createIcon("heroicons:x-mark"),
   
   // Arrows & Chevrons
-  ArrowRight: (props) => <Iconify icon="ph:arrow-right" width="1.5em" {...props} />,
-  ChevronDown: (props) => <Iconify icon="ph:caret-down" width="1.5em" {...props} />,
-  ChevronRight: (props) => <Iconify icon="ph:caret-right" width="1.5em" {...props} />,
+  ArrowRight: createIcon("ph:arrow-right"),
+  ArrowDownRight: createIcon("ph:arrow-down-right"),
+  ArrowUpRight: createIcon("ph:arrow-up-right"),
+  ChevronDown: createIcon("ph:caret-down"),
+  ChevronRight: createIcon("ph:caret-right"),
   
   // Contact & Social
-  Phone: (props) => <Iconify icon="ph:phone" width="1.5em" {...props} />,
-  Email: (props) => <Iconify icon="ph:envelope" width="1.5em" {...props} />,
-  Location: (props) => <Iconify icon="ph:map-pin" width="1.5em" {...props} />,
+  Phone: createIcon("ph:phone"),
+  Email: createIcon("ph:envelope"),
+  Location: createIcon("ph:map-pin"),
   
   // Utilities
-  Check: (props) => <Iconify icon="ph:check-circle" width="1.5em" {...props} />,
-  Star: (props) => <Iconify icon="ph:star-fill" width="1.5em" {...props} />,
+  Check: createIcon("ph:check-circle"),
+  Star: createIcon("ph:star-fill"),
 
-  // Services
-  Signage: (props) => <Iconify icon="ph:squares-four" width="1em" {...props} />,
-  Printing: (props) => <Iconify icon="ph:printer" width="1em" {...props} />,
-  DirectMailing: (props) => <Iconify icon="ph:envelope-simple" width="1em" {...props} />,
-  WebDesigning: (props) => <Iconify icon="ph:globe" width="1em" {...props} />,
-  SEO: (props) => <Iconify icon="ph:magnifying-glass" width="1em" {...props} />,
+  // Services (Passing "1em" to override the default "1.5em" width)
+  Signage: createIcon("ph:squares-four", "1em"),
+  Printing: createIcon("ph:printer", "1em"),
+  DirectMailing: createIcon("ph:envelope-simple", "1em"),
+  WebDesigning: createIcon("ph:globe", "1em"),
+  SEO: createIcon("ph:magnifying-glass", "1em"),
 };
