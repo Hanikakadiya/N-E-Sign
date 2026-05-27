@@ -41,7 +41,6 @@ export default function HeroSection() {
 
       setTrail((prev) => [...prev, newImage]);
 
-      // Remove the image after the animation finishes (1 second)
       setTimeout(() => {
         setTrail((prev) => prev.filter((img) => img.id !== newImage.id));
       }, 1000);
@@ -57,47 +56,44 @@ export default function HeroSection() {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="mx-auto max-w-[1720px] px-4 sm:px-4 flex flex-col items-center">
-        {/* Custom Dot Cursor */}
-        <div
-          className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none z-[100] transition-opacity duration-200 mix-blend-difference ${isHovered ? "opacity-100" : "opacity-0"}`}
-          style={{
-            left: `${cursorPos.x}px`,
-            top: `${cursorPos.y}px`,
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-        </div>
-
-        {/* Trail Images */}
-        {trail.map((img) => (
-          <img
-            key={img.id}
-            src={img.src}
-            alt="trail"
-            className="absolute pointer-events-none object-cover rounded-xl shadow-lg w-[190px] h-[240px] animate-trail-fade z-20 border border-white/20"
+          {/* Custom Dot Cursor */}
+          <div
+            className={`absolute w-3 h-3 bg-white rounded-full pointer-events-none z-[100] transition-opacity duration-200 mix-blend-difference ${isHovered ? "opacity-100" : "opacity-0"}`}
             style={{
-              left: `${img.x}px`,
-              top: `${img.y}px`,
+              left: `${cursorPos.x}px`,
+              top: `${cursorPos.y}px`,
+              transform: "translate(-50%, -50%)",
             }}
-          />
-        ))}
+          ></div>
 
-        {/* Top Right Glow Spot */}
-        <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[120px] rounded-full pointer-events-none"></div>
+          {/* Trail Images */}
+          {trail.map((img, i) => (
+            <img
+              key={img.id}
+              src={img.src}
+              alt="trail"
+              className="absolute pointer-events-none object-cover rounded-xl shadow-lg w-[190px] h-[240px] animate-trail-fade z-20 border border-white/20"
+              style={{
+                left: `${img.x + i * 2}px`,
+                top: `${img.y + i * 2}px`,
+              }}
+            />
+          ))}
 
-        <div className="text-center pt-[10vh] md:pt-[15vh] lg:pt-[20vh] relative z-10">
-          <h1 className="text-white text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-poppins font-extrabold">
-            <span className="text-primary">N.E Sign </span> Printing &
-            Marketing{" "}
-          </h1>
-          <p className="text-white font-poppins font-normal text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px]">
-            Lowest Price Guaranteed
-          </p>
+          {/* Top Right Glow Spot */}
+          <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[var(--color-primary)]/30 blur-[100px] md:blur-[120px] rounded-full pointer-events-none"></div>
+
+          <div className="text-center pt-[10vh] md:pt-[15vh] lg:pt-[20vh] relative z-10">
+            <h1 className="text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-poppins font-extrabold">
+              <span className="text-[var(--color-primary)]">N.E Sign </span>{" "}
+              Printing & Marketing{" "}
+            </h1>
+            <p className="font-poppins font-normal text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px]">
+              Lowest Price Guaranteed
+            </p>
+          </div>
         </div>
-                
-      </div>
-        </section>
-        
+      </section>
     </>
   );
 }

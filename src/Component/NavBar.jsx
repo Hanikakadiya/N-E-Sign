@@ -61,7 +61,7 @@ export default function NavBar() {
               <img
                 src={NavLogo}
                 alt="NE-Sign Logo"
-                className="w-[120px] sm:w-[155px] h-auto sm:h-[56px] object-contain"
+                className="w-[155px] h-auto object-contain"
               />
             </Link>
           </div>

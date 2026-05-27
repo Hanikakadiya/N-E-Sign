@@ -1,145 +1,115 @@
 import React from "react";
-import { motion } from "framer-motion";
 import vectorImg from "../../assets/Image/OurWork/vector.png";
+import workImg1 from "../../assets/Image/OurWork/OurWork-First-Img.png";
+import hoverImg1 from "../../assets/Image/OurWork/OurWork-img-hover-first.png";
+import WorkImg2 from "../../assets/Image/OurWork/OurWork-Second-Img.png";
+import hoverImg2 from "../../assets/Image/OurWork/OurWork-img-hover-second.png";
+import WorkImg3 from "../../assets/Image/OurWork/OurWork-Third-Img.png";
+import hoverImg3 from "../../assets/Image/OurWork/OurWork-img-hover-third.png";
 
 export default function OurWork() {
-  // Animation variant for heading transform
-  const headingAnim = {
-    hidden: { x: -30, scale: -1.3, opacity: 0 },
-    visible: {
-      x: 0,
-      scale: 1,
-      opacity: 1,
-      transition: { duration: 1.2, type: "spring", stiffness: 100 },
-    },
-  };
-  // Sub-heading animation: two‑step zoom/fade with repeat
-  const subHeadingAnim = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: [0, 1, 0, 1],
-      scale: [0.8, 1.2, 1, 1],
-      transition: {
-        duration: 1.2,
-        times: [0, 0.3, 0.6, 1],
-        ease: "easeInOut",
-        repeat: 2,
-        repeatDelay: 0.5,
-      },
-    },
-  };
-
   return (
-    <>
-      <section className="relative w-full min-h-[60vh] py-24 sm:py-32 lg:py-48 flex items-center justify-center overflow-hidden">
-        {/* Soft Background Glow on the right */}
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[#8B7355]/10 blur-[100px] sm:blur-[150px] rounded-full pointer-events-none"></div>
-
-        {/* Circular Lines Pattern (SVG) */}
-        <div
-          className="absolute right-[5%] -translate-y-1/2 opacity-20 md:opacity-30 pointer-events-none w-[250px] md:w-[400px]"
-          style={{ top: "calc(1 / 2 * 85%)" }}
-        >
-          <svg viewBox="0 0 100 100" className="w-full h-auto">
-            <defs>
-              <pattern
-                id="lines"
-                width="100"
-                height="4"
-                patternUnits="userSpaceOnUse"
-              >
-                <line
-                  x1="0"
-                  y1="2"
-                  x2="100"
-                  y2="2"
-                  stroke="white"
-                  strokeWidth="0.3"
-                />
-              </pattern>
-            </defs>
-            <circle cx="50" cy="50" r="40" fill="url(#lines)" />
-            <circle cx="50" cy="50" r="25" fill="black" />
-          </svg>
-        </div>
-
-        {/* Text Container */}
-        <div className="relative inline-block px-10 sm:px-16 md:px-24 z-10 w-full mx-auto flex flex-col items-center ">
-          <div className="relative inline-block w-full max">
-            {/* Top Left Quote */}
-            <div className="absolute -top-8 -left-2 sm:-top-12 sm:-left-8 md:-top-16 md:-left-16">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#8B7355"
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 opacity-90"
-              >
-                <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
-              </svg>
-            </div>
-            <div className="p-5">
-              {/* Main Typography */}
-              <motion.h1
-                className="text-white text-[26px] sm:text-[40px] md:text-[56px] lg:text-[72px] xl:text-[90px] font-poppins font-extrabold leading-tight tracking-tight flex flex-wrap items-center justify-center md:justify-start gap-x-2 sm:gap-x-4"
-                variants={headingAnim}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.7 }}
-              >
-                <span
-                  style={{ textShadow: "0 4px 20px rgba(255,255,255,0.4)" }}
-                >
-                  PRINT THAT MAKES
-                </span>
-                <span
-                  className="text-dark-orange"
-                  style={{ textShadow: "0 4px 30px rgba(239,180,81,0.8)" }}
-                >
-                  YOUR BRAND
-                </span>
-              </motion.h1>
-
-              {/* Sub Heading (Outline Text) */}
-              <motion.h2
-                className="text-transparent font-poppins text-6xl md:text-7xl lg:text-8xl tracking-wider float-right"
-                style={{ WebkitTextStroke: "1px white" }}
-                variants={subHeadingAnim}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.7 }}
-              >
-                STAND OUT
-              </motion.h2>
-            </div>
-            {/* Bottom Right Quote */}
-            <div className="absolute -bottom-8 sm:-bottom-12 md:-bottom-16 md:-right-20">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="#8B7355"
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 opacity-90 rotate-180"
-              >
-                <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
-              </svg>
-            </div>
-          </div>
-          <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[500px] md:h-[500px] bg-primary/20 blur-[100px] md:blur-[110px] rounded-full pointer-events-none ">
-            OUR WORK
-          </div>
-        </div>
-      </section>
-      <section className="w-full">
-        <div className="relative inline-block">
-          <h1 className="text-[#F79C29] text-[24px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-poppins font-bold ">
+    <section className="relative w-full py-16 sm:py-24 mx-auto overflow-hidden">
+      <div className="w-full px-4 sm:px-8 lg:px-0">
+        {/* Section Heading */}
+        <div className="relative flex items-center mb-16">
+          <img
+            src={vectorImg}
+            alt="Vector Img"
+            className="absolute left-[-40px] sm:left-[-80px] md:left-[-100px] top-[-10px] sm:top-[-20px] md:top-[-30px] w-[120px] sm:w-[180px] md:w-[220px] h-auto z-0 opacity-50"
+          />
+          <h1 className="relative z-10 text-[var(--color-dark-orange)] text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-poppins font-bold tracking-[0.2em] uppercase">
             OUR WORK
           </h1>
         </div>
-        <div>
-          <img src={vectorImg} alt="" />
-        </div>
 
-        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 py-8 sm:py-12 md:py-16 lg:py-20"></div>
-      </section>
-    </>
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6">
+          {/* Left Column (Image 1 + Experience Stats + Paragraph) */}
+          <div className="lg:col-span-5 flex flex-col gap-10">
+            <div className="relative group overflow-hidden rounded-[20px] shadow-lg w-full aspect-[777/387]">
+              <img
+                src={workImg1}
+                alt="WorkImg"
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 group-hover:opacity-0"
+              />
+              <img
+                src={hoverImg1}
+                alt="WorkImg Hover"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
+              />
+            </div>
+            <div className="flex flex-col gap-6">
+              {/* 25 Years Experience */}
+              <div className="flex items-center gap-2 sm:gap-4 w-fit">
+                <h1 className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter">
+                  25
+                </h1>
+                <h2 className="flex flex-col text-[var(--color-primary)] font-bold uppercase text-xl sm:text-3xl md:text-4xl">
+                  <span
+                    className="text-transparent text-4xl sm:text-8xl tracking-[5px] "
+                    style={{ WebkitTextStroke: "1px #8B7355" }}
+                  >
+                    YEAR
+                  </span>
+                  <span className="text-[var(--color-dark-orange)] tracking-widest text-2xl sm:text-5xl">
+                    EXPERIENCE
+                  </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          {/* Middle Column (Image 2) */}
+          <div className="lg:col-span-3 w-full flex flex-col gap-6">
+            <div className="relative group overflow-hidden rounded-[20px] shadow-lg w-full aspect-[416/578]">
+              <img
+                src={WorkImg2}
+                alt="WorkImg"
+                className="absolute inset-0 object-cover transition-opacity duration-1000 group-hover:opacity-0 w-full h-full"
+              />
+              <img
+                src={hoverImg2}
+                alt="WorkImg Hover"
+                className="absolute inset-0 object-cover opacity-0 transition-opacity duration-1000 group-hover:opacity-100 w-full h-full"
+              />
+            </div>
+           
+          </div>
+          
+          {/* Right Column (150+ Projects + Image 3) */}
+          <div className="lg:col-span-4 flex flex-col gap-10">
+            <div className="text-center flex flex-col justify-center items-center  lg:mt-8">
+              <h1 className="text-[var(--color-dark-orange)] text-5xl sm:text-6xl md:text-[80px] font-bold mb-2">
+                150+
+              </h1>
+              <p className="text-white text-lg sm:text-xl md:text-2xl font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase whitespace-normal md:whitespace-nowrap">
+                PROJECT DONE
+              </p>
+            </div>
+            <div className="relative group overflow-hidden rounded-[20px] shadow-lg w-full aspect-[447/317]">
+              <img
+                src={WorkImg3}
+                alt="WorkImg"
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 group-hover:opacity-0"
+              />
+              <img
+                src={hoverImg3}
+                alt="WorkImg Hover"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+        </div> <div className="w-full px-4 sm:px-8 lg:px-0">
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg mt-[20px] leading-relaxed">
+                Over The Years, We've Turned Countless Ideas Into High-Quality
+                Prints That Leave A Lasting Impression. From Small Personal
+                Projects To Large Corporate Campaigns, Our Team Blends
+                Creativity With Precision To Deliver Outstanding Results Every
+                Time.
+              </p>
+            </div>
+      </div>
+    </section>
   );
 }
