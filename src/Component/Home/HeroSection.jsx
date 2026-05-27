@@ -28,7 +28,7 @@ export default function HeroSection() {
     const distance = Math.sqrt(dx * dx + dy * dy);
 
     // Spawn a new image if the mouse has moved more than 60px
-    if (distance > 60) {
+    if (distance > 160) {
       const newImage = {
         id: Date.now() + Math.random(),
         x,
@@ -50,7 +50,7 @@ export default function HeroSection() {
   return (
     <>
       <section
-        className="relative w-full h-[80vh] overflow-hidden text-center flex items-center justify-center cursor-none"
+        className="relative w-[100%] h-[90vh] overflow-hidden text-center flex items-center justify-center cursor-none"
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

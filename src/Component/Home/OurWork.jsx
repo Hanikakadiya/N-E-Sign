@@ -2,15 +2,19 @@ import React from "react";
 
 export default function OurWork() {
   return (
-    <section className="relative w-full py-16 sm:py-24 mx-auto overflow-hidden">
-      <div className="w-full px-4 sm:px-8 lg:px-0">
-        {/* Section Heading */}
-        <div className="relative flex items-center mb-16">
-          <img
-            src="/Image/OurWork/Vector.png"
-            alt="Vector Img"
-            className="absolute left-[-40px] sm:left-[-80px] md:left-[-100px] top-[-10px] sm:top-[-20px] md:top-[-30px] w-[120px] sm:w-[180px] md:w-[220px] h-auto z-0 opacity-50"
-          />
+    <>
+    <div>
+      <img
+        src="/Image/OurWork/Vector.png"
+        alt="Vector Img"
+        className="absolute left-[-40px] sm:left-[-80px] md:left-[-70px] top-[-10px] sm:top-[-20px] md:top-[-30px] w-[120px] sm:w-[180px] md:w-[220px] h-auto  opacity-100"
+      />
+      </div>
+      <section className="relative w-full py-16 sm:py-24 mx-auto overflow-hidden">
+        <div className="w-full px-4 sm:px-8 lg:px-0">
+          {/* Section Heading */}
+          <div className="relative flex items-center mb-16">
+         
           <h1 className="relative z-10 text-[var(--color-dark-orange)] text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-poppins font-bold tracking-[0.2em] uppercase">
             OUR WORK
           </h1>
@@ -102,5 +106,6 @@ export default function OurWork() {
         </div>
       </div>
     </section>
+    </>
   );
 }

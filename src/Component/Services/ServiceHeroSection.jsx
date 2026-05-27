@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Icons } from "../Icons/icons";
 import "../../index.css";
 
 export default function ServiceHeroSection() {
@@ -56,19 +57,7 @@ export default function ServiceHeroSection() {
                 <span className="text-sm font-medium text-[var(--color-primary)]">
                   Get in Touch
                 </span>
-                <svg
-                  className="w-4 h-4 text-white animate-bounce-x"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
-                </svg>
+                <Icons.ArrowRight className="w-5 h-5 ml-5 transition-colors duration-300 animate-bounce-x group-hover:text-[var(--color-primary)]" />
               </Link>
             </div>
           </div>
@@ -81,20 +70,7 @@ export default function ServiceHeroSection() {
             <span className="text-[13px] font-semibold tracking-[0.2em] uppercase">
               Our Services
             </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2.5}
-              stroke="currentColor"
-              className="w-4 h-4 animate-bounce-x"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25"
-              />
-            </svg>
+            <Icons.ArrowDownRight className="w-5 h-5 animate-bounce-x" />
           </div>
 
           {/* Section Title */}
@@ -117,20 +93,7 @@ export default function ServiceHeroSection() {
                 <span className="text-white font-semibold text-[18px] tracking-wide group-hover:text-[var(--color-primary)] transition-colors">
                   {service.name}
                 </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-4 h-4 ml-5 group-hover:text-[var(--color-primary)] transition-colors animate-bounce-x"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
+                <Icons.ArrowUpRight className="w-5 h-5 ml-5 transition-colors duration-300 animate-bounce-x group-hover:text-[var(--color-primary)]" />
               </Link>
             ))}
           </div>

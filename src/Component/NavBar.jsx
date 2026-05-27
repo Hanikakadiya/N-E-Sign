@@ -25,7 +25,7 @@ export default function NavBar() {
   const NavLinks = [
     { name: "Home", href: "/" },
     {
-      name: "Services",
+      name: "Services", 
       href: "/services",
       dropdown: [
         {

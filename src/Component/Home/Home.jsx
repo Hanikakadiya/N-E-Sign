@@ -1,7 +1,9 @@
 import React from "react";
 import HeroSection from "./HeroSection";
 import BrandStatement from "./BrandStatement";
+import AboutCompany from "./AboutCompany";
 import OurWork from "./OurWork";
+import LookAtOurServices from "./LookAtOurServices";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <HeroSection />
       <BrandStatement />
       <OurWork />
+      <AboutCompany />
+      <LookAtOurServices />
     </div>
   );
 }
