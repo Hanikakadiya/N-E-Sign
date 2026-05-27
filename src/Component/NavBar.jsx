@@ -28,7 +28,43 @@ export default function NavBar() {
       name: "Services",
       href: "/services",
       dropdown: [
-        { name: "Signage", href: "/services/signage", icon: Icons.Signage },
+        {
+          name: "Signage",
+          href: "/services/signage",
+          icon: Icons.Signage,
+          subItems: [
+            {
+              name: "Exterior Sign",
+              href: "/services/signage/exterior-sign",
+              icon: Icons.ExteriorSign,
+            },
+            {
+              name: "Interior Sign",
+              href: "/services/signage/interior-sign",
+              icon: Icons.InteriorSign,
+            },
+            {
+              name: "LED Digital Board",
+              href: "/services/signage/digital-board",
+              icon: Icons.DigitalBoard,
+            },
+            {
+              name: "LED Neon Sign",
+              href: "/services/signage/neon-sign",
+              icon: Icons.NeonSign,
+            },
+            {
+              name: "Window & Wall Graphics",
+              href: "/services/signage/window-wall-graphics",
+              icon: Icons.WallGraphics,
+            },
+            {
+              name: "Vehical Graphics",
+              href: "/services/signage/vehicle-graphics",
+              icon: Icons.VehicleGraphics,
+            },
+          ],
+        },
         { name: "Printing", href: "/services/printing", icon: Icons.Printing },
         {
           name: "Direct Mailing",
@@ -75,38 +111,80 @@ export default function NavBar() {
                     (link.dropdown &&
                       link.dropdown.some((d) => location.pathname === d.href))
                       ? "text-[var(--color-primary)]"
-                      : "text-white hover:text-[var(--color-primary)]"
+                      : "hover:text-[var(--color-primary)]"
                   }`}
                 >
                   {link.name}{" "}
                   {link.dropdown && <span className="text-sm">+</span>}
                 </Link>
                 {link.dropdown && (
-                  <div className="absolute left-0 top-full pt-4 hidden group-hover:block w-[280px] z-50">
-                    <div className="bg-[#0a0a0a] border border-[#222] shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-2 rounded-2xl flex flex-col gap-1">
+                  <div className="absolute left-0 top-full pt-6 hidden group-hover:block z-50">
+                    <div className="border border-[#333] shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-2 rounded-[20px] flex flex-col gap-1 w-[260px] xl:w-[280px]">
                       {link.dropdown.map((dropLink) => {
                         const isActive = location.pathname === dropLink.href;
+
                         return (
-                          <Link
+                          <div
                             key={dropLink.name}
-                            to={dropLink.href}
-                            className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-300 group/item ${
-                              isActive
-                                ? "bg-[var(--color-primary)] text-white"
-                                : "text-gray-300 hover:bg-[#1a1a1a] hover:text-white"
-                            }`}
+                            className="relative group/subitem"
                           >
-                            <div className="flex items-center gap-3">
-                              {dropLink.icon && (
-                                <dropLink.icon
-                                  className={`text-[20px] transition-colors ${isActive ? "text-white" : "text-gray-400 group-hover/item:text-white"}`}
+                            <Link
+                              to={dropLink.href}
+                              className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-900 ${
+                                isActive
+                                  ? "bg-[var(--color-primary)] text-black"
+                                  : "text-white hover:bg-[#1a1a1a]"
+                              }`}
+                            >
+                              <div className="flex items-center gap-3">
+                                {dropLink.icon && (
+                                  <dropLink.icon
+                                    className={`text-[20px] ${isActive ? "text-black" : "text-white"}`}
+                                  />
+                                )}
+                                <span className="text-[15px] font-medium font-poppins">
+                                  {dropLink.name}
+                                </span>
+                              </div>
+                              {dropLink.subItems && (
+                                <Icons.ChevronRight
+                                  className={`w-4 h-4 ${isActive ? "text-[var(--color-primary)]" : "text-gray-400"}`}
                                 />
                               )}
-                              <span className="text-[15px] font-medium font-poppins">
-                                {dropLink.name}
-                              </span>
-                            </div>
-                          </Link>
+                            </Link>
+
+                            {/* Cascading Pop-out Menu for Sub Items */}
+                            {dropLink.subItems && (
+                              <div className="absolute left-full top-0 ml-2 hidden group-hover/subitem:block w-[280px] xl:w-[300px]">
+                                <div className="border border-[#333] shadow-2xl p-2 rounded-[20px] flex flex-col gap-1 bg-[#000000]">
+                                  {dropLink.subItems.map((subItem) => {
+                                    const isSubActive =
+                                      location.pathname === subItem.href;
+                                    return (
+                                      <Link
+                                        key={subItem.name}
+                                        to={subItem.href}
+                                        className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 group/sub ${
+                                          isSubActive
+                                            ? "bg-[var(--color-primary)] text-black font-semibold"
+                                            : "text-white hover:bg-[#333333]"
+                                        }`}
+                                      >
+                                        {subItem.icon && (
+                                          <subItem.icon
+                                            className={`text-[20px] ${isSubActive ? "text-black" : "group-hover/sub:text-white"}`}
+                                          />
+                                        )}
+                                        <span className="text-[15px] font-poppins">
+                                          {subItem.name}
+                                        </span>
+                                      </Link>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            )}
+                          </div>
                         );
                       })}
                     </div>
@@ -152,28 +230,7 @@ export default function NavBar() {
               onClick={toggleMenu}
               className="text-gray-300 hover:text-[var(--color-primary)] focus:outline-none p-2"
             >
-              <svg
-                className="w-8 h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
+              <Icons.MenuIcon className="w-10 h-10" />
             </button>
           </div>
         </div>
