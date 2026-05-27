@@ -126,7 +126,7 @@ export default function ServiceHeroSection() {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="w-4 h-4 ml-5 text-gray-500 group-hover:text-[var(--color-primary)] transition-colors animate-bounce-x"
+                  className="w-4 h-4 ml-5 group-hover:text-[var(--color-primary)] transition-colors animate-bounce-x"
                 >
                   <path
                     strokeLinecap="round"

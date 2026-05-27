@@ -3,7 +3,10 @@ import NavBar from "./Component/NavBar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Services from "./Component/Services/Services";
+import Signage from "./Component/Services/signage/Signage";
 import Lenis from "lenis";
+
+
 
 export default function App() {
   useEffect(() => {
@@ -34,6 +37,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services/signage" element={<Signage />} />
       </Routes>
     </>
   );
