@@ -57,16 +57,16 @@ export default function OurServices() {
         </svg>
         <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[130px] rounded-full pointer-events-none"></div>
       </div>
-      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 md:px-16 lg:px-24 relative z-10">
+      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 md:px-16 lg:px-40 relative z-10">
         <div className="max-w-5xl">
           {/* Subtitle */}
-          <h3 className="text-primary text-[13px] font-semibold tracking-[0.2em] uppercase mb-6 flex items-center gap-2">
+          <h3 className="text-[var(--color-primary)] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6 flex items-center gap-2">
             Our Services
           </h3>
 
           {/* Main Title */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[55px] font-bold leading-[1.15] tracking-wide mb-8">
-            <span className="text-primary">Customized Solutions</span>{" "}
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-[50px] font-bold leading-[1.15] tracking-wide mb-8">
+            <span className="text-[var(--color-primary)]">Customized Solutions</span>{" "}
             <span className="text-white">to Achieve Your Business Goals</span>
           </h2>
 
@@ -89,7 +89,7 @@ export default function OurServices() {
           <Link
             to={`/services/${service.title.toLowerCase().replace(" ", "-")}`}
             key={index}
-            className="block w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] p-[1px] bg-gradient-to-b from-transparent to-white transition-all duration-500 cursor-pointer group"
+            className="block w-full md:w-[calc(50%-12px)] lg:w-[calc(27%-16px)] p-[1px] bg-gradient-to-b from-transparent to-white transition-all duration-500 cursor-pointer group"
           >
             <div className="bg-[#050505] w-full h-full p-4 sm:p-5 flex flex-col">
               <div className="w-full h-[220px] rounded-xl overflow-hidden mb-6 relative shrink-0">

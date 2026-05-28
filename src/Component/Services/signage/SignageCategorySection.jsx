@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Icons } from "../../Icons/icons";
 
 export default function SignageCategorySection() {
@@ -12,6 +13,7 @@ export default function SignageCategorySection() {
       number: "01",
       description:
         "Custom spaces that balance function and style, tailored to your lifestyle.",
+      link: "/services/signage/exterior-sign",
     },
     {
       title: "Interior sign",
@@ -20,6 +22,7 @@ export default function SignageCategorySection() {
       number: "02",
       description:
         "Interior signs that blend functionality with style to enhance your space.",
+      link: "/services/signage/interior-sign",
     },
     {
       title: "LED Digital Board",
@@ -28,6 +31,7 @@ export default function SignageCategorySection() {
       number: "03",
       description:
         "High-impact LED displays designed to inform, promote, and engage.",
+      link: "/services/signage/digital-board",
     },
     {
       title: "LED Neon Signs",
@@ -36,6 +40,7 @@ export default function SignageCategorySection() {
       number: "04",
       description:
         "High-impact LED displays designed to inform, promote, and engage.",
+      link: "/services/signage/neon-sign",
     },
     {
       title: "Window & Wall Graphics",
@@ -44,6 +49,7 @@ export default function SignageCategorySection() {
       number: "05",
       description:
         "High-quality window and wall graphics that strengthen your brand presence.",
+      link: "/services/signage/window-wall-graphics",
     },
     {
       title: "Vehicle Graphics",
@@ -52,6 +58,7 @@ export default function SignageCategorySection() {
       number: "06",
       description:
         "High-Impact Vehicle Graphics That Promote Your Brand Everywhere.",
+      link: "/services/signage/vehicle-graphics",
     },
   ];
 
@@ -145,12 +152,15 @@ export default function SignageCategorySection() {
                     <p className="text-sm lg:text-xs xl:text-base font-normal leading-relaxed mb-6 lg:mb-4 xl:mb-8 max-w-[280px] lg:max-w-full">
                       {cat.description}
                     </p>
-                    <button className="flex items-center gap-2 xl:gap-3 px-6 lg:px-5 xl:px-8 py-2.5 lg:py-2 xl:py-3 rounded-full border border-white transition-all duration-300 cursor-pointer hover:bg-white/10 w-fit">
+                    <Link
+                      to={cat.link}
+                      className="flex items-center gap-2 xl:gap-3 px-6 lg:px-5 xl:px-8 py-2.5 lg:py-2 xl:py-3 rounded-full border border-white transition-all duration-300 cursor-pointer hover:bg-white/10 w-fit"
+                    >
                       <span className="text-[#c5a880] text-xs lg:text-[10px] xl:text-sm font-semibold uppercase tracking-wider">
                         View More
                       </span>
                       <Icons.ArrowRight className="w-5 h-5 lg:w-4 lg:h-4 xl:w-6 xl:h-6 text-[#c5a880] transition-colors duration-300 animate-bounce-x" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

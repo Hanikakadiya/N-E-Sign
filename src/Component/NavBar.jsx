@@ -148,7 +148,7 @@ export default function NavBar() {
                               </div>
                               {dropLink.subItems && (
                                 <Icons.ChevronRight
-                                  className={`w-4 h-4 ${isActive ? "text-[var(--color-primary)]" : "text-gray-400"}`}
+                                  className={`w-4 h-4 ${isActive ? "text-black" : "text-gray-400"}`}
                                 />
                               )}
                             </Link>
