@@ -6,10 +6,19 @@
   --color-dark-orange: #F79C29;
   --animate-trail-fade: trailFade 1s forwards ease-out;
 }
-body {
+html, body {
   background-color: #000;
   color: white;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  position: relative;
+}
+.container{
+  max-width: 1720px;
+  margin: 0 auto;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .text-dark-orange { color: var(--color-dark-orange); }
   @keyframes trailFade {

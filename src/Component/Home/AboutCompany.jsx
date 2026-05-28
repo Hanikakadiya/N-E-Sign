@@ -23,9 +23,9 @@ export default function AboutCompany() {
   };
 
   return (
-    <section className="relative w-full py-20 sm:py-28 lg:py-40 flex items-center justify-center overflow-hidden">
+    <section className="relative py-20 sm:py-28 lg:py-40 flex items-center justify-center">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-[var(--color-primary)]/5 blur-[120px] rounded-full pointer-events-none z-0"></div>
+      {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-[var(--color-primary)]/20 blur-[130px] rounded-full pointer-events-none z-0"></div> */}
 
       {/* Left Vector (Squiggly Line) */}
       <div className="absolute left-[2%] md:left-[5%] top-[40%] -translate-y-1/2 w-[100px] sm:w-[130px] md:w-[180px] pointer-events-none z-0 opacity-60">
@@ -37,7 +37,7 @@ export default function AboutCompany() {
       </div>
 
       {/* Right Graphic - Wave.png */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[250px] sm:w-[400px] lg:w-[550px] h-[250px] sm:h-[400px] lg:h-[550px] pointer-events-none z-0 opacity-80 translate-x-[10%]">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[250px] sm:w-[400px] lg:w-[550px] h-[250px] sm:h-[400px] lg:h-[550px] pointer-events-none z-0 opacity-80">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -55,30 +55,17 @@ export default function AboutCompany() {
         </motion.div>
       </div>
       {/* Bottom Left Orange Spot */}
-      <div className="absolute bottom-[-50px] left-[-100px] w-[300px] md:w-[450px] h-[300px] md:h-[450px] bg-[var(--color-primary)]/20 blur-[100px] md:blur-[120px] rounded-full pointer-events-none z-0"></div>
-      
+      <div className="absolute bottom-32 start-[-45px] translate-y-1/2 w-[300px] md:w-[900px] h-[300px] md:h-[700px] bg-[var(--color-primary)]/20 blur-[100px] md:blur-[120px] rounded-full pointer-events-none z-0"></div>
+
       {/* Bottom Left Graphic - Wave.png */}
-      <div className="absolute left-0 bottom-0 translate-y-[40%] -translate-x-[40%] w-[250px] sm:w-[350px] lg:w-[450px] h-[250px] sm:h-[350px] lg:h-[450px] pointer-events-none z-0 opacity-50">
-        <motion.div
-          initial={{ scale: 0.2, rotate: 45, opacity: 0 }}
-          whileInView={{ scale: 1, rotate: 45, opacity: 1 }}
-          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
-          viewport={{ once: true }}
-          className="w-full h-full"
-        >
-          <motion.img
+      <div className="absolute left-0 bottom-0 translate-y-1/2 w-[250px] sm:w-[350px] lg:w-[450px] h-[250px] sm:h-[350px] lg:h-[450px] pointer-events-none z-0 opacity-50">
+        <div className="w-full h-full transform rotate-45">
+          <img
             src="/Image/AboutCompany/Wave.png"
             alt="Wave Pattern Bottom"
             className="w-full h-full object-contain transform -scale-x-100"
-            animate={{ scale: [1, 1.2, 1] }}
-            transition={{
-              duration: 4,
-              ease: "easeInOut",
-              repeat: Infinity,
-              delay: 1,
-            }}
           />
-        </motion.div>
+        </div>
       </div>
 
       <div className="relative w-full flex flex-col items-end justify-center z-10 px-4 sm:px-8 md:px-16 max-w-[1720px] mx-auto text-left">
@@ -97,22 +84,10 @@ export default function AboutCompany() {
             <span className="text-[var(--color-primary)] text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase">
               About Company
             </span>
-            <Icons.ArrowDownRight className="w-5
-             h-5 text-[var(--color-primary)] animate-bounce-x" />
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2.5}
-              stroke="currentColor"
-              className="w-4 h-4 text-[var(--color-primary)]"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25"
-              />
-            </svg> */}
+            <Icons.ArrowDownRight
+              className="w-5
+             h-5 text-[var(--color-primary)] animate-bounce-x"
+            />
           </motion.div>
 
           {/* Main Heading */}

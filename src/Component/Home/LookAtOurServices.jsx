@@ -19,7 +19,7 @@ export default function LookAtOurServices() {
       align: "bottom",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden md:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
           style={{ top: "-10px" }}
           width="300"
           height="80"
@@ -50,7 +50,7 @@ export default function LookAtOurServices() {
       align: "top",
       svg: (
         <svg
-          className="absolute top-[30px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden md:block"
+          className="absolute top-[30px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
           width="300"
           height="80"
           viewBox="0 0 300 80"
@@ -80,7 +80,7 @@ export default function LookAtOurServices() {
       align: "bottom",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden md:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
           style={{ top: "-10px" }}
           width="300"
           height="80"
@@ -111,7 +111,7 @@ export default function LookAtOurServices() {
       align: "top",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden md:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
           style={{ top: "calc(2 * var(--zigzag) - 60px)" }}
           width="300"
           height="80"
@@ -142,7 +142,7 @@ export default function LookAtOurServices() {
       align: "bottom",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden md:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
           style={{ top: "-10px" }}
           width="300"
           height="80"
@@ -198,8 +198,12 @@ export default function LookAtOurServices() {
             <span>Look at</span>
             <div className="w-24 md:w-50 h-10 md:h-14 bg-gray-300 rounded-full shrink-0"></div>
           </div>
-          <div className="flex gap-4 items-center ml-25 ">
-            <Link to="/services" className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-[var(--color-primary)] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(237,188,90,0.4)] hover:scale-105 transition-transform duration-300">
+          <div className="flex gap-4 items-center md:ml-25 ">
+            <Link
+              to="/services"
+              onClick={() => window.scrollTo(0, 0)}
+              className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-[var(--color-primary)] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(237,188,90,0.4)] hover:scale-105 transition-transform duration-300"
+            >
               <Icons.ArrowUpRight className="w-6 h-6 md:w-7 md:h-7" />
             </Link>
             <span>our Services</span>
@@ -224,8 +228,8 @@ export default function LookAtOurServices() {
                 variants={itemVariants}
                 className={`flex flex-col items-center text-center w-full md:w-[240px] lg:w-[260px] xl:w-[300px] shrink-0 ${
                   service.align === "bottom"
-                    ? "md:translate-y-[var(--zigzag)]"
-                    : "md:-translate-y-[var(--zigzag)]"
+                    ? "xl:translate-y-[var(--zigzag)]"
+                    : "xl:-translate-y-[var(--zigzag)]"
                 }`}
               >
                 {/* Icon Circle */}

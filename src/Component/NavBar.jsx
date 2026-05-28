@@ -110,7 +110,7 @@ export default function NavBar() {
           </div>
 
           {/* Middle: Links (Desktop) */}
-          <div className="hidden xl:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             {NavLinks.map((link, index) => (
               <div key={link.name} className="relative group">
                 <Link
@@ -246,7 +246,7 @@ export default function NavBar() {
 
         {/* Mobile Menu Dropdown */}
         <div
-          className={`xl:hidden absolute top-[100px] left-0 w-full bg-[#000000] border-b border-[#333333] transition-all duration-300 ease-in-out overflow-hidden shadow-2xl ${
+          className={`lg:hidden absolute top-[100px] left-0 w-full bg-[#000000] border-b border-[#333333] transition-all duration-300 ease-in-out overflow-hidden shadow-2xl ${
             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >

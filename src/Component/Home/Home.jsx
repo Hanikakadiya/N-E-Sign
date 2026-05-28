@@ -4,15 +4,25 @@ import BrandStatement from "./BrandStatement";
 import AboutCompany from "./AboutCompany";
 import OurWork from "./OurWork";
 import LookAtOurServices from "./LookAtOurServices";
+import LatestDesigns from "./LatestDesigns";
+import VideoSection from "./VideoSection";
+import TestimonialSection from "./TestimonialSection";
+import LatestNews from "./LatestNews";
 
 export default function Home() {
   return (
-    <div className="max-w-[1720px] mx-auto w-full h-full px-4">
+    <div className="w-full h-full">
       <HeroSection />
       <BrandStatement />
-      <OurWork />
-      <AboutCompany />
-      <LookAtOurServices />
+      <div className="max-w-[1720px] mx-auto px-4">
+        <OurWork />
+        <AboutCompany />
+        <LookAtOurServices />
+        <LatestDesigns />
+      </div>
+      <VideoSection />
+      <TestimonialSection />
+      <LatestNews />
     </div>
   );
 }
