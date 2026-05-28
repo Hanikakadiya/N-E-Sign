@@ -35,10 +35,12 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="w-full bg-black py-24 md:py-32 relative overflow-hidden font-poppins">
+    <section className="w-full bg-black py-24 md:py-32 relative font-poppins">
+      {/* Right side background glow */}
+
       {/* Right side SVG Ring Graphic */}
       <div className="absolute right-12 xl:right-32 top-[15%] -translate-y-1/2 opacity-70 hidden lg:block pointer-events-none">
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[100px] sm:blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/50 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
         <svg viewBox="0 0 100 100" className="w-full h-auto">
           <defs>
             <pattern

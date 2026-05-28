@@ -188,7 +188,7 @@ export default function LookAtOurServices() {
 
   return (
     <section
-      className="relative w-full py-20 lg:py-32 bg-transparent font-poppins overflow-hidden"
+      className="relative w-full py-20 lg:py-32 bg-transparent font-poppins"
       style={{ "--zigzag": zigzagGap }}
     >
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8">
@@ -259,6 +259,7 @@ export default function LookAtOurServices() {
           </motion.div>
         </div>
       </div>
+      <div className="absolute top-[70%] right-[-10%] -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/60 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none z-0"></div>
     </section>
   );
 }

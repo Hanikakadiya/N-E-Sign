@@ -30,13 +30,13 @@ export default function ExteriorHeroSection() {
   return (
     <section className="relative w-full min-h-screen bg-black pt-28 pb-24 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-[-10%] right-[-5%] w-[500px] md:w-[700px] h-[500px] md:h-[700px] bg-[#c5a880]/15 blur-[120px] md:blur-[150px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 
       {/* Optional Topo Graphic */}
       <img
         src="/Image/Wave.png"
         alt="Topo graphic"
-        className="absolute top-0 right-0 opacity-20 w-[400px] md:w-[600px] object-cover mix-blend-screen pointer-events-none z-0"
+        className="absolute  right-0 opacity-20 w-[400px] md:w-[450px] object-cover mix-blend-screen pointer-events-none z-0"
       />
 
       <div className="max-w-[75%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-8 relative z-10">

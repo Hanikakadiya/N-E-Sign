@@ -30,9 +30,9 @@ export default function BrandStatement() {
   };
 
   return (
-    <section className="relative w-full min-h-[60vh] py-24 sm:py-32 lg:py-48 flex items-center justify-center overflow-hidden">
+    <section className="relative w-full py-24 sm:py-32 lg:py-48 flex items-center justify-center">
       {/* Soft Background Glow on the right */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[var(--color-primary)]/30 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/30 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 
       {/* Text Container */}
       <div className="relative inline-block px-10 sm:px-16 md:px-30 z-10 w-full max-w-[1720px] mx-auto flex flex-col items-center">

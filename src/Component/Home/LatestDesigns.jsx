@@ -5,25 +5,25 @@ import { Icons } from "../Icons/icons";
 export default function LatestDesigns() {
   const designs = [
     {
-      image: "/Image/LatestDesigns/image-1-glow.png",
+      image: "/Image/LatestDesigns/portfolio_neon.png",
       hoverImage: "/Image/LatestDesigns/image-1-hover.png",
       category: "Signage",
       title: "LED Neon Signage",
     },
     {
-      image: "/Image/OurWork/OurWork-img-hover-second.png",
+      image: "/Image/LatestDesigns/portfolio_business_cards.png",
       hoverImage: "/Image/LatestDesigns/image-4-book.png",
       category: "Printing",
       title: "BUSINESS CARDS",
     },
     {
-      image: "/Image/LatestDesigns/image-3-tag.png",
+      image: "/Image/LatestDesigns/portfolio_door_hanger.png",
       hoverImage: "/Image/OurWork/OurWork-img-hover-second.png",
       category: "Printing",
-      title: "TAGS",
+      title: "DOOR HANGERS",
     },
     {
-      image: "/Image/LatestDesigns/image-4-book.png",
+      image: "/Image/LatestDesigns/portfolio_magazine.png",
       hoverImage: "/Image/LatestDesigns/OurWork-img-hover-first.png",
       category: "Printing",
       title: "MAGAZINES PRINTING",
@@ -31,8 +31,9 @@ export default function LatestDesigns() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 font-poppins">
-      <div className="w-full px-4 sm:px-8 lg:px-0 mx-auto max-w-[1720px]">
+    <section className="relative w-full py-16 sm:py-24 font-poppins overflow-hidden">
+
+      <div className="w-full px-4 sm:px-8 lg:px-0 mx-auto max-w-[1720px] relative z-10">
         {/* Section Header */}
         <div className="mb-12 flex flex-col items-center md:items-start max-w-4xl mx-auto xl:mx-0 xl:pl-[312px] text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
@@ -55,7 +56,7 @@ export default function LatestDesigns() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group cursor-pointer flex flex-col"
+              className={`group cursor-pointer flex flex-col ${index % 2 !== 0 ? "md:translate-y-16 lg:translate-y-24" : ""}`}
             >
               {/* Image Container */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">

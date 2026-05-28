@@ -11,7 +11,7 @@ import LatestNews from "./LatestNews";
 
 export default function Home() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-x-hidden">
       <HeroSection />
       <BrandStatement />
       <div className="max-w-[1720px] mx-auto px-4">

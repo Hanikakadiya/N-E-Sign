@@ -3,7 +3,9 @@ import React from "react";
 export default function OurWork() {
   return (
     <>
-      <section className="relative w-full py-16 sm:py-24 mx-auto overflow-hidden">
+      <section className="relative w-full py-16 sm:py-24 mx-auto">
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/50 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
+
         {/* Vector Background Graphic inside relative section */}
         <img
           src="/Image/OurWork/Vector.png"
