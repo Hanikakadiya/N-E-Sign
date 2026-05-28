@@ -25,6 +25,9 @@ export const Icons = {
   Phone: createIcon("ph:phone"),
   Email: createIcon("ph:envelope"),
   Location: createIcon("ph:map-pin"),
+  Facebook: createIcon("gg:facebook"),
+  Pinterest: createIcon("formkit:pinterest"),
+  LinkedIn: createIcon("ri:linkedin-fill"),
   
   // Utilities
   Check: createIcon("ph:check-circle"),

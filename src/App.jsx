@@ -5,6 +5,7 @@ import Home from "./Component/Home/Home";
 import Services from "./Component/Services/Services";
 import Signage from "./Component/Services/signage/Signage";
 import ExteriorSign from "./Component/Services/signage/ExteriorSign/ExteriorSign";
+import Footer from "./Component/Footer";
 import Lenis from "lenis";
 
 function ScrollToTop() {
@@ -50,6 +51,7 @@ export default function App() {
         <Route path="/services/signage" element={<Signage />} />
         <Route path="/services/signage/exterior-sign" element={<ExteriorSign />} />
       </Routes>
+      <Footer />
     </>
   );
 }

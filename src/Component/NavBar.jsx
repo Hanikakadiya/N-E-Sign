@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeSubDropdown, setActiveSubDropdown] = useState(null);
 
   const location = useLocation();
 
@@ -22,10 +23,18 @@ export default function NavBar() {
     }
   };
 
+  const toggleSubDropdown = (name) => {
+    if (activeSubDropdown === name) {
+      setActiveSubDropdown(null);
+    } else {
+      setActiveSubDropdown(name);
+    }
+  };
+
   const NavLinks = [
     { name: "Home", href: "/" },
     {
-      name: "Services", 
+      name: "Services",
       href: "/services",
       dropdown: [
         {
@@ -101,7 +110,7 @@ export default function NavBar() {
           </div>
 
           {/* Middle: Links (Desktop) */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden xl:flex items-center space-x-6">
             {NavLinks.map((link, index) => (
               <div key={link.name} className="relative group">
                 <Link
@@ -119,7 +128,7 @@ export default function NavBar() {
                 </Link>
                 {link.dropdown && (
                   <div className="absolute left-0 top-full pt-6 hidden group-hover:block z-50">
-                    <div className="border border-[#333] shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-2 rounded-[20px] flex flex-col gap-1 w-[260px] xl:w-[280px]">
+                    <div className="border border-[#333] shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-2 rounded-[20px] flex flex-col gap-1 w-[260px] xl:w-[280px] bg-[#000000]">
                       {link.dropdown.map((dropLink) => {
                         const isActive = location.pathname === dropLink.href;
 
@@ -195,7 +204,7 @@ export default function NavBar() {
           </div>
 
           {/* Right: Search Bar & Badge (Desktop) */}
-          <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
+          <div className="hidden xl:flex items-center space-x-4 xl:space-x-8">
             {/* Search Bar */}
             <div className="flex items-center justify-between w-[160px] xl:w-[200px] h-[36px] px-4 border border-gray-400 rounded-full bg-transparent group focus-within:border-white transition-colors">
               <input
@@ -217,7 +226,7 @@ export default function NavBar() {
           </div>
 
           {/* Mobile Right: Badge & Hamburger */}
-          <div className="flex lg:hidden items-center space-x-4 z-50">
+          <div className="flex xl:hidden items-center space-x-4 z-50">
             {/* Lowest Price Badge on Mobile */}
             <img
               src="/Image/NavBar/Lowest-Price-Logo.png"
@@ -237,7 +246,7 @@ export default function NavBar() {
 
         {/* Mobile Menu Dropdown */}
         <div
-          className={`lg:hidden absolute top-[100px] left-0 w-full bg-[#000000] border-b border-[#333333] transition-all duration-300 ease-in-out overflow-hidden shadow-2xl ${
+          className={`xl:hidden absolute top-[100px] left-0 w-full bg-[#000000] border-b border-[#333333] transition-all duration-300 ease-in-out overflow-hidden shadow-2xl ${
             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
@@ -290,18 +299,51 @@ export default function NavBar() {
                 {link.dropdown && activeDropdown === index && (
                   <div className="pl-4 pb-3 space-y-3 flex flex-col">
                     {link.dropdown.map((dropLink) => (
-                      <Link
-                        key={dropLink.name}
-                        to={dropLink.href}
-                        onClick={() => setIsOpen(false)}
-                        className={`font-poppins text-[16px] transition duration-300 ${
-                          location.pathname === dropLink.href
-                            ? "text-[var(--color-primary)]"
-                            : "text-gray-400 hover:text-[var(--color-primary)]"
-                        }`}
-                      >
-                        {dropLink.name}
-                      </Link>
+                      <div key={dropLink.name} className="flex flex-col">
+                        <div className="flex justify-between items-center">
+                          <Link
+                            to={dropLink.href}
+                            onClick={() => {
+                              if (!dropLink.subItems) setIsOpen(false);
+                            }}
+                            className={`font-poppins text-[16px] transition duration-300 ${
+                              location.pathname === dropLink.href
+                                ? "text-[var(--color-primary)]"
+                                : "text-gray-400 hover:text-[var(--color-primary)]"
+                            }`}
+                          >
+                            {dropLink.name}
+                          </Link>
+                          {dropLink.subItems && (
+                            <button
+                              onClick={() => toggleSubDropdown(dropLink.name)}
+                              className="text-gray-400 hover:text-[var(--color-primary)] text-2xl leading-none px-2 focus:outline-none"
+                            >
+                              {activeSubDropdown === dropLink.name ? "-" : "+"}
+                            </button>
+                          )}
+                        </div>
+
+                        {/* Nested Sub Items for Mobile */}
+                        {dropLink.subItems && activeSubDropdown === dropLink.name && (
+                          <div className="pl-4 pt-2 pb-1 space-y-3 flex flex-col border-l border-[#333333] mt-2">
+                            {dropLink.subItems.map((subItem) => (
+                              <Link
+                                key={subItem.name}
+                                to={subItem.href}
+                                onClick={() => setIsOpen(false)}
+                                className={`font-poppins text-[14px] transition duration-300 ${
+                                  location.pathname === subItem.href
+                                    ? "text-[var(--color-primary)]"
+                                    : "text-gray-500 hover:text-[var(--color-primary)]"
+                                }`}
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                   </div>
                 )}

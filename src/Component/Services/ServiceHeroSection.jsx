@@ -14,11 +14,11 @@ export default function ServiceHeroSection() {
 
   return (
     <section className="bg-black min-h-screen w-full pt-[200px] pb-24 font-poppins">
-      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col lg:flex-row items-start gap-16">
+      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-10 xl:px-24 flex flex-col lg:flex-row items-start gap-10 xl:gap-16">
         {/* Left Column - Images */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6">
           {/* Top Coffee Image */}
-          <div className="w-full h-[240px] rounded-[32px] overflow-hidden">
+          <div className="w-full h-[180px] xl:h-[200px] rounded-[32px] overflow-hidden">
             <img
               src="/Image/Services/service-hero-coffee.png"
               alt="Coffee Signage"
@@ -29,7 +29,7 @@ export default function ServiceHeroSection() {
           {/* Bottom Printer & Lightbulb */}
           <div className="w-full relative">
             {/* Printer Image */}
-            <div className="w-full h-[510px] rounded-[32px] overflow-hidden">
+            <div className="w-full h-[280px] sm:h-[320px] xl:h-[360px] rounded-[32px] overflow-hidden">
               <img
                 src="/Image/Services/service-hero-print.jpg"
                 alt="Printing Services"
@@ -38,8 +38,8 @@ export default function ServiceHeroSection() {
             </div>
 
             {/* Lightbulb Cutout (Shifted Left) */}
-            <div className="absolute bottom-[-10px] left-[-20px] sm:left-[-50px] bg-black pt-6 pr-6 pb-4 rounded-tr-[40px] z-10">
-              <div className="w-[180px] h-[180px] sm:w-[290px] sm:h-[290px] rounded-[28px] overflow-hidden">
+            <div className="absolute bottom-[-10px] left-[-15px] sm:left-[-30px] lg:left-[-20px] xl:left-[-30px] bg-black pt-5 pr-5 pb-3 sm:pt-6 sm:pr-6 sm:pb-4 rounded-tr-[30px] sm:rounded-tr-[40px] z-10">
+              <div className="w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] xl:w-[210px] xl:h-[210px] rounded-[24px] sm:rounded-[28px] overflow-hidden">
                 <img
                   src="/Image/Services/service-hero-light.png"
                   alt="Creative Idea"
@@ -49,15 +49,15 @@ export default function ServiceHeroSection() {
             </div>
 
             {/* Get in Touch Button Cutout */}
-            <div className="absolute bottom-0 right-[0%] bg-black p-4 sm:p-5 z-10">
+            <div className="absolute bottom-0 right-[0%] bg-black p-3 sm:p-5 z-10">
               <Link
                 to="/contact"
-                className="flex items-center gap-3 px-7 py-3 border border-[#333] rounded-full transition-colors duration-300"
+                className="flex items-center gap-3 px-5 sm:px-7 py-2.5 sm:py-3 border border-[#333] rounded-full transition-colors duration-300"
               >
                 <span className="text-sm font-medium text-[var(--color-primary)]">
                   Get in Touch
                 </span>
-                <Icons.ArrowRight className="w-5 h-5 ml-5 transition-colors duration-300 animate-bounce-x group-hover:text-[var(--color-primary)]" />
+                <Icons.ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-5 transition-colors duration-300 animate-bounce-x group-hover:text-[var(--color-primary)]" />
               </Link>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function ServiceHeroSection() {
           </div>
 
           {/* Section Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-16 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-[44px] xl:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-12 xl:mb-16 tracking-tight">
             Professional Services <br />
             with{" "}
             <span className="text-[var(--color-primary)]">
@@ -83,14 +83,14 @@ export default function ServiceHeroSection() {
           </h1>
 
           {/* Services List Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 xl:gap-x-16 gap-y-0">
             {services.map((service, index) => (
               <Link
                 to={service.link}
                 key={index}
-                className="border-b border-[var(--color-primary)] py-6 flex items-center group cursor-pointer transition-all duration-300"
+                className="border-b border-[var(--color-primary)] py-5 xl:py-6 flex items-center group cursor-pointer transition-all duration-300"
               >
-                <span className="text-white font-semibold text-[18px] tracking-wide group-hover:text-[var(--color-primary)] transition-colors">
+                <span className="text-white font-semibold text-[16px] xl:text-[18px] tracking-wide group-hover:text-[var(--color-primary)] transition-colors">
                   {service.name}
                 </span>
                 <Icons.ArrowUpRight className="w-5 h-5 ml-5 transition-colors duration-300 animate-bounce-x group-hover:text-[var(--color-primary)]" />
