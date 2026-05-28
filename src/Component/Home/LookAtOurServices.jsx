@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Icons } from "../Icons/icons";
 
 export default function LookAtOurServices() {
@@ -198,9 +199,9 @@ export default function LookAtOurServices() {
             <div className="w-24 md:w-50 h-10 md:h-14 bg-gray-300 rounded-full shrink-0"></div>
           </div>
           <div className="flex gap-4 items-center ml-25 ">
-            <div className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-[var(--color-primary)] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(237,188,90,0.4)]">
+            <Link to="/services" className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-[var(--color-primary)] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(237,188,90,0.4)] hover:scale-105 transition-transform duration-300">
               <Icons.ArrowUpRight className="w-6 h-6 md:w-7 md:h-7" />
-            </div>
+            </Link>
             <span>our Services</span>
           </div>
         </div>
@@ -230,14 +231,14 @@ export default function LookAtOurServices() {
                 {/* Icon Circle */}
                 <div className="relative">
                   {service.svg}
-                  <div className="relative w-16 h-16 md:w-20 md:h-20 bg-white rounded-full border-[2px] border-dashed border-[var(--color-primary)] flex items-center justify-center mb-6 overflow-hidden transition-transform duration-300 hover:scale-110 shrink-0">
+                  <div className="group relative w-16 h-16 md:w-20 md:h-20 bg-white rounded-full  border-[var(--color-primary)] flex items-center justify-center mb-6 overflow-hidden transition-all duration-500 hover:scale-110 hover:bg-[var(--color-primary)] shrink-0">
                     {/* Pale orange accent circle inside */}
-                    <div className="absolute top-1/2 left-1/2 w-full h-full bg-[var(--color-primary)] opacity-20 rounded-full"></div>
+                    <div className="absolute top-1/2 left-1/2 w-full h-full bg-[var(--color-primary)] opacity-20 rounded-full transition-opacity duration-300 group-hover:opacity-0"></div>
 
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-8 h-8 md:w-10 md:h-10 object-contain relative z-10"
+                      className="w-8 h-8 md:w-10 md:h-10 object-contain relative z-10 transition-all duration-300 group-hover:brightness-0 group-hover:invert"
                     />
                   </div>
                 </div>

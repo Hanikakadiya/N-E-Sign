@@ -1,12 +1,20 @@
 import React, { useEffect } from "react";
 import NavBar from "./Component/NavBar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Services from "./Component/Services/Services";
 import Signage from "./Component/Services/signage/Signage";
 import Lenis from "lenis";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 export default function App() {
   useEffect(() => {
@@ -33,6 +41,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
