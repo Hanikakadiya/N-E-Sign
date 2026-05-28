@@ -36,8 +36,6 @@ export default function OurServices() {
 
   return (
     <section className="w-full bg-black py-24 md:py-32 relative overflow-hidden font-poppins">
-      {/* Right side background glow */}
-
       {/* Right side SVG Ring Graphic */}
       <div className="absolute right-12 xl:right-32 top-[15%] -translate-y-1/2 opacity-70 hidden lg:block pointer-events-none">
         <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[100px] sm:blur-[150px] rounded-full pointer-events-none"></div>
@@ -55,7 +53,6 @@ export default function OurServices() {
           <circle cx="50" cy="50" r="48" fill="url(#lines)" />
           <circle cx="50" cy="50" r="25" fill="black" />
         </svg>
-        <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/30 blur-[100px] md:blur-[130px] rounded-full pointer-events-none"></div>
       </div>
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8 md:px-16 lg:px-40 relative z-10">
         <div className="max-w-5xl">
@@ -63,10 +60,11 @@ export default function OurServices() {
           <h3 className="text-[var(--color-primary)] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6 flex items-center gap-2">
             Our Services
           </h3>
-
           {/* Main Title */}
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-[50px] font-bold leading-[1.15] tracking-wide mb-8">
-            <span className="text-[var(--color-primary)]">Customized Solutions</span>{" "}
+            <span className="text-[var(--color-primary)]">
+              Customized Solutions
+            </span>{" "}
             <span className="text-white">to Achieve Your Business Goals</span>
           </h2>
 
