@@ -32,7 +32,6 @@ export default function LatestDesigns() {
 
   return (
     <section className="relative w-full py-16 sm:py-24 font-poppins overflow-hidden">
-
       <div className="w-full px-4 sm:px-8 lg:px-0 mx-auto max-w-[1720px] relative z-10">
         {/* Section Header */}
         <div className="mb-12 flex flex-col items-center md:items-start max-w-4xl mx-auto xl:mx-0 xl:pl-[312px] text-center md:text-left">
@@ -50,52 +49,52 @@ export default function LatestDesigns() {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {designs.map((design, index) => (
-            <motion.div
+              <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`group cursor-pointer flex flex-col ${index % 2 !== 0 ? "md:translate-y-16 lg:translate-y-24" : ""}`}
-            >
-              {/* Image Container */}
+              >
+                {/* Image Container */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
-                <img
-                  src={design.image}
-                  alt={design.title}
+                  <img
+                    src={design.image}
+                    alt={design.title}
                   className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105 ${design.hoverImage ? "group-hover:opacity-0" : ""}`}
-                />
-                {design.hoverImage && (
-                  <img
-                    src={design.hoverImage}
-                    alt={design.title + " Hover"}
-                    className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105"
                   />
-                )}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+                  {design.hoverImage && (
+                    <img
+                      src={design.hoverImage}
+                      alt={design.title + " Hover"}
+                      className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
 
-              {/* Footer */}
-              <div className="bg-[#111111] border-t border-[#222] p-6 flex items-center justify-between transition-colors duration-300 ">
-                <div className="flex flex-col gap-1">
-                  <span className="text-gray-400 text-xs tracking-wider uppercase">
-                    {design.category}
-                  </span>
-                  <h3 className=" text-xl md:text-2xl font-bold uppercase tracking-wide">
-                    {design.title}
-                  </h3>
+                {/* Footer */}
+                <div className="bg-[#111111] border-t border-[#222] p-6 flex items-center justify-between transition-colors duration-300 ">
+                  <div className="flex flex-col gap-1">
+                    <span className="text-gray-400 text-xs tracking-wider uppercase">
+                      {design.category}
+                    </span>
+                    <h3 className=" text-xl md:text-2xl font-bold uppercase tracking-wide">
+                      {design.title}
+                    </h3>
+                  </div>
+                  <div className="w-10 h-10 flex items-center justify-center bg-transparent">
+                    <img
+                      src="/Image/LatestDesigns/ArrowUpRight.png"
+                      alt="Arrow"
+                      className="w-6 h-6 md:w-8 md:h-8 animate-bounce-x"
+                    />
+                  </div>
                 </div>
-                <div className="w-10 h-10 flex items-center justify-center bg-transparent">
-                  <img
-                    src="/Image/LatestDesigns/ArrowUpRight.png"
-                    alt="Arrow"
-                    className="w-6 h-6 md:w-8 md:h-8 animate-bounce-x"
-                  />
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+              </motion.div>
+            ))}
+          </div>
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import ExteriorSign from "./Component/Services/signage/ExteriorSign/ExteriorSign
 import BuildingSign from "./Component/Services/signage/ExteriorSign/BuildingSign/ChannelLetters";
 import BoxSigns from "./Component/Services/signage/ExteriorSign/BuildingSign/BoxSigns";
 import CanopySigns from "./Component/Services/signage/ExteriorSign/BuildingSign/CanopySigns";
+import MetalPlasticSigns from "./Component/Services/signage/ExteriorSign/BuildingSign/MetalPlasticSigns";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
 
@@ -67,6 +68,10 @@ export default function App() {
         <Route
           path="/services/signage/exterior-sign/canopy-signs"
           element={<CanopySigns />}
+        />
+        <Route
+          path="/services/signage/exterior-sign/metal-plastic-signs"
+          element={<MetalPlasticSigns />}
         />
       </Routes>
       <Footer />
