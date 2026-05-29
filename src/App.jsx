@@ -5,6 +5,7 @@ import Home from "./Component/Home/Home";
 import Services from "./Component/Services/Services";
 import Signage from "./Component/Services/signage/Signage";
 import ExteriorSign from "./Component/Services/signage/ExteriorSign/ExteriorSign";
+import BuildingSign from "./Component/Services/signage/ExteriorSign/BuildingSign/ChannelLetters";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
 
@@ -49,9 +50,16 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/signage" element={<Signage />} />
-        <Route path="/services/signage/exterior-sign" element={<ExteriorSign />} />
+        <Route
+          path="/services/signage/exterior-sign"
+          element={<ExteriorSign />}
+        />
+        <Route
+          path="/services/signage/exterior-sign/building-sign"
+          element={<BuildingSign />}
+        />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }

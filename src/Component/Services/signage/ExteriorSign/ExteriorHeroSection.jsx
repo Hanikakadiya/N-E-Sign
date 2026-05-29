@@ -10,6 +10,7 @@ export default function ExteriorHeroSection() {
         "Signs mounted directly on the buildings for branding and visibility",
       image: "/Image/signage/exterior-sign/exterior-building.jpg", // Using closest match
       overlayColor: "from-[#852170] to-[#CF414B]", // Purple to pinkish
+      href: "/services/signage/exterior-sign/building-sign",
     },
     {
       title: "Freestanding Signs",
@@ -72,9 +73,11 @@ export default function ExteriorHeroSection() {
         {/* Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {cards.map((card, idx) => (
-            <div
+            <Link
               key={idx}
               className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white"
+              to={card.href || "#"}
+              className="group relative block w-full sm:w-[330px] h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white"
             >
               {/* Background Image spans full height */}
               <img
@@ -103,14 +106,14 @@ export default function ExteriorHeroSection() {
 
               {/* Bottom half with button - Solid normally, Glassy on hover */}
               <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full bg-[#181818] group-hover:bg-[#181818]/60 group-hover:backdrop-blur-md flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
-                <button className="flex items-center justify-center gap-3 w-fit border rounded-full px-5 py-2 hover:bg-white/5 transition-all duration-300 group/btn">
+                <div className="flex items-center justify-center gap-3 w-fit border rounded-full px-5 py-2 hover:bg-white/5 transition-all duration-300 group/btn">
                   <span className="text-[#c5a880] text-xs lg:text-[13px] font-medium">
                     View More
                   </span>
                   <Icons.ArrowRight className="w-4 h-4 text-[#c5a880] transition-transform group-hover/btn:translate-x-1" />
-                </button>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
