@@ -5,7 +5,7 @@ import { Icons } from "../Icons/icons";
 export default function LatestDesigns() {
   const designs = [
     {
-      image: "/Image/LatestDesigns/portfolio_neon.png",
+      image: "/Image/LatestDesigns/image-1-glow.png",
       hoverImage: "/Image/LatestDesigns/image-1-hover.png",
       category: "Signage",
       title: "LED Neon Signage",
@@ -17,7 +17,7 @@ export default function LatestDesigns() {
       title: "BUSINESS CARDS",
     },
     {
-      image: "/Image/LatestDesigns/portfolio_door_hanger.png",
+      image: "/Image/LatestDesigns/image-3-tag.png",
       hoverImage: "/Image/OurWork/OurWork-img-hover-second.png",
       category: "Printing",
       title: "DOOR HANGERS",
