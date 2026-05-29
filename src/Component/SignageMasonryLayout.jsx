@@ -1,28 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ChannelLatterData } from "./ChannelLatterData";
-import { Icons } from "../../../../Icons/icons";
-import Sidebar from "../../../../Sidebar";
+import { Icons } from "./Icons/icons";
+import Sidebar from "./Sidebar";
 
-export default function BuildingSign() {
-  const [data, setData] = useState(null);
+export default function SignageMasonryLayout({ data, activeId }) {
+  const [pageData, setPageData] = useState(null);
 
   useEffect(() => {
     // Simulating API fetch
     const fetchData = async () => {
-      // In a real scenario, this would be a fetch() call.
-      // We simulate network delay here for realism.
       setTimeout(() => {
-        setData(ChannelLatterData);
+        setPageData(data);
       }, 500);
     };
 
     fetchData();
-  }, []);
+  }, [data]);
 
-  if (!data) {
+  if (!pageData) {
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-black  font-poppins">
+      <div className="w-full h-screen flex items-center justify-center bg-black font-poppins">
         Loading...
       </div>
     );
@@ -33,9 +30,9 @@ export default function BuildingSign() {
       <div className="flex flex-col lg:flex-row w-full">
         {/* Universal Left Sidebar */}
         <Sidebar 
-          title={data.sidebar.title} 
-          links={data.sidebar.links} 
-          activeId="channel-letters" 
+          title={pageData.sidebar.title} 
+          links={pageData.sidebar.links} 
+          activeId={activeId} 
         />
 
         {/* Main Content Area */}
@@ -55,34 +52,29 @@ export default function BuildingSign() {
 
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16">
-            {data.content.map((section) => (
+            {pageData.content.map((section) => (
               <div
                 key={section.id}
-                className={`relative flex flex-col ${
-                  section.hasBorder ? "p-6 lg:p-8 border-2  rounded-xl" : ""
-                }`}
+                className="relative flex flex-col"
               >
-                <h3 className="text-3xl lg:text-[48px] font-bold mb-4 tracking-wide">
-                  <span className="text-[var(--color-primary)]">
-                    {section.highlightTitle}
-                  </span>{" "}
-                  <span className="">{section.mainTitle}</span>
+                <h3 className="text-3xl lg:text-[48px] font-bold mb-4 tracking-wide text-white">
+                  {section.mainTitle}
                 </h3>
-                <p className="text-gray-400 text-[15px] lg:text-[20px] leading-relaxed max-w-6xl mb-8">
+                <p className="text-gray-400 text-[15px] lg:text-[20px] leading-relaxed max-w-6xl mb-12">
                   {section.description}
                 </p>
 
-                {/* Images Grid */}
-                <div className="flex flex-wrap justify-center gap-4 lg:gap-5 xl:gap-6">
+                {/* Masonry Layout for Images */}
+                <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 lg:gap-6 space-y-4 lg:space-y-6">
                   {section.images.map((imgSrc, idx) => (
                     <div
                       key={idx}
-                      className="w-[305px] h-[410px] rounded-lg overflow-hidden border border-[#333] shadow-lg"
+                      className="rounded-lg overflow-hidden border border-[#333] shadow-lg break-inside-avoid relative group"
                     >
                       <img
                         src={imgSrc}
-                        alt={`${section.highlightTitle} image ${idx + 1}`}
-                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                        alt={`${section.mainTitle} image ${idx + 1}`}
+                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                     </div>
                   ))}

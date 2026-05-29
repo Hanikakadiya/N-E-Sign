@@ -75,9 +75,8 @@ export default function ExteriorHeroSection() {
           {cards.map((card, idx) => (
             <Link
               key={idx}
-              className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white"
+              className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white block"
               to={card.href || "#"}
-              className="group relative block w-full sm:w-[330px] h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white"
             >
               {/* Background Image spans full height */}
               <img
