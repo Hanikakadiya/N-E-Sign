@@ -53,7 +53,7 @@ export default function TestimonialSection() {
       {/* Background Glow */}
       <div className="absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[var(--color-primary)]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
-      <div className="w-full mx-auto px-4 sm:px-8 z-10 mt-10 sm:mt-16 md:mt-24">
+      <div className="w-full mx-auto px-4 z-10 mt-10 sm:mt-16 md:mt-24">
         <div className="w-full max-w-[1138px] mx-auto relative">
           {/* Top Left Quote */}
           <div className="absolute -top-12 left-0 md:-top-20 md:-left-4 lg:-top-32 lg:-left-12 xl:-top-40 xl:-left-32 z-0 pointer-events-none">

@@ -14,7 +14,7 @@ export default function Home() {
     <div className="w-full h-full overflow-x-hidden">
       <HeroSection />
       <BrandStatement />
-      <div className="max-w-[1720px] mx-auto px-4">
+      <div className="max-w-[1720px] mx-auto">
         <OurWork />
         <AboutCompany />
         <LookAtOurServices />

@@ -28,7 +28,7 @@ export default function ExteriorHeroSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-screen bg-black pt-28 pb-24 overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 
@@ -39,7 +39,7 @@ export default function ExteriorHeroSection() {
         className="absolute  right-0 opacity-20 w-[400px] md:w-[450px] object-cover mix-blend-screen pointer-events-none z-0"
       />
 
-      <div className="max-w-[75%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-8 relative z-10">
+      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10">
         {/* Back Link */}
         <Link
           to="/services/signage"
@@ -70,11 +70,11 @@ export default function ExteriorHeroSection() {
         </div>
 
         {/* Cards Section */}
-        <div className="flex flex-wrap gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="group relative w-full sm:w-[330px] h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white"
+              className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white"
             >
               {/* Background Image spans full height */}
               <img

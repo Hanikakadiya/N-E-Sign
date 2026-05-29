@@ -19,7 +19,7 @@ export default function LookAtOurServices() {
       align: "bottom",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none xl:block"
           style={{ top: "-10px" }}
           width="300"
           height="80"
@@ -50,7 +50,7 @@ export default function LookAtOurServices() {
       align: "top",
       svg: (
         <svg
-          className="absolute top-[30px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
+          className="absolute top-[30px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none xl:block"
           width="300"
           height="80"
           viewBox="0 0 300 80"
@@ -80,7 +80,7 @@ export default function LookAtOurServices() {
       align: "bottom",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none xl:block"
           style={{ top: "-10px" }}
           width="300"
           height="80"
@@ -111,7 +111,7 @@ export default function LookAtOurServices() {
       align: "top",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none xl:block"
           style={{ top: "calc(2 * var(--zigzag) - 60px)" }}
           width="300"
           height="80"
@@ -142,7 +142,7 @@ export default function LookAtOurServices() {
       align: "bottom",
       svg: (
         <svg
-          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none hidden xl:block"
+          className="absolute left-1/2 -translate-x-1/2 -z-10 pointer-events-none xl:block"
           style={{ top: "-10px" }}
           width="300"
           height="80"
@@ -194,15 +194,15 @@ export default function LookAtOurServices() {
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8">
         {/* Header Section */}
         <div className="flex flex-wrap flex-col items-center justify-center gap-3 sm:gap-5 text-[32px] sm:text-4xl md:text-5xl lg:text-[55px] font-bold  mb-20 md:mb-32">
-          <div className="flex gap-10">
+          <div className="flex gap-6 md:gap-10 items-center justify-center">
             <span>Look at</span>
-            <div className="w-24 md:w-50 h-10 md:h-14 bg-gray-300 rounded-full shrink-0"></div>
+            <div className="w-24 md:w-48 xl:w-[220px] h-10 md:h-14 bg-gray-300 rounded-full shrink-0"></div>
           </div>
-          <div className="flex gap-4 items-center md:ml-25 ">
+          <div className="flex gap-4 items-center md:ml-25 mt-2 md:mt-4">
             <Link
               to="/services"
               onClick={() => window.scrollTo(0, 0)}
-              className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-[var(--color-primary)] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(237,188,90,0.4)] hover:scale-105 transition-transform duration-300"
+              className="w-10 h-10 md:w-20 md:h-20 rounded-full bg-[var(--color-primary)] flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(237,188,90,0.4)] hover:scale-105 transition-transform duration-300"
             >
               <Icons.ArrowUpRight className="w-6 h-6 md:w-7 md:h-7" />
             </Link>
@@ -226,14 +226,14 @@ export default function LookAtOurServices() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className={`flex flex-col items-center text-center w-full md:w-[240px] lg:w-[260px] xl:w-[300px] shrink-0 ${
+                className={`flex flex-col items-center text-center w-full md:w-[240px] lg:w-[250px] xl:w-[250px] shrink-0 ${
                   service.align === "bottom"
                     ? "xl:translate-y-[var(--zigzag)]"
                     : "xl:-translate-y-[var(--zigzag)]"
                 }`}
               >
                 {/* Icon Circle */}
-                <div className="relative">
+                <div className="relative flex justify-center w-full">
                   {service.svg}
                   <div className="group relative w-16 h-16 md:w-20 md:h-20 bg-white rounded-full  border-[var(--color-primary)] flex items-center justify-center mb-6 overflow-hidden transition-all duration-500 hover:scale-110 hover:bg-[var(--color-primary)] shrink-0">
                     {/* Pale orange accent circle inside */}

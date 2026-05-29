@@ -12,17 +12,16 @@ export default function OurWork() {
           alt="Vector Img"
           className="absolute left-[-20px] sm:left-[-40px] md:left-[-70px] top-[20px] sm:top-[30px] md:top-[40px] w-[120px] sm:w-[180px] md:w-[220px] h-auto opacity-100 z-0 pointer-events-none"
         />
-        <div className="w-full px-4 sm:px-8 lg:px-0 relative z-10 max-w-[1720px] mx-auto">
+        <div className="w-full lg:px-0 relative z-10 max-w-[1720px] mx-auto">
           {/* Section Heading */}
           <div className="relative flex items-center mb-10 md:mb-16">
             <h1 className="relative z-10 text-[var(--color-dark-orange)] text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-poppins font-bold tracking-[0.2em] uppercase">
               OUR WORK
             </h1>
           </div>
-          
+
           {/* Main Content Grid (1 col mobile, 2 col tablet, 12 cols laptop/desktop) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-4 lg:gap-6">
-            
             {/* Left Column (Image 1 + Experience Stats + Paragraph) */}
             <div className="sm:col-span-1 lg:col-span-5 flex flex-col gap-6 md:gap-10">
               <div className="relative group overflow-hidden rounded-[20px] shadow-lg w-full aspect-[777/387]">
@@ -98,9 +97,8 @@ export default function OurWork() {
                 />
               </div>
             </div>
-            
           </div>
-          
+
           <div className="w-full mt-[30px] text-center sm:text-left">
             <p className="text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed  mx-auto sm:mx-0">
               Over The Years, We've Turned Countless Ideas Into High-Quality
@@ -109,7 +107,6 @@ export default function OurWork() {
               With Precision To Deliver Outstanding Results Every Time.
             </p>
           </div>
-          
         </div>
       </section>
     </>

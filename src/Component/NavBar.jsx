@@ -97,7 +97,7 @@ export default function NavBar() {
   return (
     <>
       <nav className="fixed w-full h-[100px] z-50 top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
-        <div className="flex items-center justify-between max-w-[1720px] mx-auto w-full h-full px-4">
+        <div className="flex items-center justify-between max-w-[1720px] mx-auto w-full h-full">
           {/* Left: Logo */}
           <div className=" z-50">
             <Link to="/">
@@ -325,24 +325,25 @@ export default function NavBar() {
                         </div>
 
                         {/* Nested Sub Items for Mobile */}
-                        {dropLink.subItems && activeSubDropdown === dropLink.name && (
-                          <div className="pl-4 pt-2 pb-1 space-y-3 flex flex-col border-l border-[#333333] mt-2">
-                            {dropLink.subItems.map((subItem) => (
-                              <Link
-                                key={subItem.name}
-                                to={subItem.href}
-                                onClick={() => setIsOpen(false)}
-                                className={`font-poppins text-[14px] transition duration-300 ${
-                                  location.pathname === subItem.href
-                                    ? "text-[var(--color-primary)]"
-                                    : "text-gray-500 hover:text-[var(--color-primary)]"
-                                }`}
-                              >
-                                {subItem.name}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
+                        {dropLink.subItems &&
+                          activeSubDropdown === dropLink.name && (
+                            <div className="pl-4 pt-2 pb-1 space-y-3 flex flex-col border-l border-[#333333] mt-2">
+                              {dropLink.subItems.map((subItem) => (
+                                <Link
+                                  key={subItem.name}
+                                  to={subItem.href}
+                                  onClick={() => setIsOpen(false)}
+                                  className={`font-poppins text-[14px] transition duration-300 ${
+                                    location.pathname === subItem.href
+                                      ? "text-[var(--color-primary)]"
+                                      : "text-gray-500 hover:text-[var(--color-primary)]"
+                                  }`}
+                                >
+                                  {subItem.name}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
                       </div>
                     ))}
                   </div>

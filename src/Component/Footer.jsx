@@ -50,18 +50,18 @@ export default function Footer() {
         </div>
 
         {/* Middle Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-16 border-b border-[#222222]">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]">
           {/* Column 1: Let's Work Together */}
-          <div className="lg:col-span-1 flex flex-col items-start pr-0 lg:pr-8 lg:border-r border-[#222222]">
-            <h2 className="text-[40px] font-bold leading-none mb-2 tracking-wide">
+          <div className="md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0">
+            <h2 className="text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">
               LET'S WORK
             </h2>
-            <h3 className="text-[22px] font-medium tracking-[0.1em] uppercase mb-8">
+            <h3 className="text-[22px] font-medium tracking-[0.1em] uppercase mb-8 text-center lg:text-left">
               Together
             </h3>
             <a
               href="mailto:nesignsinc@gmail.com"
-              className="flex items-center gap-4 px-6 py-3 rounded-full border border-[#333] transition-colors group"
+              className="flex items-center gap-3 xl:gap-4 px-5 py-2.5 xl:px-6 xl:py-3 rounded-full border border-[#333] transition-colors group"
             >
               <span className="text-[13px] text-gray-300 group-hover:text-white transition-colors">
                 nesignsinc@gmail.com
@@ -95,9 +95,9 @@ export default function Footer() {
             </Link>
             <Link
               to="/promotional-products"
-              className="text-[14px] hover:text-[var(--color-primary)] transition-colors"
+              className="text-[14px] hover:text-[var(--color-primary)] transition-colors leading-tight"
             >
-              Promotional Products
+              Promotional <br className="hidden lg:block xl:hidden" /> Products
             </Link>
             <Link
               to="/our-work"
@@ -181,9 +181,9 @@ export default function Footer() {
             </Link>
             <Link
               to="/services/signage/window-wall-graphics"
-              className="text-[14px] hover:text-[var(--color-primary)] transition-colors"
+              className="text-[14px] hover:text-[var(--color-primary)] transition-colors leading-tight"
             >
-              Window & Wall Graphics
+              Window & Wall <br className="hidden lg:block xl:hidden" /> Graphics
             </Link>
             <Link
               to="/services/signage/vehicle-graphics"
@@ -194,25 +194,27 @@ export default function Footer() {
           </div>
 
           {/* Column 5: Contact Details */}
-          <div className="flex flex-col gap-6 lg:pl-4">
-            <h4 className="text-[16px] font-semibold text-[var(--color-primary)] mb-0">
+          <div className="md:col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start gap-6 xl:pl-4 mt-8 lg:mt-0">
+            <h4 className="text-[16px] font-semibold text-[var(--color-primary)] mb-0 text-center lg:text-left">
               Contact Details
             </h4>
-            <div className="flex items-start gap-4">
+            <div className="flex items-start justify-center lg:justify-start gap-4">
               <Icons.Location className="w-5 h-5 mt-1 flex-shrink-0" />
               <span className="text-[14px] leading-relaxed uppercase">
-                2223 OGDEN AVE #B LISLE, IL 60515
+                2223 OGDEN AVE #B <br className="hidden lg:block xl:hidden" /> LISLE, IL 60515
               </span>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center lg:justify-start gap-4">
               <Icons.Phone className="w-5 h-5 flex-shrink-0" />
-              <span className="text-[14px] uppercase">630-454-SIGN (7446)</span>
+              <span className="text-[14px] uppercase leading-relaxed">
+                630-454-SIGN <br className="hidden lg:block xl:hidden" /> (7446)
+              </span>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="py-8 flex flex-col sm:flex-row justify-between justify-center items-center gap-4">
           <p className="text-[13px] text-gray-500">
             ©2026{" "}
             <span className="text-[var(--color-primary)] font-semibold">
