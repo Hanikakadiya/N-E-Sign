@@ -135,7 +135,7 @@ export default function TestimonialSection() {
                     <span className="text-[#8a9df0] font-semibold text-lg md:text-xl">
                       {testimonials[currentIndex].name}
                     </span>
-                    <span className="text-gray-400 text-sm md:text-base mt-1">
+                    <span className="text-[#8a9df0] text-sm md:text-base mt-1">
                       {testimonials[currentIndex].role}
                     </span>
                   </div>
