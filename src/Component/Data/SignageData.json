@@ -191,7 +191,117 @@
         "description": "Standalone signs designed for visibility form a distance or near entrances",
         "image": "/Image/signage/exterior-sign/exterior-freestanding.jpg",
         "overlayColor": "from-[#EDBC5A] to-[#F79C29]",
-        "href": "/services/signage/exterior-sign/freestanding-sign"
+        "href": "/services/signage/exterior-sign/free-standing-signs",
+        "sidebar": {
+          "title": "Freestanding Signs",
+          "links": [
+            {
+              "id": "monument-signs",
+              "name": "Monument Signs"
+            },
+            {
+              "id": "pylon-signs",
+              "name": "Pylon Signs"
+            },
+            {
+              "id": "post-and-panel-signs",
+              "name": "Post and Panel Signs"
+            },
+            {
+              "id": "parking-signs",
+              "name": "Parking Signs"
+            },
+            {
+              "id": "curbside-pickup-signs",
+              "name": "Curbside Pickup Signs"
+            },
+            {
+              "id": "wayfinding-signs",
+              "name": "Wayfinding Signs"
+            },
+            {
+              "id": "drive-thru-canopy-signs",
+              "name": "Drive Thru canopy Signs"
+            },
+            {
+              "id": "clearance-bar",
+              "name": "Clearance Bar"
+            }
+          ]
+        },
+        "contentDetails": {
+          "monument-signs": [
+            {
+              "id": "monument-signs",
+              "mainTitle": "Monument Signs",
+              "description": "Professional, high-visibility signage for business entrances.",
+              "images": [
+                "/Image/FreestandingSigns/MonumentSigns/Monument-Goldngate.png",
+                "/Image/FreestandingSigns/MonumentSigns/Monument-TheLorrel.png",
+                "/Image/FreestandingSigns/MonumentSigns/Monument-TheLorrel-side.png",
+                "/Image/FreestandingSigns/MonumentSigns/Monument-TheParker.png",
+                "/Image/FreestandingSigns/MonumentSigns/Monument-RioHill.png",
+                "/Image/FreestandingSigns/MonumentSigns/Monument-DollyFood.png"
+              ]
+            }
+          ],
+          "pylon-signs": [
+            {
+              "id": "pylon-signs",
+              "mainTitle": "Pylon Signs",
+              "description": "Tall, elevated signs maximizing visibility from a distance or highway.",
+              "images": []
+            }
+          ],
+          "post-and-panel-signs": [
+            {
+              "id": "post-and-panel-signs",
+              "mainTitle": "Post and Panel Signs",
+              "description": "Versatile and cost-effective signs ideal for site identification and directions.",
+              "images": []
+            }
+          ],
+          "parking-signs": [
+            {
+              "id": "parking-signs",
+              "mainTitle": "Parking Signs",
+              "description": "Clear signage regulating parking spaces and improving traffic flow.",
+              "images": []
+            }
+          ],
+          "curbside-pickup-signs": [
+            {
+              "id": "curbside-pickup-signs",
+              "mainTitle": "Curbside Pickup Signs",
+              "description": "Designated pick-up area signs designed for clarity and convenience.",
+              "images": []
+            }
+          ],
+          "wayfinding-signs": [
+            {
+              "id": "wayfinding-signs",
+              "mainTitle": "Wayfinding Signs",
+              "description": "Directional signs guiding visitors seamlessly through complexes or pathways.",
+              "images": []
+            }
+          ],
+          "drive-thru-canopy-signs": [
+            {
+              "id": "drive-thru-canopy-signs",
+              "mainTitle": "Drive Thru Canopy Signs",
+              "description": "Overhead canopy signage that enhances branding for drive-thru lanes.",
+              "images": []
+            }
+          ],
+          "clearance-bar": [
+            {
+              "id": "clearance-bar",
+              "mainTitle": "Clearance Bar",
+              "description": "High-visibility height restriction bars protecting structures and vehicles.",
+              "images": []
+            }
+          ]
+        }
       },
       {
         "title": "Temporary Signs",

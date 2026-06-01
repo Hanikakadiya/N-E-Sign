@@ -6,7 +6,7 @@ import Sidebar from "../../../Sidebar";
 
 export default function BuildingSignData() {
   const [searchParams] = useSearchParams();
-  const activeId = searchParams.get('tab') || 'channel-letters';
+  const activeId = searchParams.get("tab") || "channel-letters";
   const lookupId = activeId;
 
   const [pageData, setPageData] = useState(null);
@@ -15,11 +15,13 @@ export default function BuildingSignData() {
     // Simulating API fetch with loading state
     const fetchData = async () => {
       setTimeout(() => {
-        const buildingSignData = SignageData.find(c => c.title === "Exterior sign")?.subCategories.find(s => s.title === "Building Signs");
-        
+        const buildingSignData = SignageData.find(
+          (c) => c.title === "Exterior sign",
+        )?.subCategories.find((s) => s.title === "Building Signs");
+
         const data = {
           sidebar: buildingSignData?.sidebar,
-          content: buildingSignData?.contentDetails[lookupId]
+          content: buildingSignData?.contentDetails[lookupId],
         };
         setPageData(data);
       }, 500);
@@ -32,7 +34,7 @@ export default function BuildingSignData() {
 
   if (!pageData || !pageData.content) {
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-black font-poppins text-white">
+      <div className="w-full h-screen flex items-center justify-center font-poppins text-white">
         Loading...
       </div>
     );
@@ -42,10 +44,13 @@ export default function BuildingSignData() {
     <div className="w-full min-h-screen bg-[#0a0a0a] font-poppins pt-[100px]">
       <div className="flex flex-col lg:flex-row w-full">
         {/* Universal Left Sidebar */}
-        <Sidebar 
-          title={pageData.sidebar.title} 
-          links={pageData.sidebar.links} 
-          activeId={activeId} 
+        <Sidebar
+          title={pageData.sidebar.title}
+          links={pageData.sidebar.links?.map(link => ({
+            ...link,
+            href: `?tab=${link.id}`
+          }))}
+          activeId={activeId}
         />
 
         {/* Main Content Area */}
@@ -66,12 +71,13 @@ export default function BuildingSignData() {
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16">
             {pageData.content.map((section) => (
-              <div
-                key={section.id}
-                className="relative flex flex-col"
-              >
+              <div key={section.id} className="relative flex flex-col">
                 <h3 className="text-3xl lg:text-[48px] font-bold mb-4 tracking-wide text-white">
-                  {section.highlightTitle && <span className="text-[var(--color-primary)] mr-2">{section.highlightTitle}</span>}
+                  {section.highlightTitle && (
+                    <span className="text-[var(--color-primary)] mr-2">
+                      {section.highlightTitle}
+                    </span>
+                  )}
                   {section.mainTitle}
                 </h3>
                 <p className="text-gray-400 text-[15px] lg:text-[20px] leading-relaxed max-w-6xl mb-12">
@@ -79,7 +85,7 @@ export default function BuildingSignData() {
                 </p>
 
                 {/* Dynamic Image Layout */}
-                <div 
+                <div
                   className={
                     activeId === "channel-letters"
                       ? "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6"
@@ -90,7 +96,9 @@ export default function BuildingSignData() {
                     <div
                       key={idx}
                       className={`rounded-lg overflow-hidden border border-[#333] shadow-lg relative group ${
-                        activeId === "channel-letters" ? "aspect-[3/4]" : "break-inside-avoid"
+                        activeId === "channel-letters"
+                          ? "aspect-[3/4]"
+                          : "break-inside-avoid"
                       }`}
                     >
                       <img
