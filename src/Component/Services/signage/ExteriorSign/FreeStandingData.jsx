@@ -20,7 +20,8 @@ export default function FreeStandingData() {
         )?.subCategories.find((s) => s.title === "Freestanding Signs");
 
         // Dynamically find the default tab if none is in the URL
-        const currentActiveId = activeTab || freeStandingData?.sidebar?.links?.[0]?.id;
+        const currentActiveId =
+          activeTab || freeStandingData?.sidebar?.links?.[0]?.id;
         setActiveId(currentActiveId);
 
         const data = {
@@ -39,7 +40,8 @@ export default function FreeStandingData() {
   if (!pageData || !pageData.content) {
     return (
       <div className="w-full h-screen flex items-center justify-center font-poppins text-white">
-        Loading... (Make sure Freestanding Signs has sidebar and contentDetails in JSON)
+        Loading... (Make sure Freestanding Signs has sidebar and contentDetails
+        in JSON)
       </div>
     );
   }
@@ -95,7 +97,15 @@ export default function FreeStandingData() {
                 </div>
 
                 {/* Dynamic Image Layout */}
-                {activeId === "monument-signs" || activeId === "clearance-bar" || activeId === "drive-thru-canopy-signs" ? (
+                {activeId === "monument-signs" ||
+                activeId === "pylon-signs" ||
+                activeId === "post-and-panel-signs" ||
+                activeId === "parking-signs" ||
+                activeId === "curbside-pickup-signs" ||
+                activeId === "wayfinding-signs" ||
+                activeId === "drive-thru-canopy-signs" ||
+                activeId === "clearance-bar"
+                 ? (
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-6">
                     {section.images?.map((imgSrc, idx) => {
                       let colSpan = "md:col-span-1";

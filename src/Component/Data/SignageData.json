@@ -249,40 +249,75 @@
             {
               "id": "pylon-signs",
               "mainTitle": "Pylon Signs",
-              "description": "Safety bars designed to prevent vehicle height clearance issues.",
-              "images": []
+              "description": "Tall, attention-grabbing signs ideal for roadside visibility.",
+              "images": [
+                "/Image/FreestandingSigns/PylonSigns/Pylon-Signage.png",
+                "/Image/FreestandingSigns/PylonSigns/Pylon-Boss-Place.png",
+                "/Image/FreestandingSigns/PylonSigns/Pylon-Uludag-Group.png",
+                "/Image/FreestandingSigns/PylonSigns/Pylon-Bien.png",
+                "/Image/FreestandingSigns/PylonSigns/Pylon-Inova.png",
+                "/Image/FreestandingSigns/PylonSigns/Pylon-Baharat.png"
+              ]
             }
           ],
           "post-and-panel-signs": [
             {
               "id": "post-and-panel-signs",
               "mainTitle": "Post and Panel Signs",
-              "description": "Versatile and cost-effective signs ideal for site identification and directions.",
-              "images": []
+              "description": "Customizable signs mounted on posts, ideal for visibility.",
+              "images": [
+                "/Image/FreestandingSigns/PostAndPanelSigns/Post-Recreation.png",
+                "/Image/FreestandingSigns/PostAndPanelSigns/Post-Andrews.png",
+                "/Image/FreestandingSigns/PostAndPanelSigns/Post-Bourne.png",
+                "/Image/FreestandingSigns/PostAndPanelSigns/Post-Olene.png",
+                "/Image/FreestandingSigns/PostAndPanelSigns/Post-Bois-Bersel.png",
+                "/Image/FreestandingSigns/PostAndPanelSigns/Post-Massasoit.png"
+              ]
             }
           ],
           "parking-signs": [
             {
               "id": "parking-signs",
               "mainTitle": "Parking Signs",
-              "description": "Clear signage regulating parking spaces and improving traffic flow.",
-              "images": []
+              "description": "Clear, durable signage for designated parking areas.",
+              "images": [
+                "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-Way-Parking.png",
+                "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-WoodsAndHiking.png",
+                "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-ParkingExit.png",
+                "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-ReservedParking.png",
+                "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-Parking.png",
+                "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-PublicParking.png"
+              ]
             }
           ],
           "curbside-pickup-signs": [
             {
               "id": "curbside-pickup-signs",
               "mainTitle": "Curbside Pickup Signs",
-              "description": "Designated pick-up area signs designed for clarity and convenience.",
-              "images": []
+              "description": "Easy-to-spot signs guiding customers to pick up locations.",
+              "images": [
+                "/Image/FreestandingSigns/CurbsidePickupSigns/CurbsidePickupSigns-CurbSide.png",
+                "/Image/FreestandingSigns/CurbsidePickupSigns/CurbsidePickupSigns-Pickup.png",
+                "/Image/FreestandingSigns/CurbsidePickupSigns/CurbsidePickupSigns-YourLogo.png",
+                "/Image/FreestandingSigns/CurbsidePickupSigns/CurbsidePickupSigns-ParkingOnly.png",
+                "/Image/FreestandingSigns/CurbsidePickupSigns/CurbsidePickupSigns-Scheels.png",
+                "/Image/FreestandingSigns/CurbsidePickupSigns/CurbsidePickupSigns-FrontPorch.png"
+              ]
             }
           ],
           "wayfinding-signs": [
             {
               "id": "wayfinding-signs",
               "mainTitle": "Wayfinding Signs",
-              "description": "Directional signs guiding visitors seamlessly through complexes or pathways.",
-              "images": []
+              "description": "Signs for parking, entrances, and interior navigation (illuminated and non-illuminated).",
+              "images": [
+                "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Visitor.png",
+                "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-NewPort.png",
+                "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Toilets.png",
+                "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Speicherring.png",
+                "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Photonstrasse.png",
+                "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Shops.png"
+              ]
             }
           ],
           "drive-thru-canopy-signs": [
