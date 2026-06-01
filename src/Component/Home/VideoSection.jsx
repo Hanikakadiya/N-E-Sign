@@ -4,7 +4,7 @@ import { Icons } from "../Icons/icons";
 
 export default function VideoSection() {
   return (
-    <section className="relative w-full py-16 sm:py-24 font-poppins flex flex-col items-center overflow-x-clip">
+    <section className="relative w-full py-16 sm:py-24 font-poppins flex flex-col items-center">
       {/* "See all projects" Button (overlaps previous section) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
         <button className="flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full border-1 border-[#ffffff]/20 text-[var(--color-primary)] font-semibold text-sm sm:text-base md:text-lg">

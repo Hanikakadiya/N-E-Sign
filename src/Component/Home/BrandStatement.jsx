@@ -35,22 +35,23 @@ export default function BrandStatement() {
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/30 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 
       {/* Text Container */}
-      <div className="relative inline-block px-10 sm:px-16 md:px-30 z-10 w-full max-w-[1720px] mx-auto flex flex-col items-center">
+      <div className="relative inline-block px-4 sm:px-8 md:px-16 lg:px-30 z-10 w-full max-w-[1720px] mx-auto flex flex-col items-center">
         <div className="relative inline-block w-full">
           {/* Top Left Quote */}
-          <div className="absolute -top-16 -left-2 sm:-top-12 sm:-left-8 md:-top-25 md:-left-30">
+          <div className="absolute -top-8 -left-2 sm:-top-12 sm:-left-4 md:-top-16 md:-left-8 lg:-top-20 lg:-left-16 xl:-top-24 xl:-left-24">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="#8B7355"
-              className="w-20 h-20 sm:w-30 sm:h-30 md:w-35 md:h-35 opacity-90"
+              className="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 opacity-90"
             >
               <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
             </svg>
           </div>
-          <div className="p-5 flex flex-col xl:flex-row items-center xl:items-start justify-center">
+          <div className="p-2 sm:p-5 flex flex-col xl:flex-row items-center xl:items-start justify-center">
             {/* Main Typography */}
-            <div className="text-[28px] sm:text-[36px] md:text-[36px] lg:text-[50px] xl:text-[70px] 2xl:text-[90px] font-poppins font-extrabold leading-[1.1] tracking-tight flex flex-col xl:flex-row items-center xl:items-baseline justify-center text-center xl:text-left w-full">
+            <div className="text-[20px] sm:text-[30px] md:text-[40px] lg:text-[55px] xl:text-[70px] 2xl:text-[90px] font-poppins font-extrabold leading-[1.1] tracking-tight flex flex-col xl:flex-row items-center xl:items-baseline justify-center text-center xl:text-left w-full">
+              {/* Line 1 */}
               <motion.div
                 variants={headingAnim}
                 initial="hidden"
@@ -59,15 +60,17 @@ export default function BrandStatement() {
                 className="flex justify-center xl:justify-start w-full xl:w-auto"
               >
                 <span
-                  className="mr-0 xl:mr-5 mb-2 xl:mb-0 block"
+                  className="mr-0 xl:mr-5 mb-2 xl:mb-0 block whitespace-nowrap"
                   style={{ textShadow: "0 4px 20px rgba(255,255,255,0.4)" }}
                 >
                   PRINT THAT MAKES
                 </span>
               </motion.div>
 
-              <div className="flex flex-col relative w-fit items-center xl:items-end mx-auto xl:mx-0">
-                <div className="absolute top-1 left-1/1 -translate-x-1/2 -translate-y-1/2 opacity-25 md:opacity-30 pointer-events-none w-[200px] sm:w-[250px] md:w-[240px] lg:w-[300px] xl:w-[350px] z-[-9]">
+              {/* Line 2 (Mobile: Side-by-side, Desktop: Stacked) */}
+              <div className="flex flex-row xl:flex-col relative w-fit items-center xl:items-end justify-center mx-auto xl:mx-0 gap-3 md:gap-5 xl:gap-0 mt-3 md:mt-4 xl:mt-0">
+                {/* Background Pattern for Line 2 */}
+                <div className="absolute top-0 xl:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-25 md:opacity-30 pointer-events-none w-[180px] sm:w-[300px] md:w-[500px] lg:w-[650px] xl:w-[450px] z-[-9]">
                   <svg viewBox="0 0 100 100" className="w-full h-auto">
                     <defs>
                       <pattern
@@ -105,7 +108,7 @@ export default function BrandStatement() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="flex flex-col items-center xl:items-end w-full relative z-10"
+                  className="flex items-center justify-center xl:justify-end relative z-10 w-full"
                 >
                   <span
                     className="text-[var(--color-dark-orange)] block whitespace-nowrap"
@@ -115,16 +118,16 @@ export default function BrandStatement() {
                   </span>
                 </motion.div>
 
-                {/* Sub Heading (Outline Text) perfectly width-matched */}
+                {/* Sub Heading (Outline Text) */}
                 <motion.div
-                  className="w-full mt-2 xl:mt-[-0.2em] flex justify-center xl:justify-end relative z-10"
+                  className="flex items-center justify-center xl:justify-end relative z-10 w-full xl:mt-[-0.2em]"
                   variants={subHeadingAnim}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
                 >
                   <h1
-                    className="text-transparent font-poppins text-[26px] sm:text-[32px] md:text-[32px] lg:text-[45px] xl:text-[60px] 2xl:text-[75px] tracking-[0.1em] sm:tracking-widest whitespace-nowrap leading-tight"
+                    className="text-transparent font-poppins text-[19px] sm:text-[28px] md:text-[40px] lg:text-[55px] xl:text-[70px] 2xl:text-[75px] tracking-widest whitespace-nowrap leading-tight"
                     style={{ WebkitTextStroke: "1px white" }}
                   >
                     STAND OUT
@@ -134,7 +137,7 @@ export default function BrandStatement() {
             </div>
           </div>
           {/* Bottom Right Quote */}
-          <div className="absolute -bottom-8 -right-2 sm:-bottom-12 sm:-right-4 md:-bottom-16 md:-right-8 lg:-bottom-20 lg:-right-20">
+          <div className="absolute -bottom-6 -right-2 sm:-bottom-10 sm:-right-4 md:-bottom-14 md:-right-8 lg:-bottom-20 lg:-right-16 xl:-bottom-24 xl:-right-24">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

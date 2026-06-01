@@ -50,7 +50,7 @@ export default function HeroSection() {
   return (
     <>
       <section
-        className="relative w-[100%] h-[90vh] overflow-hidden text-center flex items-center justify-center cursor-none"
+        className="relative w-[100%] h-[90vh] text-center flex items-center justify-center cursor-none"
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

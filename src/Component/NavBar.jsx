@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-// Container import removed; layout handled inline
 import { Icons } from "./Icons/icons";
 import { Icon } from "@iconify/react";
 
@@ -97,7 +96,7 @@ export default function NavBar() {
   return (
     <>
       <nav className="fixed w-full h-[100px] z-50 top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
-        <div className="flex items-center justify-between max-w-[1720px] mx-auto w-full h-full">
+        <div className=" container flex items-center justify-between max-w-[1720px] mx-auto w-full h-full">
           {/* Left: Logo */}
           <div className=" z-50">
             <Link to="/">

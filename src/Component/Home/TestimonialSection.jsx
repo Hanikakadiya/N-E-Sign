@@ -49,18 +49,18 @@ export default function TestimonialSection() {
   }, [currentIndex]);
 
   return (
-    <section className="container relative w-full py-16 sm:py-24 overflow-hidden flex flex-col items-center font-poppins">
+    <section className="relative container mx-auto py-16 sm:py-24 flex flex-col items-center font-poppins">
       {/* Background Glow */}
       <div className="absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[var(--color-primary)]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
-      <div className="w-full mx-auto px-4 z-10 mt-10 sm:mt-16 md:mt-24">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-16 z-10 mt-10 sm:mt-16 md:mt-24">
         <div className="w-full max-w-[1138px] mx-auto relative">
           {/* Top Left Quote */}
-          <div className="absolute -top-12 left-0 md:-top-20 md:-left-4 lg:-top-32 lg:-left-12 xl:-top-40 xl:-left-70 z-0 pointer-events-none">
+          <div className="absolute -top-12 -left-2 md:-top-16 md:-left-8 lg:-top-24 lg:-left-12 xl:-top-35 xl:-left-20 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              fill="#8B7355"
+              fill="#ffffff46"
               className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 opacity-70 lg:opacity-90"
             >
               <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
@@ -68,11 +68,11 @@ export default function TestimonialSection() {
           </div>
 
           {/* Bottom Right Quote */}
-          <div className="absolute -bottom-12 right-0 md:-bottom-16 md:-right-4 lg:-bottom-10 lg:-right-12 xl:-bottom-10 xl:-right-70 z-0 pointer-events-none">
+          <div className="absolute -bottom-10 -right-2 md:-bottom-12 md:-right-8 lg:-bottom-16 lg:-right-12 xl:-bottom-20 xl:-right-20 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              fill="#8B7355"
+              fill="#ffffff46"
               className="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 opacity-70 lg:opacity-90 rotate-180"
             >
               <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
@@ -95,21 +95,21 @@ export default function TestimonialSection() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -30 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="flex flex-col md:flex-row items-center justify-center relative w-full"
+                className="flex flex-col lg:flex-row items-center justify-center relative w-full px-4 sm:px-8 md:px-12 lg:px-0"
               >
                 {/* Left Image */}
-                <div className="w-[90%] md:w-auto flex-shrink-0 flex items-center justify-center z-10 relative mb-6 md:mb-0">
+                <div className="w-[280px] sm:w-[320px] md:w-[350px] lg:w-[320px] xl:w-[350px] flex-shrink-0 flex items-center justify-center z-10 relative mb-[-20px] lg:mb-0">
                   <img
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
-                    className="w-full sm:w-[350px] md:w-[268px] h-[350px] md:h-[419px] object-cover rounded-2xl md:rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+                    className="w-full h-[350px] sm:h-[400px] lg:h-[450px] object-cover rounded-2xl lg:rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)] relative z-10"
                   />
                 </div>
 
                 {/* Right Content */}
-                <div className="w-[90%] md:w-[452px] h-auto md:h-[272px] flex-1 flex flex-col justify-center p-8 bg-[#1a1a1a] border border-[#333] md:border-l-0 rounded-2xl md:rounded-l-none md:rounded-r-2xl shadow-2xl relative z-0">
+                <div className="w-full sm:w-[80%] md:w-[70%] lg:w-auto lg:flex-1 h-auto lg:h-[350px] xl:h-[380px] flex flex-col justify-center p-8 sm:p-10 lg:p-12 xl:p-16 bg-[#1a1a1a] border border-[#333] lg:border-l-0 rounded-2xl lg:rounded-l-none lg:rounded-r-2xl shadow-2xl relative z-0 pt-12 lg:pt-12">
                   {/* Grey Tab below the text box */}
-                  <div className="absolute top-full left-10 md:left-16 w-[120px] md:w-[150px] h-[30px] md:h-[45px] bg-[#4d4d4d] rounded-b-xl border-x border-b border-[#333] border-t-0 hidden md:block"></div>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-16 w-[120px] sm:w-[150px] h-[30px] sm:h-[45px] bg-[#4d4d4d] rounded-b-xl border-x border-b border-[#333] border-t-0 hidden sm:block"></div>
 
                   {/* Stars */}
                   <div className="flex gap-2 mb-10">
@@ -126,16 +126,16 @@ export default function TestimonialSection() {
                   </div>
 
                   {/* Testimonial Text */}
-                  <p className="text-lg md:text-[18px] leading-[1.6] max-w-[650px] mb-4 font-light tracking-wide">
+                  <p className="text-base sm:text-lg lg:text-[18px] leading-[1.6] max-w-[650px] mb-4 sm:mb-6 font-light tracking-wide">
                     {testimonials[currentIndex].text}
                   </p>
 
                   {/* Author Info */}
                   <div className="flex flex-col">
-                    <span className="text-[#8a9df0] font-semibold text-lg md:text-xl">
+                    <span className="text-[#8a9df0] font-semibold text-lg sm:text-xl">
                       {testimonials[currentIndex].name}
                     </span>
-                    <span className="text-[#8a9df0] text-sm md:text-base mt-1">
+                    <span className="text-[#8a9df0] text-sm sm:text-base mt-1">
                       {testimonials[currentIndex].role}
                     </span>
                   </div>

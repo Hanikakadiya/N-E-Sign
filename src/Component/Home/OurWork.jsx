@@ -3,16 +3,16 @@ import React from "react";
 export default function OurWork() {
   return (
     <>
-      <section className="relative w-full py-16 sm:py-24 mx-auto">
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/50 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
+      <section className="relative w-full py-16 container mx-auto">
+        <div className="absolute top-1/2 right-[-20%] md:right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/50 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none z-0"></div>
 
-        {/* Vector Background Graphic inside relative section */}
-        <img
-          src="/Image/OurWork/Vector.png"
-          alt="Vector Img"
-          className="absolute left-[-20px] sm:left-[-40px] md:left-[-70px] top-[20px] sm:top-[30px] md:top-[40px] w-[120px] sm:w-[180px] md:w-[220px] h-auto opacity-100 z-0 pointer-events-none"
-        />
-        <div className="w-full lg:px-0 relative z-10 max-w-[1720px] mx-auto">
+        <div className="w-full p-2 relative z-10 max-w-[1720px] mx-auto">
+          {/* Vector Background Graphic inside relative container */}
+          <img
+            src="/Image/OurWork/Vector.png"
+            alt="Vector Img"
+            className="absolute left-[-20px] sm:left-[-40px] md:left-[-70px] top-[20px] sm:top-[30px] md:top-[40px] w-[120px] sm:w-[180px] md:w-[220px] h-auto opacity-100 z-0 pointer-events-none"
+          />
           {/* Section Heading */}
           <div className="relative flex items-center mb-10 md:mb-16">
             <h1 className="relative z-10 text-[var(--color-dark-orange)] text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-poppins font-bold tracking-[0.2em] uppercase">
@@ -21,7 +21,7 @@ export default function OurWork() {
           </div>
 
           {/* Main Content Grid (1 col mobile, 2 col tablet, 12 cols laptop/desktop) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-6 lg:gap-8 xl:gap-10">
             {/* Left Column (Image 1 + Experience Stats + Paragraph) */}
             <div className="sm:col-span-1 lg:col-span-5 flex flex-col gap-6 md:gap-10">
               <div className="relative group overflow-hidden rounded-[20px] shadow-lg w-full aspect-[777/387]">
@@ -44,12 +44,12 @@ export default function OurWork() {
                   </h1>
                   <h2 className="flex flex-col text-[var(--color-primary)] font-bold uppercase text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
                     <span
-                      className="text-transparent text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl tracking-[5px]"
+                      className="text-transparent text-5xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-7xl tracking-[3px] xl:tracking-[5px]"
                       style={{ WebkitTextStroke: "1px #8B7355" }}
                     >
                       YEAR
                     </span>
-                    <span className="text-[var(--color-dark-orange)] tracking-widest text-2xl sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl">
+                    <span className="text-[var(--color-dark-orange)] tracking-widest text-2xl sm:text-xl md:text-2xl lg:text-2xl xl:text-4xl">
                       EXPERIENCE
                     </span>
                   </h2>
@@ -63,12 +63,12 @@ export default function OurWork() {
                 <img
                   src="/Image/OurWork/OurWork-Second-img.png"
                   alt="WorkImg"
-                  className="absolute inset-0 object-cover transition-opacity duration-1000 group-hover:opacity-0 w-full h-full"
+                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 group-hover:opacity-0"
                 />
                 <img
                   src="/Image/OurWork/OurWork-img-hover-second.png"
                   alt="WorkImg Hover"
-                  className="absolute inset-0 object-cover opacity-0 transition-opacity duration-1000 group-hover:opacity-100 w-full h-full"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
                 />
               </div>
             </div>
@@ -77,10 +77,10 @@ export default function OurWork() {
             {/* On tablet (sm), it spans 2 cols, but uses flex-row so Image 3 is only 50% width! */}
             <div className="sm:col-span-2 lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-6 md:gap-10 items-center">
               <div className="text-center flex flex-col justify-center items-center w-full sm:w-1/2 lg:w-full md:mt-4 lg:mt-8">
-                <h1 className="text-[var(--color-dark-orange)] text-5xl sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[80px] font-bold mb-2">
+                <h1 className="text-[var(--color-dark-orange)] text-5xl sm:text-[40px] md:text-[50px] lg:text-[50px] xl:text-[70px] font-bold mb-2">
                   150+
                 </h1>
-                <p className="text-lg sm:text-base md:text-lg lg:text-2xl xl:text-4xl font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase whitespace-normal xl:whitespace-nowrap">
+                <p className="text-lg sm:text-base md:text-lg lg:text-xl xl:text-3xl font-bold tracking-[0.1em] sm:tracking-[0.2em] uppercase whitespace-normal xl:whitespace-nowrap text-center">
                   PROJECT DONE
                 </p>
               </div>
@@ -99,8 +99,8 @@ export default function OurWork() {
             </div>
           </div>
 
-          <div className="w-full mt-[30px] text-center sm:text-left">
-            <p className="text-sm sm:text-sm md:text-base lg:text-lg leading-relaxed  mx-auto sm:mx-0">
+          <div className="w-full mt-[30px] lg:mt-[50px] text-center lg:text-left flex justify-center lg:justify-start">
+            <p className="text-sm sm:text-base lg:text-lg leading-relaxed font-light">
               Over The Years, We've Turned Countless Ideas Into High-Quality
               Prints That Leave A Lasting Impression. From Small Personal
               Projects To Large Corporate Campaigns, Our Team Blends Creativity
