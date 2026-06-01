@@ -49,14 +49,14 @@ export default function TestimonialSection() {
   }, [currentIndex]);
 
   return (
-    <section className="container relative w-full py-16 sm:py-24 bg-[#111] overflow-hidden flex flex-col items-center font-poppins">
+    <section className="container relative w-full py-16 sm:py-24 overflow-hidden flex flex-col items-center font-poppins">
       {/* Background Glow */}
       <div className="absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[var(--color-primary)]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
       <div className="w-full mx-auto px-4 z-10 mt-10 sm:mt-16 md:mt-24">
         <div className="w-full max-w-[1138px] mx-auto relative">
           {/* Top Left Quote */}
-          <div className="absolute -top-12 left-0 md:-top-20 md:-left-4 lg:-top-32 lg:-left-12 xl:-top-40 xl:-left-32 z-0 pointer-events-none">
+          <div className="absolute -top-12 left-0 md:-top-20 md:-left-4 lg:-top-32 lg:-left-12 xl:-top-40 xl:-left-70 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ export default function TestimonialSection() {
           </div>
 
           {/* Bottom Right Quote */}
-          <div className="absolute -bottom-12 right-0 md:-bottom-16 md:-right-4 lg:-bottom-10 lg:-right-12 xl:-bottom-10 xl:-right-32 z-0 pointer-events-none">
+          <div className="absolute -bottom-12 right-0 md:-bottom-16 md:-right-4 lg:-bottom-10 lg:-right-12 xl:-bottom-10 xl:-right-70 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -77,7 +77,7 @@ export default function TestimonialSection() {
             >
               <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
             </svg>
-          </div>
+          </div>  
 
           {/* Card Container with Scroll Animation */}
           <motion.div
