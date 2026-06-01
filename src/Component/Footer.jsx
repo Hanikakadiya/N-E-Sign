@@ -4,8 +4,8 @@ import { Icons } from "./Icons/icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white font-poppins pt-16">
-      <div className="max-w-[1720px] mx-auto px-4">
+    <footer className="bg-black font-poppins pt-16">
+      <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center pb-8 border-b border-[#222222]">
           {/* Logo */}
@@ -18,7 +18,7 @@ export default function Footer() {
           </Link>
 
           {/* Social Links */}
-          <div className="flex items-center gap-8 mt-6 sm:mt-0">
+          <div className="flex items-center gap-4 mt-6 sm:mt-0">
             <a
               href="https://www.facebook.com/"
               className="flex items-center gap-2 text-sm text-gray-300 hover:text-[var(--color-primary)] transition-colors"
@@ -151,7 +151,7 @@ export default function Footer() {
           </div>
 
           {/* Column 4: All Signages */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 ">
             <h4 className="text-[16px] font-semibold text-[var(--color-primary)] mb-2">
               All Signages
             </h4>

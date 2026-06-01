@@ -7,7 +7,7 @@ export default function ExteriorHeroSection() {
   const cards = SignageData.find(c => c.title === "Exterior sign")?.subCategories || [];
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen pt-[120px] sm:pt-[150px] overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 

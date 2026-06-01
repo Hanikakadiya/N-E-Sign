@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Icons } from "./Icons/icons";
 import { Icon } from "@iconify/react";
@@ -9,6 +9,32 @@ export default function NavBar() {
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
 
   const location = useLocation();
+
+  useEffect(() => {
+    const preventScroll = (e) => {
+      // Allow scrolling if the touch/scroll is inside the mobile menu
+      if (e.target.closest(".mobile-menu-scroll-container")) {
+        return;
+      }
+      e.preventDefault();
+    };
+
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+      document.addEventListener("touchmove", preventScroll, { passive: false });
+      document.addEventListener("wheel", preventScroll, { passive: false });
+    } else {
+      document.body.classList.remove("overflow-hidden");
+      document.removeEventListener("touchmove", preventScroll);
+      document.removeEventListener("wheel", preventScroll);
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+      document.removeEventListener("touchmove", preventScroll);
+      document.removeEventListener("wheel", preventScroll);
+    };
+  }, [isOpen]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -95,7 +121,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed w-full h-[100px] z-50 top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
+      <nav className="fixed w-full md:h-[100px] h-[80px]  z-50 top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
         <div className=" container flex items-center justify-between max-w-[1720px] mx-auto w-full h-full">
           {/* Left: Logo */}
           <div className=" z-50">
@@ -230,32 +256,44 @@ export default function NavBar() {
             <img
               src="/Image/NavBar/Lowest-Price-Logo.png"
               alt="Lowest Price"
-              className="w-[55px] h-[55px] sm:w-[65px] sm:h-[65px] object-contain"
+              className="hidden md:block w-[55px] h-[55px] sm:w-[65px] sm:h-[65px] object-contain"
             />
 
             {/* Hamburger Button */}
             <button
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-[var(--color-primary)] focus:outline-none p-2"
+              className="relative w-12 h-12 focus:outline-none flex flex-col items-center justify-center gap-[6px]"
+              aria-label="Toggle Menu"
             >
-              <Icons.MenuIcon className="w-10 h-10" />
+              <span
+                className={`block w-7 h-[2px] bg-white transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[8px]" : ""}`}
+              ></span>
+              <span
+                className={`block w-7 h-[2px] bg-white transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}
+              ></span>
+              <span
+                className={`block w-7 h-[2px] bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[8px]" : ""}`}
+              ></span>
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
+        {/* Mobile Menu Full Screen */}
         <div
-          className={`xl:hidden absolute top-[100px] left-0 w-full bg-[#000000] border-b border-[#333333] transition-all duration-300 ease-in-out overflow-hidden shadow-2xl ${
-            isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          data-lenis-prevent
+          className={`mobile-menu-scroll-container xl:hidden fixed top-[100px] left-0 w-full bg-[#000000] transition-all duration-500 ease-in-out z-40 overflow-y-auto overscroll-none ${
+            isOpen
+              ? "h-[calc(100vh-100px)] opacity-100 visible"
+              : "h-0 opacity-0 invisible"
           }`}
         >
-          <div className="px-6 py-6 flex flex-col space-y-4">
+          <div className="px-6 py-8 flex flex-col space-y-6 min-h-full pb-24">
             {/* Mobile Search Bar */}
             <div className="flex items-center justify-between w-full h-[40px] px-4 border border-gray-400 rounded-full bg-transparent focus-within:border-white transition-colors mb-4">
               <input
                 type="text"
                 placeholder="Search here"
-                className="bg-transparent text-[#ffffff] w-full font-poppins font-normal text-[14px] outline-none placeholder-gray-400"
+                className="bg-transparent  w-full font-poppins font-normal text-[14px] outline-none placeholder-gray-400"
               />
               <img
                 src="/Image/NavBar/coolicon.svg"

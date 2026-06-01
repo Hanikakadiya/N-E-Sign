@@ -35,7 +35,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="w-full bg-black py-24 md:py-32 relative font-poppins">
+    <section className="container mx-auto bg-black relative font-poppins">
       {/* Right side background glow */}
 
       {/* Right side SVG Ring Graphic */}
