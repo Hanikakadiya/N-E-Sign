@@ -6,17 +6,7 @@ export default function Sidebar({ title, links, activeId, backLink = "/services/
   return (
     <div className="w-full lg:w-[280px] xl:w-[320px] flex-shrink-0 lg:sticky lg:top-[100px] lg:left-0 lg:h-[calc(100vh-100px)] self-start overflow-y-auto custom-scrollbar px-4 lg:px-8 py-8 lg:border-r border-[#222] bg-[#0a0a0a] z-40">
       
-      {backLink && (
-        <Link
-          to={backLink}
-          className="flex items-center gap-3 text-sm font-semibold tracking-wider text-gray-300 hover:text-white transition-colors mb-8 group uppercase"
-        >
-          <span className="inline-block group-hover:-translate-x-1 transition-transform">
-            <Icons.ArrowRight className="w-4 h-4 rotate-180" />
-          </span>
-          Go Back
-        </Link>
-      )}
+
 
       {title && (
         <h2 className="text-[var(--color-primary)] text-2xl lg:text-[24px] font-bold mb-6 ml-4">
@@ -38,6 +28,18 @@ export default function Sidebar({ title, links, activeId, backLink = "/services/
           </Link>
         ))}
       </div>
+
+      {backLink && (
+        <Link
+          to={backLink}
+          className="flex items-center justify-center gap-2 border border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-3 rounded-full text-[16px] font-semibold hover:bg-[var(--color-primary)] hover:text-black transition-colors mt-12 w-fit group"
+        >
+          <span className="inline-block group-hover:-translate-x-1 transition-transform">
+            <Icons.ArrowRight className="w-4 h-4 rotate-180" />
+          </span>
+          Go Back
+        </Link>
+      )}
     </div>
   );
 }

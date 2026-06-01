@@ -249,7 +249,7 @@
             {
               "id": "pylon-signs",
               "mainTitle": "Pylon Signs",
-              "description": "Tall, elevated signs maximizing visibility from a distance or highway.",
+              "description": "Safety bars designed to prevent vehicle height clearance issues.",
               "images": []
             }
           ],
@@ -290,7 +290,14 @@
               "id": "drive-thru-canopy-signs",
               "mainTitle": "Drive Thru Canopy Signs",
               "description": "Overhead canopy signage that enhances branding for drive-thru lanes.",
-              "images": []
+              "images": [
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-StarBug.png",
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-OpenDrive.png",
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-Jeronimo.png",
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveTHruCanopy-ColorOpenDrive.png",
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-TwoCars.png",
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-WoodPlat.png"  
+              ]
             }
           ],
           "clearance-bar": [
@@ -298,7 +305,14 @@
               "id": "clearance-bar",
               "mainTitle": "Clearance Bar",
               "description": "High-visibility height restriction bars protecting structures and vehicles.",
-              "images": []
+              "images": [
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-ClearanceHeight.png",
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-Magtech.png",
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-Car.png",
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-LowClrarance.png",
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-Parking.png",
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-whiteCar.png"   
+              ]
             }
           ]
         }
@@ -308,7 +322,98 @@
         "description": "Flexible signage for short-term use, promotions, and events",
         "image": "/Image/signage/exterior-sign/exterior-temporary.jpg",
         "overlayColor": "from-[#4FE6F1] to-[#2472FC]",
-        "href": "/services/signage/exterior-sign/temporary-sign"
+        "href": "/services/signage/exterior-sign/temporary-sign",
+        "sidebar": {
+          "title": "Temporary & Portable Signs",
+          "links": [
+            {
+              "id": "sandwich-boards",
+              "name": "Sandwich Boards",
+              "href": "/services/signage/exterior-sign/temporary-sign"
+            },
+            {
+              "id": "banners",
+              "name": "Banners",
+              "href": "/services/signage/exterior-sign/temporary-sign"
+            },
+            {
+              "id": "custom-pop-up-tents",
+              "name": "Custom Pop-Up Tents",
+              "href": "/services/signage/exterior-sign/temporary-sign"
+            },
+            {
+              "id": "flags",
+              "name": "Flags",
+              "href": "/services/signage/exterior-sign/temporary-sign"
+            }
+          ]
+        },
+        "contentDetails": {
+          "sandwich-boards": [
+            {
+              "id": "sandwich-boards",
+              "mainTitle": "Sandwich Boards",
+              "description": "Portable signs for sidewalk or event use .",
+              "images": [
+                "/Image/TamporarySigns/SandwichBoards/TamporarySigns-Boutique.png",
+                "/Image/TamporarySigns/SandwichBoards/TamporarySigns-Kolamba.png",
+                "/Image/TamporarySigns/SandwichBoards/TamporaryBrooklynSweet.png",
+                "/Image/TamporarySigns/SandwichBoards/TamporarySigns-Faith.png",
+                "/Image/TamporarySigns/SandwichBoards/TamporarySigns-Camilla.png",
+                "/Image/TamporarySigns/SandwichBoards/TamporarySigns-Madeline.png",
+                "/Image/TamporarySigns/SandwichBoards/TamporarySigns-tray.png"
+              ]
+            }
+          ],
+          "banners": [
+            {
+              "id": "banners",
+              "mainTitle": "Banners",
+              "description": "Weather-resistant, promotional banners for events or sales.",
+              "images": [
+                "/Image/TamporarySigns/Banners/Banners-HowWeWork.png",
+                "/Image/TamporarySigns/Banners/Banners-WeMakeIt.png",
+                "/Image/TamporarySigns/Banners/Banners-CreativeHouseWeMakeIt.png",
+                "/Image/TamporarySigns/Banners/Banners-ChooseTheBestForBusiness.png",
+                "/Image/TamporarySigns/Banners/Banners-OurServices.png",
+                "/Image/TamporarySigns/Banners/Banners-BusinessAgency.png",
+                "/Image/TamporarySigns/Banners/Banners-weAreCreativeAgency.png"
+              ]
+            }
+          ],
+          "custom-pop-up-tents": [
+            {
+              "id": "custom-pop-up-tents",
+              "mainTitle": "Custom Pop-Up Tents",
+              "description": "Branded tents for outdoor events and promotions.",
+              "images": [
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-TentGazebo.png",
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-Arcticlean.png",
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-SkyMockup.png",
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-NorthConsulthing.png",
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-FreeMockup.png",
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-CanopyTent.png",
+                "/Image/TamporarySigns/CustomePopUpTent/CustomPopUp-TentCraft.png"
+              ]
+            }
+          ],
+          "flags": [
+            {
+              "id": "flags",
+              "mainTitle": "Flags",
+              "description": "Eye-catching custom flags to attract attention.",
+              "images": [
+                "/Image/TamporarySigns/Flags/Flags-Featherl.png",
+                "/Image/TamporarySigns/Flags/Flags-seville.png",
+                "/Image/TamporarySigns/Flags/Flags-man.png",
+                "/Image/TamporarySigns/Flags/Flags-MockUpPSD.png",
+                "/Image/TamporarySigns/Flags/Flags-citroen.png",
+                "/Image/TamporarySigns/Flags/Flags-Open.png",
+                "/Image/TamporarySigns/Flags/Flags-CocaCola.png"
+              ]
+            }
+          ]
+        }
       }
     ]
   },

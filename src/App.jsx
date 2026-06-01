@@ -9,6 +9,7 @@ import BuildingSignData from "./Component/Services/signage/ExteriorSign/Building
 import FreeStandingData from "./Component/Services/signage/ExteriorSign/FreeStandingData";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
+import TemporarySignData from "./Component/Services/signage/ExteriorSign/TemporarySignData";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,6 +63,10 @@ export default function App() {
         <Route
           path="/services/signage/exterior-sign/free-standing-signs"
           element={<FreeStandingData />}
+        />
+        <Route
+          path="/services/signage/exterior-sign/temporary-sign"
+          element={<TemporarySignData />}
         />
       </Routes>
       <Footer />

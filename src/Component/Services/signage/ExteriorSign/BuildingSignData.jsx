@@ -55,34 +55,40 @@ export default function BuildingSignData() {
 
         {/* Main Content Area */}
         <div className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-20 py-8 lg:py-16">
-          {/* Top Header - Contact Button */}
-          <div className="flex justify-end mb-10">
-            <Link
-              to="/contact"
-              className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-6 py-5 rounded-full text-[15px] font-semibold hover:opacity-90 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(247,156,41,0.3)] group"
-            >
-              Contact Now{" "}
-              <span className="inline-block animate-bounce-x">
-                <Icons.ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-          </div>
+
 
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16">
             {pageData.content.map((section) => (
               <div key={section.id} className="relative flex flex-col">
-                <h3 className="text-3xl lg:text-[48px] font-bold mb-4 tracking-wide text-white">
-                  {section.highlightTitle && (
-                    <span className="text-[var(--color-primary)] mr-2">
-                      {section.highlightTitle}
-                    </span>
-                  )}
-                  {section.mainTitle}
-                </h3>
-                <p className="text-gray-400 text-[15px] lg:text-[20px] leading-relaxed max-w-6xl mb-12">
-                  {section.description}
-                </p>
+                {/* Header Row: Title/Description on Left, Button on Right */}
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-12">
+                  <div className="flex-1">
+                    <h3 className="text-3xl lg:text-[48px] font-bold mb-4 tracking-wide text-white">
+                      {section.highlightTitle && (
+                        <span className="text-[var(--color-primary)] mr-2">
+                          {section.highlightTitle}
+                        </span>
+                      )}
+                      {section.mainTitle}
+                    </h3>
+                    <p className="text-gray-400 text-[15px] lg:text-[20px] leading-relaxed max-w-4xl">
+                      {section.description}
+                    </p>
+                  </div>
+                  
+                  <div className="shrink-0 flex items-center lg:items-start">
+                    <Link
+                      to="/contact"
+                      className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
+                    >
+                      Contact Now{" "}
+                      <span className="inline-block animate-bounce-x">
+                        <Icons.ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
 
                 {/* Dynamic Image Layout */}
                 <div
