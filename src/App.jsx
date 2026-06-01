@@ -6,6 +6,7 @@ import Services from "./Component/Services/Services";
 import Signage from "./Component/Services/signage/Signage";
 import ExteriorSign from "./Component/Services/signage/ExteriorSign/ExteriorSign";
 import BuildingSignData from "./Component/Services/signage/ExteriorSign/BuildingSignData";
+import FreeStandingData from "./Component/Services/signage/ExteriorSign/FreeStandingData";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
 
@@ -57,6 +58,10 @@ export default function App() {
         <Route
           path="/services/signage/exterior-sign/building-sign"
           element={<BuildingSignData />}
+        />
+        <Route
+          path="/services/signage/exterior-sign/free-standing-signs"
+          element={<FreeStandingData />}
         />
       </Routes>
       <Footer />
