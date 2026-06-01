@@ -5,11 +5,7 @@ import Home from "./Component/Home/Home";
 import Services from "./Component/Services/Services";
 import Signage from "./Component/Services/signage/Signage";
 import ExteriorSign from "./Component/Services/signage/ExteriorSign/ExteriorSign";
-import BuildingSign from "./Component/Services/signage/ExteriorSign/BuildingSign/ChannelLetters";
-import BoxSigns from "./Component/Services/signage/ExteriorSign/BuildingSign/BoxSigns";
-import CanopySigns from "./Component/Services/signage/ExteriorSign/BuildingSign/CanopySigns";
-import MetalPlasticSigns from "./Component/Services/signage/ExteriorSign/BuildingSign/MetalPlasticSigns";
-import OutdoorWinterVestibule from "./Component/Services/signage/ExteriorSign/BuildingSign/OutdoorWinterVestibule";
+import BuildingSignData from "./Component/Services/signage/ExteriorSign/BuildingSignData";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
 
@@ -60,23 +56,7 @@ export default function App() {
         />
         <Route
           path="/services/signage/exterior-sign/building-sign"
-          element={<BuildingSign />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/box-signs"
-          element={<BoxSigns />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/canopy-signs"
-          element={<CanopySigns />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/metal-plastic-signs"
-          element={<MetalPlasticSigns />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/outdoor-vestibule"
-          element={<OutdoorWinterVestibule />}
+          element={<BuildingSignData />}
         />
       </Routes>
       <Footer />

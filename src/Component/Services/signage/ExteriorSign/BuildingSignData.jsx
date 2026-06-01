@@ -1,25 +1,38 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Icons } from "./Icons/icons";
-import Sidebar from "./Sidebar";
+import { useSearchParams, Link } from "react-router-dom";
+import SignageData from "../../../Data/SignageData.json";
+import { Icons } from "../../../Icons/icons";
+import Sidebar from "../../../Sidebar";
 
-export default function SignageMasonryLayout({ data, activeId }) {
+export default function BuildingSignData() {
+  const [searchParams] = useSearchParams();
+  const activeId = searchParams.get('tab') || 'channel-letters';
+  const lookupId = activeId;
+
   const [pageData, setPageData] = useState(null);
 
   useEffect(() => {
-    // Simulating API fetch
+    // Simulating API fetch with loading state
     const fetchData = async () => {
       setTimeout(() => {
+        const buildingSignData = SignageData.find(c => c.title === "Exterior sign")?.subCategories.find(s => s.title === "Building Signs");
+        
+        const data = {
+          sidebar: buildingSignData?.sidebar,
+          content: buildingSignData?.contentDetails[lookupId]
+        };
         setPageData(data);
       }, 500);
     };
 
+    // Reset data to trigger loading state when tab changes
+    setPageData(null);
     fetchData();
-  }, [data]);
+  }, [lookupId]);
 
-  if (!pageData) {
+  if (!pageData || !pageData.content) {
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-black font-poppins">
+      <div className="w-full h-screen flex items-center justify-center bg-black font-poppins text-white">
         Loading...
       </div>
     );
@@ -58,23 +71,34 @@ export default function SignageMasonryLayout({ data, activeId }) {
                 className="relative flex flex-col"
               >
                 <h3 className="text-3xl lg:text-[48px] font-bold mb-4 tracking-wide text-white">
+                  {section.highlightTitle && <span className="text-[var(--color-primary)] mr-2">{section.highlightTitle}</span>}
                   {section.mainTitle}
                 </h3>
                 <p className="text-gray-400 text-[15px] lg:text-[20px] leading-relaxed max-w-6xl mb-12">
                   {section.description}
                 </p>
 
-                {/* Masonry Layout for Images */}
-                <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 lg:gap-6 space-y-4 lg:space-y-6">
+                {/* Dynamic Image Layout */}
+                <div 
+                  className={
+                    activeId === "channel-letters"
+                      ? "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6"
+                      : "columns-1 sm:columns-2 lg:columns-3 gap-4 lg:gap-6 space-y-4 lg:space-y-6"
+                  }
+                >
                   {section.images.map((imgSrc, idx) => (
                     <div
                       key={idx}
-                      className="rounded-lg overflow-hidden border border-[#333] shadow-lg break-inside-avoid relative group"
+                      className={`rounded-lg overflow-hidden border border-[#333] shadow-lg relative group ${
+                        activeId === "channel-letters" ? "aspect-[3/4]" : "break-inside-avoid"
+                      }`}
                     >
                       <img
                         src={imgSrc}
                         alt={`${section.mainTitle} image ${idx + 1}`}
-                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                        className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${
+                          activeId === "channel-letters" ? "h-full" : "h-auto"
+                        }`}
                       />
                     </div>
                   ))}

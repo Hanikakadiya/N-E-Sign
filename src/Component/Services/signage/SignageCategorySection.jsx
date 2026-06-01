@@ -1,66 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../Icons/icons";
+import SignageData from "../../Data/SignageData.json";
 
 export default function SignageCategorySection() {
   const [activeCard, setActiveCard] = useState(null);
 
-  const categories = [
-    {
-      title: "Exterior sign",
-      image: "/Image/signage/Exterior-sign-01.png",
-      gradient: "from-[#CF414B]/80 to-[#852170]/80",
-      number: "01",
-      description:
-        "Custom spaces that balance function and style, tailored to your lifestyle.",
-      link: "/services/signage/exterior-sign",
-    },
-    {
-      title: "Interior sign",
-      image: "/Image/signage/Interior-sign-02.png",
-      gradient: "from-[#4FE6F1]/80 to-[#ED90CF]/80",
-      number: "02",
-      description:
-        "Interior signs that blend functionality with style to enhance your space.",
-      link: "/services/signage/interior-sign",
-    },
-    {
-      title: "LED Digital Board",
-      image: "/Image/signage/Digital-Board-03.png",
-      gradient: "from-[#ADFDA2]/80 to-[#05A5BF]/80",
-      number: "03",
-      description:
-        "High-impact LED displays designed to inform, promote, and engage.",
-      link: "/services/signage/digital-board",
-    },
-    {
-      title: "LED Neon Signs",
-      image: "/Image/signage/LED-Neon-04.png",
-      gradient: "from-[#8711C1]/80 to-[#2472FC]/80",
-      number: "04",
-      description:
-        "High-impact LED displays designed to inform, promote, and engage.",
-      link: "/services/signage/neon-sign",
-    },
-    {
-      title: "Window & Wall Graphics",
-      image: "/Image/signage/Wall-Graphics-05.png",
-      gradient: "from-[#F79C29]/80 to-[#EDBC5A]/80",
-      number: "05",
-      description:
-        "High-quality window and wall graphics that strengthen your brand presence.",
-      link: "/services/signage/window-wall-graphics",
-    },
-    {
-      title: "Vehicle Graphics",
-      image: "/Image/signage/Vehicle-Graphics-06.png",
-      gradient: "from-[#05A5BF]/80 to-[#CF414B]/80",
-      number: "06",
-      description:
-        "High-Impact Vehicle Graphics That Promote Your Brand Everywhere.",
-      link: "/services/signage/vehicle-graphics",
-    },
-  ];
+  const categories = SignageData;
 
   return (
     <section className="w-full pb-20 pt-32 overflow-hidden">

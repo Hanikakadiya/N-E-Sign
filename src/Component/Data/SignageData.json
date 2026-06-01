@@ -1,0 +1,250 @@
+[
+  {
+    "title": "Exterior sign",
+    "image": "/Image/signage/Exterior-sign-01.png",
+    "gradient": "from-[#CF414B]/80 to-[#852170]/80",
+    "number": "01",
+    "description": "Custom spaces that balance function and style, tailored to your lifestyle.",
+    "link": "/services/signage/exterior-sign",
+    "subCategories": [
+      {
+        "title": "Building Signs",
+        "description": "Signs mounted directly on the buildings for branding and visibility",
+        "image": "/Image/signage/exterior-sign/exterior-building.jpg",
+        "overlayColor": "from-[#852170] to-[#CF414B]",
+        "href": "/services/signage/exterior-sign/building-sign",
+        "sidebar": {
+          "title": "Building Signs",
+          "links": [
+            {
+              "id": "channel-letters",
+              "name": "Channel letters",
+              "href": "/services/signage/exterior-sign/building-sign"
+            },
+            {
+              "id": "box-signs",
+              "name": "Box Signs",
+              "href": "/services/signage/exterior-sign/box-signs"
+            },
+            {
+              "id": "canopy-signs",
+              "name": "Canopy signs",
+              "href": "/services/signage/exterior-sign/canopy-signs"
+            },
+            {
+              "id": "metal-plastic-signs",
+              "name": "Metal & Plastic Signs",
+              "href": "/services/signage/exterior-sign/metal-plastic-signs"
+            },
+            {
+              "id": "blade-signs",
+              "name": "Blade Signs",
+              "href": "/services/signage/exterior-sign/blade-signs"
+            },
+            {
+              "id": "outdoor-vestibule",
+              "name": "Outdoor winter vestibule",
+              "href": "/services/signage/exterior-sign/outdoor-vestibule"
+            }
+          ]
+        },
+        "contentDetails": {
+          "box-signs": [
+            {
+              "id": "box-signs",
+              "highlightTitle": "",
+              "mainTitle": "Box Signs",
+              "description": "Custom sign boxes for versatile display.",
+              "images": [
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img1-Coffee.png",
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img4-BrassOnion.png",
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img2-Dog.png",
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img5-B.png",
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img7-Designize.png",
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img3-Malt-sprinkle.png",
+                "/Image/BuildingSigns/BoxSigns/BoxSigns-img6-Birds.png"
+              ]
+            }
+          ],
+          "canopy-signs": [
+            {
+              "id": "canopy-signs",
+              "highlightTitle": "",
+              "mainTitle": "Canopy Signs",
+              "description": "Signage integrated with awnings for added branding on metal, canvas and vinyl material.",
+              "images": [
+                "/Image/BuildingSigns/CanopySigns/CanopySigns-Img1-CoffeeHouse.png",
+                "/Image/BuildingSigns/CanopySigns/CanopySigns-Img4-Eddystone.png",
+                "/Image/BuildingSigns/CanopySigns/CanopySigns-Img2-ForestHill.png ",
+                "/Image/BuildingSigns/CanopySigns/CanopySigns-Img5-Gucci.png",
+                "/Image/BuildingSigns/CanopySigns/Image (27).png",
+                "/Image/BuildingSigns/CanopySigns/CanopySigns-Img1-HotelMonaco.png",
+                "/Image/BuildingSigns/CanopySigns/CanopySigns-Img6-LifeOnOnCalm.png"
+              ]
+            }
+          ],
+          "metal-plastic-signs": [
+            {
+              "id": "metal-plastic-signs",
+              "highlightTitle": "",
+              "mainTitle": "Metal & Plastic Signs",
+              "description": "Durable, versatile materials for various branding needs.",
+              "images": [
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-Bob-Img-1.png",
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-a-Img-2.png ",
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-K-Img-3.png",
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-ok-Img-4.png",
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-BeautySalon-Img-5.png",
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-Forever-Img-6.png",
+                "/Image/BuildingSigns/MetalPlasticSigns/Metal-Spa-Img-7.png"
+              ]
+            }
+          ],
+          "blade-signs": [
+            {
+              "id": "blade-signs",
+              "highlightTitle": "",
+              "mainTitle": "Blade Signs",
+              "description": "Perpendicular signs that extend from the building to increase visibility, perfect for storefronts in high-traffic areas.",
+              "images": [
+                "/Image/BuildingSigns/BladeSigns/Blade-1.png",
+                "/Image/BuildingSigns/BladeSigns/Blade-2.png ",
+                "/Image/BuildingSigns/BladeSigns/Blade-3.png",
+                "/Image/BuildingSigns/BladeSigns/Blade-4.png",
+                "/Image/BuildingSigns/BladeSigns/Blade-5.png",
+                "/Image/BuildingSigns/BladeSigns/Blade-6.png",
+                "/Image/BuildingSigns/BladeSigns/Blade-7.png"
+              ]
+            }
+          ],
+          "outdoor-vestibule": [
+            {
+              "id": "outdoor-vestibule",
+              "highlightTitle": "",
+              "mainTitle": "Outdoor winter vestibule",
+              "description": "Enclosed entryway that blocks cold air and improves energy efficiency.",
+              "images": [
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img1-rich.png",
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img2.png",
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img3-bareburger.png",
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img4-triumph.png",
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img5-seaport.png",
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img6-artaux.png",
+                "/Image/BuildingSigns/OutdoorWinterVestibule/outdoor-img7.png"
+              ]
+            }
+          ],
+          "channel-letters": [
+            {
+              "id": "front-lit",
+              "highlightTitle": "Front-Lit",
+              "mainTitle": "Channel Letters",
+              "description": "These are the most common type of channel letters, where the letters are illuminated from the front using LED lighting. The light shines through the face of the letter, making it highly visible at night.",
+              "images": [
+                "/Image/BuildingSigns/ChannelLetters/FrontLit-Civitta.png",
+                "/Image/BuildingSigns/ChannelLetters/FrontLit-LouisVuitton.png",
+                "/Image/BuildingSigns/ChannelLetters/FrontLit-Burberry.png",
+                "/Image/BuildingSigns/ChannelLetters/FrontLit-Rons.png"
+              ]
+            },
+            {
+              "id": "back-lit",
+              "highlightTitle": "Back-Lit",
+              "mainTitle": "Channel Letters",
+              "description": "Also known as \"halo-lit\" letters, these are illuminated from behind, creating a glowing effect around the edges. Offers a soft, elegant appearance.",
+              "images": [
+                "/Image/BuildingSigns/ChannelLetters/BackLit-Dior.png",
+                "/Image/BuildingSigns/ChannelLetters/BackLit-LouisVuitton.png",
+                "/Image/BuildingSigns/ChannelLetters/BackLit-Calvin.png",
+                "/Image/BuildingSigns/ChannelLetters/BackLit-YouLogo.png"
+              ]
+            },
+            {
+              "id": "combination-lit",
+              "highlightTitle": "Combination-Lit",
+              "mainTitle": "Channel Letters",
+              "description": "A hybrid of front-lit and back-lit, where the letters are illuminated both from the front and the back. This creates a more dramatic effect, providing enhanced visibility and a dynamic look.",
+              "images": [
+                "/Image/BuildingSigns/ChannelLetters/CombinationLit-Mars.png",
+                "/Image/BuildingSigns/ChannelLetters/CombinationLit-Custo.png",
+                "/Image/BuildingSigns/ChannelLetters/CombinationLit-Salon.png",
+                "/Image/BuildingSigns/ChannelLetters/CombinationLit-Omega.png"
+              ]
+            },
+            {
+              "id": "panel-mounted",
+              "highlightTitle": "Panel mounted",
+              "mainTitle": "channel letters",
+              "description": "Channel letters mounted on an aluminum panel shaped in rectangle, square, or custom design, with the letters mounted on top.",
+              "images": [
+                "/Image/BuildingSigns/ChannelLetters/PanelMounted-NoveIdeas.png",
+                "/Image/BuildingSigns/ChannelLetters/PanelMounted-E.png",
+                "/Image/BuildingSigns/ChannelLetters/PanelMounted-Pop.png",
+                "/Image/BuildingSigns/ChannelLetters/PanelMounted-Sign.png"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Freestanding Signs",
+        "description": "Standalone signs designed for visibility form a distance or near entrances",
+        "image": "/Image/signage/exterior-sign/exterior-freestanding.jpg",
+        "overlayColor": "from-[#EDBC5A] to-[#F79C29]",
+        "href": "/services/signage/exterior-sign/freestanding-sign"
+      },
+      {
+        "title": "Temporary Signs",
+        "description": "Flexible signage for short-term use, promotions, and events",
+        "image": "/Image/signage/exterior-sign/exterior-temporary.jpg",
+        "overlayColor": "from-[#4FE6F1] to-[#2472FC]",
+        "href": "/services/signage/exterior-sign/temporary-sign"
+      }
+    ]
+  },
+  {
+    "title": "Interior sign",
+    "image": "/Image/signage/Interior-sign-02.png",
+    "gradient": "from-[#4FE6F1]/80 to-[#ED90CF]/80",
+    "number": "02",
+    "description": "Interior signs that blend functionality with style to enhance your space.",
+    "link": "/services/signage/interior-sign",
+    "subCategories": []
+  },
+  {
+    "title": "LED Digital Board",
+    "image": "/Image/signage/Digital-Board-03.png",
+    "gradient": "from-[#ADFDA2]/80 to-[#05A5BF]/80",
+    "number": "03",
+    "description": "High-impact LED displays designed to inform, promote, and engage.",
+    "link": "/services/signage/digital-board",
+    "subCategories": []
+  },
+  {
+    "title": "LED Neon Signs",
+    "image": "/Image/signage/LED-Neon-04.png",
+    "gradient": "from-[#8711C1]/80 to-[#2472FC]/80",
+    "number": "04",
+    "description": "High-impact LED displays designed to inform, promote, and engage.",
+    "link": "/services/signage/neon-sign",
+    "subCategories": []
+  },
+  {
+    "title": "Window & Wall Graphics",
+    "image": "/Image/signage/Wall-Graphics-05.png",
+    "gradient": "from-[#F79C29]/80 to-[#EDBC5A]/80",
+    "number": "05",
+    "description": "High-quality window and wall graphics that strengthen your brand presence.",
+    "link": "/services/signage/window-wall-graphics",
+    "subCategories": []
+  },
+  {
+    "title": "Vehicle Graphics",
+    "image": "/Image/signage/Vehicle-Graphics-06.png",
+    "gradient": "from-[#05A5BF]/80 to-[#CF414B]/80",
+    "number": "06",
+    "description": "High-Impact Vehicle Graphics That Promote Your Brand Everywhere.",
+    "link": "/services/signage/vehicle-graphics",
+    "subCategories": []
+  }
+]

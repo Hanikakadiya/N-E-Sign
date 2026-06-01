@@ -14,7 +14,7 @@ export default function Sidebar({ title, links, activeId, backLink = "/services/
         {links?.map((link) => (
           <Link
             key={link.id}
-            to={link.href || "#"}
+            to={`?tab=${link.id}`}
             className={`text-left px-4 py-3 rounded-md text-[15px] font-medium transition-colors ${
               link.id === activeId
                 ? "bg-[#2a2a2a] text-white"

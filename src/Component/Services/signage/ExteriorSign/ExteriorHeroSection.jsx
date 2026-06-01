@@ -1,32 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../../Icons/icons";
+import SignageData from "../../../Data/SignageData.json";
 
 export default function ExteriorHeroSection() {
-  const cards = [
-    {
-      title: "Building Signs",
-      description:
-        "Signs mounted directly on the buildings for branding and visibility",
-      image: "/Image/signage/exterior-sign/exterior-building.jpg", // Using closest match
-      overlayColor: "from-[#852170] to-[#CF414B]", // Purple to pinkish
-      href: "/services/signage/exterior-sign/building-sign",
-    },
-    {
-      title: "Freestanding Signs",
-      description:
-        "Standalone signs designed for visibility form a distance or near entrances",
-      image: "/Image/signage/exterior-sign/exterior-freestanding.jpg", // Using closest match
-      overlayColor: "from-[#EDBC5A] to-[#F79C29]", // Yellow to orange
-    },
-    {
-      title: "Temporary Signs",
-      description:
-        "Flexible signage for short-term use, promotions, and events",
-      image: "/Image/signage/exterior-sign/exterior-temporary.jpg", // Using closest match
-      overlayColor: "from-[#4FE6F1] to-[#2472FC]", // Light blue to blue
-    },
-  ];
+  const cards = SignageData.find(c => c.title === "Exterior sign")?.subCategories || [];
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
