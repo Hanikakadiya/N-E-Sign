@@ -459,7 +459,99 @@
     "number": "02",
     "description": "Interior signs that blend functionality with style to enhance your space.",
     "link": "/services/signage/interior-sign",
-    "subCategories": []
+    "subCategories": [
+      {
+        "title": "ADA Signage",
+        "description": "Clear, accessible signs for directions, room IDs, and navigation throughout your space.",
+        "image": "/Image/signage/interior-sign/ada-signage.jpg",
+        "overlayColor": "from-[#7E22CE] to-[#4C1D95]",
+        "href": "/services/signage/interior-sign/ada-signage"
+      },
+      {
+        "title": "Custom Graphics",
+        "description": "Vinyl and printed designs for walls, floors, doors, and windows, to enhance branding and create a unique look.",
+        "image": "/Image/signage/interior-sign/custom-graphics.jpg",
+        "overlayColor": "from-[#F59E0B] to-[#D97706]",
+        "href": "/services/signage/interior-sign/custom-graphics"
+      },
+      {
+        "title": "Corporate Branding Signs",
+        "description": "Add personality to your space with high-quality, decorative canvas art tailored to your interior design.",
+        "image": "/Image/signage/interior-sign/corporate-branding.jpg",
+        "overlayColor": "from-[#3B82F6] to-[#1D4ED8]",
+        "href": "/services/signage/interior-sign/corporate-branding"
+      },
+      {
+        "title": "Menu Board",
+        "description": "For restaurants, cafes, or reception areas.",
+        "image": "/Image/signage/interior-sign/menu-board.jpg",
+        "overlayColor": "from-[#EC4899] to-[#BE185D]",
+        "href": "/services/signage/interior-sign/menu-board"
+      },
+      {
+        "title": "Dimensional Letters",
+        "description": "Raised letters for a modern, 3D effect on walls.",
+        "image": "/Image/signage/interior-sign/dimensional-letters.jpg",
+        "overlayColor": "from-[#10B981] to-[#047857]",
+        "href": "/services/signage/interior-sign/dimensional-letters"
+      },
+      {
+        "title": "Acrylic Signs",
+        "description": "Signs mounted directly on the buildings for branding and visibility.",
+        "image": "/Image/signage/interior-sign/acrylic-signs.jpg",
+        "overlayColor": "from-[#1E3A8A] to-[#1E40AF]",
+        "href": "/services/signage/interior-sign/acrylic-signs"
+      },
+      {
+        "title": "Custom Canvas Prints",
+        "description": "Add personality to your space with high-quality, decorative canvas art tailored to your interior design.",
+        "image": "/Image/signage/interior-sign/custom-canvas.jpg",
+        "overlayColor": "from-[#EF4444] to-[#B91C1C]",
+        "href": "/services/signage/interior-sign/custom-canvas"
+      },
+      {
+        "title": "Banners and Posters",
+        "description": "Easy-to-mount for promotions or temporary information.",
+        "image": "/Image/signage/interior-sign/banners-posters.jpg",
+        "overlayColor": "from-[#65A30D] to-[#4D7C0F]",
+        "href": "/services/signage/interior-sign/banners-posters"
+      },
+      {
+        "title": "Step and Repeat Backdrop",
+        "description": "Stylish branded displays perfect for events, photo ops, or adding a professional touch to interior spaces.",
+        "image": "/Image/signage/interior-sign/step-repeat.jpg",
+        "overlayColor": "from-[#312E81] to-[#3730A3]",
+        "href": "/services/signage/interior-sign/step-repeat"
+      },
+      {
+        "title": "Banner Stands",
+        "description": "Portable, eye-catching displays ideal for lobbies, events, promotions, or directional signage inside your space.",
+        "image": "/Image/signage/interior-sign/banner-stands.jpg",
+        "overlayColor": "from-[#60A5FA] to-[#2563EB]",
+        "href": "/services/signage/interior-sign/banner-stands"
+      },
+      {
+        "title": "Wayfinding signs",
+        "description": "Easy-to-read, personalized signs to guide visitors and improve navigation.",
+        "image": "/Image/signage/interior-sign/wayfinding.jpg",
+        "overlayColor": "from-[#A78BFA] to-[#7C3AED]",
+        "href": "/services/signage/interior-sign/wayfinding"
+      },
+      {
+        "title": "Trade Show Signage",
+        "description": "Custom pop-up displays, back-drops, and tear drops, tablecloths, and banners, to help your brand stand out at trade shows and events.",
+        "image": "/Image/signage/interior-sign/trade-show.jpg",
+        "overlayColor": "from-[#14B8A6] to-[#0F766E]",
+        "href": "/services/signage/interior-sign/trade-show"
+      },
+      {
+        "title": "Any custom Interior Signs",
+        "description": "Let us help you create your vision.",
+        "image": "/Image/signage/interior-sign/custom-interior.jpg",
+        "overlayColor": "from-[#1E3A8A] to-[#1D4ED8]",
+        "href": "/services/signage/interior-sign/custom-interior"
+      }
+    ]
   },
   {
     "title": "LED Digital Board",

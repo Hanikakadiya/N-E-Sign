@@ -11,6 +11,7 @@ import Footer from "./Component/Footer";
 import Lenis from "lenis";
 import TemporarySignData from "./Component/Services/signage/ExteriorSign/TemporarySignData";
 import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/DigitalSignage";
+import InteriorSigns from "./Component/Services/signage/InteriorSigns/InteriorSigns";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -76,6 +77,10 @@ export default function App() {
         <Route
           path="/services/signage/digital-board/:subCategory"
           element={<DigitalSignage />}
+        />
+        <Route
+          path="/services/signage/interior-sign"
+          element={<InteriorSigns />}
         />
       </Routes>
       <Footer />
