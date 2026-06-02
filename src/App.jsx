@@ -8,12 +8,7 @@ import ExteriorSigns from "./Component/Services/signage/ExteriorSign/ExteriorSig
 import InteriorSigns from "./Component/Services/signage/InteriorSigns/InteriorSigns";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
-<<<<<<< Updated upstream
-import TemporarySignData from "./Component/Services/signage/ExteriorSign/TemporarySignData";
 import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/DigitalSignage";
-import InteriorSigns from "./Component/Services/signage/InteriorSigns/InteriorSigns";
-=======
->>>>>>> Stashed changes
 
 function ScrollToTop() {
   const { pathname } = useLocation();
