@@ -639,13 +639,13 @@
           "mainTitle": "Acrylic Signs",
           "description": "SIGNS MOUNTED DIRECTLY ON THE BUILDINGS FOR BRANDING AND VISIBILITY.",
           "images": [
-            "/Image/InteriorSigns/acrylic-signs/1.jpg",
-            "/Image/InteriorSigns/acrylic-signs/2.jpg",
-            "/Image/InteriorSigns/acrylic-signs/3.jpg",
-            "/Image/InteriorSigns/acrylic-signs/4.jpg",
-            "/Image/InteriorSigns/acrylic-signs/5.jpg",
-            "/Image/InteriorSigns/acrylic-signs/6.jpg",
-            "/Image/InteriorSigns/acrylic-signs/7.jpg"
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-18Fabry.png",
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-Backery.png",
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-TotalBeauty.png",
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-HappyBirthday.png",
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-Photography.png",
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-TheSmith.png",
+            "/Image/InteriorSigns/AcrylicSigns/Acrylic-assistant.png"
           ]
         }
       ],
