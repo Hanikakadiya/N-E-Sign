@@ -10,7 +10,9 @@ export function InteriorDetailView({ id }) {
   useEffect(() => {
     const fetchData = async () => {
       setTimeout(() => {
-        const categoryData = SignageData.find((c) => c.link.includes("interior-sign"));
+        const categoryData = SignageData.find((c) =>
+          c.link.includes("interior-sign"),
+        );
         const content = categoryData?.contentDetails?.[id];
         setPageData({ content });
       }, 300);
@@ -29,12 +31,10 @@ export function InteriorDetailView({ id }) {
   }
 
   return (
-    <div className="font-poppins pt-[100px] md:pt-[120px]">
-      <div className="flex flex-col lg:flex-row container mx-auto relative px-4 sm:px-8 lg:px-12 xl:px-20">
-        
+    <div className="font-poppins pt-[100px] md:pt-[120px] max-w-[1630px] mx-[155px] xl:ml-[170px] 2xl:ml-[200px]">
+      <div className="flex flex-col lg:flex-row  mx-auto relative px-4 sm:px-8 lg:px-12 xl:px-20">
         {/* Main Content Area */}
         <div className="w-full py-8 lg:py-16">
-          
           {/* Back Arrow */}
           <div className="absolute z-20 top-0 sm:top-8 lg:top-16 left-0">
             <Link
@@ -53,7 +53,7 @@ export function InteriorDetailView({ id }) {
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:items-center text-center gap-16 mb-12 justify-around">
                   <div className="flex-1 max-w-5xl lg:pl-16">
-                    <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[48px]">
+                    <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[40px]">
                       {section.highlightTitle && (
                         <span className="text-[var(--color-primary)] mr-2">
                           {section.highlightTitle}
@@ -61,11 +61,11 @@ export function InteriorDetailView({ id }) {
                       )}
                       {section.mainTitle}
                     </h3>
-                    <p className="text-[var(--color-gray)] leading-relaxed text-[10px] sm:text-[24px] font-semibold tracking-widest uppercase">
+                    <p className="text-[var(--color-gray)] leading-relaxed text-[10px] sm:text-[18px] font-semibold tracking-widest uppercase">
                       {section.description}
                     </p>
                   </div>
-                  
+
                   <div className="shrink-0 flex items-center lg:items-start">
                     <Link
                       to="/contact"
@@ -86,13 +86,18 @@ export function InteriorDetailView({ id }) {
                     if (idx === 0 || idx === 6) colSpan = "md:col-span-2";
 
                     return (
-                      <div key={idx} className={`rounded-lg overflow-hidden border border-[#333] shadow-lg relative group h-[200px] sm:h-[300px] lg:h-[350px] ${colSpan}`}>
+                      <div
+                        key={idx}
+                        className={`rounded-lg overflow-hidden border border-[#333] shadow-lg relative group h-[200px] sm:h-[300px] lg:h-[350px] ${colSpan}`}
+                      >
                         <img
                           src={imgSrc}
                           alt={`${section.mainTitle} image ${idx + 1}`}
                           loading="lazy"
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          onError={(e) => { e.target.style.display = 'none'; }}
+                          onError={(e) => {
+                            e.target.style.display = "none";
+                          }}
                         />
                       </div>
                     );
@@ -117,7 +122,9 @@ export default function InteriorSigns() {
   }
 
   // Otherwise, render the Cards view using exact same design as Exterior
-  const categoryData = SignageData.find((c) => c.link.includes("interior-sign"));
+  const categoryData = SignageData.find((c) =>
+    c.link.includes("interior-sign"),
+  );
   const cards = categoryData?.subCategories || [];
 
   return (
@@ -152,7 +159,8 @@ export default function InteriorSigns() {
           </h1>
 
           <p className="text-[var(--color-gray)] text-sm md:text-base lg:text-[16px] max-w-xl font-normal">
-            Essential for identifying spaces and enhancing branding within your building.
+            Essential for identifying spaces and enhancing branding within your
+            building.
           </p>
         </div>
 
@@ -170,11 +178,17 @@ export default function InteriorSigns() {
                   alt={card.title}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  onError={(e) => { e.target.style.display = "none"; }}
+                  onError={(e) => {
+                    e.target.style.display = "none";
+                  }}
                 />
 
-                <div className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-85 group-hover:opacity-0 mix-blend-multiply transition-opacity duration-500 z-10`}></div>
-                <div className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-40 group-hover:opacity-0 transition-opacity duration-500 z-10`}></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-85 group-hover:opacity-0 mix-blend-multiply transition-opacity duration-500 z-10`}
+                ></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-40 group-hover:opacity-0 transition-opacity duration-500 z-10`}
+                ></div>
 
                 <div className="absolute top-0 left-0 p-6 lg:p-7 w-full z-20 flex flex-col transition-opacity duration-500">
                   <h3 className="text-[24px] lg:text-[26px] font-bold mb-3 font-poppins leading-tight">
