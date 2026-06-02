@@ -7,7 +7,7 @@ export default function ExteriorHeroSection() {
   const cards = SignageData.find(c => c.title === "Exterior sign")?.subCategories || [];
 
   return (
-    <section className="relative w-full min-h-screen pt-[120px] sm:pt-[150px] overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 
@@ -18,25 +18,28 @@ export default function ExteriorHeroSection() {
         className="absolute  right-0 opacity-20 w-[400px] md:w-[450px] object-cover mix-blend-screen pointer-events-none z-0"
       />
 
-      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10">
-        {/* Back Link */}
-        <Link
-          to="/services/signage"
-          className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-10 w-fit"
-        >
-          <Icons.ArrowRight className="w-4 h-4 rotate-180" />
-          <span className="text-[13px] font-medium">Back to Categories</span>
-        </Link>
-
+      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
         {/* Header Section */}
         <div className="flex flex-col items-start mb-16 relative">
-          <div className="flex items-center gap-3 mb-8 px-4 py-2 rounded-full bg-[#1a1a1a] w-fit shadow-lg">
-            <div className="w-3.5 h-3.5 flex items-center justify-center rounded-full border ">
-              <div className="w-[6px] h-[6px] rounded-full bg-gray-300"></div>
+          <div className="flex items-center gap-4 mb-8">
+            {/* Back Arrow */}
+            <Link
+              to="/services/signage"
+              className="flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+              title="Back to Categories"
+            >
+              <Icons.ArrowRight className="w-5 h-5 rotate-180" />
+            </Link>
+
+            {/* Exterior Sign Badge */}
+            <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-[#1a1a1a] w-fit shadow-lg border border-white/5">
+              <div className="w-3.5 h-3.5 flex items-center justify-center rounded-full border ">
+                <div className="w-[6px] h-[6px] rounded-full bg-gray-300"></div>
+              </div>
+              <span className="text-gray-300 text-[10px] sm:text-[11px] font-semibold tracking-widest uppercase">
+                Exterior Sign
+              </span>
             </div>
-            <span className="text-gray-300 text-[10px] sm:text-[11px] font-semibold tracking-widest uppercase">
-              Exterior Sign
-            </span>
           </div>
 
           <h1 className="text-white text-4xl md:text-5xl lg:text-[54px] font-medium mb-5 font-poppins">
@@ -49,11 +52,11 @@ export default function ExteriorHeroSection() {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8">
           {cards.map((card, idx) => (
             <Link
               key={idx}
-              className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white block"
+              className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] lg:w-[350px] rounded-sm overflow-hidden border border-white block"
               to={card.href || "#"}
             >
               {/* Background Image spans full height */}
