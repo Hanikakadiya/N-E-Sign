@@ -4,6 +4,7 @@
 :root {
   --color-primary: #EDBC5A;
   --color-dark-orange: #F79C29;
+  --color-gray: #9ca3af;
   --animate-trail-fade: trailFade 1s forwards ease-out;
 }
 html, body {

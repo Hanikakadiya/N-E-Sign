@@ -1,24 +1,36 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { Icons } from "../../../Icons/icons";
 import SignageData from "../../../Data/SignageData.json";
+import Sidebar from "../../../Sidebar";
 
-// --- INTERIOR DETAIL COMPONENT (Dynamic View without Sidebar) ---
-export function InteriorDetailView({ id }) {
+// --- EXTERIOR DETAIL COMPONENT (Dynamic View with Sidebar) ---
+export function ExteriorDetailView({ id }) {
+  const [searchParams] = useSearchParams();
+  const tab = searchParams.get("tab");
   const [pageData, setPageData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       setTimeout(() => {
-        const categoryData = SignageData.find((c) => c.link.includes("interior-sign"));
-        const content = categoryData?.contentDetails?.[id];
-        setPageData({ content });
+        const categoryData = SignageData.find((c) =>
+          c.link.includes("exterior-sign"),
+        );
+        const subCat = categoryData?.subCategories.find((s) =>
+          s.href.includes(id),
+        );
+
+        const sidebar = subCat?.sidebar;
+        const activeTab = tab || sidebar?.links?.[0]?.id;
+        const content = subCat?.contentDetails?.[activeTab];
+
+        setPageData({ content, sidebar });
       }, 300);
     };
 
     setPageData(null);
     fetchData();
-  }, [id]);
+  }, [id, tab]);
 
   if (!pageData || !pageData.content) {
     return (
@@ -28,17 +40,29 @@ export function InteriorDetailView({ id }) {
     );
   }
 
+  const activeTab = tab || pageData.sidebar?.links?.[0]?.id;
+
   return (
-    <div className="font-poppins pt-[100px] md:pt-[120px]">
-      <div className="flex flex-col lg:flex-row container mx-auto relative px-4 sm:px-8 lg:px-12 xl:px-20">
-        
+    <div className="w-full min-h-screen bg-[#0a0a0a] font-poppins pt-[100px] md:pt-[120px]">
+      <div className="flex flex-col lg:flex-row w-full">
+        {/* Left Sidebar */}
+        {pageData.sidebar && (
+          <Sidebar
+            title={pageData.sidebar.title}
+            links={pageData.sidebar.links?.map((link) => ({
+              ...link,
+              href: `?tab=${link.id}`,
+            }))}
+            activeId={activeTab}
+          />
+        )}
+
         {/* Main Content Area */}
-        <div className="w-full py-8 lg:py-16">
-          
+        <div className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-20 py-8 lg:py-16 relative">
           {/* Back Arrow */}
-          <div className="absolute z-20 top-0 sm:top-8 lg:top-16 left-0">
+          <div className="absolute z-20 top-4 sm:top-8 left-4 sm:left-8">
             <Link
-              to="/services/signage/interior-sign"
+              to="/services/signage/exterior-sign"
               className="flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors"
               title="Back to Categories"
             >
@@ -51,8 +75,8 @@ export function InteriorDetailView({ id }) {
             {pageData.content.map((section) => (
               <div key={section.id} className="relative flex flex-col">
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-center text-center gap-16 mb-12 justify-around">
-                  <div className="flex-1 max-w-5xl lg:pl-16">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-12">
+                  <div className="flex-1 max-w-4xl">
                     <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[48px]">
                       {section.highlightTitle && (
                         <span className="text-[var(--color-primary)] mr-2">
@@ -61,17 +85,17 @@ export function InteriorDetailView({ id }) {
                       )}
                       {section.mainTitle}
                     </h3>
-                    <p className="text-[var(--color-gray)] leading-relaxed text-[10px] sm:text-[24px] font-semibold tracking-widest uppercase">
+                    <p className="text-[var(--color-gray)] leading-relaxed text-[15px] lg:text-[20px]">
                       {section.description}
                     </p>
                   </div>
-                  
+
                   <div className="shrink-0 flex items-center lg:items-start">
                     <Link
                       to="/contact"
                       className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-6 py-2.5 lg:px-8 lg:py-4 rounded-full text-[13px] lg:text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
                     >
-                      Contact Us
+                      Contact Now
                       <span className="inline-block animate-bounce-x">
                         <Icons.ArrowRight className="w-4 h-4" />
                       </span>
@@ -79,20 +103,38 @@ export function InteriorDetailView({ id }) {
                   </div>
                 </div>
 
-                {/* Dynamic Image Layout (Masonry-like) */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                {/* Dynamic Image Layout */}
+                <div
+                  className={
+                    activeTab === "channel-letters"
+                      ? "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-6"
+                      : "columns-1 sm:columns-2 lg:columns-3 gap-4 lg:gap-6 space-y-4 lg:space-y-6"
+                  }
+                >
                   {section.images?.map((imgSrc, idx) => {
-                    let colSpan = "md:col-span-1";
-                    if (idx === 0 || idx === 6) colSpan = "md:col-span-2";
+                    let containerClass =
+                      "rounded-lg overflow-hidden border border-[#333] shadow-lg relative group";
+                    let imgClass =
+                      "w-full object-cover transition-transform duration-700 group-hover:scale-110";
+
+                    if (activeTab === "channel-letters") {
+                      containerClass += " aspect-[3/4]";
+                      imgClass += " h-full";
+                    } else {
+                      containerClass += " break-inside-avoid";
+                      imgClass += " h-auto";
+                    }
 
                     return (
-                      <div key={idx} className={`rounded-lg overflow-hidden border border-[#333] shadow-lg relative group h-[200px] sm:h-[300px] lg:h-[350px] ${colSpan}`}>
+                      <div key={idx} className={containerClass}>
                         <img
                           src={imgSrc}
                           alt={`${section.mainTitle} image ${idx + 1}`}
                           loading="lazy"
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          onError={(e) => { e.target.style.display = 'none'; }}
+                          className={imgClass}
+                          onError={(e) => {
+                            e.target.style.display = "none";
+                          }}
                         />
                       </div>
                     );
@@ -107,23 +149,31 @@ export function InteriorDetailView({ id }) {
   );
 }
 
-// --- MAIN COMPONENT (Interior Cards Section) ---
-export default function InteriorSigns() {
+// --- MAIN COMPONENT (Exterior Cards Section) ---
+export default function ExteriorSigns() {
   const { id } = useParams();
 
   // If there's an ID, render the dynamic details view
   if (id) {
-    return <InteriorDetailView id={id} />;
+    return <ExteriorDetailView id={id} />;
   }
 
-  // Otherwise, render the Cards view using exact same design as Exterior
-  const categoryData = SignageData.find((c) => c.link.includes("interior-sign"));
+  // Otherwise, render the Cards view
+  const categoryData = SignageData.find((c) =>
+    c.link.includes("exterior-sign"),
+  );
   const cards = categoryData?.subCategories || [];
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
+
+      <img
+        src="/Image/Wave.png"
+        alt="Topo graphic"
+        className="absolute right-0 opacity-20 w-[400px] md:w-[450px] object-cover mix-blend-screen pointer-events-none z-0"
+      />
 
       <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
         {/* Header Section */}
@@ -152,17 +202,17 @@ export default function InteriorSigns() {
           </h1>
 
           <p className="text-[var(--color-gray)] text-sm md:text-base lg:text-[16px] max-w-xl font-normal">
-            Essential for identifying spaces and enhancing branding within your building.
+            Signs mounted directly on the building for branding and visibility.
           </p>
         </div>
 
         {/* Cards Section */}
         {cards.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+          <div className="flex flex-wrap gap-6 lg:gap-8">
             {cards.map((card, idx) => (
               <Link
                 key={idx}
-                className="group relative w-full h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white/20 block"
+                className="group relative w-full sm:w-[calc(50%-12px)] lg:w-[350px] h-[340px] sm:h-[380px] lg:h-[430px] rounded-sm overflow-hidden border border-white/20 block shrink-0"
                 to={card.href || "#"}
               >
                 <img
@@ -170,11 +220,17 @@ export default function InteriorSigns() {
                   alt={card.title}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  onError={(e) => { e.target.style.display = "none"; }}
+                  onError={(e) => {
+                    e.target.style.display = "none";
+                  }}
                 />
 
-                <div className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-85 group-hover:opacity-0 mix-blend-multiply transition-opacity duration-500 z-10`}></div>
-                <div className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-40 group-hover:opacity-0 transition-opacity duration-500 z-10`}></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-85 group-hover:opacity-0 mix-blend-multiply transition-opacity duration-500 z-10`}
+                ></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-40 group-hover:opacity-0 transition-opacity duration-500 z-10`}
+                ></div>
 
                 <div className="absolute top-0 left-0 p-6 lg:p-7 w-full z-20 flex flex-col transition-opacity duration-500">
                   <h3 className="text-[24px] lg:text-[26px] font-bold mb-3 font-poppins leading-tight">
@@ -197,7 +253,7 @@ export default function InteriorSigns() {
             ))}
           </div>
         ) : (
-          <div className="text-gray-400 text-[16px] italic pb-20">
+          <div className="text-[var(--color-gray)] text-[16px] italic pb-20">
             More content coming soon...
           </div>
         )}

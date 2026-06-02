@@ -4,14 +4,16 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Services from "./Component/Services/Services";
 import Signage from "./Component/Services/signage/Signage";
-import ExteriorSign from "./Component/Services/signage/ExteriorSign/ExteriorSign";
-import BuildingSignData from "./Component/Services/signage/ExteriorSign/BuildingSignData";
-import FreeStandingData from "./Component/Services/signage/ExteriorSign/FreeStandingData";
+import ExteriorSigns from "./Component/Services/signage/ExteriorSign/ExteriorSigns";
+import InteriorSigns from "./Component/Services/signage/InteriorSigns/InteriorSigns";
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
+<<<<<<< Updated upstream
 import TemporarySignData from "./Component/Services/signage/ExteriorSign/TemporarySignData";
 import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/DigitalSignage";
 import InteriorSigns from "./Component/Services/signage/InteriorSigns/InteriorSigns";
+=======
+>>>>>>> Stashed changes
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -56,19 +58,11 @@ export default function App() {
         <Route path="/services/signage" element={<Signage />} />
         <Route
           path="/services/signage/exterior-sign"
-          element={<ExteriorSign />}
+          element={<ExteriorSigns />}
         />
         <Route
-          path="/services/signage/exterior-sign/building-sign"
-          element={<BuildingSignData />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/free-standing-signs"
-          element={<FreeStandingData />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/temporary-sign"
-          element={<TemporarySignData />}
+          path="/services/signage/exterior-sign/:id"
+          element={<ExteriorSigns />}
         />
         <Route
           path="/services/signage/digital-board"
@@ -80,6 +74,10 @@ export default function App() {
         />
         <Route
           path="/services/signage/interior-sign"
+          element={<InteriorSigns />}
+        />
+        <Route
+          path="/services/signage/interior-sign/:id"
           element={<InteriorSigns />}
         />
       </Routes>
