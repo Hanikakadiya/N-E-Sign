@@ -189,8 +189,8 @@ export default function NavBar() {
 
                             {/* Cascading Pop-out Menu for Sub Items */}
                             {dropLink.subItems && (
-                              <div className="absolute left-full top-0 ml-2 hidden group-hover/subitem:block w-[280px] xl:w-[300px]">
-                                <div className="border border-[#333] shadow-2xl p-2 rounded-[20px] flex flex-col gap-1 bg-[#000000]">
+                              <div className="absolute left-full top-0 pl-4 hidden group-hover/subitem:block z-50">
+                                <div className="border border-[#333] shadow-2xl p-2 rounded-[20px] flex flex-col gap-1 bg-[#000000] w-[260px] xl:w-[280px]">
                                   {dropLink.subItems.map((subItem) => {
                                     const isSubActive =
                                       location.pathname === subItem.href;

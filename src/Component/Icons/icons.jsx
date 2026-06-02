@@ -32,6 +32,10 @@ export const Icons = {
   // Utilities
   Check: createIcon("ph:check-circle"),
   Star: createIcon("ph:star-fill"),
+  Users: createIcon("ph:users-three"),
+  SealCheck: createIcon("ph:seal-check"),
+  Sun: createIcon("ph:sun"),
+  Desktop: createIcon("ph:monitor"),
 
   // Services (Passing "1em" to override the default "1.5em" width)
   Signage: createIcon("ph:squares-four", "1em"),
@@ -47,4 +51,18 @@ export const Icons = {
   NeonSign: createIcon("ph:lightning", "1em"),
   WallGraphics: createIcon("ph:image", "1em"),
   VehicleGraphics: createIcon("ph:truck", "1em"),
+
+  // Digital Signage Categories (Your custom icons)
+  Church: createIcon("ph:church", "1em"),
+  BarsRestaurants: createIcon("fa-solid:utensils", "1em"),
+  EventsConcert: createIcon("fa:music", "1em"),
+  OutdoorBillboards: createIcon("mdi:billboard", "1em"),
+  OutdoorLED: createIcon("ph:monitor", "1em"),
+  SchoolsUni: createIcon("fa:graduation-cap", "1em"),
+  Automotive: createIcon("fa:car", "1em"),
+  Hospitality: createIcon("fa:hotel", "1em"),
+  Healthcare: createIcon("fa:hospital-o", "1em"),
+  ShoppingMall: createIcon("fa:shopping-bag", "1em"),
+  RetailStore: createIcon("fa:shopping-cart", "1em"),
+  CarWash: createIcon("fa:shower", "1em"),
 };

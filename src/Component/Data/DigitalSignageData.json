@@ -1,0 +1,491 @@
+[
+  {
+    "id": "churches",
+    "title": "Churches",
+    "subtitle": "Ministry Communication",
+    "description": "Our church LED signs and digital display boards help ministries communicate effectively.",
+    "icon": "Church",
+    "iconColor": "text-blue-500",
+    "hoverBg": "hover:bg-blue-500",
+    "href": "/services/signage/digital-board/churches",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Churches.png",
+      "tagline": "CHURCHES DIGITAL LED SIGNS",
+      "title": "Inspire, Inform & Grow Your Churches.",
+      "description": "Our church LED signs and digital display boards help ministries communicate service times, sermon series, Bible verses, and community events with clarity and impact.",
+      "featuresTitle": "Why Choose Digital LED Signs for Churches",
+      "features": [
+        "Display weekly schedules and promotions",
+        "Promote special events & announcements",
+        "Share inspirational messages 24/7",
+        "Update content remotely in minutes"
+      ],
+      "options": [
+        {
+          "title": "Outdoor Church LED Signs",
+          "description": "Weatherproof, high-brightness boards ensuring your message radiates day and night.",
+          "icon": "Sun"
+        },
+        {
+          "title": "Indoor Church LED Screens",
+          "description": "Perfect for worship lyrics, sermon visuals, and seamless live streaming integration.",
+          "icon": "Desktop"
+        }
+      ],
+      "buttonText": "Get a custom churches LED sign quote",
+      "footerText": "Boost your engagement with vibrant LED displays."
+    },
+    "themeColor": "#3b82f6"
+  },
+  {
+    "id": "bars-restaurants",
+    "title": "Bars & Restaurants",
+    "subtitle": "Attract More Customers",
+    "description": "Upgrade your marketing with restaurant digital signage and LED menu boards.",
+    "icon": "BarsRestaurants",
+    "iconColor": "text-yellow-500",
+    "hoverBg": "hover:bg-yellow-500",
+    "href": "/services/signage/digital-board/bars-restaurants",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Restaurant.png",
+      "tagline": "BARS & RESTAURANTS DIGITAL LED SIGNS",
+      "title": "Restaurant & Bar Digital LED Boards Attract More Customers & Increase Daily Sales.",
+      "description": "Upgrade your marketing with restaurant digital signage and LED menu boards that captivate customers and drive daily sales.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Daily Specials",
+            "Happy Hour promotions",
+            "Live Sports Viewers",
+            "Digital menu boards"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Instant price changes",
+            "Increase foot traffic",
+            "Modern customer experience",
+            "Higher upsell rates"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom bars & restaurants LED sign quote",
+      "footerText": "Upgrade your marketing with restaurant digital signage and LED menu boards that captivate customers and drive daily sales."
+    },
+    "themeColor": "#eab308"
+  },
+  {
+    "id": "events-concert",
+    "title": "Events & Concert",
+    "subtitle": "Unforgettable Visual Experiences",
+    "description": "Our LED video walls for events create stunning visual backdrops for any crowd.",
+    "icon": "EventsConcert",
+    "iconColor": "text-purple-500",
+    "hoverBg": "hover:bg-purple-500",
+    "href": "/services/signage/digital-board/events-concert",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Event-Concert.png",
+      "tagline": "EVENTS & CONCERT DIGITAL LED SIGNS",
+      "title": "Event & Concert LED Video Walls Create Unforgettable Visual Experiences.",
+      "description": "Our LED video walls for events and concerts deliver jaw-dropping clarity for audiences of any size.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Stage backdrops",
+            "Live score displays",
+            "Sponsor branding",
+            "Crowd engagement"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Ultra-high brightness",
+            "Seamless tiling",
+            "Fast deployment",
+            "Rental packages available"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom events & concert LED sign quote",
+      "footerText": "Our LED video walls for events and concerts deliver jaw-dropping clarity for audiences of any size."
+    },
+    "themeColor": "#a855f7"
+  },
+  {
+    "id": "outdoor-billboards",
+    "title": "Outdoor Billboards",
+    "subtitle": "Maximize Visibility & Revenue",
+    "description": "Our outdoor LED billboards deliver maximum visibility day and night.",
+    "icon": "OutdoorBillboards",
+    "iconColor": "text-red-500",
+    "hoverBg": "hover:bg-red-500",
+    "href": "/services/signage/digital-board/outdoor-billboards",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Otdoor-BillBoards.png",
+      "tagline": "OUTDOOR BILLBOARDS DIGITAL LED SIGNS",
+      "title": "Outdoor LED Billboards Maximize Visibility & Advertising Revenue.",
+      "description": "Our outdoor LED billboards deliver brilliant, weatherproof visibility that generates income around the clock.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Highway advertising",
+            "Local business promos",
+            "Multi-advertiser rotation",
+            "Real estate listings"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "24/7 visibility",
+            "Dynamic ad rotation",
+            "IP65 weatherproofing",
+            "Remote scheduling"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom outdoor billboards LED sign quote",
+      "footerText": "Our outdoor LED billboards deliver brilliant, weatherproof visibility that generates income around the clock."
+    },
+    "themeColor": "#ef4444"
+  },
+  {
+    "id": "outdoor-led-signs",
+    "title": "Outdoor LED Signs",
+    "subtitle": "Built for Performance & Durability",
+    "description": "Our weatherproof outdoor LED signs perform in any climate, year-round.",
+    "icon": "OutdoorLED",
+    "iconColor": "text-orange-500",
+    "hoverBg": "hover:bg-orange-500",
+    "href": "/services/signage/digital-board/outdoor-led-signs",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Outdoor-Display.png",
+      "tagline": "OUTDOOR LED SIGNS DIGITAL LED SIGNS",
+      "title": "Outdoor LED Signs Built for Performance & Durability.",
+      "description": "Our weatherproof outdoor LED signs are engineered to perform in extreme weather, keeping your message visible year-round.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Storefront signs",
+            "Monument signs",
+            "Road-side displays",
+            "Directional signage"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "IP65 rated",
+            "Wide temperature range",
+            "High brightness panels",
+            "5-year warranty"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom outdoor led signs LED sign quote",
+      "footerText": "Our weatherproof outdoor LED signs are engineered to perform in extreme weather, keeping your message visible year-round."
+    },
+    "themeColor": "#f97316"
+  },
+  {
+    "id": "schools-uni",
+    "title": "Schools & UNI",
+    "subtitle": "Improve Campus Communication",
+    "description": "Our school LED display boards keep students and staff informed in real-time.",
+    "icon": "SchoolsUni",
+    "iconColor": "text-blue-600",
+    "hoverBg": "hover:bg-blue-600",
+    "href": "/services/signage/digital-board/schools-uni",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Schools-Board.png",
+      "tagline": "SCHOOLS & UNI DIGITAL LED SIGNS",
+      "title": "School & University LED Boards Improve Communication Across Campus.",
+      "description": "Our school LED display boards keep students, staff, and visitors informed with real-time updates and announcements.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Campus announcements",
+            "Event schedules",
+            "Safety alerts",
+            "Sports scoreboards"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Easy content management",
+            "Multi-zone displays",
+            "ADA compliant",
+            "Durable construction"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom schools & uni LED sign quote",
+      "footerText": "Our school LED display boards keep students, staff, and visitors informed with real-time updates and announcements."
+    },
+    "themeColor": "#2563eb"
+  },
+  {
+    "id": "automotive",
+    "title": "Automotive",
+    "subtitle": "Drive Traffic. Increase Sales.",
+    "description": "Showcase promotions and inventory with dynamic digital displays.",
+    "icon": "Automotive",
+    "iconColor": "text-green-500",
+    "hoverBg": "hover:bg-green-500",
+    "href": "/services/signage/digital-board/automotive",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Hyundai.png",
+      "tagline": "AUTOMOTIVE DIGITAL LED SIGNS",
+      "title": "Automotive LED Displays Drive Traffic & Increase Daily Sales.",
+      "description": "Showcase your inventory, promotions, and special financing offers with eye-catching dynamic LED displays.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "New vehicle promotions",
+            "Service department deals",
+            "Finance rate displays",
+            "Lot directional signage"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "High-glare rejection",
+            "Live inventory feeds",
+            "Custom animation",
+            "Dealer brand compliance"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom automotive LED sign quote",
+      "footerText": "Showcase your inventory, promotions, and special financing offers with eye-catching dynamic LED displays."
+    },
+    "themeColor": "#22c55e"
+  },
+  {
+    "id": "hospitality",
+    "title": "Hospitality",
+    "subtitle": "Elevate Guest Experience",
+    "description": "Our hospitality LED screens enhance communication and branding seamlessly.",
+    "icon": "Hospitality",
+    "iconColor": "text-pink-500",
+    "hoverBg": "hover:bg-pink-500",
+    "href": "/services/signage/digital-board/hospitality",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Hospital.png",
+      "tagline": "HOSPITALITY DIGITAL LED SIGNS",
+      "title": "Hospitality LED Screens Elevate Guest Experience.",
+      "description": "Our hospitality LED screens blend seamlessly into your environment, delivering personalized guest communications.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Lobby welcome screens",
+            "Event board displays",
+            "Restaurant digital menus",
+            "Wayfinding systems"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Luxury aesthetics",
+            "Low-profile mounting",
+            "Central CMS control",
+            "Custom content branding"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom hospitality LED sign quote",
+      "footerText": "Our hospitality LED screens blend seamlessly into your environment, delivering personalized guest communications."
+    },
+    "themeColor": "#ec4899"
+  },
+  {
+    "id": "healthcare",
+    "title": "Healthcare",
+    "subtitle": "Clear Communication When It Matters Most",
+    "description": "Our medical facility LED signs help communicate important information dynamically.",
+    "icon": "Healthcare",
+    "iconColor": "text-yellow-600",
+    "hoverBg": "hover:bg-yellow-600",
+    "href": "/services/signage/digital-board/healthcare",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-HealthCare.png",
+      "tagline": "HEALTHCARE DIGITAL LED SIGNS",
+      "title": "Healthcare LED Displays Clear Communication When It Matters Most.",
+      "description": "Our medical facility LED displays guide patients, reduce anxiety, and improve operational efficiency.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Queue management",
+            "Wayfinding displays",
+            "Health awareness boards",
+            "Waiting room info"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Low flicker panels",
+            "HIPAA-conscious design",
+            "Easy remote updates",
+            "Infection-resistant surfaces"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom healthcare LED sign quote",
+      "footerText": "Our medical facility LED displays guide patients, reduce anxiety, and improve operational efficiency."
+    },
+    "themeColor": "#ca8a04"
+  },
+  {
+    "id": "shopping-mall",
+    "title": "Shopping Mall",
+    "subtitle": "Capture High-Traffic Attention",
+    "description": "Engage shoppers with large-scale indoor digital displays and directories.",
+    "icon": "ShoppingMall",
+    "iconColor": "text-pink-600",
+    "hoverBg": "hover:bg-pink-600",
+    "href": "/services/signage/digital-board/shopping-mall",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-ShoppingMall.png",
+      "tagline": "SHOPPING MALL DIGITAL LED SIGNS",
+      "title": "Shopping Mall LED Displays Capture High-Traffic Attention.",
+      "description": "Engage millions of shoppers with bold, large-format LED installations that command attention at every turn.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Promotional campaigns",
+            "Tenant advertising",
+            "Event announcements",
+            "Interactive directories"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Massive format options",
+            "Tenant revenue sharing",
+            "Centralized scheduling",
+            "Ultra-bright panels"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom shopping mall LED sign quote",
+      "footerText": "Engage millions of shoppers with bold, large-format LED installations that command attention at every turn."
+    },
+    "themeColor": "#db2777"
+  },
+  {
+    "id": "retail-store",
+    "title": "Retail Store",
+    "subtitle": "Convert Foot Traffic into Sales",
+    "description": "Our retail LED signage solutions help stores stand out and increase sales.",
+    "icon": "RetailStore",
+    "iconColor": "text-green-600",
+    "hoverBg": "hover:bg-green-600",
+    "href": "/services/signage/digital-board/retail-store",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-Retail-Store.png",
+      "tagline": "RETAIL STORE DIGITAL LED SIGNS",
+      "title": "Retail LED Signage Convert Foot Traffic into Sales.",
+      "description": "Our retail LED signage solutions help stores stand out, highlight promotions, and drive impulse purchases.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Window displays",
+            "In-store promotions",
+            "Product spotlighting",
+            "Price updates"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Eye-catching brightness",
+            "Instant price changes",
+            "Seasonal flexibility",
+            "Compact thin profiles"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom retail store LED sign quote",
+      "footerText": "Our retail LED signage solutions help stores stand out, highlight promotions, and drive impulse purchases."
+    },
+    "themeColor": "#16a34a"
+  },
+  {
+    "id": "car-wash",
+    "title": "Car Wash",
+    "subtitle": "Display Pricing and Services",
+    "description": "Our car wash LED signs help display pricing and service packages clearly.",
+    "icon": "CarWash",
+    "iconColor": "text-blue-400",
+    "hoverBg": "hover:bg-blue-400",
+    "href": "/services/signage/digital-board/car-wash",
+    "modal": {
+      "image": "/Image/DigitalSignage/DigitalSignage-CarWash.png",
+      "tagline": "CAR WASH DIGITAL LED SIGNS",
+      "title": "Car Wash LED Signs Display Pricing & Packages with Clarity.",
+      "description": "Our car wash LED signs help display pricing and service packages clearly, attracting more customers and boosting revenue.",
+      "options": [
+        {
+          "title": "Ideal For:",
+          "list": [
+            "Service menu displays",
+            "Loyalty program promos",
+            "Add-on upsells",
+            "Drive-through menus"
+          ],
+          "icon": "Users"
+        },
+        {
+          "title": "Benefits:",
+          "list": [
+            "Moisture & humidity resistant",
+            "Bright in direct sunlight",
+            "Dynamic pricing updates",
+            "Compact display options"
+          ],
+          "icon": "SealCheck"
+        }
+      ],
+      "buttonText": "Get a custom car wash LED sign quote",
+      "footerText": "Our car wash LED signs help display pricing and service packages clearly, attracting more customers and boosting revenue."
+    },
+    "themeColor": "#60a5fa"
+  }
+]
