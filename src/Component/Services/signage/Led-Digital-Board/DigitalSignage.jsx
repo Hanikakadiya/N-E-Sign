@@ -55,7 +55,7 @@ export default function DigitalSignage() {
         </p>
       </div>
 
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 relative z-10">
         {DigitalSignageData.map((card, idx) => (
           <div
             key={idx}

@@ -331,7 +331,7 @@
                 "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-Jeronimo.png",
                 "/Image/FreestandingSigns/DriveThruCanopySigns/DriveTHruCanopy-ColorOpenDrive.png",
                 "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-TwoCars.png",
-                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-WoodPlat.png"  
+                "/Image/FreestandingSigns/DriveThruCanopySigns/DriveThruCanopy-WoodPlat.png"
               ]
             }
           ],
@@ -346,7 +346,7 @@
                 "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-Car.png",
                 "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-LowClrarance.png",
                 "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-Parking.png",
-                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-whiteCar.png"   
+                "/Image/FreestandingSigns/ClearanceBar/ClearanceBar-whiteCar.png"
               ]
             }
           ]
@@ -687,13 +687,13 @@
           "mainTitle": "Branded Step & Repeat Backdrops That Impress",
           "description": "Create a professional, picture-ready backdrop that keeps your brand in every shot.",
           "images": [
-            "/Image/InteriorSigns/step-repeat/1.jpg",
-            "/Image/InteriorSigns/step-repeat/2.jpg",
-            "/Image/InteriorSigns/step-repeat/3.jpg",
-            "/Image/InteriorSigns/step-repeat/4.jpg",
-            "/Image/InteriorSigns/step-repeat/5.jpg",
-            "/Image/InteriorSigns/step-repeat/6.jpg",
-            "/Image/InteriorSigns/step-repeat/7.jpg"
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-Colombian.png",
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-NMIMS.png",
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-Birthfund.png",
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-Burjeel.png",
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-Hulu.png",
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-Huluabc.png",
+            "/Image/InteriorSigns/RepeatBackdrops/RepeatBackdrops-Vydia.png"
           ]
         }
       ],
@@ -703,13 +703,13 @@
           "mainTitle": "Portable Banner Stands for Powerful Promotions",
           "description": "Take your message anywhere with compact, travel-friendly banner solutions.",
           "images": [
-            "/Image/InteriorSigns/banner-stands/1.jpg",
-            "/Image/InteriorSigns/banner-stands/2.jpg",
-            "/Image/InteriorSigns/banner-stands/3.jpg",
-            "/Image/InteriorSigns/banner-stands/4.jpg",
-            "/Image/InteriorSigns/banner-stands/5.jpg",
-            "/Image/InteriorSigns/banner-stands/6.jpg",
-            "/Image/InteriorSigns/banner-stands/7.jpg"
+            "/Image/InteriorSigns/BannerStands/BannerStands-Brand.png",
+            "/Image/InteriorSigns/BannerStands/BannerStands-StandOnly.png",
+            "/Image/InteriorSigns/BannerStands/BannerStands-YourLogo.png",
+            "/Image/InteriorSigns/BannerStands/BannerStands-Connected.png",
+            "/Image/InteriorSigns/BannerStands/BannerStands-Life.png",
+            "/Image/InteriorSigns/BannerStands/BannerStands-Nestora.png",
+            "/Image/InteriorSigns/BannerStands/BannerStands-Summerbay.png"
           ]
         }
       ],
@@ -721,10 +721,10 @@
           "images": [
             "/Image/InteriorSigns/wayfinding/1.jpg",
             "/Image/InteriorSigns/wayfinding/2.jpg",
-            "/Image/InteriorSigns/wayfinding/3.jpg",
+            "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Toilets.png",
             "/Image/InteriorSigns/wayfinding/4.jpg",
-            "/Image/InteriorSigns/wayfinding/5.jpg",
-            "/Image/InteriorSigns/wayfinding/6.jpg",
+            "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-WoodsAndHiking.png",
+            "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-ParkingExit.png",
             "/Image/InteriorSigns/wayfinding/7.jpg"
           ]
         }
