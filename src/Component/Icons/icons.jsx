@@ -13,14 +13,14 @@ export const Icons = {
   Menu: createIcon("heroicons:bars-3"),
   Close: createIcon("heroicons:x-mark"),
   MenuIcon: createIcon("akar-icons:three-line-horizontal"),
-  
+
   // Arrows & Chevrons
   ArrowRight: createIcon("ph:arrow-right"),
   ArrowDownRight: createIcon("ph:arrow-down-right"),
   ArrowUpRight: createIcon("ph:arrow-up-right"),
   ChevronDown: createIcon("ph:caret-down"),
   ChevronRight: createIcon("ph:caret-right"),
-  
+
   // Contact & Social
   Phone: createIcon("ph:phone"),
   Email: createIcon("ph:envelope"),
@@ -28,7 +28,7 @@ export const Icons = {
   Facebook: createIcon("gg:facebook"),
   Pinterest: createIcon("formkit:pinterest"),
   LinkedIn: createIcon("ri:linkedin-fill"),
-  
+
   // Utilities
   Check: createIcon("ph:check-circle"),
   Star: createIcon("ph:star-fill"),

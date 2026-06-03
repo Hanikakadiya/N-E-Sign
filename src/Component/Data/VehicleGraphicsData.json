@@ -1,0 +1,196 @@
+{
+  "header": {
+    "title": "What Types of Vehicle Graphics Are Available?",
+    "description": "There are plenty of options available to you, no matter what kind of vehicle you may have or what your budget might be. At N-E-Sign, we offer:"
+  },
+  "cards": [
+    {
+      "id": "vehicle-wraps",
+      "title": "Vehicle Wraps",
+      "image": "/Image/VehicleGraphics/Vehicle-Wraps.png",
+      "themeColor": "#EAB308",
+      "description": "Transform your vehicle into a mobile billboard with our custom graphics.",
+      "modal": {
+        "images": [
+          "/Image/VehicleGraphics/VehicleWraps/Vehicle-Wraps-Drive1.png",
+          "/Image/VehicleGraphics/VehicleWraps/Vehicle-Wraps-Drive2.png",
+          "/Image/VehicleGraphics/VehicleWraps/Vehicle-Wraps-Drive3.png"
+        ],
+        "tagline": "VEHICLE GRAPHICS & WRAPS",
+        "title": "Drive Your Brand Everywhere with High Impact Vehicle Advertising",
+        "description": "Turn Your Vehicles into Mobile Billboards with NE Signs Vehicle graphics are a highly cost-effective way to promote your brand and attract more customers even when your vehicle is parked. With NE Signs, your company vehicles can do more than just transport goods or provide services they become powerful mobile advertisements, delivering your marketing message wherever they go, every single day. Local Authority Build trust instantly when your professional vehicles arrive on site. 24/7 Marketing Your message works even when your vehicles are parked.",
+        "whiteCards": [
+          {
+            "title": "How can I use full vehicle wraps?",
+            "icon": "Automotive",
+            "imagePosition": "right",
+            "image": "/Image/VehicleGraphics/VehicleWraps/Vehicle-Wraps-HowUse.png",
+            "paragraphs": [
+              "A full car wrap completely encases your vehicle in graphics and lettering to advertise your brand and showcase your products, services or message. They're a great option for creating a consistent, uniform look across different styles of vehicles, or for when you're just looking to make a big statement while on the road.",
+              "Full wraps are the perfect choice for your company's fleet of delivery vans, trucks and trailers that see a lot of time on the road. Customized wraps for your entire fleet will make your brand instantly recognizable within your community and better establish your company's reputation."
+            ],
+            "note": "When it's time to replace your vehicle, wraps can be removed without any damage to the original paint or finish."
+          },
+          {
+            "title": "What kind of partial vehicle wraps are there?",
+            "icon": "Grid",
+            "imagePosition": "left",
+            "image": "/Image/VehicleGraphics/VehicleWraps/Vehicle-Wraps-Partial.png",
+            "intro": "Don't need a full vehicle wrap? Partial wraps are a great option to add a professional, consistent look to your company vehicles.",
+            "bulletPoints": [
+              {
+                "title": "Window Graphics:",
+                "text": "One-way perforated vinyl allows you to add eye-catching graphics that show your message while allowing you to safely see out."
+              },
+              {
+                "title": "Vinyl Lettering:",
+                "text": "Precision-cut graphics can be applied anywhere to display vital info like phone numbers, web addresses, or service lists."
+              }
+            ],
+            "footerText": "Whether you're looking to cover a small portion or up to 75% of the surface area, our design team works with the natural flow of your vehicle's design to help you stand out for all the right reasons."
+          }
+        ],
+        "ctaBanner": {
+          "title": "Ready to transform your fleet?",
+          "description": "Schedule a consultation today and see how our design team can help you stand out.",
+          "phone": "630-454-SIGN ( 7446 )",
+          "buttonText": "Schedule a consultation"
+        }
+      }
+    },
+    {
+      "id": "fleet-graphics",
+      "title": "Fleet Graphics",
+      "image": "/Image/VehicleGraphics/Fleet-Graphics.png",
+      "themeColor": "#EAB308",
+      "description": "Transform your vehicle into a mobile billboard with our custom graphics.",
+      "modal": {
+        "images": [
+          "/Image/VehicleGraphics/Fleet-Graphics/Fleet-Graphics-1.png",
+          "/Image/VehicleGraphics/Fleet-Graphics/Fleet-Graphics-2.png",
+          "/Image/VehicleGraphics/Fleet-Graphics/Fleet-Graphics-3.png"
+        ],
+        "title": "Custom Fleet Graphics for Consistent Brand Visibility",
+        "description": "Whether you have a single service vehicle or a large delivery fleet, custom fleet graphics from Image360 help showcase your brand and promote your business wherever you go. We understand every business has unique needs and budgets. That’s why we offer a wide range of vehicle wraps and lettering solutions for cars, trucks, vans, trailers, and buses—designed to create the perfect fleet branding for you.",
+        "whiteCards": [
+          {
+            "title": "Who can use fleet graphics?",
+            "icon": "Automotive",
+            "imagePosition": "right",
+            "image": "/Image/VehicleGraphics/Fleet-Graphics/Fleet-Graphics-MoovIn.png",
+            "paragraphs": [
+              "No matter your industry, fleet graphics are a smart way to create a consistent and professional look across all your business vehicles. Whether you operate cars, trucks, vans, or buses, we ensure your entire fleet reflects a clear and unified brand identity.",
+              "From trucking companies needing updated door lettering to contractors branding service vans or colleges standardizing campus vehicles, we provide complete fleet graphic and wrap solutions tailored to your needs."
+            ],
+            "note": "From single vehicles to large rigs, eye-catching transit graphics and wraps are a powerful way to boost brand awareness on the move."
+          },
+          {
+            "title": "What are fleet graphics made from?",
+            "icon": "Grid",
+            "imagePosition": "left",
+            "image": "/Image/VehicleGraphics/Fleet-Graphics/Fleet-Graphics-Concretech.png",
+            "intro": "Our vehicle wraps and fleet graphics are crafted from high-quality, durable vinyl designed to handle the demands of daily driving. They maintain a bold, professional look whether your vehicle is parked or on the road. With UV-resistant materials, your colors stay vibrant and won’t fade, ensuring long-lasting impact for your brand.",
+            "bulletPoints": [
+              {
+                "text": "At Image360, we start with precise measurements of your fleet vehicles, followed by custom graphic designs that make your brand stand out on the road. As a full-service signage provider, we also handle professional installation to ensure a flawless finish."
+              },
+              {
+                "text": "Using high-quality materials and advanced production technology, we deliver durable, consistent fleet branding. If you’ve recently rebranded or acquired another business, we also offer graphic removal and updates to keep your fleet aligned with your new identity."
+              }
+            ]
+          }
+        ],
+        "ctaBanner": {
+          "title": "Ready to brand your fleet?",
+          "description": "Schedule a consultation today and get a custom quote for your commercial vehicles.",
+          "phone": "630-454-SIGN ( 7446 )",
+          "buttonText": "Get a custom quote"
+        }
+      }
+    },
+    {
+      "id": "magnetic-car-signs",
+      "title": "Magnetic Car Signs",
+      "image": "/Image/VehicleGraphics/Magnetic-Car-Signs.png",
+      "themeColor": "#EAB308",
+      "description": "Transform your vehicle into a mobile billboard with our custom graphics.",
+      "modal": {
+        "images": [
+          "/Image/VehicleGraphics/Magnetic-Car-Signs/Magnetic-Car-Signs-01.png",
+          "/Image/VehicleGraphics/Magnetic-Car-Signs/Magnetic-Car-Signs-02.png",
+          "/Image/VehicleGraphics/Magnetic-Car-Signs/Magnetic-Car-Signs-03.png"
+        ],
+        "title": "Custom Boat Wraps & Graphics for Maximum Brand Visibility.",
+        "description": "Ideal for car, truck, or van doors—and even hoods—we create each magnet to fit your vehicle perfectly. From precise measurements to final installation, we handle the entire process to deliver a tailored solution for your needs. We also offer magnetic car-top signs, including illuminated options for maximum visibility day or night. Whatever your vehicle advertising goals, we’re here to create the right solution for you.",
+        "whiteCards": [],
+        "ctaBanner": {
+          "title": "Ready to transform your fleet?",
+          "description": "Schedule a consultation today and see how our design team can help you stand out.",
+          "phone": "630-454-SIGN ( 7446 )",
+          "buttonText": "Schedule a consultation"
+        }
+      }
+    },
+    {
+      "id": "vehicle-graphics-lettering",
+      "title": "Vehicle Graphics & Lettering",
+      "image": "/Image/VehicleGraphics/Vehicle-Graphics-Lettering.png",
+      "themeColor": "#EAB308",
+      "description": "Transform your vehicle into a mobile billboard with our custom graphics.",
+      "modal": {
+        "image": "/Image/VehicleGraphics/Vehicle-Graphics-Lettering.png",
+        "images": [
+          "/Image/VehicleGraphics/Vehicle-Graphics-Lettering.png",
+          "/Image/VehicleGraphics/Magnetic-Car-Signs.png",
+          "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=800&auto=format&fit=crop"
+        ],
+        "tagline": "VEHICLE GRAPHICS & WRAPS",
+        "title": "Transform Your Vehicle Graphics & Lettering",
+        "description": "Our high-quality vehicle graphics & lettering ensure your brand gets noticed on the road. We use premium vinyl and vibrant inks to create long-lasting, eye-catching mobile advertising.",
+        "whiteCards": [
+          {
+            "title": "How can I use Vehicle Lettering?",
+            "icon": "Automotive",
+            "imagePosition": "right",
+            "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=800&auto=format&fit=crop",
+            "paragraphs": [
+              "Vehicle lettering is a clean, classic, and effective way to display your company name, logo, contact information, and services directly on your vehicle's body or windows.",
+              "Precision-cut vinyl lettering gives a professional, painted-on look that is highly durable and weather-resistant, ensuring your message stays crisp and readable for years."
+            ],
+            "note": "We use high-performance cast vinyl that conforms to the curves of your vehicle and resists fading."
+          },
+          {
+            "title": "What details should I include?",
+            "icon": "Grid",
+            "imagePosition": "left",
+            "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=800&auto=format&fit=crop",
+            "intro": "Keep it simple and readable for maximum impact while driving.",
+            "bulletPoints": [
+              {
+                "title": "Essential Info:",
+                "text": "Company name, primary service, phone number, and website."
+              },
+              {
+                "title": "Strategic Placement:",
+                "text": "Doors, tailgates, and rear windows offer the best visibility."
+              }
+            ],
+            "footerText": "Our designers will help you choose the right fonts and colors for maximum readability from a distance."
+          }
+        ],
+        "ctaBanner": {
+          "title": "Ready for clean, professional lettering?",
+          "description": "Contact us today to design custom cut vinyl lettering for your vehicle.",
+          "phone": "630-454-SIGN ( 7446 )",
+          "buttonText": "Get a custom quote"
+        }
+      }
+    }
+  ],
+  "cta": {
+    "title": "Ready to Start?",
+    "description": "Our experts are ready to help you design the perfect look for your fleet.",
+    "buttonText": "Contact Us Now",
+    "buttonLink": "/contact-us"
+  }
+}
