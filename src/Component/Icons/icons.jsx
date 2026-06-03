@@ -65,4 +65,15 @@ export const Icons = {
   ShoppingMall: createIcon("fa:shopping-bag", "1em"),
   RetailStore: createIcon("fa:shopping-cart", "1em"),
   CarWash: createIcon("fa:shower", "1em"),
+
+  // LED- Neon 
+  neonText: createIcon("material-symbols:format-color-text-rounded", "2em"),
+  neonColor: createIcon("material-symbols:format-paint-outline-rounded", "2em"),
+  neonFont: createIcon("material-symbols:font-download-outline-rounded", "2em"),
+  neonSize: createIcon("proicons:screen-size", "2em"),
+  neonBackboard: createIcon("material-symbols:layers-outline-rounded", "2em"),
+  neonBackground: createIcon("material-symbols:image-outline", "2em"),
+  neonEffects: createIcon("octicon:light-bulb-24", "2em"),
+  neonLedKit: createIcon("tabler:bulb-filled", "2em"),
+  
 };

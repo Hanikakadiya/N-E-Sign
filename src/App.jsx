@@ -9,6 +9,7 @@ import InteriorSigns from "./Component/Services/signage/InteriorSigns/InteriorSi
 import Footer from "./Component/Footer";
 import Lenis from "lenis";
 import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/DigitalSignage";
+import LEDNeonSigns from "./Component/Services/signage/LED-neon/LED-NeonSigns";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -21,6 +22,8 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     // Initialize Lenis smooth scrolling
     const lenis = new Lenis({
@@ -75,6 +78,7 @@ export default function App() {
           path="/services/signage/interior-sign/:id"
           element={<InteriorSigns />}
         />
+        <Route path="/services/signage/neon-sign" element={<LEDNeonSigns />} />
       </Routes>
       <Footer />
     </>
