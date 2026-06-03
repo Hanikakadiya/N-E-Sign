@@ -10,7 +10,6 @@ import Footer from "./Component/Footer";
 import Lenis from "lenis";
 import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/DigitalSignage";
 import LEDNeonSigns from "./Component/Services/signage/LED-neon/LED-NeonSigns";
-import VehicleService from "./Component/Services/signage/VehicalGraphics/VehicleService";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -80,14 +79,6 @@ export default function App() {
           element={<InteriorSigns />}
         />
         <Route path="/services/signage/neon-sign" element={<LEDNeonSigns />} />
-        <Route
-          path="/services/signage/vehicle-graphics"
-          element={<VehicleService />}
-        />
-        <Route
-          path="/services/signage/vehicle-graphics/:subCategory"
-          element={<VehicleService />}
-        />
       </Routes>
 
       <Footer />

@@ -66,14 +66,13 @@ export const Icons = {
   RetailStore: createIcon("fa:shopping-cart", "1em"),
   CarWash: createIcon("fa:shower", "1em"),
 
-  // LED- Neon 
-  neonText: createIcon("material-symbols:format-color-text-rounded", "2em"),
-  neonColor: createIcon("material-symbols:format-paint-outline-rounded", "2em"),
-  neonFont: createIcon("material-symbols:font-download-outline-rounded", "2em"),
-  neonSize: createIcon("proicons:screen-size", "2em"),
-  neonBackboard: createIcon("material-symbols:layers-outline-rounded", "2em"),
-  neonBackground: createIcon("material-symbols:image-outline", "2em"),
-  neonEffects: createIcon("octicon:light-bulb-24", "2em"),
-  neonLedKit: createIcon("tabler:bulb-filled", "2em"),
-  
+  // LED- Neon
+  neonText: createIcon("material-symbols:format-color-text-rounded", "1em"),
+  neonColor: createIcon("material-symbols:format-paint-outline-rounded", "1em"),
+  neonFont: createIcon("material-symbols:font-download-outline-rounded", "1em"),
+  neonSize: createIcon("proicons:screen-size", "1em"),
+  neonBackboard: createIcon("material-symbols:layers-outline-rounded", "1em"),
+  neonBackground: createIcon("material-symbols:image-outline", "1em"),
+  neonEffects: createIcon("octicon:light-bulb-24", "1em"),
+  neonLedKit: createIcon("tabler:bulb-filled", "1em"),
 };

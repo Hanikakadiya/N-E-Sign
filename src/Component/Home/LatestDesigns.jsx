@@ -60,8 +60,8 @@ export default function LatestDesigns() {
               {/* Image Container */}
               <div
                 className={`relative overflow-hidden w-full ${
-                  index === 0 || index === 3 
-                    ? "aspect-[4/3] sm:aspect-[16/11]" 
+                  index === 0 || index === 3
+                    ? "aspect-[4/3] sm:aspect-[16/12]"
                     : "aspect-[4/5] sm:aspect-[16/14]"
                 }`}
               >

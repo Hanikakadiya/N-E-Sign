@@ -1,0 +1,127 @@
+[
+  {
+    "id": "1",
+    "title": "EDDM Service(Every door\ndirect mail)",
+    "description": "NE Signs makes Every Door Direct Mail (EDDM®) easy and affordable, giving small businesses the opportunity to connect with entire neighborhoods.",
+    "buttonText": "Get Service Now",
+    "image": "/Image/Services/DirectMail/DirectMail-PostONTable.png",
+    "color": "#0f62bb",
+    "detail": {
+      "image": "/Image/Services/DirectMail/DirectMail-PostONTable.png",
+      "heading": "EDDM is a powerful tool for wide-area neighbourhood coverage",
+      "subDescription": "We provide end-to-end direct mail solutions, ensuring seamless design, preparation, and mailing services.",
+      "features": [
+        "Affordable postage (varies by area)",
+        "No mailing list needed",
+        "Flexible campaign timing",
+        "Simple route targeting",
+        "Fast campaign launch",
+        "High-impact larger mailers",
+        "Easy postal setup",
+        "Wide local coverage",
+        "Hassle-free process",
+        "Budget-friendly option"
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "title": "Direct Mail",
+    "description": "NE Signs leverages a complete arsenal of direct mail solutions to effectively highlight your brand's products and services.",
+    "buttonText": "Get Service Now",
+    "image": "/Image/Services/DirectMail/DirectMail-PostInBox.png",
+    "color": "#e6af41",
+    "detail": {
+      "image": "/Image/Services/DirectMail/DirectMail-PostInBox.png",
+      "heading": "Precision-crafted direct mail campaigns for targeted results",
+      "subDescription": "From design to delivery, we handle every step to maximize your response rates and ROI.",
+      "features": [
+        "Targeted audience segmentation",
+        "Personalized messaging",
+        "High-quality printing",
+        "Custom design options",
+        "Trackable campaign metrics",
+        "Variable data printing",
+        "Cost-effective marketing",
+        "Full-service mailing",
+        "A/B testing capabilities",
+        "Improved conversion rates"
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "title": "Political Mail",
+    "description": "Connect with voters efficiently using our targeted political mailing services. Ensure your message reaches the right constituents at the right time.",
+    "buttonText": "Get Service Now",
+    "image": "/Image/Services/DirectMail/DirectMail-PostDilivered.png",
+    "color": "#df5551",
+    "detail": {
+      "image": "/Image/Services/DirectMail/DirectMail-PostDilivered.png",
+      "heading": "Effective political mailers to engage your constituents",
+      "subDescription": "Reach the right voters at the right time with our targeted political mailing services designed for maximum impact.",
+      "features": [
+        "Voter demographic targeting",
+        "Rapid turnaround times",
+        "Compliance with mailing regulations",
+        "High-visibility designs",
+        "Cost-effective mass mailing",
+        "Absentee ballot mailers",
+        "Fundraising campaign support",
+        "Issue-based messaging",
+        "Precise district targeting",
+        "Reliable delivery schedules"
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "title": "Customer and business\nmailing list",
+    "description": "Access high-quality, verified mailing lists to expand your reach. Target specific demographics and business sectors to optimize your direct mail ROI.",
+    "buttonText": "Get Service Now",
+    "image": "/Image/Services/DirectMail/DirectMail-BoxPicked.png",
+    "color": "#66a848",
+    "detail": {
+      "image": "/Image/Services/DirectMail/DirectMail-BoxPicked.png",
+      "heading": "Verified mailing lists to expand your business reach",
+      "subDescription": "Target specific demographics and business sectors to optimize your direct mail ROI with our high-quality data.",
+      "features": [
+        "B2B and B2C lists available",
+        "Geographic targeting",
+        "Demographic filtering",
+        "Regularly updated data",
+        "High deliverability rates",
+        "Custom list building",
+        "Competitor radius targeting",
+        "Income and age filtering",
+        "New homeowner lists",
+        "Data hygiene services"
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "title": "Variable Data",
+    "description": "Personalize every piece of mail with variable data printing. Increase engagement by dynamically changing text and graphics based on recipient data.",
+    "buttonText": "Get Service Now",
+    "image": "/Image/Services/DirectMail/DirectMail-Location.png",
+    "color": "#a1194e",
+    "detail": {
+      "image": "/Image/Services/DirectMail/DirectMail-Location.png",
+      "heading": "Hyper-personalized mailers using variable data printing",
+      "subDescription": "Increase engagement and response rates by dynamically changing text and graphics based on recipient data.",
+      "features": [
+        "Personalized recipient names",
+        "Dynamic image swapping",
+        "Customized offers",
+        "Location-based maps",
+        "PURL integration",
+        "Targeted messaging",
+        "Higher ROI than static mail",
+        "Seamless database integration",
+        "Full-color personalization",
+        "Automated triggered mailings"
+      ]
+    }
+  }
+]
