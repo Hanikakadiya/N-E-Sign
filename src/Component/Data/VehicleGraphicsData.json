@@ -138,44 +138,33 @@
       "themeColor": "#EAB308",
       "description": "Transform your vehicle into a mobile billboard with our custom graphics.",
       "modal": {
-        "image": "/Image/VehicleGraphics/Vehicle-Graphics-Lettering.png",
         "images": [
-          "/Image/VehicleGraphics/Vehicle-Graphics-Lettering.png",
-          "/Image/VehicleGraphics/Magnetic-Car-Signs.png",
-          "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=800&auto=format&fit=crop"
+          "/Image/VehicleGraphics/VehicleLettering/VehicleLettering-Automotive.png",
+          "/Image/VehicleGraphics/VehicleLettering/VehicleLettering-Visual.png",
+          "/Image/VehicleGraphics/VehicleLettering/VehicleLettering-Jacobs.png"
         ],
-        "tagline": "VEHICLE GRAPHICS & WRAPS",
-        "title": "Transform Your Vehicle Graphics & Lettering",
-        "description": "Our high-quality vehicle graphics & lettering ensure your brand gets noticed on the road. We use premium vinyl and vibrant inks to create long-lasting, eye-catching mobile advertising.",
+        "title": "Custom Vehicle Graphics & Lettering That Drive Results",
+        "description": "Adding custom graphics and lettering to your company vehicles is a smart way to showcase your brand clearly and effectively. Whether parked or on the move, branded cars, trucks, or trailers capture attention and help attract potential customers wherever they go.",
         "whiteCards": [
           {
-            "title": "How can I use Vehicle Lettering?",
+            "title": "Window Graphics",
             "icon": "Automotive",
             "imagePosition": "right",
-            "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=800&auto=format&fit=crop",
+            "image": "/Image/VehicleGraphics/VehicleLettering/VehicleLettering-WindowGriphics.png",
             "paragraphs": [
-              "Vehicle lettering is a clean, classic, and effective way to display your company name, logo, contact information, and services directly on your vehicle's body or windows.",
-              "Precision-cut vinyl lettering gives a professional, painted-on look that is highly durable and weather-resistant, ensuring your message stays crisp and readable for years."
+              "Window graphics are a smart way to achieve a full-wrap look for your vehicle without the cost of a complete car wrap. We offer a wide range of options, including transparent designs that allow natural light inside your vehicle. You can also choose one-way graphics that display your branding to the outside while maintaining visibility from inside, ensuring both impact and safety on the road.",
+              "These graphics are perfect for businesses looking to maximize brand visibility while maintaining a clean and professional appearance. Whether you want bold promotional designs or subtle branding, window graphics can be fully customized to match your style and message."
             ],
-            "note": "We use high-performance cast vinyl that conforms to the curves of your vehicle and resists fading."
+            "note": "Made from high-quality, weather-resistant materials, our window graphics are designed to withstand daily wear and outdoor conditions without fading or peeling"
           },
           {
-            "title": "What details should I include?",
+            "title": "Vinyl Graphics",
             "icon": "Grid",
             "imagePosition": "left",
-            "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=800&auto=format&fit=crop",
-            "intro": "Keep it simple and readable for maximum impact while driving.",
-            "bulletPoints": [
-              {
-                "title": "Essential Info:",
-                "text": "Company name, primary service, phone number, and website."
-              },
-              {
-                "title": "Strategic Placement:",
-                "text": "Doors, tailgates, and rear windows offer the best visibility."
-              }
-            ],
-            "footerText": "Our designers will help you choose the right fonts and colors for maximum readability from a distance."
+            "image": "/Image/VehicleGraphics/Fleet-Graphics/Fleet-Graphics-Concretech.png",
+            "intro": "Vinyl lettering, decals, and graphics are a proven way to promote your business and communicate important information with a clean, professional look. Our vehicle lettering solutions offer a versatile and budget-friendly way to showcase your brand and make a strong impression within your community.",
+            "paragraphs": [],
+            "footerText": "Ideal for both individual vehicles and entire fleets, vinyl lettering also helps meet safety and compliance needs by displaying vehicle numbers, DOT information, and company details clearly and effectively."
           }
         ],
         "ctaBanner": {

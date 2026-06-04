@@ -126,123 +126,125 @@ export default function VehicleService() {
 
         {/* Dynamic Content Sections */}
         {modal.whiteCards ? (
-          <div className="max-w-[1000px] mx-auto px-4 md:px-8 space-y-12 mb-20 relative z-10 mt-10">
-            {modal.whiteCards.map((card, idx) => {
-              const IconComponent = Icons[card.icon];
+          <>
+            <div className="max-w-[1000px] mx-auto px-4 md:px-8 space-y-12 relative z-10 mt-10">
+              {modal.whiteCards.map((card, idx) => {
+                const IconComponent = Icons[card.icon];
 
-              const isImageLeft = card.imagePosition === "left";
+                const isImageLeft = card.imagePosition === "left";
 
-              return (
-                <div
-                  key={idx}
-                  className="bg-white rounded-[32px] overflow-hidden flex flex-col md:flex-row shadow-2xl"
-                >
-                  {isImageLeft && (
-                    <div className="w-full md:w-[45%] min-h-[300px] order-2 md:order-1">
-                      <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-
+                return (
                   <div
-                    className={`w-full md:w-[55%] p-8 md:p-12 flex flex-col justify-center ${isImageLeft ? "order-1 md:order-2" : ""}`}
+                    key={idx}
+                    className="bg-white rounded-[32px] overflow-hidden flex flex-col md:flex-row shadow-2xl"
                   >
-                    <div className="flex items-center gap-4 mb-6">
-                      {card.icon === "Grid" ? (
-                        <div className="grid grid-cols-2 gap-[2px] text-[#EAB308]">
-                          <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
-                          <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
-                          <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
-                          <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
+                    {isImageLeft && (
+                      <div className="w-full md:w-[45%] min-h-[300px] order-2 md:order-1">
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+
+                    <div
+                      className={`w-full md:w-[55%] p-8 md:p-12 flex flex-col justify-center ${isImageLeft ? "order-1 md:order-2" : ""}`}
+                    >
+                      <div className="flex items-center gap-4 mb-6">
+                        {card.icon === "Grid" ? (
+                          <div className="grid grid-cols-2 gap-[2px] text-[#EAB308]">
+                            <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
+                            <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
+                            <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
+                            <div className="w-3 h-3 border-[2px] border-current rounded-[2px]"></div>
+                          </div>
+                        ) : IconComponent ? (
+                          <IconComponent className="w-8 h-8 text-[#EAB308]" />
+                        ) : null}
+                        <h2 className="text-2xl md:text-3xl font-extrabold text-[#111]">
+                          {card.title}
+                        </h2>
+                      </div>
+
+                      <div className="text-[#444] text-[14px] leading-relaxed space-y-5">
+                        {card.intro && <p>{card.intro}</p>}
+
+                        {card.paragraphs &&
+                          card.paragraphs.map((p, i) => (
+                            <p
+                              key={i}
+                              className={
+                                !card.intro && i === 0 ? "text-[#333]" : ""
+                              }
+                            >
+                              {p}
+                            </p>
+                          ))}
+
+                        {card.bulletPoints &&
+                          card.bulletPoints.map((bp, i) => (
+                            <p key={i}>
+                              <strong className="text-[#111] font-extrabold">
+                                {bp.title}
+                              </strong>{" "}
+                              {bp.text}
+                            </p>
+                          ))}
+
+                        {card.footerText && <p>{card.footerText}</p>}
+                      </div>
+
+                      {card.note && (
+                        <div className="mt-8 border-l-[3px] border-[#EAB308] pl-5 py-1">
+                          <p className="text-[#555] text-[13px] font-medium leading-relaxed">
+                            {card.note}
+                          </p>
                         </div>
-                      ) : IconComponent ? (
-                        <IconComponent className="w-8 h-8 text-[#EAB308]" />
-                      ) : null}
-                      <h2 className="text-2xl md:text-3xl font-extrabold text-[#111]">
-                        {card.title}
-                      </h2>
-                    </div>
-
-                    <div className="text-[#444] text-[14px] leading-relaxed space-y-5">
-                      {card.intro && (
-                        <p>{card.intro}</p>
                       )}
-
-                      {card.paragraphs &&
-                        card.paragraphs.map((p, i) => (
-                          <p
-                            key={i}
-                            className={
-                              !card.intro && i === 0 ? "text-[#333]" : ""
-                            }
-                          >
-                            {p}
-                          </p>
-                        ))}
-
-                      {card.bulletPoints &&
-                        card.bulletPoints.map((bp, i) => (
-                          <p key={i}>
-                            <strong className="text-[#111] font-extrabold">
-                              {bp.title}
-                            </strong>{" "}
-                            {bp.text}
-                          </p>
-                        ))}
-
-                      {card.footerText && <p>{card.footerText}</p>}
                     </div>
 
-                    {card.note && (
-                      <div className="mt-8 border-l-[3px] border-[#EAB308] pl-5 py-1">
-                        <p className="text-[#555] text-[13px] font-medium leading-relaxed">
-                          {card.note}
-                        </p>
+                    {!isImageLeft && (
+                      <div className="w-full md:w-[45%] min-h-[300px]">
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                     )}
                   </div>
-
-                  {!isImageLeft && (
-                    <div className="w-full md:w-[45%] min-h-[300px]">
-                      <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
 
             {/* CTA Section (White Card) */}
             {modal.ctaBanner && (
-              <div className="bg-white rounded-[24px] p-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center justify-between shadow-2xl gap-8 mt-12">
-                <div className="text-[#111] text-center md:text-left">
-                  <h3 className="text-xl md:text-2xl font-extrabold mb-2">
-                    {modal.ctaBanner.title}
-                  </h3>
-                  <p className="text-[#666] text-[13px] font-medium">
-                    {modal.ctaBanner.description}
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
-                  <span className="text-[#EAB308] font-extrabold text-[16px]">
-                    {modal.ctaBanner.phone}
-                  </span>
-                  <Link
-                    to="/contact-us"
-                    className="bg-[#EAB308] text-white font-bold py-3.5 px-8 rounded-full hover:bg-[#d9a007] transition-colors shadow-md text-[14px] whitespace-nowrap"
-                  >
-                    {modal.ctaBanner.buttonText}
-                  </Link>
+              <div className="max-w-[1500px] mx-auto px-4 md:px-8 relative z-10 mt-12 mb-20">
+                <div className="bg-white rounded-[24px] p-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center justify-between shadow-2xl gap-8">
+                  <div className="text-[#111] text-center md:text-left">
+                    <h3 className="text-xl md:text-2xl font-extrabold mb-2">
+                      {modal.ctaBanner.title}
+                    </h3>
+                    <p className="text-[#666] text-[13px] font-medium">
+                      {modal.ctaBanner.description}
+                    </p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
+                    <span className="text-[#EAB308] font-extrabold text-[16px]">
+                      {modal.ctaBanner.phone}
+                    </span>
+                    <Link
+                      to="/contact-us"
+                      className="bg-[#EAB308] text-white font-bold py-3.5 px-8 rounded-full hover:bg-[#d9a007] transition-colors shadow-md text-[14px] whitespace-nowrap"
+                    >
+                      {modal.ctaBanner.buttonText}
+                    </Link>
+                  </div>
                 </div>
               </div>
             )}
-          </div>
+          </>
         ) : (
           /* Fallback for other vehicle graphics subcategories */
           <div className="max-w-[1200px] mx-auto px-4 md:px-8 relative z-10 mt-10">
