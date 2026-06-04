@@ -11,6 +11,7 @@ import Lenis from "lenis";
 import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/DigitalSignage";
 import LEDNeonSigns from "./Component/Services/signage/LED-neon/LED-NeonSigns";
 import VehicleService from "./Component/Services/signage/VehicalGraphics/VehicleService";
+import DirectMail from "./Component/Services/DirectMail/DirectMail";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -87,6 +88,11 @@ export default function App() {
         <Route
           path="/services/signage/vehicle-graphics/:subCategory"
           element={<VehicleService />}
+        />
+        <Route path="/services/direct-mailing" element={<DirectMail />} />
+        <Route
+          path="/services/direct-mailing/:id"
+          element={<DirectMail />}
         />
       </Routes>
 

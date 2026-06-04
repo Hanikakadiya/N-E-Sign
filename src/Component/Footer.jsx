@@ -183,7 +183,8 @@ export default function Footer() {
               to="/services/signage/window-wall-graphics"
               className="text-[14px] hover:text-[var(--color-primary)] transition-colors leading-tight"
             >
-              Window & Wall <br className="hidden lg:block xl:hidden" /> Graphics
+              Window & Wall <br className="hidden lg:block xl:hidden" />{" "}
+              Graphics
             </Link>
             <Link
               to="/services/signage/vehicle-graphics"
@@ -201,7 +202,8 @@ export default function Footer() {
             <div className="flex items-start justify-center lg:justify-start gap-4">
               <Icons.Location className="w-5 h-5 mt-1 flex-shrink-0" />
               <span className="text-[14px] leading-relaxed uppercase">
-                2223 OGDEN AVE #B <br className="hidden lg:block xl:hidden" /> LISLE, IL 60515
+                2223 OGDEN AVE #B <br className="hidden lg:block xl:hidden" />{" "}
+                LISLE, IL 60515
               </span>
             </div>
             <div className="flex items-center justify-center lg:justify-start gap-4">
