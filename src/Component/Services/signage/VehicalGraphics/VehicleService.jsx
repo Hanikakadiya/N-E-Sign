@@ -102,7 +102,7 @@ export default function VehicleService() {
 
                 {/* Top Right Small Image */}
                 {orbitalImage1 && (
-                  <div className="relative lg:absolute lg:top-[14.6%] lg:right-[14.6%] w-full sm:w-1/2 lg:w-[150px] lg:h-[100px] xl:w-[200px] xl:h-[130px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
+                  <div className="relative lg:absolute lg:top-[14.6%] lg:right-[14.6%] w-full sm:w-1/2 lg:w-[150px] lg:h-[100px] xl:w-[350px] xl:h-[130px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
                     <img
                       src={orbitalImage1}
                       alt="Orbital 1"

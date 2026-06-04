@@ -12,6 +12,7 @@ import DigitalSignage from "./Component/Services/signage/Led-Digital-Board/Digit
 import LEDNeonSigns from "./Component/Services/signage/LED-neon/LED-NeonSigns";
 import VehicleService from "./Component/Services/signage/VehicalGraphics/VehicleService";
 import DirectMail from "./Component/Services/DirectMail/DirectMail";
+import Apparel from "./Component/Apparel/Apparel";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -55,6 +56,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/Apparel" element={<Apparel />} />
         <Route path="/services/signage" element={<Signage />} />
         <Route
           path="/services/signage/exterior-sign"
