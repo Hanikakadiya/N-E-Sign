@@ -36,7 +36,7 @@ export default function VehicleService() {
     const orbitalImage2 = modal.images?.[2];
 
     return (
-      <section className="min-h-screen font-poppins pb-20 pt-20 mt-12 bg-[#121212] text-white relative overflow-hidden">
+      <section className="min-h-screen font-poppins pb-20 pt-20 mt-12 relative overflow-hidden">
         {/* Subtle Glow Background */}
         <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#EAB308] opacity-[0.03] blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -50,9 +50,9 @@ export default function VehicleService() {
             <Icons.ArrowRight className="w-6 h-6 rotate-180" />
           </button>
 
-          <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20 mb-20">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-20">
             {/* Left Column: Text */}
-            <div className="w-full md:w-[50%] max-w-[747px]">
+            <div className="w-full lg:w-[50%] max-w-[747px]">
               {modal.tagline && (
                 <span className="text-[#EAB308] text-xs font-bold tracking-widest uppercase mb-4 block">
                   {modal.tagline}
@@ -77,20 +77,35 @@ export default function VehicleService() {
             </div>
 
             {/* Right Column: Orbital Layout */}
-            <div className="w-full md:w-[50%] relative flex justify-center items-center py-10 min-h-[500px]">
-              {/* The orbital circle */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] lg:w-[500px] lg:h-[500px] rounded-full border border-white z-0 hidden md:block">
+            <div className="w-full lg:w-[40%] relative flex flex-col justify-center items-center py-10 min-h-[350px] lg:min-h-[450px]">
+              {/* Main Image Card */}
+              <div className="relative lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-10 xl:-left-10 z-10 w-full max-w-[320px] h-auto lg:max-w-none lg:w-[320px] lg:h-[360px] xl:w-[350px] xl:h-[390px] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center p-6 mx-auto lg:mx-0">
+                <img
+                  src={mainImage}
+                  alt={modal.title}
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://placehold.co/600x400/eeeeee/999999?text=Vehicle+Image";
+                  }}
+                />
+              </div>
+
+              {/* The orbital circle / Mobile Grid Wrapper */}
+              <div className="w-full max-w-[500px] lg:max-w-none mt-8 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-[60%] xl:left-[55%] lg:-translate-x-1/2 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] lg:rounded-full lg:border lg:border-white z-0 flex flex-col sm:flex-row lg:block justify-center items-center gap-6">
                 {/* Top Yellow Dot */}
-                <div className="absolute top-0 left-1/2 w-7 h-7 rounded-full bg-[#EAB308] -translate-x-1/2 -translate-y-1/2 z-10 ring-8 ring-[#121212]"></div>
+                <div className="hidden lg:block absolute top-0 left-1/2 w-7 h-7 rounded-full bg-[#EAB308] -translate-x-1/2 -translate-y-1/2 z-10 ring-8 ring-[#121212]"></div>
 
                 {/* Bottom Yellow Dot */}
-                <div className="absolute bottom-0 left-1/2 w-7 h-7 rounded-full bg-[#EAB308] -translate-x-1/2 translate-y-1/2 z-10 ring-8 ring-[#121212]"></div>
+                <div className="hidden lg:block absolute bottom-0 left-1/2 w-7 h-7 rounded-full bg-[#EAB308] -translate-x-1/2 translate-y-1/2 z-10 ring-8 ring-[#121212]"></div>
 
                 {/* Top Right Small Image */}
                 {orbitalImage1 && (
-                  <div className="absolute top-[14.6%] right-[14.6%] w-[130px] h-[85px] lg:w-[250px] lg:h-[150px] rounded-2xl overflow-hidden shadow-2xl z-20 translate-x-1/2 -translate-y-1/2">
+                  <div className="relative lg:absolute lg:top-[14.6%] lg:right-[14.6%] w-full sm:w-1/2 lg:w-[150px] lg:h-[100px] xl:w-[200px] xl:h-[130px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
                     <img
                       src={orbitalImage1}
+                      alt="Orbital 1"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -98,27 +113,14 @@ export default function VehicleService() {
 
                 {/* Bottom Right Small Image */}
                 {orbitalImage2 && (
-                  <div className="absolute top-[80%] right-[14.6%] w-[130px] h-[85px] lg:w-[200px] lg:h-[250px] rounded-2xl overflow-hidden shadow-2xl z-20 translate-x-1/2 -translate-y-1/2">
+                  <div className="relative lg:absolute lg:top-[80%] lg:right-[14.6%] w-full sm:w-1/2 lg:w-[150px] lg:h-[180px] xl:w-[180px] xl:h-[220px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
                     <img
                       src={orbitalImage2}
+                      alt="Orbital 2"
                       className="w-full h-full object-cover"
                     />
                   </div>
                 )}
-              </div>
-
-              {/* Main Image Card */}
-              <div className="relative z-10 w-[280px] h-[320px] lg:w-[350px] lg:h-[390px] left-[-150px] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center p-6 bg-[#d9d9d9]">
-                <img
-                  src={mainImage}
-                  alt={modal.title}
-                  className="w-full h-auto object-contain drop-shadow-2xl scale-[1.15]"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src =
-                      "https://placehold.co/600x400/eeeeee/999999?text=Vehicle+Image";
-                  }}
-                />
               </div>
             </div>
           </div>

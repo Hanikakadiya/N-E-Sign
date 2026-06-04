@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         {/* Middle Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]">
           {/* Column 1: Let's Work Together */}
           <div className="md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0">
             <h2 className="text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">

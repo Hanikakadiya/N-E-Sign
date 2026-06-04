@@ -121,7 +121,9 @@
           "/Image/VehicleGraphics/Magnetic-Car-Signs/Magnetic-Car-Signs-03.png"
         ],
         "title": "Custom Boat Wraps & Graphics for Maximum Brand Visibility.",
-        "description": "Ideal for car, truck, or van doors—and even hoods—we create each magnet to fit your vehicle perfectly. From precise measurements to final installation, we handle the entire process to deliver a tailored solution for your needs. We also offer magnetic car-top signs, including illuminated options for maximum visibility day or night. Whatever your vehicle advertising goals, we’re here to create the right solution for you.",
+        "description": ["Vehicle magnets are a smart, flexible solution—perfect if you use your personal car for business. Easily transferable between vehicles, our custom magnets feature your branding and logo, offering a cost-effective way to promote your products or services locally.",
+          "Ideal for car, truck, or van doors—and even hoods—we create each magnet to fit your vehicle perfectly. From precise measurements to final installation, we handle the entire process to deliver a tailored solution for your needs. We also offer magnetic car-top signs, including illuminated options for maximum visibility day or night. Whatever your vehicle advertising goals, we’re here to create the right solution for you."
+      ],
         "whiteCards": [],
         "ctaBanner": {
           "title": "Ready to transform your fleet?",
