@@ -1,113 +1,7 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Icons } from "../../Icons/icons";
 import DirectMailData from "../../Data/DirectMailData.json";
-
-export function DirectMailDetail({ id }) {
-  const card = DirectMailData.find(
-    (c) => c.title.toLowerCase().replace(/[^a-z0-9]+/g, "-") === id,
-  );
-
-  return (
-    <div className="w-full min-h-screen font-poppins bg-[#0a0a0a]">
-      {/* Hero Section */}
-      <section className="relative w-full h-[400px] md:h-[450px] flex flex-col items-center justify-center bg-[#18140c] overflow-hidden pt-20">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-[#d99f2b]/10 blur-[120px] rounded-full pointer-events-none"></div>
-
-        <div className="relative z-10 flex flex-col items-center text-center px-4 mb-10">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-[54px] font-bold mb-8 font-poppins">
-            {card ? card.title.replace(/\n/g, " ") : "Direct Mail"}
-          </h1>
-          <div className="flex items-center gap-3 px-6 py-2 rounded-full border border-white/10 bg-black/40 backdrop-blur-md">
-            <Icons.Home className="w-4 h-4 text-white" />
-            <Link
-              to="/"
-              className="text-white text-[13px] hover:text-[var(--color-primary)] transition-colors font-medium"
-            >
-              Home
-            </Link>
-            <span className="text-white/30 text-[13px]">•</span>
-            <span className="text-[var(--color-gray)] text-[13px] font-medium tracking-wide">
-              Direct Mailing
-            </span>
-          </div>
-        </div>
-
-        <svg
-          viewBox="0 0 1440 320"
-          className="absolute bottom-[-1px] left-0 w-full h-[120px] md:h-[180px] lg:h-[220px]"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#0a0a0a"
-            fillOpacity="1"
-            d="M0,192L48,208C96,224,192,256,288,245.3C384,235,480,181,576,149.3C672,117,768,107,864,128C960,149,1056,203,1152,202.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
-      </section>
-
-      {/* Main Content Area */}
-      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 py-16 lg:py-24">
-        {card ? (
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
-            <div className="w-full lg:w-1/2 relative flex justify-center">
-              <div className="absolute -top-10 -left-6 lg:-left-12 z-10 text-[var(--color-primary)]">
-                <Icons.Star className="w-10 h-10 lg:w-12 lg:h-12 absolute top-0 left-8 lg:left-12 opacity-80" />
-                <Icons.Star className="w-6 h-6 lg:w-8 lg:h-8 absolute top-12 left-0 opacity-60" />
-              </div>
-              <div className="w-full max-w-[500px] h-[450px] sm:h-[550px] lg:h-[650px] rounded-tl-[64px] rounded-tr-[64px] rounded-bl-[24px] rounded-br-[24px] overflow-hidden relative z-0 border border-white/5">
-                <img
-                  src={card.detail?.image || card.image}
-                  alt={card.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-8 -left-8 lg:-left-12 z-[-1] w-32 h-32 lg:w-40 lg:h-40 bg-[var(--color-primary)] rounded-full blur-3xl opacity-20"></div>
-            </div>
-
-            <div className="w-full lg:w-1/2 flex flex-col pt-4 lg:pt-16">
-              <h2 className="text-[32px] md:text-4xl lg:text-[42px] font-bold leading-[1.2] mb-6 text-white font-poppins">
-                {card.detail?.heading || card.title}
-              </h2>
-              <p className="text-[16px] md:text-[18px] text-white/90 leading-relaxed mb-10 font-normal">
-                {card.detail?.subDescription || card.description}
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
-                {card.detail?.features?.map((feature, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="mt-1 flex-shrink-0 w-[18px] h-[18px] rounded-full border border-[var(--color-primary)] flex items-center justify-center">
-                      <Icons.Check className="w-3 h-3 text-[var(--color-primary)]" />
-                    </div>
-                    <span className="text-[15px] lg:text-[16px] text-white font-medium leading-snug">
-                      {feature}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-16 lg:mt-20">
-                <Link
-                  to="/services/direct-mailing"
-                  className="flex items-center gap-2 text-[var(--color-gray)] hover:text-[var(--color-primary)] transition-colors w-fit"
-                >
-                  <Icons.ArrowRight className="w-5 h-5 rotate-180" />
-                  <span className="font-semibold tracking-wide text-sm">
-                    Return to Direct Mailing Services
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="text-center text-[var(--color-gray)] text-xl italic py-20">
-            Service details not found.
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
 
 const DIRECT_MAIL_DATA = [
   {
@@ -158,11 +52,6 @@ const DIRECT_MAIL_DATA = [
 ];
 
 export default function DirectMail() {
-  const { id } = useParams();
-
-  if (id) {
-    return <DirectMailDetail id={id} />;
-  }
 
   const cards = DirectMailData || DIRECT_MAIL_DATA;
 
@@ -227,7 +116,7 @@ export default function DirectMail() {
                     group-hover:opacity-100
                 "
               >
-                <p className="text-[14px] text-white mb-4">
+                <p className="text-[14px] mb-4">
                   {card.description}
                 </p>
 
@@ -235,7 +124,7 @@ export default function DirectMail() {
                   to={`/services/direct-mailing/${card.title
                     .toLowerCase()
                     .replace(/[^a-z0-9]+/g, "-")}`}
-                  className="bg-black text-white px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 w-max"
+                  className="bg-black px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 w-max"
                 >
                   {card.buttonText}
                   <Icons.ArrowRight className="w-4 h-4" />

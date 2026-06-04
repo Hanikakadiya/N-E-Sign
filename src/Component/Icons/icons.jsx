@@ -9,6 +9,7 @@ const createIcon = (iconName, defaultWidth = "1.5em") => {
 export const Icons = {
   // Navigation & UI
   Home: createIcon("ph:house"),
+  fullhome: createIcon("material-symbols:home"),
   Search: createIcon("ph:magnifying-glass"),
   Profile: createIcon("iconamoon:profile-thin"),
   Menu: createIcon("heroicons:bars-3"),

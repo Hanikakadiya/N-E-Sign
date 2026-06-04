@@ -2,11 +2,13 @@
   {
     "id": "1",
     "title": "EDDM Service(Every door\ndirect mail)",
-    "description": "NE Signs makes Every Door Direct Mail (EDDM®) easy and affordable, giving small businesses the opportunity to connect with entire neighborhoods.",
+    "description": "NE Signs makes Every Door Direct Mail (EDDM\u00ae) easy and affordable, giving small businesses the opportunity to connect with entire neighborhoods.",
     "buttonText": "Get Service Now",
     "image": "/Image/Services/DirectMail/DirectMail-PostONTable.png",
     "color": "#0f62bb",
-    "detail": {
+    "pageType": "EDDM",
+    "heroHeading": "Every Door Direct Mail (EDDM)",
+    "featureLeft": {
       "image": "/Image/Services/DirectMail/DirectMail-PostONTable.png",
       "heading": "EDDM is a powerful tool for wide-area neighbourhood coverage",
       "subDescription": "We provide end-to-end direct mail solutions, ensuring seamless design, preparation, and mailing services.",
@@ -31,23 +33,130 @@
     "buttonText": "Get Service Now",
     "image": "/Image/Services/DirectMail/DirectMail-PostInBox.png",
     "color": "#e6af41",
-    "detail": {
+    "pageType": "DirectMail",
+    "heroHeading": "Comprehensive Direct Mail Solutions",
+    "featureRight": {
       "image": "/Image/Services/DirectMail/DirectMail-PostInBox.png",
-      "heading": "Precision-crafted direct mail campaigns for targeted results",
-      "subDescription": "From design to delivery, we handle every step to maximize your response rates and ROI.",
+      "heading": "Our Direct Mail Services",
+      "subDescription": "We partner with you to maximize the impact of your campaigns.",
       "features": [
-        "Targeted audience segmentation",
-        "Personalized messaging",
-        "High-quality printing",
-        "Custom design options",
-        "Trackable campaign metrics",
-        "Variable data printing",
-        "Cost-effective marketing",
-        "Full-service mailing",
-        "A/B testing capabilities",
-        "Improved conversion rates"
+        "Address verification (CASS) and duplicate removal",
+        "Intelligent Mail barcoding and NCOA processing",
+        "Direct mailing lists tailored to highly targeted demographics",
+        "Variable data printing (VDP) to personalize each mailpiece",
+        "Match addressing and inserting for complex mailings",
+        "Folding, inserting, sealing, and postal prep",
+        "Automated PDF digital proofing",
+        "Campaign tracking and reporting"
       ]
-    }
+    },
+    "benefitsLeft": {
+      "imageTop": "/Image/Services/DirectMail/Target-1.jpg",
+      "imageBottom": "/Image/Services/DirectMail/Target-2.jpg",
+      "heading": "How Targeted Mailing Lists Can Benefit Your Business",
+      "subDescription": "With targeted direct mailing lists, you reach local customers precisely.",
+      "features": [
+        {
+          "title": "Industry Segments",
+          "desc": "Specific vertical markets you want to target."
+        },
+        {
+          "title": "Company Details",
+          "desc": "Size, location, sales volume, etc."
+        },
+        {
+          "title": "Contact Titles",
+          "desc": "CEOs, Marketing Directors, HR, etc."
+        }
+      ]
+    },
+    "categories": [
+      {
+        "title": "Demographic",
+        "icon": "Users",
+        "desc": "Target by age, income, education"
+      },
+      {
+        "title": "Financial",
+        "icon": "ChartLineUp",
+        "desc": "Target by income and credit levels"
+      },
+      {
+        "title": "Homeowners",
+        "icon": "HouseLine",
+        "desc": "Target by property details"
+      },
+      {
+        "title": "Lifestyle",
+        "icon": "Heart",
+        "desc": "Target by hobbies and interests"
+      },
+      {
+        "title": "Business",
+        "icon": "Briefcase",
+        "desc": "Target by B2B metrics"
+      }
+    ],
+    "solutionsGrid": [
+      {
+        "title": "PREMIUM MAILING LISTS",
+        "desc": "Access high-quality mailing lists to target your ideal audience.",
+        "icon": "ListBullets"
+      },
+      {
+        "title": "CREATIVE DESIGN",
+        "desc": "Eye-catching graphic design for your mailers.",
+        "icon": "PenNib"
+      },
+      {
+        "title": "QUALITY PRINTING",
+        "desc": "State-of-the-art printing facilities for vibrant results.",
+        "icon": "Printer"
+      },
+      {
+        "title": "MAILING SERVICES",
+        "desc": "Complete sorting, prep, and USPS delivery.",
+        "icon": "Envelope"
+      }
+    ],
+    "verticalTimeline": [
+      {
+        "step": "1",
+        "title": "UNPARALLELED TARGETING",
+        "desc": "Pinpoint your perfect audience using advanced demographics.",
+        "align": "left"
+      },
+      {
+        "step": "2",
+        "title": "CUSTOM SOLUTIONS",
+        "desc": "Tailor your message with variable data printing.",
+        "align": "right"
+      },
+      {
+        "step": "3",
+        "title": "SUPERIOR ENGAGEMENT",
+        "desc": "Drive action with personalized, high-quality mailers.",
+        "align": "left"
+      },
+      {
+        "step": "4",
+        "title": "QUALITY CUSTOMER SERVICE",
+        "desc": "Dedicated support throughout your campaign.",
+        "align": "right"
+      },
+      {
+        "step": "5",
+        "title": "ACCURACY GUARANTEE",
+        "desc": "Rigorous data cleansing for maximum deliverability.",
+        "align": "left"
+      },
+      {
+        "step": "6",
+        "title": "EXCEPTIONAL RESPONSE RATES",
+        "desc": "Achieve higher ROI with targeted direct mail.",
+        "align": "right"
+      }
+    ]
   },
   {
     "id": "3",
@@ -56,23 +165,130 @@
     "buttonText": "Get Service Now",
     "image": "/Image/Services/DirectMail/DirectMail-PostDilivered.png",
     "color": "#df5551",
-    "detail": {
+    "pageType": "PoliticalMail",
+    "heroHeading": "Political Campaign Direct Mailing Services",
+    "featureLeft": {
       "image": "/Image/Services/DirectMail/DirectMail-PostDilivered.png",
-      "heading": "Effective political mailers to engage your constituents",
-      "subDescription": "Reach the right voters at the right time with our targeted political mailing services designed for maximum impact.",
+      "heading": "Political Campaign Direct Mailing Services",
+      "subDescription": "We handle everything from candidate literature to absentee ballot mailers, ensuring your campaign is delivered to specific voter targets on time and within budget.",
+      "features": []
+    },
+    "horizontalTimeline": [
+      {
+        "step": "1",
+        "title": "Targeted Voter Outreach",
+        "desc": "We help you identify and reach your most crucial voter demographics with precision targeted mailing lists."
+      },
+      {
+        "step": "2",
+        "title": "Compelling Messaging",
+        "desc": "Our creative team designs impactful mailers that resonate with voters and clearly convey your platform."
+      },
+      {
+        "step": "3",
+        "title": "Strategic Deployment",
+        "desc": "We time your mailings perfectly to maximize visibility and influence right before critical voting periods."
+      },
+      {
+        "step": "4",
+        "title": "Campaign Victory",
+        "desc": "Watch your targeted efforts translate into increased voter turnout and electoral success."
+      }
+    ],
+    "benefitsGrid": [
+      {
+        "title": "Unlock Voter Knowledge",
+        "desc": "Leverage data to understand your constituents better.",
+        "icon": "Target",
+        "color": "#df5551"
+      },
+      {
+        "title": "Rally the Base Early",
+        "desc": "Mobilize your core supporters effectively.",
+        "icon": "Megaphone",
+        "color": "#0f62bb"
+      },
+      {
+        "title": "Target Specific Voters",
+        "desc": "Deliver personalized messages to distinct demographics.",
+        "icon": "Users",
+        "color": "#df5551"
+      },
+      {
+        "title": "Build Real Trust",
+        "desc": "Physical mail demonstrates commitment and legitimacy.",
+        "icon": "ShieldCheck",
+        "color": "#0f62bb"
+      },
+      {
+        "title": "Low-Budget Friendly",
+        "desc": "Cost-effective outreach compared to broadcast media.",
+        "icon": "CurrencyDollar",
+        "color": "#66a848"
+      },
+      {
+        "title": "Is Your Campaign Ready to Win?",
+        "desc": "Start your targeted direct mail campaign today.",
+        "button": "Start Now",
+        "color": "#111111"
+      }
+    ],
+    "featureRight": {
+      "image": "/Image/Services/DirectMail/laptop-network.jpg",
+      "heading": "Why Choose NE Signs For Your Political Campaign?",
+      "subDescription": "Backed by decades of industry expertise, NE Signs delivers cost-effective direct mail campaigns designed to drive your political message.",
       "features": [
-        "Voter demographic targeting",
-        "Rapid turnaround times",
-        "Compliance with mailing regulations",
-        "High-visibility designs",
-        "Cost-effective mass mailing",
-        "Absentee ballot mailers",
-        "Fundraising campaign support",
-        "Issue-based messaging",
-        "Precise district targeting",
-        "Reliable delivery schedules"
+        "Voter data analysis and strategy",
+        "In-house design and copywriting",
+        "High-capacity printing",
+        "Secure postal processing",
+        "Targeted distribution",
+        "Fast turnaround times",
+        "Direct-to-door delivery"
       ]
-    }
+    },
+    "stackedFeatureLeft": {
+      "imageTop": "/Image/Services/DirectMail/political-1.jpg",
+      "imageBottom": "/Image/Services/DirectMail/political-2.jpg",
+      "heading": "With NE Signs, every detail of your political direct mail campaign is managed seamlessly, from print to mailbox.",
+      "subDescription": "As a political candidate, your campaign needs a reliable partner who understands the fast-paced nature of elections. We offer complete solutions tailored to political needs.",
+      "features": [
+        {
+          "title": "Extensive Campaign Resources",
+          "desc": "Access our vast library of political templates and design assets."
+        },
+        {
+          "title": "Fast and Budget-Friendly",
+          "desc": "We optimize every step to save you time and money without compromising quality."
+        },
+        {
+          "title": "Unmatched Reach and Precision",
+          "desc": "Leverage our advanced targeting to ensure your message hits the right households."
+        }
+      ]
+    },
+    "parties": [
+      {
+        "title": "Republican",
+        "desc": "Targeted messaging for conservative platforms.",
+        "color": "#df5551"
+      },
+      {
+        "title": "Democratic",
+        "desc": "Targeted messaging for progressive platforms.",
+        "color": "#0f62bb"
+      },
+      {
+        "title": "Independent",
+        "desc": "Reach swing voters with tailored mailers.",
+        "color": "#8b5cf6"
+      },
+      {
+        "title": "Unified Trust",
+        "desc": "Non-partisan mailers for local elections.",
+        "color": "#10b981"
+      }
+    ]
   },
   {
     "id": "4",
@@ -81,23 +297,120 @@
     "buttonText": "Get Service Now",
     "image": "/Image/Services/DirectMail/DirectMail-BoxPicked.png",
     "color": "#66a848",
-    "detail": {
+    "pageType": "CustomerAndBusiness",
+    "heroHeading": "Targeted Mailing Lists (Consumer & B2B)",
+    "featureLeft": {
       "image": "/Image/Services/DirectMail/DirectMail-BoxPicked.png",
-      "heading": "Verified mailing lists to expand your business reach",
-      "subDescription": "Target specific demographics and business sectors to optimize your direct mail ROI with our high-quality data.",
+      "heading": "Targeted Mailing Lists (Consumer & B2B)",
+      "subDescription": "Reach the right audience with our highly targeted mailing lists. B2B or consumer, we provide customized lists based on demographics, firmographics, and behavior.",
       "features": [
-        "B2B and B2C lists available",
-        "Geographic targeting",
-        "Demographic filtering",
-        "Regularly updated data",
-        "High deliverability rates",
-        "Custom list building",
-        "Competitor radius targeting",
-        "Income and age filtering",
-        "New homeowner lists",
-        "Data hygiene services"
+        "Accurate Demographic Targeting",
+        "B2B and Consumer Lists",
+        "Geographic Targeting",
+        "High Deliverability Rates",
+        "NCOA Checked Data",
+        "Custom List Compilation"
       ]
-    }
+    },
+    "reachAudience": {
+      "heading": "Reach Your Ideal Audience",
+      "subDescription": "Enhance your ROI by mailing exclusively to potential customers most likely to buy.",
+      "tabs": [
+        {
+          "title": "Local Geographics",
+          "desc": "Target by zip code, city, or custom radius"
+        },
+        {
+          "title": "Specific Demographics",
+          "desc": "Target by age, income, homeowners, etc."
+        }
+      ],
+      "comparison": {
+        "left": {
+          "title": "Every Door Direct Mail",
+          "desc": "Reach every mailbox in a chosen neighborhood without a mailing list.",
+          "features": [
+            "Lowest Postage Rate: Most affordable postage",
+            "Broad Reach: Hit every home on a carrier route",
+            "Easy Process: No names or addresses needed"
+          ]
+        },
+        "right": {
+          "title": "Targeted Mailing Lists",
+          "desc": "Mail only to specific demographics that match your ideal customer profile.",
+          "features": [
+            "Precise Delivery: Only mail to selected targets",
+            "Higher ROI: Don't waste money on uninterested parties",
+            "Personalization: Use names to increase response rates"
+          ]
+        }
+      }
+    },
+    "geographicGrid": [
+      {
+        "title": "ZIP Codes & Routes",
+        "desc": "Select specific postal routes or entire zip codes to saturate a local market."
+      },
+      {
+        "title": "City, County & State",
+        "desc": "Broaden your reach to entire municipalities or regions for wider brand awareness."
+      },
+      {
+        "title": "Custom Radius",
+        "desc": "Draw a circle around your business location and target everyone within that specific distance."
+      }
+    ],
+    "benefitsLeft": {
+      "image": "/Image/Services/DirectMail/trust-loyalty.jpg",
+      "heading": "Benefits of Using Targeted Direct Mailing Lists",
+      "subDescription": "The right audience list is the foundation of any successful direct mail campaign. Don't waste money mailing to the wrong people.",
+      "features": [
+        "Higher Response Rates",
+        "Cost-Effective Marketing",
+        "Personalized Messaging",
+        "Measurable Results",
+        "Increased Brand Awareness",
+        "Targeted Promotions"
+      ]
+    },
+    "stackedFeatureLeft": {
+      "imageTop": "/Image/Services/DirectMail/business-1.jpg",
+      "imageBottom": "/Image/Services/DirectMail/business-2.jpg",
+      "heading": "Ways to Win Back Previous Clients",
+      "subDescription": "Direct mail is incredibly effective for re-engaging lapsed customers. A personalized 'We Miss You' mailer can bring them back.",
+      "features": [
+        {
+          "title": "Targeted Offers",
+          "desc": "Send exclusive discounts to customers who haven't purchased in 6 months."
+        },
+        {
+          "title": "Personalized Mail",
+          "desc": "Use variable data to address them by name and reference past purchases."
+        },
+        {
+          "title": "Update on Changes",
+          "desc": "Let them know about new products, services, or management changes."
+        }
+      ]
+    },
+    "includedGrid": [
+      {
+        "title": "Verified Data",
+        "desc": "Our lists are constantly updated and verified for accuracy."
+      },
+      {
+        "title": "NCOA Processing",
+        "desc": "We check every address against the National Change of Address database."
+      },
+      {
+        "title": "CASS Certification",
+        "desc": "Addresses are standardized to USPS formatting for the lowest postage rates."
+      },
+      {
+        "title": "Duplicate Removal",
+        "desc": "We merge and purge your lists to ensure you never pay for duplicate mailings."
+      }
+    ]
   },
   {
     "id": "5",
@@ -106,21 +419,39 @@
     "buttonText": "Get Service Now",
     "image": "/Image/Services/DirectMail/DirectMail-Location.png",
     "color": "#a1194e",
-    "detail": {
-      "image": "/Image/Services/DirectMail/DirectMail-Location.png",
-      "heading": "Hyper-personalized mailers using variable data printing",
-      "subDescription": "Increase engagement and response rates by dynamically changing text and graphics based on recipient data.",
+    "pageType": "VariableData",
+    "heroHeading": "Variable Data Printing Services",
+    "featureLeft": {
+      "image": "/Image/Services/DirectMail/variable-1.jpg",
+      "heading": "Variable data makes printing personal",
+      "subDescription": "Variable data printing (VDP) allows you to customize each individual printed piece in a direct mail campaign based on data you have about the recipient. By tailoring graphics and text to specific individuals, you can significantly boost response rates.",
+      "features": []
+    },
+    "featureRight": {
+      "image": "/Image/Services/DirectMail/variable-2.jpg",
+      "heading": "Boost business growth with customized print marketing",
+      "subDescription": "Direct mail statistics consistently show that personalized mail performs significantly better than generic mailings. Speak directly to your customer's unique needs.",
       "features": [
-        "Personalized recipient names",
-        "Dynamic image swapping",
-        "Customized offers",
-        "Location-based maps",
-        "PURL integration",
-        "Targeted messaging",
-        "Higher ROI than static mail",
-        "Seamless database integration",
-        "Full-color personalization",
-        "Automated triggered mailings"
+        "Higher return on investment (ROI)",
+        "Builds stronger customer loyalty",
+        "Increases response rates by up to 30%",
+        "Allows for highly targeted promotions",
+        "Creates a unique, premium feel",
+        "Tracks campaign success accurately"
+      ]
+    },
+    "howItWorks": {
+      "heading": "How does variable data printing work?",
+      "subDescription": "We merge your customer database with our high-speed digital printing presses to produce thousands of unique, personalized pieces seamlessly.",
+      "imageTop": "/Image/Services/DirectMail/variable-3.jpg",
+      "imageBottom": "/Image/Services/DirectMail/variable-4.jpg",
+      "features": [
+        "Data collection (Names, past purchases, demographics)",
+        "Database cleaning and preparation",
+        "Template design with variable fields",
+        "Dynamic content mapping",
+        "High-speed digital printing",
+        "Automated sorting and mailing"
       ]
     }
   }

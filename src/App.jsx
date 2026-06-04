@@ -13,6 +13,11 @@ import LEDNeonSigns from "./Component/Services/signage/LED-neon/LED-NeonSigns";
 import VehicleService from "./Component/Services/signage/VehicalGraphics/VehicleService";
 import DirectMail from "./Component/Services/DirectMail/DirectMail";
 import Apparel from "./Component/Apparel/Apparel";
+import EDDMServicesCard from "./Component/Services/DirectMail/EDDMServicesCard";
+import DirectMailCard from "./Component/Services/DirectMail/DirectMailCard";
+import PoliticalMail from "./Component/Services/DirectMail/PoliticalMail";
+import CustomerAndBusinessMailCard from "./Component/Services/DirectMail/CustomerAndBusinessMailCard";
+import VariableDataCard from "./Component/Services/DirectMail/VariableDataCard";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -92,10 +97,11 @@ export default function App() {
           element={<VehicleService />}
         />
         <Route path="/services/direct-mailing" element={<DirectMail />} />
-        <Route
-          path="/services/direct-mailing/:id"
-          element={<DirectMail />}
-        />
+        <Route path="/services/direct-mailing/eddm-service-every-door-direct-mail-" element={<EDDMServicesCard />} />
+        <Route path="/services/direct-mailing/direct-mail" element={<DirectMailCard />} />
+        <Route path="/services/direct-mailing/political-mail" element={<PoliticalMail />} />
+        <Route path="/services/direct-mailing/customer-and-business-mailing-list" element={<CustomerAndBusinessMailCard />} />
+        <Route path="/services/direct-mailing/variable-data" element={<VariableDataCard />} />
       </Routes>
 
       <Footer />
