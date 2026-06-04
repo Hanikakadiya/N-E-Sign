@@ -719,13 +719,13 @@
           "mainTitle": "Professional Signage for Seamless Navigation",
           "description": "Designed for clarity, durability, and easy visibility in any environment.",
           "images": [
-            "/Image/InteriorSigns/wayfinding/1.jpg",
-            "/Image/InteriorSigns/wayfinding/2.jpg",
+            "/Image/InteriorSigns/WayFinding/WayFinding-Entrance.png",
+            "/Image/InteriorSigns/WayFinding/WayFinding-arrowGreenUp-Left.png",
             "/Image/FreestandingSigns/WayfindingSigns/WayfindingSigns-Toilets.png",
-            "/Image/InteriorSigns/wayfinding/4.jpg",
+            "/Image/InteriorSigns/WayFinding/WayFinding-StafCarParking.png",
             "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-WoodsAndHiking.png",
             "/Image/FreestandingSigns/ParkingSigns/ParkingSigns-ParkingExit.png",
-            "/Image/InteriorSigns/wayfinding/7.jpg"
+            "/Image/InteriorSigns/WayFinding/WayFinding-ClubHouse.png"
           ]
         }
       ],
@@ -735,13 +735,13 @@
           "mainTitle": "Custom Trade Show Signage That Stands Out",
           "description": "From banners to booth backdrops, we create impactful signage that elevates your presence.",
           "images": [
-            "/Image/InteriorSigns/trade-show/1.jpg",
-            "/Image/InteriorSigns/trade-show/2.jpg",
-            "/Image/InteriorSigns/trade-show/3.jpg",
-            "/Image/InteriorSigns/trade-show/4.jpg",
-            "/Image/InteriorSigns/trade-show/5.jpg",
-            "/Image/InteriorSigns/trade-show/6.jpg",
-            "/Image/InteriorSigns/trade-show/7.jpg"
+            "/Image/InteriorSigns/TradeShow/TradeShow-Vohcom.png",
+            "/Image/InteriorSigns/TradeShow/TradeShow-Privo.png",
+            "/Image/InteriorSigns/TradeShow/TradeShow-BoothMockUp.png",
+            "/Image/InteriorSigns/TradeShow/TradeShow-TheBrand.png",
+            "/Image/InteriorSigns/TradeShow/TradeShow-Studiolution.png",
+            "/Image/InteriorSigns/TradeShow/TrandShow-MotionIo.png",
+            "/Image/InteriorSigns/TradeShow/TradeShow-OtherServices.png"
           ]
         }
       ],
