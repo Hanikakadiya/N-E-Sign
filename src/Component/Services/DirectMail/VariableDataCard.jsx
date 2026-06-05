@@ -22,6 +22,12 @@ export default function VariableDataCard() {
           description={data.featureLeft.subDescription}
           listItems={data.featureLeft.features}
           benefitsData={data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft}
+
+          secondaryImagePosition="right"
+          secondaryImage={data.featureRight?.image}
+          secondaryHeading={data.featureRight?.heading}
+          secondaryDescription={data.featureRight?.subDescription}
+          secondaryListItems={data.featureRight?.features}
         />
       )}
     </>

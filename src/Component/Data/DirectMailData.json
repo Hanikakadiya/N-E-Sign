@@ -452,30 +452,32 @@
       "features": []
     },
     "featureRight": {
-      "image": "/Image/Services/DirectMail/variable-2.jpg",
-      "heading": "Boost business growth with customized print marketing",
-      "subDescription": "Direct mail statistics consistently show that personalized mail performs significantly better than generic mailings. Speak directly to your customer's unique needs.",
+      "image": "/Image/Services/DirectMail/VariableData/DirectMail-VariableData-RightImage.png",
+      "heading": "Boost business growth with customized print marketingBoost business growth with customized print marketing",
+      "subDescription": "Direct mail, invitations, flyers, and event promotions become far more effective with variable data printing. By customizing text, images, and colors within the same print run, you create a personalized experience for each customer—strengthening your message and driving more business.",
       "features": [
-        "Higher return on investment (ROI)",
-        "Builds stronger customer loyalty",
-        "Increases response rates by up to 30%",
-        "Allows for highly targeted promotions",
-        "Creates a unique, premium feel",
-        "Tracks campaign success accurately"
+        "Right list + smart design = better results",
+        "High-quality marketing materials",
+        "Expert support from NE Signs",
+        "Stronger response with personalized printing",
+        "End-to-end guidance, planning to print",
+        "Creative, strategic design approach"
       ]
     },
     "howItWorks": {
       "heading": "How does variable data printing work?",
-      "subDescription": "We merge your customer database with our high-speed digital printing presses to produce thousands of unique, personalized pieces seamlessly.",
+      "subDescription": "Reconnect with past clients by understanding their needs, offering personalized outreach, exclusive deals, and improved services. Consistent follow-ups and strong customer support help rebuild trust and long-term relationships.",
       "imageTop": "/Image/Services/DirectMail/variable-3.jpg",
       "imageBottom": "/Image/Services/DirectMail/variable-4.jpg",
       "features": [
-        "Data collection (Names, past purchases, demographics)",
-        "Database cleaning and preparation",
-        "Template design with variable fields",
-        "Dynamic content mapping",
-        "High-speed digital printing",
-        "Automated sorting and mailing"
+        "Data from mailing lists connects to layout fields",
+        "Personalized text and images for each customer",
+        "Each piece is printed uniquely per record",
+        "Custom colors, offers, or promotions per recipient",
+        "Higher engagement through targeted messaging",
+        "Reduces waste compared to generic campaigns",
+        "Improves response rates with tailored content",
+        "Flexible for postcards, flyers, brochures, and mailers"
       ]
     }
   }
