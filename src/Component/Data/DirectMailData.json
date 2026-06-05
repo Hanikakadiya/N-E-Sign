@@ -9,7 +9,7 @@
     "pageType": "EDDM",
     "heroHeading": "Every Door Direct Mail (EDDM)",
     "featureLeft": {
-      "image": "/Image/Services/DirectMail/DirectMail-PostONTable.png",
+      "image": "/Image/Services/DirectMail/EDDM/DirectMail-EDDM.png",
       "heading": "EDDM is a powerful tool for wide-area neighbourhood coverage",
       "subDescription": "We provide end-to-end direct mail solutions, ensuring seamless design, preparation, and mailing services.",
       "features": [
@@ -24,6 +24,19 @@
         "Hassle-free process",
         "Budget-friendly option"
       ]
+    },
+    "featureRight": {
+      "image": "/Image/Services/DirectMail/EDDM/DirectMail-EDDM-RightImage.png",
+      "heading": "What is EDDM Actually?",
+      "subDescription": "Through strategic loyalty and re-activation efforts, we keep your brand top-of-mind and ready to serve when clients need you most.",
+      "features": [
+        "Customer rewards and incentive initiatives",
+        "Company updates and informational bulletins",
+        "Branded giveaways for contests and special events",
+        "Strategic email outreach campaigns",
+        "Targeted direct mail campaigns",
+        "Direct postal marketing solutions"
+      ]
     }
   },
   {
@@ -36,37 +49,48 @@
     "pageType": "DirectMail",
     "heroHeading": "Comprehensive Direct Mail Solutions",
     "featureRight": {
-      "image": "/Image/Services/DirectMail/DirectMail-PostInBox.png",
-      "heading": "Our Direct Mail Services",
-      "subDescription": "We partner with you to maximize the impact of your campaigns.",
+      "image": "/Image/Services/DirectMail/Directmailcard/DirectMail-DirectMailCardBi-Fold.png",
+      "heading": "Direct Mailing Lists Service",
+      "subDescription": "Graphics Universal supports client-partners with end-to-end direct mailing list services, such as:",
       "features": [
-        "Address verification (CASS) and duplicate removal",
-        "Intelligent Mail barcoding and NCOA processing",
-        "Direct mailing lists tailored to highly targeted demographics",
-        "Variable data printing (VDP) to personalize each mailpiece",
-        "Match addressing and inserting for complex mailings",
-        "Folding, inserting, sealing, and postal prep",
-        "Automated PDF digital proofing",
-        "Campaign tracking and reporting"
+        "Address verification and CASS certification to ensure mailing accuracy and postal compliance.",
+        "Intelligent barcoding and IMb integration for improved tracking and delivery efficiency.",
+        "Data cleansing, deduplication, and segmentation for highly targeted campaigns.",
+        "Variable data printing (VDP) to personalize each mail piece for better response rates.",
+        "Inkjet addressing and tabbing for streamlined mail processing.",
+        "Folding, inserting, sealing, and kitting services for complete mail assembly.",
+        "Automated list hygiene services to reduce undeliverable and returned mail.",
+        "Geo-targeting and demographic filtering to reach your ideal audience.",
+        "Campaign tracking and reporting to measure performance and ROI.",
+        "Warehousing, inventory management, and on-demand fulfillment solutions."
       ]
     },
     "benefitsLeft": {
-      "imageTop": "/Image/Services/DirectMail/Target-1.jpg",
-      "imageBottom": "/Image/Services/DirectMail/Target-2.jpg",
-      "heading": "How Targeted Mailing Lists Can Benefit Your Business",
-      "subDescription": "With targeted direct mailing lists, you reach local customers precisely.",
+      "imageTop": "/Image/Services/DirectMail/Directmailcard/DirectMail-MailCard-chees.png",
+      "imageBottom": "/Image/Services/DirectMail/Directmailcard/DirectMail-MailCard-OnHandsHumans.png",
+      "heading": "Ways to Win Back Previous Clients",
+      "subDescription": "Win back previous clients using personalized marketing strategies, targeted email campaigns, direct mail outreach, and exclusive offers that rebuild trust, strengthen customer relationships, increase loyalty, and maximize long-term customer lifetime value and repeat revenue growth.",
+      "bottomDescription": "With Targeted Direct Mailing Lists, your campaign is strategically focused on qualified prospects who fit your specific criteria. This approach reduces waste and increases response rates by deliveringConsumer targeting allows you to reach the right audience using detailed demographic, geographic, and lifestyle data. We can segment by age, gender, income, home value, marital status, presence of children, buying behavior, interests, location, and more—ensuring your message connects with those most likely to your message to the right businesses. We can target businesses by:",
       "features": [
         {
-          "title": "Industry Segments",
-          "desc": "Specific vertical markets you want to target."
+          "title": "Industry Segment:",
+          "desc": "Specific niches within broader industries for precise targeting."
         },
         {
-          "title": "Company Details",
-          "desc": "Size, location, sales volume, etc."
+          "title": "Years in Business:",
+          "desc": "Startups, established companies, or long-standing enterprises."
         },
         {
-          "title": "Contact Titles",
-          "desc": "CEOs, Marketing Directors, HR, etc."
+          "title": "Ownership Type:",
+          "desc": "Private, public, franchise, or family-owned businesses."
+        },
+        {
+          "title": "Decision-Maker Titles:",
+          "desc": "Owners, CEOs, Marketing Directors, Purchasing Managers, etc."
+        },
+        {
+          "title": "Annual Revenue Range:",
+          "desc": "Target companies based on defined revenue brackets."
         }
       ]
     },
@@ -168,9 +192,9 @@
     "pageType": "PoliticalMail",
     "heroHeading": "Political Campaign Direct Mailing Services",
     "featureLeft": {
-      "image": "/Image/Services/DirectMail/DirectMail-PostDilivered.png",
+      "image": "/Image/Services/DirectMail/Political/DirectMail-POliticalCard.png",
       "heading": "Political Campaign Direct Mailing Services",
-      "subDescription": "We handle everything from candidate literature to absentee ballot mailers, ensuring your campaign is delivered to specific voter targets on time and within budget.",
+      "subDescription": "We handle everything from creative development to mailing and fulfillment, ensuring a seamless campaign from start to finish, with precise targeting, professional printing, on-time delivery, and measurable results that maximize your marketing investment.",
       "features": []
     },
     "horizontalTimeline": [
@@ -248,22 +272,22 @@
       ]
     },
     "stackedFeatureLeft": {
-      "imageTop": "/Image/Services/DirectMail/political-1.jpg",
-      "imageBottom": "/Image/Services/DirectMail/political-2.jpg",
-      "heading": "With NE Signs, every detail of your political direct mail campaign is managed seamlessly, from print to mailbox.",
-      "subDescription": "As a political candidate, your campaign needs a reliable partner who understands the fast-paced nature of elections. We offer complete solutions tailored to political needs.",
+      "imageTop": "/Image/Services/DirectMail/Political/DirectMail-Political-Mission.png",
+      "imageBottom": "/Image/Services/DirectMail/Political/DirectMail-Political-M.ARXIHAD.png",
+      "heading": "With N.E Signs, every detail of your political direct mail campaign is managed seamlessly, from print to mailbox.",
+      "subDescription": "N.E Signs supports your campaign with powerful promotional tools designed to capture voter attention and drive action. When deadlines are tight and budgets must be strategic, our experienced team delivers results—backed by years of successfully executed political mail campaigns.  From highly targeted demographic outreach to large-volume production and distribution, we manage it all without compromising quality. We work side by side with you to ensure your mailers reach the exact markets, zip codes, and households you specify—right on schedule.",
       "features": [
         {
-          "title": "Extensive Campaign Resources",
-          "desc": "Access our vast library of political templates and design assets."
+          "title": "Political Campaign Postcards :",
+          "desc": "Political postcards are a cost-effective way to connect with voters and communicate your message. They help you make a strong impression, remind constituents of their civic duty to vote, and clearly present the reasons to support you and your party."
         },
         {
-          "title": "Fast and Budget-Friendly",
-          "desc": "We optimize every step to save you time and money without compromising quality."
+          "title": "Political Campaign Brochures :",
+          "desc": "A political brochure is a compelling communication tool that helps you engage voters directly. Compact yet informative, it combines essential campaign messages with emotionally engaging visuals to influence and inspire your audience."
         },
         {
-          "title": "Unmatched Reach and Precision",
-          "desc": "Leverage our advanced targeting to ensure your message hits the right households."
+          "title": "Make a Political Impression That Lasts :",
+          "desc": "Maximize your campaign's visibility with professionally crafted political mailers. We help you connect with voters through strategic messaging and high-quality production. Call 770-723-0202 or complete our online contact form to begin your project."
         }
       ]
     },
@@ -300,16 +324,16 @@
     "pageType": "CustomerAndBusiness",
     "heroHeading": "Targeted Mailing Lists (Consumer & B2B)",
     "featureLeft": {
-      "image": "/Image/Services/DirectMail/DirectMail-BoxPicked.png",
+      "image": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirectMail-CustomerBusiness.png",
       "heading": "Targeted Mailing Lists (Consumer & B2B)",
-      "subDescription": "Reach the right audience with our highly targeted mailing lists. B2B or consumer, we provide customized lists based on demographics, firmographics, and behavior.",
+      "subDescription": "Reach the right audience with accurate targeted mailing lists USA businesses rely on. At N.E Signs, we provide data-driven direct mailing lists segmented by demographics, location, income, and industry. Whether you need homeowner lists by ZIP code or B2B decision-makers by NAICS code, our trusted mailing list company helps you target qualified prospects, improve response rates, and maximize ROI with verified USA mailing lists.",
       "features": [
-        "Accurate Demographic Targeting",
-        "B2B and Consumer Lists",
-        "Geographic Targeting",
-        "High Deliverability Rates",
-        "NCOA Checked Data",
-        "Custom List Compilation"
+        "Accurate Targeted Mailing Lists USA",
+        "Income & industry-based targeting",
+        "Data-driven Direct Mailing Lists",
+        "Homeowner lists by ZIP code",
+        "Segmented by demographics & location",
+        "B2B decision-makers by NAICS code"
       ]
     },
     "reachAudience": {
@@ -422,9 +446,9 @@
     "pageType": "VariableData",
     "heroHeading": "Variable Data Printing Services",
     "featureLeft": {
-      "image": "/Image/Services/DirectMail/variable-1.jpg",
+      "image": "/Image/Services/DirectMail/VariableData/DirectMail-VariableData.png",
       "heading": "Variable data makes printing personal",
-      "subDescription": "Variable data printing (VDP) allows you to customize each individual printed piece in a direct mail campaign based on data you have about the recipient. By tailoring graphics and text to specific individuals, you can significantly boost response rates.",
+      "subDescription": "Variable data printing lets you personalize each piece with content tailored to a customer's preferences or previous purchases. By delivering more relevant messages, you can significantly boost response rates while lowering printing and mailing costs compared to broad, untargeted campaigns.",
       "features": []
     },
     "featureRight": {
