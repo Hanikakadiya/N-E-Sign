@@ -37,6 +37,34 @@
         "Targeted direct mail campaigns",
         "Direct postal marketing solutions"
       ]
+    },
+    "benefitsLeft": {
+      "imageTop": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirerctMail-Customer-TwoMans.png",
+      "imageBottom": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirectMail-Customer-Girls.png",
+      "heading": "Ways to Win Back Previous Clients",
+      "subDescription": "Win back previous clients using personalized marketing strategies, targeted email campaigns, direct mail outreach, and exclusive offers that rebuild trust, strengthen customer relationships, increase loyalty, and maximize long-term customer lifetime value and repeat revenue growth.",
+      "features": [
+        {
+          "title": "Industry Segment:",
+          "desc": "Specific niches within broader industries for precise targeting."
+        },
+        {
+          "title": "Years in Business:",
+          "desc": "Startups, established companies, or long-standing enterprises."
+        },
+        {
+          "title": "Ownership Type:",
+          "desc": "Private, public, franchise, or family-owned businesses."
+        },
+        {
+          "title": "Decision-Maker Titles:",
+          "desc": "Owners, CEOs, Marketing Directors, Purchasing Managers, etc."
+        },
+        {
+          "title": "Annual Revenue Range:",
+          "desc": "Target companies based on defined revenue brackets."
+        }
+      ]
     }
   },
   {
@@ -398,22 +426,30 @@
       ]
     },
     "stackedFeatureLeft": {
-      "imageTop": "/Image/Services/DirectMail/business-1.jpg",
-      "imageBottom": "/Image/Services/DirectMail/business-2.jpg",
+      "imageTop": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirerctMail-Customer-TwoMans.png",
+      "imageBottom": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirectMail-Customer-Girls.png",
       "heading": "Ways to Win Back Previous Clients",
       "subDescription": "Direct mail is incredibly effective for re-engaging lapsed customers. A personalized 'We Miss You' mailer can bring them back.",
       "features": [
         {
-          "title": "Targeted Offers",
-          "desc": "Send exclusive discounts to customers who haven't purchased in 6 months."
+          "title": "Qualified Targeting ",
+          "desc": "Reach ideal prospects using verified residential mailing lists and business mailing lists USA filtered by demographics and firmographics."
         },
         {
-          "title": "Personalized Mail",
-          "desc": "Use variable data to address them by name and reference past purchases."
+          "title": "Higher Response Rates :",
+          "desc": "Improve conversions with accurate, data-driven direct mailing lists service built for better ROI."
         },
         {
-          "title": "Update on Changes",
-          "desc": "Let them know about new products, services, or management changes."
+          "title": "Nationwide Coverage :",
+          "desc": "From local ZIP code mailing lists to full USA mailing lists, scale campaigns effortlessly."
+        },
+        {
+          "title": "Smart Segmentation :",
+          "desc": "Build targeted audiences for acquisition, retention, and reactivation with customized direct mail marketing lists."
+        },
+        {
+          "title": "Clean & Certified Data :",
+          "desc": "CASS, NCOA, and DPV-processed mailing list data ensures maximum deliverability and reduced returns."
         }
       ]
     },

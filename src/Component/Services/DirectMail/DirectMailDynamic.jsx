@@ -22,7 +22,7 @@ export default function DirectMailDynamic({
   imageTheme = "leaf",
   secondaryImageTheme = "standard",
   benefitsData,
-  children
+  children,
 }) {
   return (
     <section className="w-full min-h-screen font-['Inter',sans-serif]">
@@ -42,7 +42,10 @@ export default function DirectMailDynamic({
 
         {/* Breadcrumb */}
         <p className="flex justify-center gap-2 items-center border border-[#ffffff33] w-max px-5 h-[34px] rounded-full text-white mx-auto backdrop-blur-sm">
-          <Link to="/" className="flex items-center gap-2 hover:text-[var(--color-primary)] transition-colors">
+          <Link
+            to="/"
+            className="flex items-center gap-2 hover:text-[var(--color-primary)] transition-colors"
+          >
             <span>
               <Icons.fullhome className="w-[12px] h-[12px] text-current" />
             </span>
@@ -80,6 +83,9 @@ export default function DirectMailDynamic({
         />
       )}
 
+      {/* Custom Page Sections */}
+      {children && <div className="relative z-10 w-full mt-20">{children}</div>}
+
       {/* Benefits Section (Top Heading, Overlapping Images, Bottom Text) */}
       {benefitsData && (
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10">
@@ -106,7 +112,9 @@ export default function DirectMailDynamic({
                         <span className="text-white">{f}</span>
                       ) : (
                         <>
-                          <span className="font-bold text-white mr-1">{f.title}</span>
+                          <span className="font-bold text-white mr-1">
+                            {f.title}
+                          </span>
                           <span className="text-white/80">{f.desc}</span>
                         </>
                       )}
@@ -141,12 +149,6 @@ export default function DirectMailDynamic({
         </div>
       )}
 
-      {/* Custom Page Sections */}
-      {children && (
-        <div className="relative z-10 w-full mt-20">
-          {children}
-        </div>
-      )}
     </section>
   );
 }
@@ -160,7 +162,7 @@ const ContentBlock = ({
   listItems = [],
   listColumns = 2,
   listStyle = "check",
-  imageTheme = "leaf"
+  imageTheme = "leaf",
 }) => {
   const isLeaf = imageTheme === "leaf";
 
@@ -169,20 +171,28 @@ const ContentBlock = ({
   let triangleClip = "";
   if (isLeaf) {
     // Leaf theme: Triangle at BOTTOM OUTER corner
-    trianglePos = imagePosition === "left" ? "bottom-0 left-0" : "bottom-0 right-0";
-    triangleClip = imagePosition === "left" ? "polygon(0 0, 0% 100%, 100% 100%)" : "polygon(100% 0, 0% 100%, 100% 100%)";
+    trianglePos =
+      imagePosition === "left" ? "bottom-0 left-0" : "bottom-0 right-0";
+    triangleClip =
+      imagePosition === "left"
+        ? "polygon(0 0, 0% 100%, 100% 100%)"
+        : "polygon(100% 0, 0% 100%, 100% 100%)";
   } else {
     // Standard theme: Triangle at TOP OUTER corner
     trianglePos = imagePosition === "left" ? "top-0 left-0" : "top-0 right-0";
-    triangleClip = imagePosition === "left" ? "polygon(0 0, 100% 0, 0 100%)" : "polygon(0 0, 100% 0, 100% 100%)";
+    triangleClip =
+      imagePosition === "left"
+        ? "polygon(0 0, 100% 0, 0 100%)"
+        : "polygon(0 0, 100% 0, 100% 100%)";
   }
 
   // Image Shape
   let imageShape = "";
   if (isLeaf) {
-    imageShape = imagePosition === "left" 
-      ? "rounded-tl-[450px] rounded-tr-[32px] rounded-bl-[450px] rounded-br-[32px]"
-      : "rounded-tr-[450px] rounded-tl-[32px] rounded-br-[450px] rounded-bl-[32px]";
+    imageShape =
+      imagePosition === "left"
+        ? "rounded-tl-[450px] rounded-tr-[32px] rounded-bl-[450px] rounded-br-[32px]"
+        : "rounded-tr-[450px] rounded-tl-[32px] rounded-br-[450px] rounded-bl-[32px]";
   } else {
     imageShape = "rounded-[32px]";
   }
@@ -202,7 +212,9 @@ const ContentBlock = ({
               src="/Image/Services/DirectMail/DirectMail-EDDM-Star-Vector.png"
               alt="Star Vector"
               className={`absolute z-20 w-[110px] h-[110px] object-contain pointer-events-none ${
-                imagePosition === "left" ? "-top-4 -left-4 lg:-left-6" : "-top-4 -right-4 lg:-right-6"
+                imagePosition === "left"
+                  ? "-top-4 -left-4 lg:-left-6"
+                  : "-top-4 -right-4 lg:-right-6"
               }`}
             />
           )}
@@ -221,7 +233,7 @@ const ContentBlock = ({
               <img
                 src={image}
                 alt={heading}
-                className="w-full h-full object-cover relative" 
+                className="w-full h-full object-cover relative"
               />
             )}
           </div>
@@ -238,7 +250,9 @@ const ContentBlock = ({
 
           {/* List Items */}
           {listItems && listItems.length > 0 && (
-            <div className={`grid grid-cols-1 ${listColumns === 2 ? "sm:grid-cols-2" : ""} gap-y-4`}>
+            <div
+              className={`grid grid-cols-1 ${listColumns === 2 ? "sm:grid-cols-2" : ""} gap-y-4`}
+            >
               {listItems.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   {listStyle === "check" ? (
