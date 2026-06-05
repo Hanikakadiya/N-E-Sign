@@ -22,7 +22,7 @@ export default function VehicleService() {
           </h2>
           <button
             onClick={() => navigate("/services/signage/vehicle-graphics")}
-            className="text-[#EAB308] underline"
+            className="text-[var(--color-primary)] underline"
           >
             Go Back
           </button>

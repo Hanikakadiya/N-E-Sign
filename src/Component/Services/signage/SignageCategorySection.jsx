@@ -14,12 +14,12 @@ export default function SignageCategorySection() {
         {/* Header */}
         <div className="flex flex-col items-start mb-12">
           <div className="flex items-center gap-4 mb-4">
-            <div className="h-[1px] w-12 bg-[#c5a880]"></div>
-            <span className="text-[#c5a880] tracking-widest text-sm uppercase font-semibold">
+            <div className="h-[1px] w-12 bg-[var(--color-primary)]"></div>
+            <span className="text-[var(--color-primary)] tracking-widest text-sm uppercase font-semibold">
               Category
             </span>
           </div>
-          <h2 className="text-white text-4xl md:text-5xl font-bold max-w-xl leading-tight font-poppins">
+          <h2 className="text-4xl md:text-5xl font-bold max-w-xl leading-tight font-poppins">
             Find the Right Signage for Your Business
           </h2>
         </div>

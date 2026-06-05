@@ -13,6 +13,10 @@ import LEDNeonSigns from "./Component/Services/signage/LED-neon/LED-NeonSigns";
 import VehicleService from "./Component/Services/signage/VehicalGraphics/VehicleService";
 import DirectMail from "./Component/Services/DirectMail/DirectMail";
 import Apparel from "./Component/Apparel/Apparel";
+import PromotionalProducts from "./Component/PromotionalProducts/PromotionalProducts";
+import OurWork from "./Component/OurWork/OurWork"
+import ContectHeroSection from "./Component/ContactUs/ContectHeroSection";
+import WhyContactUs from "./Component/ContactUs/WhyContactUs";
 import EDDMServicesCard from "./Component/Services/DirectMail/EDDMServicesCard";
 import DirectMailCard from "./Component/Services/DirectMail/DirectMailCard";
 import PoliticalMail from "./Component/Services/DirectMail/PoliticalMail";
@@ -62,6 +66,17 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/Apparel" element={<Apparel />} />
+        <Route path="/promotional-products" element={<PromotionalProducts />} />
+        <Route path="/our-work" element={<OurWork />} />
+        <Route 
+          path="/contact" 
+          element={
+            <div className="min-h-screen">
+              <ContectHeroSection />
+              <WhyContactUs />
+            </div>
+          } 
+        />
         <Route path="/services/signage" element={<Signage />} />
         <Route
           path="/services/signage/exterior-sign"
@@ -97,11 +112,26 @@ export default function App() {
           element={<VehicleService />}
         />
         <Route path="/services/direct-mailing" element={<DirectMail />} />
-        <Route path="/services/direct-mailing/eddm-service-every-door-direct-mail-" element={<EDDMServicesCard />} />
-        <Route path="/services/direct-mailing/direct-mail" element={<DirectMailCard />} />
-        <Route path="/services/direct-mailing/political-mail" element={<PoliticalMail />} />
-        <Route path="/services/direct-mailing/customer-and-business-mailing-list" element={<CustomerAndBusinessMailCard />} />
-        <Route path="/services/direct-mailing/variable-data" element={<VariableDataCard />} />
+        <Route
+          path="/services/direct-mailing/eddm-service-every-door-direct-mail-"
+          element={<EDDMServicesCard />}
+        />
+        <Route
+          path="/services/direct-mailing/direct-mail"
+          element={<DirectMailCard />}
+        />
+        <Route
+          path="/services/direct-mailing/political-mail"
+          element={<PoliticalMail />}
+        />
+        <Route
+          path="/services/direct-mailing/customer-and-business-mailing-list"
+          element={<CustomerAndBusinessMailCard />}
+        />
+        <Route
+          path="/services/direct-mailing/variable-data"
+          element={<VariableDataCard />}
+        />
       </Routes>
 
       <Footer />

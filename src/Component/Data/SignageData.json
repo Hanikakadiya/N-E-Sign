@@ -190,7 +190,7 @@
         "title": "Freestanding Signs",
         "description": "Standalone signs designed for visibility form a distance or near entrances",
         "image": "/Image/signage/exterior-sign/exterior-freestanding.jpg",
-        "overlayColor": "from-[#EDBC5A] to-[#F79C29]",
+        "overlayColor": "from-[var(--color-primary)] to-[var(--color-dark-orange)]",
         "href": "/services/signage/exterior-sign/free-standing-signs",
         "sidebar": {
           "title": "Freestanding Signs",
@@ -471,7 +471,7 @@
         "title": "Custom Graphics",
         "description": "Vinyl and printed designs for walls, floors, doors, and windows, to enhance branding and create a unique look.",
         "image": "/Image/InteriorSigns/InteriorSigns-CustomGraphics.jpg",
-        "overlayColor": "from-[#EDBC5A] to-[#893960]",
+        "overlayColor": "from-[var(--color-primary)] to-[#893960]",
         "href": "/services/signage/interior-sign/custom-graphics"
       },
       {
@@ -784,7 +784,7 @@
   {
     "title": "Window & Wall Graphics",
     "image": "/Image/signage/Wall-Graphics-05.png",
-    "gradient": "from-[#F79C29]/80 to-[#EDBC5A]/80",
+    "gradient": "from-[var(--color-dark-orange)]/80 to-[var(--color-primary)]/80",
     "number": "05",
     "description": "High-quality window and wall graphics that strengthen your brand presence.",
     "link": "/services/signage/window-wall-graphics",
