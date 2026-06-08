@@ -83,7 +83,7 @@ export default function LatestDesigns() {
               {/* Footer */}
               <div className="bg-[#111111] border-t border-[#222] p-6 flex items-center justify-between transition-colors duration-300">
                 <div className="flex flex-col gap-1">
-                  <span className="text-gray-400 text-xs tracking-wider uppercase">
+                  <span className="text-[var(--color-gray)] text-xs tracking-wider uppercase">
                     {design.category}
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wide">

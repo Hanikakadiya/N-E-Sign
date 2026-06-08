@@ -28,25 +28,25 @@ export default function WhyContactUs() {
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
                   <FiCheckCircle className="text-[var(--color-primary)] text-[1.35rem] shrink-0 mt-0.5" />
-                  <span className="text-gray-300 text-sm md:text-base leading-snug">
+                  <span className="text-[var(--color-gray)] text-sm md:text-base leading-snug">
                     Expert printing and signage solutions
                   </span>
                 </li>
                 <li className="flex items-start gap-4">
                   <FiCheckCircle className="text-[var(--color-primary)] text-[1.35rem] shrink-0 mt-0.5" />
-                  <span className="text-gray-300 text-sm md:text-base leading-snug">
+                  <span className="text-[var(--color-gray)] text-sm md:text-base leading-snug">
                     Custom quotes and competitive pricing
                   </span>
                 </li>
                 <li className="flex items-start gap-4">
                   <FiCheckCircle className="text-[var(--color-primary)] text-[1.35rem] shrink-0 mt-0.5" />
-                  <span className="text-gray-300 text-sm md:text-base leading-snug">
+                  <span className="text-[var(--color-gray)] text-sm md:text-base leading-snug">
                     Fast turnaround with reliable delivery
                   </span>
                 </li>
                 <li className="flex items-start gap-4">
                   <FiCheckCircle className="text-[var(--color-primary)] text-[1.35rem] shrink-0 mt-0.5" />
-                  <span className="text-gray-300 text-sm md:text-base leading-snug">
+                  <span className="text-[var(--color-gray)] text-sm md:text-base leading-snug">
                     High-quality materials and professional craftsmanship
                   </span>
                 </li>
@@ -58,7 +58,7 @@ export default function WhyContactUs() {
               <h3 className="text-lg md:text-[20px] font-bold mb-3 text-white">
                 Customer Support You Can Trust
               </h3>
-              <p className="text-gray-400 text-[14px] leading-relaxed max-w-[95%] mx-auto">
+              <p className="text-[var(--color-gray)] text-[14px] leading-relaxed max-w-[95%] mx-auto">
                 At <span className="text-[var(--color-primary)] font-medium">NE Signs</span>,
                 customer satisfaction is our priority. We deliver responsive,
                 transparent, and reliable printing services tailored to your
@@ -78,7 +78,7 @@ export default function WhyContactUs() {
             <h2 className="text-3xl md:text-[30px] font-bold mb-3 tracking-tight">
               Send Us a Message
             </h2>
-            <p className="text-gray-400 text-base mb-10">
+            <p className="text-[var(--color-gray)] text-base mb-10">
               Fill out the form below and we'll get back to you as soon as
               possible.
             </p>
@@ -93,7 +93,7 @@ export default function WhyContactUs() {
                   <input
                     type="text"
                     placeholder="John Doe"
-                    className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm text-white placeholder:text-gray-600 focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all"
+                    className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm text-white placeholder:text-[var(--color-gray)] focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all"
                   />
                 </div>
 
@@ -105,7 +105,7 @@ export default function WhyContactUs() {
                   <input
                     type="email"
                     placeholder="john@example.com"
-                    className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm placeholder:text-gray-600 focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all"
+                    className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm placeholder:text-[var(--color-gray)] focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all"
                   />
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function WhyContactUs() {
                     className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm appearance-none focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all cursor-pointer"
                     defaultValue=""
                   >
-                    <option value="" disabled className="text-gray-500">
+                    <option value="" disabled className="text-[var(--color-gray)]">
                       Select Category
                     </option>
                     <option value="signage" className="bg-[#1A1410]">
@@ -165,7 +165,7 @@ export default function WhyContactUs() {
                 <textarea
                   placeholder="Tell us about your project requirements..."
                   rows="5"
-                  className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm placeholder:text-gray-600 focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all resize-none"
+                  className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm placeholder:text-[var(--color-gray)] focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all resize-none"
                 ></textarea>
               </div>
 

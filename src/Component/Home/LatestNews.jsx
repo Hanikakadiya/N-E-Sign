@@ -78,7 +78,7 @@ export default function LatestNews() {
             <div className="absolute top-0 left-0 w-full flex flex-col bg-[#1a1a1a] rounded-2xl overflow-hidden border border-[#333] hover:border-[#4d4d4d] transition-all duration-300 group shadow-lg">
               {/* Text Content (Top) */}
               <div className="p-6 md:p-8 flex flex-col gap-2 relative z-10 bg-[#1a1a1a]">
-                <span className="text-gray-400 text-xs sm:text-sm tracking-wide">
+                <span className="text-[var(--color-gray)] text-xs sm:text-sm tracking-wide">
                   {news.date}
                 </span>
                 <h3 className="text-sm sm:text-lg md:text-xl font-medium leading-snug">
@@ -88,7 +88,7 @@ export default function LatestNews() {
                 {/* Expanding Description */}
                 <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
                   <div className="overflow-hidden">
-                    <p className="text-gray-400 mt-3 leading-relaxed text-[12px] sm:text-[14px] md:text-[16px]">
+                    <p className="text-[var(--color-gray)] mt-3 leading-relaxed text-[12px] sm:text-[14px] md:text-[16px]">
                       {news.description}
                     </p>
                   </div>

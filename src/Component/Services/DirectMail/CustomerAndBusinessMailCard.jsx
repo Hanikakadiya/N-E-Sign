@@ -34,7 +34,7 @@ export default function CustomerAndBusinessMailCard() {
                 <h2 className="text-[36px] md:text-[36px] font-bold mb-4">
                   Reach Your Ideal Audience
                 </h2>
-                <p className="text-white/60 text-[16px] md:text-[20px] max-w-[600px] mx-auto">
+                <p className="text-[var(--color-gray)] text-[16px] md:text-[20px] max-w-[600px] mx-auto">
                   Find your perfect mailing strategy through our guided
                   selection process.
                 </p>
@@ -67,7 +67,7 @@ export default function CustomerAndBusinessMailCard() {
                       <h4 className="font-bold text-[18px] mb-1">
                         Local Saturation
                       </h4>
-                      <p className="text-white/50 text-[14px]">
+                      <p className="text-[var(--color-gray)] text-[14px]">
                         I want to reach every home in a specific area.
                       </p>
                     </div>
@@ -93,7 +93,7 @@ export default function CustomerAndBusinessMailCard() {
                       <h4 className="font-bold text-[18px] mb-1">
                         Specific Demographics
                       </h4>
-                      <p className="text-white/50 text-[14px]">
+                      <p className="text-[var(--color-gray)] text-[14px]">
                         I want to reach people based on data/traits.
                       </p>
                     </div>
@@ -115,7 +115,7 @@ export default function CustomerAndBusinessMailCard() {
                     <h3 className="text-[24px] font-bold mb-4">
                       Every Door Direct Mail
                     </h3>
-                    <p className="text-white/60 mb-8 text-[15px] leading-relaxed">
+                    <p className="text-[var(--color-gray)] mb-8 text-[15px] leading-relaxed">
                       Best for high-volume local awareness where "Current
                       Resident" messaging is effective.
                     </p>
@@ -153,7 +153,7 @@ export default function CustomerAndBusinessMailCard() {
                     <h3 className="text-[24px] font-bold mb-4">
                       Targeted Mailing Lists
                     </h3>
-                    <p className="text-white/60 mb-8 text-[15px] leading-relaxed">
+                    <p className="text-[var(--color-gray)] mb-8 text-[15px] leading-relaxed">
                       Best for data-driven campaigns targeting specific ages,
                       incomes, or consumer behaviors.
                     </p>
@@ -200,7 +200,7 @@ export default function CustomerAndBusinessMailCard() {
                   <span className="text-[var(--color-primary)]">Targeting</span>{" "}
                   Options
                 </h2>
-                <p className="text-white/60 text-[15px] md:text-[16px] max-w-[700px] mx-auto leading-relaxed">
+                <p className="text-[var(--color-gray)] text-[15px] md:text-[16px] max-w-[700px] mx-auto leading-relaxed">
                   Harness high-fidelity location data to deploy
                   precision-engineered mailing lists. Our platform maps audience
                   density with sub-meter accuracy across three core tiers.
@@ -217,13 +217,13 @@ export default function CustomerAndBusinessMailCard() {
                     </svg> */}
                     <Icons.roundLocation className="w-6 h-6" />
                   </div>
-                  <div className="text-white/40 text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
+                  <div className="text-[var(--color-gray)] text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
                     Tier 01 // Hyper-Local
                   </div>
                   <h3 className="text-[24px] font-bold mb-4">
                     ZIP Code & Radius
                   </h3>
-                  <p className="text-white/50 text-[16px] leading-relaxed mb-8 flex-grow">
+                  <p className="text-[var(--color-gray)] text-[16px] leading-relaxed mb-8 flex-grow">
                     Deploy laser-focused campaigns using{" "}
                     <span className="text-white/80 font-semibold">
                       ZIP code mailing lists
@@ -232,7 +232,7 @@ export default function CustomerAndBusinessMailCard() {
                     and micro-markets.
                   </p>
                   <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/5 text-[10px] font-bold tracking-wider">
-                    <span className="text-white/40">PRECISION: HIGH</span>
+                    <span className="text-[var(--color-gray)]">PRECISION: HIGH</span>
                     <span className="text-[var(--color-primary,#F9A826)]">
                       ACTIVE: ANALYZE
                     </span>
@@ -247,13 +247,13 @@ export default function CustomerAndBusinessMailCard() {
                     </svg> */}
                     <Icons.Earth className="w-6 h-6" />
                   </div>
-                  <div className="text-white/40 text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
+                  <div className="text-[var(--color-gray)] text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
                     Tier 02 // Regional Coverage
                   </div>
                   <h3 className="text-[24px] font-bold mb-4">
                     City, County & State
                   </h3>
-                  <p className="text-white/50 text-[16px] leading-relaxed mb-8 flex-grow">
+                  <p className="text-[var(--color-gray)] text-[16px] leading-relaxed mb-8 flex-grow">
                     Broad-spectrum{" "}
                     <span className="text-white/80 font-semibold">
                       macro-targeting
@@ -262,7 +262,7 @@ export default function CustomerAndBusinessMailCard() {
                     initiatives and multi-city rollouts.
                   </p>
                   <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/5 text-[10px] font-bold tracking-wider">
-                    <span className="text-white/40">SCALE: UNLIMITED</span>
+                    <span className="text-[var(--color-gray)]">SCALE: UNLIMITED</span>
                     <span className="text-[var(--color-primary,#F9A826)]">
                       ACTIVE: NETWORK
                     </span>
@@ -277,11 +277,11 @@ export default function CustomerAndBusinessMailCard() {
                     </svg> */}
                     <Icons.UpDownArrow className="w-6 h-6" />
                   </div>
-                  <div className="text-white/40 text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
+                  <div className="text-[var(--color-gray)] text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
                     Tier 03 // Neighborhood
                   </div>
                   <h3 className="text-[24px] font-bold mb-4">Carrier Route</h3>
-                  <p className="text-white/50 text-[16px] leading-relaxed mb-8 flex-grow">
+                  <p className="text-[var(--color-gray)] text-[16px] leading-relaxed mb-8 flex-grow">
                     Maximum saturation via{" "}
                     <span className="text-white/80 font-semibold">
                       USPS carrier route data
@@ -290,7 +290,7 @@ export default function CustomerAndBusinessMailCard() {
                     neighborhood-level reach.
                   </p>
                   <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/5 text-[10px] font-bold tracking-wider">
-                    <span className="text-white/40">EFFICIENCY: MAX</span>
+                    <span className="text-[var(--color-gray)]">EFFICIENCY: MAX</span>
                     <span className="text-[var(--color-primary,#F9A826)]">
                       ROUTING: USPS
                     </span>
@@ -344,7 +344,7 @@ export default function CustomerAndBusinessMailCard() {
 
                   <div className="flex gap-4">
                     <div className="flex-1 bg-[#1c1c1c] rounded-xl p-5 border border-white/5">
-                      <p className="text-white/40 text-[10px] font-bold tracking-widest uppercase mb-1">
+                      <p className="text-[var(--color-gray)] text-[10px] font-bold tracking-widest uppercase mb-1">
                         Data Integrity
                       </p>
                       <h4 className="text-[20px] font-bold mb-3">99.98%</h4>
@@ -353,7 +353,7 @@ export default function CustomerAndBusinessMailCard() {
                       </div>
                     </div>
                     <div className="flex-1 bg-[#1c1c1c] rounded-xl p-5 border border-white/5">
-                      <p className="text-white/40 text-[10px] font-bold tracking-widest uppercase mb-1">
+                      <p className="text-[var(--color-gray)] text-[10px] font-bold tracking-widest uppercase mb-1">
                         Network Reach
                       </p>
                       <h4 className="text-[20px] font-bold mb-3">50 States</h4>
@@ -389,13 +389,13 @@ export default function CustomerAndBusinessMailCard() {
                         Audience & Area Analysis
                       </h4>
                     </div>
-                    <p className="text-white/60 text-[14px] leading-relaxed mb-2 flex-grow h-fit">
+                    <p className="text-[var(--color-gray)] text-[14px] leading-relaxed mb-2 flex-grow h-fit">
                       Size your market by{" "}
                       <span className="text-white"> ZIP, radius, or city </span>{" "}
                       using high-precision USPS mailing lists.
                     </p>
                     <div className="flex justify-between items-end mb-2">
-                      <span className="text-white/40 text-[10px] font-bold tracking-widest">
+                      <span className="text-[var(--color-gray)] text-[10px] font-bold tracking-widest">
                         PRECISION SCALE
                       </span>
                       <span className="text-[var(--color-primary,#F9A826)] text-[10px] font-bold">
@@ -418,12 +418,12 @@ export default function CustomerAndBusinessMailCard() {
                         Data Hygiene
                       </h4>
                     </div>
-                    <p className="text-white/60 text-[13px] leading-relaxed mb-8 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-8 flex-grow">
                       B2B & Consumer lists. CASS/NCOA updated and DPV validated
                       to eliminate duplicates.
                     </p>
                     <div className="flex justify-between items-end mb-2">
-                      <span className="text-white/40 text-[10px] font-bold tracking-widest">
+                      <span className="text-[var(--color-gray)] text-[10px] font-bold tracking-widest">
                         CLEAN RATE
                       </span>
                       <span className="text-[var(--color-primary,#F9A826)] text-[10px] font-bold">
@@ -445,12 +445,12 @@ export default function CustomerAndBusinessMailCard() {
                         Creative & Mail
                       </h4>
                     </div>
-                    <p className="text-white/60 text-[13px] leading-relaxed mb-8 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-8 flex-grow">
                       Full lifecycle management: design, high-volume print, and
                       verified USPS entry.
                     </p>
                     <div className="flex justify-between items-end mb-2">
-                      <span className="text-white/40 text-[10px] font-bold tracking-widest">
+                      <span className="text-[var(--color-gray)] text-[10px] font-bold tracking-widest">
                         IMPLEMENTATION
                       </span>
                       <span className="text-[var(--color-primary)] text-[10px] font-bold">
@@ -484,12 +484,12 @@ export default function CustomerAndBusinessMailCard() {
                         Tracking & BI
                       </h4>
                     </div>
-                    <p className="text-white/60 text-[13px] leading-relaxed mb-8 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-8 flex-grow">
                       Real-time reporting with QR tracking, UTMs, and matchbacks
                       for ROI analysis.
                     </p>
                     <div className="flex justify-between items-end mb-2">
-                      <span className="text-white/40 text-[10px] font-bold tracking-widest">
+                      <span className="text-[var(--color-gray)] text-[10px] font-bold tracking-widest">
                         ATTRIBUTION
                       </span>
                       <span className="text-[var(--color-primary,#F9A826)] text-[10px] font-bold">

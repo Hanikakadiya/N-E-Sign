@@ -84,7 +84,7 @@ export default function DirectMailCard() {
               Popular Direct Mail Marketing{" "}
               <span className="font-bold">Targeting Categories</span>
             </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+            <p className="text-[var(--color-gray)] text-lg max-w-3xl mx-auto">
               Reach the right audience with precision. Choose from our
               high-performing targeting filters to maximize your campaign ROI.
             </p>
@@ -120,7 +120,7 @@ export default function DirectMailCard() {
                 <h3 className="font-bold text-2xl mb-3 text-gray-900">
                   {category.title}
                 </h3>
-                <p className="text-gray-500 text-base leading-relaxed">
+                <p className="text-[var(--color-gray)] text-base leading-relaxed">
                   {category.description}
                 </p>
               </motion.div>
@@ -266,7 +266,7 @@ export default function DirectMailCard() {
                         >
                           {item.title}
                         </h3>
-                        <p className="text-gray-600 text-sm md:text-[14px] leading-relaxed font-medium">
+                        <p className="text-[var(--color-gray)] text-sm md:text-[14px] leading-relaxed font-medium">
                           {item.desc}
                         </p>
                       </div>

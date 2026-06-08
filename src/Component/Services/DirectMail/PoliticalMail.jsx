@@ -43,7 +43,7 @@ export default function PoliticalMail() {
                     <h2 className="text-[32px] md:text-[48px] font-bold mb-4">
                       How Direct Mail Drives Political Victory
                     </h2>
-                    <p className="text-white/60 text-[14px] md:text-[18px] max-w-[800px] mx-auto leading-relaxed">
+                    <p className="text-[var(--color-gray)] text-[14px] md:text-[18px] max-w-[800px] mx-auto leading-relaxed">
                       Proven step-by-step approach to win votes, high-impact
                       printed collateral for our candidates. Each milestone
                       represents a competitive full-turn methodology.
@@ -74,20 +74,20 @@ export default function PoliticalMail() {
                         <h4 className="font-bold text-[18px] mb-1 text-white">
                           Targeted Outreach
                         </h4>
-                        <p className="text-[14px] text-white/40 font-bold uppercase tracking-widest mb-6">
+                        <p className="text-[14px] text-[var(--color-gray)] font-bold uppercase tracking-widest mb-6">
                           Target Audience
                         </p>
 
                         <div className="bg-[#1c1c1c] text-white border-t-4 border-transparent group-hover:bg-white group-hover:text-black group-hover:border-[var(--color-primary,#F9A826)] transition-all duration-300 rounded-xl p-6 w-full md:w-[264px] h-[263px] text-left shadow-xl flex flex-col mx-auto">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-8 h-8 rounded bg-white/10 group-hover:bg-[var(--color-primary,#F9A826)]/10 flex items-center justify-center transition-colors duration-300">
-                              <Icons.roundLocation className="w-4 h-4 text-white/70 group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
+                              <Icons.roundLocation className="w-4 h-4 text-[var(--color-gray)] group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
                             </div>
                             <span className="text-white group-hover:text-black font-bold text-[14px] uppercase tracking-wider transition-colors duration-300">
                               STEP 1
                             </span>
                           </div>
-                          <p className="text-[14px] leading-relaxed text-white/60 group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
+                          <p className="text-[14px] leading-relaxed text-[var(--color-gray)] group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
                             Start strong. Direct mail drives measurable results
                             with powerful ROI. Voters engage more with print,
                             and campaigns see higher recall rates. Speed
@@ -110,20 +110,20 @@ export default function PoliticalMail() {
                         <h4 className="font-bold text-[18px] mb-1 text-white">
                           Compelling Message
                         </h4>
-                        <p className="text-white/40 text-[14px] font-bold uppercase tracking-widest mb-6">
+                        <p className="text-[var(--color-gray)] text-[14px] font-bold uppercase tracking-widest mb-6">
                           Direct Design
                         </p>
 
                         <div className="bg-[#1c1c1c] text-white border-t-4 border-transparent group-hover:bg-white group-hover:text-black group-hover:border-[var(--color-primary,#F9A826)] transition-all duration-300 rounded-xl p-6 w-full md:w-[264px] h-[263px] text-left shadow-xl flex flex-col mx-auto">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-8 h-8 rounded bg-white/10 group-hover:bg-[var(--color-primary,#F9A826)]/10 flex items-center justify-center transition-colors duration-300">
-                              <Icons.Printing className="w-4 h-4 text-white/70 group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
+                              <Icons.Printing className="w-4 h-4 text-[var(--color-gray)] group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
                             </div>
                             <span className="text-white group-hover:text-black font-bold text-[14px] uppercase tracking-wider transition-colors duration-300">
                               STEP 2
                             </span>
                           </div>
-                          <p className="text-[14px] leading-relaxed text-white/60 group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
+                          <p className="text-[14px] leading-relaxed text-[var(--color-gray)] group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
                             Study voter data and demographic insights. We don’t
                             mass mail—we precisely target key segments to
                             stretch every campaign dollar further.
@@ -144,20 +144,20 @@ export default function PoliticalMail() {
                         <h4 className="font-bold text-[18px] mb-1 text-white">
                           Strategic Deploy
                         </h4>
-                        <p className="text-white/40 text-[14px] font-bold uppercase tracking-widest mb-6">
+                        <p className="text-[var(--color-gray)] text-[14px] font-bold uppercase tracking-widest mb-6">
                           Creative Output
                         </p>
 
                         <div className="bg-[#1c1c1c] text-white border-t-4 border-transparent group-hover:bg-white group-hover:text-black group-hover:border-[var(--color-primary,#F9A826)] transition-all duration-300 rounded-xl p-6 w-full md:w-[264px] h-[263px] text-left shadow-xl flex flex-col mx-auto">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-8 h-8 rounded bg-white/10 group-hover:bg-[var(--color-primary,#F9A826)]/10 flex items-center justify-center transition-colors duration-300">
-                              <Icons.database className="w-4 h-4 text-white/70 group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
+                              <Icons.database className="w-4 h-4 text-[var(--color-gray)] group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
                             </div>
                             <span className="text-white group-hover:text-black font-bold text-[14px] uppercase tracking-wider transition-colors duration-300">
                               STEP 3
                             </span>
                           </div>
-                          <p className="text-[14px] leading-relaxed text-white/60 group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
+                          <p className="text-[14px] leading-relaxed text-[var(--color-gray)] group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
                             Print leaves a lasting presence. Unlike digital ads
                             that disappear, mail pieces remain in homes. Design
                             materials that invite touch, attention, and repeated
@@ -179,20 +179,20 @@ export default function PoliticalMail() {
                         <h4 className="font-bold text-[18px] mb-1 text-white">
                           Campaign Victory
                         </h4>
-                        <p className="text-white/40 text-[14px] font-bold uppercase tracking-widest mb-6">
+                        <p className="text-[var(--color-gray)] text-[14px] font-bold uppercase tracking-widest mb-6">
                           First Mail Drop
                         </p>
 
                         <div className="bg-[#1c1c1c] text-white border-t-4 border-transparent group-hover:bg-white group-hover:text-black group-hover:border-[var(--color-primary,#F9A826)] transition-all duration-300 rounded-xl p-6 w-full md:w-[264px] h-[263px] text-left shadow-xl flex flex-col mx-auto">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-8 h-8 rounded bg-white/10 group-hover:bg-[var(--color-primary,#F9A826)]/10 flex items-center justify-center transition-colors duration-300">
-                              <Icons.Check className="w-[16px] h-[16px] text-white/70 group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
+                              <Icons.Check className="w-[16px] h-[16px] text-[var(--color-gray)] group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
                             </div>
                             <span className="text-white group-hover:text-black font-bold text-[14px] uppercase tracking-wider transition-colors duration-300">
                               FINAL
                             </span>
                           </div>
-                          <p className="text-[14px] leading-relaxed text-white/60 group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
+                          <p className="text-[14px] leading-relaxed text-[var(--color-gray)] group-hover:text-black/80 transition-colors duration-300 flex-grow overflow-hidden">
                             Complete campaign execution. From production to
                             verified delivery, we eliminate complexity. Clear
                             pricing and dependable performance define our
@@ -212,13 +212,13 @@ export default function PoliticalMail() {
                   transition={{ duration: 0.6 }}
                   className="text-center mb-16"
                 >
-                  <p className="text-white/40 text-[11px] font-bold tracking-widest uppercase mb-4">
+                  <p className="text-[var(--color-gray)] text-[11px] font-bold tracking-widest uppercase mb-4">
                     A Strategic Advantage
                   </p>
                   <h2 className="text-[32px] md:text-[40px] font-bold mb-4">
                     Benefits of Direct Mail
                   </h2>
-                  <p className="text-white/60 text-[14px] md:text-[16px] max-w-[700px] mx-auto leading-relaxed">
+                  <p className="text-[var(--color-gray)] text-[14px] md:text-[16px] max-w-[700px] mx-auto leading-relaxed">
                     Simple, effective ways to reach voters directly. See why
                     campaigns across voting styles prioritize direct mail to
                     win.
@@ -242,7 +242,7 @@ export default function PoliticalMail() {
                         Voters See Your Message
                       </h4>
                     </div>
-                    <p className="text-black/60 text-[14px] leading-relaxed mb-6 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[14px] leading-relaxed mb-6 flex-grow">
                       <span className="text-black font-bold">
                         Every voter opens their mail.
                       </span>{" "}
@@ -276,7 +276,7 @@ export default function PoliticalMail() {
                         Stays in the Home
                       </h4>
                     </div>
-                    <p className="text-black/60 text-[13px] leading-relaxed mb-6 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-6 flex-grow">
                       <span className="font-bold text-black">
                         {" "}
                         Physical items stick around.
@@ -305,7 +305,7 @@ export default function PoliticalMail() {
                         Target Specific Voters
                       </h4>
                     </div>
-                    <p className="text-black/60 text-[13px] leading-relaxed mb-6 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-6 flex-grow">
                       <span className="font-bold text-black">
                         Spend smarter.
                       </span>
@@ -332,7 +332,7 @@ export default function PoliticalMail() {
                         Build Real Trust
                       </h4>
                     </div>
-                    <p className="text-black/60 text-[13px] leading-relaxed mb-6 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-6 flex-grow">
                       <span className="font-bold text-black">
                         Print feels official.
                       </span>
@@ -360,7 +360,7 @@ export default function PoliticalMail() {
                         Low-Budget Friendly
                       </h4>
                     </div>
-                    <p className="text-black/60 text-[13px] leading-relaxed mb-6 flex-grow">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-6 flex-grow">
                       <span className="font-bold text-black">
                         Scales to your wallet.
                       </span>
@@ -383,18 +383,18 @@ export default function PoliticalMail() {
                     {/* Decorative background element */}
                     <div className="absolute top-[-50px] right-[-50px] w-32 h-32 bg-[var(--color-primary,#F9A826)] opacity-10 rounded-full blur-2xl"></div>
 
-                    <div className="bg-[var(--color-primary,#F9A826)] text-black text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-4">
-                      WIN MORE
+                    <div className="bg-[#5f5444] text-[var(--color-dark-orange)] text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-4">
+                      active plan
                     </div>
                     <h4 className="font-bold text-[22px] mb-3 leading-tight">
                       Is Your Campaign Ready to Win?
                     </h4>
-                    <p className="text-white/60 text-[13px] leading-relaxed mb-8">
+                    <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-8">
                       Start your targeted direct mail campaign today. Let us
                       help you develop a winning strategy that reaches your
                       voters effectively.
                     </p>
-                    <button className="bg-[var(--color-primary,#F9A826)] hover:bg-[#e09822] transition-colors text-black font-bold py-3 px-6 rounded w-full flex items-center justify-center gap-2">
+                    <button className="bg-[var(--color-primary,#F9A826)] hover:bg-[#e09822] transition-colors font-bold py-3 px-6 rounded w-full flex items-center justify-center gap-2">
                       Get Started Today
                       <Icons.ArrowRight className="w-4 h-4" />
                     </button>
@@ -428,7 +428,7 @@ export default function PoliticalMail() {
                   <h2 className="text-[32px] md:text-[40px] font-bold mb-4">
                     Serving All Political Parties and Offices
                   </h2>
-                  <p className="text-white/60 text-[14px] md:text-[16px] max-w-[800px] mx-auto leading-relaxed">
+                  <p className="text-[var(--color-gray)] text-[14px] md:text-[16px] max-w-[800px] mx-auto leading-relaxed">
                     A unified journey for every candidate. We bridge the gap
                     with expert direct mail strategies tailored for every point
                     on the political spectrum.
@@ -488,7 +488,7 @@ export default function PoliticalMail() {
                           >
                             {party.title}
                           </h4>
-                          <p className="text-black/60 text-[13px] leading-relaxed mb-6 flex-grow">
+                          <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-6 flex-grow">
                             {party.desc}
                           </p>
                           <Link

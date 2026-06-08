@@ -42,13 +42,13 @@ export default function SignageHeroSection() {
               Get your Business Signage in Best Price.
             </h1>
 
-            <p className="text-gray-400 font-normal text-[16px] sm:text-[19px] leading-[1.3] mb-6">
+            <p className="text-[var(--color-gray)] font-normal text-[16px] sm:text-[19px] leading-[1.3] mb-6">
               Get high-quality business signage designed to attract attention
               and build trust. We offer durable, visually striking signs at the
               best prices, tailored to fit your brand and business needs.
             </p>
 
-            <p className="text-gray-400 font-normal text-[16px] sm:text-[19px] leading-[1.3]">
+            <p className="text-[var(--color-gray)] font-normal text-[16px] sm:text-[19px] leading-[1.3]">
               Make your business stand out with affordable, eye-catching
               signage. From design to installation, we deliver quality signs
               that fit your budget without compromising on style.

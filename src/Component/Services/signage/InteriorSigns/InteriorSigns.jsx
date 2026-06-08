@@ -231,7 +231,7 @@ export default function InteriorSigns() {
             ))}
           </motion.div>
         ) : (
-          <div className="text-gray-400 text-[16px] italic pb-20">
+          <div className="text-[var(--color-gray)] text-[16px] italic pb-20">
             More content coming soon...
           </div>
         )}

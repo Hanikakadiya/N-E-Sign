@@ -22,7 +22,7 @@ export default function ContectHeroSection() {
               Get in Touch With <span className="text-[var(--color-primary)]">NE Signs</span>
             </h1>
 
-            <div className="space-y-6 text-gray-400 text-base md:text-lg max-w-xl leading-relaxed">
+            <div className="space-y-6 text-[var(--color-gray)] text-base md:text-lg max-w-xl leading-relaxed">
               <p>
                 Looking for reliable printing and signage services? Have
                 questions about your next project? The team at NE Signs is here
@@ -67,7 +67,7 @@ export default function ContectHeroSection() {
           {/* Card 1 */}
           <div className="bg-gradient-to-b from-white/[0.06] to-transparent border border-white/[0.05] rounded-2xl p-10 flex flex-col items-center text-center transition-all hover:border-white/[0.1] hover:bg-white/[0.05] duration-300 shadow-2xl shadow-black/40 backdrop-blur-sm group">
             <FiPhoneCall className="text-[var(--color-primary)] text-[2.5rem] mb-6 transition-transform group-hover:scale-110 duration-300" />
-            <p className="text-gray-400 text-[20px] mb-3 tracking-wide">Call Us</p>
+            <p className="text-[var(--color-gray)] text-[20px] mb-3 tracking-wide">Call Us</p>
             <p className="font-semibold text-lg md:text-[24px] tracking-wide">
               +1 (123) 456-7890
             </p>
@@ -76,7 +76,7 @@ export default function ContectHeroSection() {
           {/* Card 2 */}
           <div className="bg-gradient-to-b from-white/[0.06] to-transparent border border-white/[0.05] rounded-2xl p-10 flex flex-col items-center text-center transition-all hover:border-white/[0.1] hover:bg-white/[0.05] duration-300 shadow-2xl shadow-black/40 backdrop-blur-sm group">
             <FiMail className="text-[var(--color-primary)] text-[2.5rem] mb-6 transition-transform group-hover:scale-110 duration-300" />
-            <p className="text-gray-400 text-[20px] mb-3 tracking-wide">
+            <p className="text-[var(--color-gray)] text-[20px] mb-3 tracking-wide">
               Email Support
             </p>
             <p className="font-semibold text-lg md:text-[24px] tracking-wide">
@@ -87,7 +87,7 @@ export default function ContectHeroSection() {
           {/* Card 3 */}
           <div className="bg-gradient-to-b from-white/[0.06] to-transparent border border-white/[0.05] rounded-2xl p-10 flex flex-col items-center text-center transition-all hover:border-white/[0.1] hover:bg-white/[0.05] duration-300 shadow-2xl shadow-black/40 backdrop-blur-sm group">
             <FiMapPin className="text-[var(--color-primary)] text-[2.5rem] mb-6 transition-transform group-hover:scale-110 duration-300" />
-            <p className="text-gray-400 text-[20px] mb-3 tracking-wide">
+            <p className="text-[var(--color-gray)] text-[20px] mb-3 tracking-wide">
               Visit Our Office
             </p>
             <p className="font-semibold text-base md:text-[24px] leading-snug">

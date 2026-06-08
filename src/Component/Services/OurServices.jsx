@@ -80,7 +80,7 @@ export default function OurServices() {
 
           {/* Description Paragraph */}
           <div className="pl-0 md:pl-16 lg:pl-14">
-            <p className="text-gray-300 text-base md:text-lg lg:text-[22px] font-poppins leading-[1.3] max-w-3xl">
+            <p className="text-[var(--color-gray)] text-base md:text-lg lg:text-[22px] font-poppins leading-[1.3] max-w-3xl">
               We create customized printing solutions focused on achieving your
               business goals. From impactful designs to premium-quality
               materials, every print is thoughtfully crafted to strengthen your
@@ -119,7 +119,7 @@ export default function OurServices() {
                   {service.title}
                 </h4>
 
-                <p className="text-gray-300 text-[15px] font-normal leading-[1.6] mb-8 grow">
+                <p className="text-[var(--color-gray)] text-[15px] font-normal leading-[1.6] mb-8 grow">
                   {service.description}
                 </p>
 

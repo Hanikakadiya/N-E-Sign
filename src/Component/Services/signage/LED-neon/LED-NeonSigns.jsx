@@ -274,7 +274,7 @@ export default function LEDNeonSigns() {
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="Your text"
-              className="bg-transparent border-1 rounded-[15px] outline-none w-full py-3 px-2 text-sm placeholder:text-white/30 text-center"
+              className="bg-transparent border-1 rounded-[15px] outline-none w-full py-3 px-2 text-sm placeholder:text-[var(--color-gray)] text-center"
               maxLength={30}
             />
             <button
@@ -298,7 +298,7 @@ export default function LEDNeonSigns() {
             >
               {/* TEXT COLOR */}
               <div className="bg-[#222222] border border-[#333] rounded-[24px] p-5 shadow-2xl">
-                <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span
                     className="w-2 h-2 rounded-full"
                     style={{ backgroundColor: textColor || "#ffffff" }}
@@ -333,7 +333,7 @@ export default function LEDNeonSigns() {
                     </div>
                   ))}
                   <div className="flex justify-center items-center">
-                    <button className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-colors hover:bg-white/30">
+                    <button className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors hover:bg-white/30">
                       <LuPenTool size={18} />
                     </button>
                   </div>
@@ -342,7 +342,7 @@ export default function LEDNeonSigns() {
 
               {/* GLOW COLOR */}
               <div className="bg-[#222222] border border-[#333] rounded-[24px] p-5 shadow-2xl">
-                <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span
                     className="w-2 h-2 rounded-full"
                     style={{
@@ -378,7 +378,7 @@ export default function LEDNeonSigns() {
                     </div>
                   ))}
                   <div className="flex justify-center items-center">
-                    <button className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-colors hover:bg-white/30">
+                    <button className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors hover:bg-white/30">
                       <LuPenTool size={18} />
                     </button>
                   </div>
@@ -387,7 +387,7 @@ export default function LEDNeonSigns() {
 
               {/* TYPOGRAPHIC SOUL */}
               <div className="bg-[#222222] border border-[#333] rounded-[24px] p-5 shadow-2xl">
-                <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span className="w-2 h-2 rounded-full bg-gray-500"></span>
                   Typographic Soul
                 </h3>
@@ -427,7 +427,7 @@ export default function LEDNeonSigns() {
 
           {activeTab === "SIZE" && (
             <div className="bg-[#111111]/70 backdrop-blur border border-[#333] rounded-[32px] p-6 shadow-2xl">
-              <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+              <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                 <span
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ backgroundColor: themeColor }}
@@ -460,7 +460,7 @@ export default function LEDNeonSigns() {
                           {s.price}
                         </span>
                       </div>
-                      <div className="flex justify-between items-center text-[10px] text-white/50 w-full">
+                      <div className="flex justify-between items-center text-[10px] text-[var(--color-gray)] w-full">
                         <span>Length: {s.length}</span>
                         <span>Height: {s.height}</span>
                       </div>
@@ -477,7 +477,7 @@ export default function LEDNeonSigns() {
               className="flex flex-col gap-4 max-h-[70vh] overflow-y-auto pb-10 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-white/20 hover:[&::-webkit-scrollbar-thumb]:bg-white/40 [&::-webkit-scrollbar-thumb]:rounded-full pr-2 w-[370px] -ml-6 focus:outline-none"
             >
               <div className="bg-[#222222] backdrop-blur-xl border border-[#333] rounded-[32px] p-6 shadow-2xl">
-                <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span
                     className="w-1.5 h-1.5 rounded-full"
                     style={{ backgroundColor: themeColor }}
@@ -542,7 +542,7 @@ export default function LEDNeonSigns() {
               </div>
 
               <div className="bg-[#222222] backdrop-blur-xl border border-[#333] rounded-[32px] p-6 shadow-2xl">
-                <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span
                     className="w-1.5 h-1.5 rounded-full"
                     style={{ backgroundColor: themeColor }}
@@ -583,14 +583,14 @@ export default function LEDNeonSigns() {
                   })}
                 </div>
 
-                <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span
                     className="w-1.5 h-1.5 rounded-full"
                     style={{ backgroundColor: themeColor }}
                   ></span>
                   Background Settings
                 </h3>
-                <p className="text-xs text-white/70">
+                <p className="text-xs text-[var(--color-gray)]">
                   You can select a room background using the thumbnails on the
                   left side of the screen.
                 </p>
@@ -600,14 +600,14 @@ export default function LEDNeonSigns() {
 
           {activeTab === "BGCOLOR" && (
             <div className="bg-[#222222] backdrop-blur-xl border border-[#333] rounded-[32px] p-6 shadow-2xl">
-              <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+              <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                 <span
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ backgroundColor: themeColor }}
                 ></span>
                 Background Color
               </h3>
-              <p className="text-xs text-white/70">
+              <p className="text-xs text-[var(--color-gray)]">
                 Custom background colors coming soon.
               </p>
             </div>
@@ -615,7 +615,7 @@ export default function LEDNeonSigns() {
 
           {activeTab === "EFFECTS" && (
             <div className="bg-[#222222] backdrop-blur-xl border border-[#333] rounded-[32px] p-6 shadow-2xl">
-              <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+              <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                 <span
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ backgroundColor: themeColor }}
@@ -648,7 +648,7 @@ export default function LEDNeonSigns() {
                   >
                     Remote Control Dimmer
                   </span>
-                  <span className="text-[10px] text-white/50">
+                  <span className="text-[10px] text-[var(--color-gray)]">
                     Adjust brightness and flashing modes.
                   </span>
                 </button>
@@ -673,7 +673,7 @@ export default function LEDNeonSigns() {
                   >
                     RGB Color Changing
                   </span>
-                  <span className="text-[10px] text-white/50">
+                  <span className="text-[10px] text-[var(--color-gray)]">
                     Dynamic color changing effects with remote.
                   </span>
                 </button>
@@ -683,7 +683,7 @@ export default function LEDNeonSigns() {
 
           {activeTab === "LEDKIT" && (
             <div className="bg-[#222222] backdrop-blur-xl border border-[#333] rounded-[32px] p-6 shadow-2xl">
-              <h3 className="text-[10px] font-bold text-white/70 tracking-widest mb-4 flex items-center gap-2 uppercase">
+              <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                 <span
                   className="w-1.5 h-1.5 rounded-full"
                   style={{ backgroundColor: themeColor }}
@@ -711,7 +711,7 @@ export default function LEDNeonSigns() {
                   >
                     Indoor Use Only
                   </span>
-                  <span className="text-[10px] text-white/50">
+                  <span className="text-[10px] text-[var(--color-gray)]">
                     Standard power supply and wiring.
                   </span>
                 </button>
@@ -736,7 +736,7 @@ export default function LEDNeonSigns() {
                   >
                     Outdoor Waterproofing
                   </span>
-                  <span className="text-[10px] text-white/50">
+                  <span className="text-[10px] text-[var(--color-gray)]">
                     Weather-sealed LEDs and waterproof supply.
                   </span>
 

@@ -182,7 +182,7 @@ export default function NavBar() {
                               </div>
                               {dropLink.subItems && (
                                 <Icons.ChevronRight
-                                  className={`w-4 h-4 ${isActive ? "text-black" : "text-gray-400"}`}
+                                  className={`w-4 h-4 ${isActive ? "text-black" : "text-[var(--color-gray)]"}`}
                                 />
                               )}
                             </Link>
@@ -319,7 +319,7 @@ export default function NavBar() {
                       (link.dropdown &&
                         link.dropdown.some((d) => location.pathname === d.href))
                         ? "text-[var(--color-primary)]"
-                        : "text-gray-300 hover:text-[var(--color-primary)]"
+                        : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"
                     }`}
                   >
                     {link.name}
@@ -327,7 +327,7 @@ export default function NavBar() {
                   {link.dropdown && (
                     <button
                       onClick={() => toggleDropdown(index)}
-                      className="text-gray-300 hover:text-[var(--color-primary)] text-2xl leading-none px-2 focus:outline-none"
+                      className="text-[var(--color-gray)] hover:text-[var(--color-primary)] text-2xl leading-none px-2 focus:outline-none"
                     >
                       {activeDropdown === index ? "-" : "+"}
                     </button>
@@ -346,7 +346,7 @@ export default function NavBar() {
                             className={`font-poppins text-[16px] transition duration-300 ${
                               location.pathname === dropLink.href
                                 ? "text-[var(--color-primary)]"
-                                : "text-gray-400 hover:text-[var(--color-primary)]"
+                                : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"
                             }`}
                           >
                             {dropLink.name}
@@ -354,7 +354,7 @@ export default function NavBar() {
                           {dropLink.subItems && (
                             <button
                               onClick={() => toggleSubDropdown(dropLink.name)}
-                              className="text-gray-400 hover:text-[var(--color-primary)] text-2xl leading-none px-2 focus:outline-none"
+                              className="text-[var(--color-gray)] hover:text-[var(--color-primary)] text-2xl leading-none px-2 focus:outline-none"
                             >
                               {activeSubDropdown === dropLink.name ? "-" : "+"}
                             </button>
@@ -373,7 +373,7 @@ export default function NavBar() {
                                   className={`font-poppins text-[14px] transition duration-300 ${
                                     location.pathname === subItem.href
                                       ? "text-[var(--color-primary)]"
-                                      : "text-gray-500 hover:text-[var(--color-primary)]"
+                                      : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"
                                   }`}
                                 >
                                   {subItem.name}

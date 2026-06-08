@@ -251,7 +251,7 @@ export default function LookAtOurServices() {
                 <h3 className="text-xl md:text-[22px] font-medium mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 text-[13px] md:text-sm font-light leading-[1.6] max-w-[300px] mx-auto px-2">
+                <p className="text-[var(--color-gray)] text-[13px] md:text-sm font-light leading-[1.6] max-w-[300px] mx-auto px-2">
                   {service.description}
                 </p>
               </motion.div>

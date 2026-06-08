@@ -283,7 +283,7 @@ export default function VehicleService() {
                       className="flex items-center gap-4 bg-[#222] py-4 px-6 rounded-xl border border-[#333]"
                     >
                       <div className="w-2.5 h-2.5 rounded-full bg-[#EAB308] flex-shrink-0"></div>
-                      <span className="text-gray-300 text-[14px] font-medium">
+                      <span className="text-[var(--color-gray)] text-[14px] font-medium">
                         {feature}
                       </span>
                     </div>
@@ -314,7 +314,7 @@ export default function VehicleService() {
                         {option.list.map((item, i) => (
                           <li key={i} className="flex items-center gap-4">
                             <div className="w-2 h-2 rounded-full bg-[#EAB308] flex-shrink-0"></div>
-                            <span className="text-gray-300 text-[14px]">
+                            <span className="text-[var(--color-gray)] text-[14px]">
                               {item}
                             </span>
                           </li>
@@ -368,7 +368,7 @@ export default function VehicleService() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
             {VehicleData.header.title}
           </h2>
-          <p className="text-gray-300 text-[15px] md:text-[16px] max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-[var(--color-gray)] text-[15px] md:text-[16px] max-w-3xl mx-auto leading-relaxed mb-6">
             {VehicleData.header.description}
           </p>
           <div className="w-20 h-1 bg-[#EAB308] rounded-full"></div>

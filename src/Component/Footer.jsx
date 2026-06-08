@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="flex items-center gap-4 mt-6 sm:mt-0">
             <a
               href="https://www.facebook.com/"
-              className="flex items-center gap-2 text-sm text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+              className="flex items-center gap-2 text-sm text-[var(--color-gray)] hover:text-[var(--color-primary)] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +37,7 @@ export default function Footer() {
             </a>
             <a
               href="https://in.pinterest.com/"
-              className="flex items-center gap-2 text-sm text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+              className="flex items-center gap-2 text-sm text-[var(--color-gray)] hover:text-[var(--color-primary)] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
             <a
               href="https://www.linkedin.com/"
-              className="flex items-center gap-2 text-sm text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+              className="flex items-center gap-2 text-sm text-[var(--color-gray)] hover:text-[var(--color-primary)] transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -76,7 +76,7 @@ export default function Footer() {
               href="mailto:nesignsinc@gmail.com"
               className="flex items-center gap-3 xl:gap-4 px-5 py-2.5 xl:px-6 xl:py-3 rounded-full border border-[#333] transition-colors group"
             >
-              <span className="text-[13px] text-gray-300 group-hover:text-white transition-colors">
+              <span className="text-[13px] text-[var(--color-gray)] group-hover:text-white transition-colors">
                 nesignsinc@gmail.com
               </span>
               <Icons.ArrowUpRight className="w-4 h-4 transition-colors" />
@@ -236,7 +236,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="py-8 flex flex-col sm:flex-row justify-between justify-center items-center gap-4"
         >
-          <p className="text-[13px] text-gray-500">
+          <p className="text-[13px] text-[var(--color-gray)]">
             ©2026{" "}
             <span className="text-[var(--color-primary)] font-semibold">
               N.E SIGNS
