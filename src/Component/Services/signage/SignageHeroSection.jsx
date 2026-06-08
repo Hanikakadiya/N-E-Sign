@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Icons } from "../../Icons/icons";
+import { motion } from "framer-motion";
 
 export default function SignageHeroSection() {
   const signageCards = [
@@ -24,7 +25,12 @@ export default function SignageHeroSection() {
       <div className="max-w-[98%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
-          <div className="flex flex-col items-start max-w-[700px]">
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-col items-start max-w-[700px]"
+          >
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[1px] w-20 bg-[var(--color-primary)]"></div>
               <span className="text-[var(--color-primary)] tracking-[0.15em] text-[14px] uppercase">
@@ -47,10 +53,15 @@ export default function SignageHeroSection() {
               signage. From design to installation, we deliver quality signs
               that fit your budget without compromising on style.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Content - Gallery */}
-          <div className="relative w-full">
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="relative w-full"
+          >
             {/* Glow Spot Behind Cards */}
             <div className="absolute top-[20px] right-[-40px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[var(--color-primary)] opacity-30 blur-[100px] md:blur-[120px] rounded-full pointer-events-none z-0"></div>
 
@@ -103,7 +114,7 @@ export default function SignageHeroSection() {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

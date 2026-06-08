@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import VehicleData from "../../../Data/VehicleGraphicsData.json";
 import { Icons } from "../../../Icons/icons";
+import { motion } from "framer-motion";
 
 export default function VehicleService() {
   const { subCategory } = useParams();
@@ -52,7 +53,12 @@ export default function VehicleService() {
 
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-20">
             {/* Left Column: Text */}
-            <div className="w-full lg:w-[50%] max-w-[747px]">
+            <motion.div 
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              className="w-full lg:w-[50%] max-w-[747px]"
+            >
               {modal.tagline && (
                 <span className="text-[#EAB308] text-xs font-bold tracking-widest uppercase mb-4 block">
                   {modal.tagline}
@@ -74,10 +80,15 @@ export default function VehicleService() {
                   </Link>
                 </div>
               )}
-            </div>
+            </motion.div>
 
             {/* Right Column: Orbital Layout */}
-            <div className="w-full lg:w-[40%] relative flex flex-col justify-center items-center py-10 min-h-[350px] lg:min-h-[450px]">
+            <motion.div 
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="w-full lg:w-[40%] relative flex flex-col justify-center items-center py-10 min-h-[350px] lg:min-h-[450px]"
+            >
               {/* Main Image Card */}
               <div className="relative lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-10 xl:-left-10 z-10 w-full max-w-[320px] h-auto lg:max-w-none lg:w-[320px] lg:h-[360px] xl:w-[350px] xl:h-[390px] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center p-6 mx-auto lg:mx-0">
                 <img
@@ -122,7 +133,7 @@ export default function VehicleService() {
                   </div>
                 )}
               </div>
-            </div>
+              </motion.div>
           </div>
         </div>
 
@@ -136,8 +147,12 @@ export default function VehicleService() {
                 const isImageLeft = card.imagePosition === "left";
 
                 return (
-                  <div
+                  <motion.div
                     key={idx}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.6 }}
                     className="bg-white rounded-[32px] overflow-hidden flex flex-col md:flex-row shadow-2xl"
                   >
                     {isImageLeft && (
@@ -215,7 +230,7 @@ export default function VehicleService() {
                         />
                       </div>
                     )}
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
@@ -343,7 +358,13 @@ export default function VehicleService() {
     <section className="bg-[#121212] py-20 px-4 md:px-8 font-poppins text-white min-h-screen mt-12 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 flex flex-col items-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16 flex flex-col items-center"
+        >
           <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
             {VehicleData.header.title}
           </h2>
@@ -351,10 +372,16 @@ export default function VehicleService() {
             {VehicleData.header.description}
           </p>
           <div className="w-20 h-1 bg-[#EAB308] rounded-full"></div>
-        </div>
+        </motion.div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {VehicleData.cards.map((card, idx) => (
             <Link
               key={idx}
@@ -396,7 +423,7 @@ export default function VehicleService() {
               {VehicleData.cta.buttonText}
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

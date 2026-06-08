@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../Icons/icons";
 import SignageData from "../../Data/SignageData.json";
+import { motion } from "framer-motion";
 
 export default function SignageCategorySection() {
   const [activeCard, setActiveCard] = useState(null);
@@ -12,7 +13,13 @@ export default function SignageCategorySection() {
     <section className="w-full pb-20 pt-32 overflow-hidden">
       <div className="max-w-[83%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         {/* Header */}
-        <div className="flex flex-col items-start mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-start mb-12"
+        >
           <div className="flex items-center gap-4 mb-4">
             <div className="h-[1px] w-12 bg-[var(--color-primary)]"></div>
             <span className="text-[var(--color-primary)] tracking-widest text-sm uppercase font-semibold">
@@ -22,10 +29,14 @@ export default function SignageCategorySection() {
           <h2 className="text-4xl md:text-5xl font-bold max-w-xl leading-tight font-poppins">
             Find the Right Signage for Your Business
           </h2>
-        </div>
+        </motion.div>
 
         {/* Cards Container */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:h-[500px] gap-6 lg:gap-6"
           onMouseLeave={() => window.innerWidth >= 1024 && setActiveCard(null)}
         >
@@ -112,7 +123,7 @@ export default function SignageCategorySection() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

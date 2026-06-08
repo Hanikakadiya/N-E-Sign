@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Icons } from "../../../Icons/icons";
 import DigitalSignageData from "../../../Data/DigitalSignageData.json";
+import { motion } from "framer-motion";
 
 export default function DigitalSignage() {
   const { subCategory } = useParams();
@@ -44,7 +45,13 @@ export default function DigitalSignage() {
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden pt-[120px] pb-[100px] px-4 md:px-8 lg:px-16 font-poppins">
-      <div className="max-w-4xl mx-auto text-center mb-16 relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="max-w-4xl mx-auto text-center mb-16 relative z-10"
+      >
         <h1 className="text-3xl md:text-[48px] leading-tight font-bold mb-6">
           Digital Signage Solutions for Every
           <br className="hidden md:block" /> Industry
@@ -53,9 +60,15 @@ export default function DigitalSignage() {
           Transform your space, engage your audience, and communicate with
           impact using our industry-leading LED and digital display solutions.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 relative z-10"
+      >
         {DigitalSignageData.map((card, idx) => (
           <div
             key={idx}
@@ -89,7 +102,7 @@ export default function DigitalSignage() {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
       {/* Dynamic Popup Modal */}
       {selectedCard && (

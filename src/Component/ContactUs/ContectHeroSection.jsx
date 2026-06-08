@@ -1,5 +1,6 @@
 import React from "react";
 import { FiPhoneCall, FiMail, FiMapPin } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function ContectHeroSection() {
   return (
@@ -11,7 +12,12 @@ export default function ContectHeroSection() {
         {/* Top Section: Text and Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center mb-24">
           {/* Left: Text Content */}
-          <div className="space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="space-y-8"
+          >
             <h1 className="text-4xl md:text-5xl lg:text-[48px] font-bold leading-[1.1] tracking-tight">
               Get in Touch With <span className="text-[var(--color-primary)]">NE Signs</span>
             </h1>
@@ -30,10 +36,15 @@ export default function ContectHeroSection() {
                 will respond quickly.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right: Image */}
-          <div className="relative flex justify-center items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="relative flex justify-center items-center"
+          >
             {/* Dark circle behind the avatar to match the design */}
             <div className="absolute w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] bg-white/[0.04] border border-white/[0.05] rounded-full z-0"></div>
 
@@ -43,11 +54,16 @@ export default function ContectHeroSection() {
               alt="Customer Support"
               className="relative z-10 w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] object-cover rounded-[3rem] shadow-2xl shadow-black/60 border border-white/5"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* Bottom Section: Contact Info Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        >
           {/* Card 1 */}
           <div className="bg-gradient-to-b from-white/[0.06] to-transparent border border-white/[0.05] rounded-2xl p-10 flex flex-col items-center text-center transition-all hover:border-white/[0.1] hover:bg-white/[0.05] duration-300 shadow-2xl shadow-black/40 backdrop-blur-sm group">
             <FiPhoneCall className="text-[var(--color-primary)] text-[2.5rem] mb-6 transition-transform group-hover:scale-110 duration-300" />
@@ -79,7 +95,7 @@ export default function ContectHeroSection() {
               Downers grove, IL 60515
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

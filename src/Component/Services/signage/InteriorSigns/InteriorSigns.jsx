@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Icons } from "../../../Icons/icons";
 import SignageData from "../../../Data/SignageData.json";
+import { motion } from "framer-motion";
 
 // --- INTERIOR DETAIL COMPONENT (Dynamic View without Sidebar) ---
 export function InteriorDetailView({ id }) {
@@ -48,8 +49,15 @@ export function InteriorDetailView({ id }) {
 
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16 mt-12 lg:mt-0">
-            {pageData.content.map((section) => (
-              <div key={section.id} className="relative flex flex-col">
+            {pageData.content.map((section, sectionIdx) => (
+              <motion.div 
+                key={section.id} 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.7, delay: sectionIdx * 0.1 }}
+                className="relative flex flex-col"
+              >
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:items-center text-center gap-16 mb-12 justify-around">
                   <div className="flex-1 max-w-5xl lg:pl-16">
@@ -103,7 +111,7 @@ export function InteriorDetailView({ id }) {
                     );
                   })}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -134,7 +142,13 @@ export default function InteriorSigns() {
 
       <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
         {/* Header Section */}
-        <div className="flex flex-col items-start mb-16 relative">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-start mb-16 relative"
+        >
           <div className="flex items-center gap-4 mb-8">
             <Link
               to="/services/signage"
@@ -162,11 +176,17 @@ export default function InteriorSigns() {
             Essential for identifying spaces and enhancing branding within your
             building.
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards Section */}
         {cards.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
+          >
             {cards.map((card, idx) => (
               <Link
                 key={idx}
@@ -209,7 +229,7 @@ export default function InteriorSigns() {
                 </div>
               </Link>
             ))}
-          </div>
+          </motion.div>
         ) : (
           <div className="text-gray-400 text-[16px] italic pb-20">
             More content coming soon...

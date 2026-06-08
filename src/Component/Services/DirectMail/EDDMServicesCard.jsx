@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic from "./DirectMailDynamic";
-
+import { Icons } from "../../../Component/Icons/icons";
 
 export default function EDDMServicesCard() {
   // Scroll to top when page loads
@@ -29,8 +29,9 @@ export default function EDDMServicesCard() {
           secondaryHeading={data.featureRight?.heading}
           secondaryDescription={data.featureRight?.subDescription}
           secondaryListItems={data.featureRight?.features}
-          benefitsData={data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft}
-
+          benefitsData={
+            data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft
+          }
         >
           {/* Section 3: Single Source for Powerful Direct Mail */}
           <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 text-white relative z-10">
@@ -48,16 +49,16 @@ export default function EDDMServicesCard() {
                   {/* Main Image */}
                   <div className="bg-[#dcdcdc] rounded-[24px] p-8 w-full aspect-square flex items-center justify-center shadow-lg">
                     <img
-                      src="/Image/Services/DirectMail/EDDM/DirectMail-EDDM-Flyers.png"
+                      src="/Image/Services/DirectMail/EDDM/EDDM-YourHealth.png"
                       alt="Direct Mail Campaigns"
                       className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                     />
                   </div>
 
                   {/* Floating Badge overlay */}
-                  <div className="absolute -bottom-10 -right-4 md:-right-10 w-[180px] h-[180px] md:w-[220px] md:h-[220px] bg-[#111] border-4 border-[#111] rounded-[24px] overflow-hidden shadow-2xl z-10">
+                  <div className="absolute -bottom-10 -right-4 md:-right-10 w-[180px] h-[180px] md:w-[220px] md:h-[220px] rounded-[24px] overflow-hidden shadow-2xl z-10">
                     <img
-                      src="/Image/Services/DirectMail/EDDM/DirectMail-EDDM-Graph.png"
+                      src="/Image/Services/DirectMail/EDDM/EDDM-Source-Year.png"
                       alt="25+ Years Experience"
                       className="w-full h-full object-cover"
                     />
@@ -100,22 +101,7 @@ export default function EDDMServicesCard() {
                     <div key={idx} className="flex items-start gap-6 relative">
                       {/* Icon Circle */}
                       <div className="flex-shrink-0 w-[48px] h-[48px] rounded-full bg-[var(--color-primary)] flex items-center justify-center relative z-10 shadow-lg border-4 border-[#111]">
-                        {/* <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          className="text-[#111]"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg> */}
-                        {/* <Icons.Check className="w-6 h-6 text-black" /> */}
+                        <Icons.Check className="w-[25px] h-[25px]" />
                       </div>
                       {/* Text Content */}
                       <div className="pt-2">

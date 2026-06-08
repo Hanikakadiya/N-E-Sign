@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 export default function OurServices() {
   const servicesData = [
     {
@@ -57,7 +59,13 @@ export default function OurServices() {
         </svg>
       </div>
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8 md:px-16 lg:px-40 relative z-10">
-        <div className="max-w-5xl">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-5xl"
+        >
           {/* Subtitle */}
           <h3 className="text-[var(--color-primary)] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6 flex items-center gap-2">
             Our Services
@@ -80,57 +88,65 @@ export default function OurServices() {
               deliver measurable results for your business
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Services Cards Grid */}
       <div className="mt-20 flex flex-wrap justify-center gap-6">
         {servicesData.map((service, index) => (
-          <Link
-            to={`/services/${service.title.toLowerCase().replace(" ", "-")}`}
+          <motion.div
             key={index}
-            className="block w-full md:w-[calc(50%-12px)] lg:w-[calc(27%-16px)] p-[1px] bg-gradient-to-b from-transparent to-white transition-all duration-500 cursor-pointer group"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className="block w-full md:w-[calc(50%-12px)] lg:w-[calc(27%-16px)]"
           >
-            <div className="bg-[#050505] w-full h-full p-4 sm:p-5 flex flex-col">
-              <div className="w-full h-[220px] rounded-xl overflow-hidden mb-6 relative shrink-0">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
+            <Link
+              to={`/services/${service.title.toLowerCase().replace(" ", "-")}`}
+              className="block w-full h-full p-[1px] bg-gradient-to-b from-transparent to-white transition-all duration-500 cursor-pointer group"
+            >
+              <div className="bg-[#050505] w-full h-full p-4 sm:p-5 flex flex-col">
+                <div className="w-full h-[220px] rounded-xl overflow-hidden mb-6 relative shrink-0">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
 
-              <h4 className="text-xl sm:text-[24px] font-bold text-white mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300">
-                {service.title}
-              </h4>
+                <h4 className="text-xl sm:text-[24px] font-bold text-white mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300">
+                  {service.title}
+                </h4>
 
-              <p className="text-gray-300 text-[15px] font-normal leading-[1.6] mb-8 grow">
-                {service.description}
-              </p>
+                <p className="text-gray-300 text-[15px] font-normal leading-[1.6] mb-8 grow">
+                  {service.description}
+                </p>
 
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-[1px] bg-[#333] group-hover:bg-[var(--color-primary)] transition-colors duration-300"></div>
-                <div className="flex items-center group-hover:translate-x-4 duration-300">
-                  <span className="text-[var(--color-primary)] font-medium transition-all">
-                    Read More
-                  </span>
-                  <svg
-                    className="w-3.5 h-3.5 text-[var(--color-primary)] transition-transform ml-1 group-hover:translate-x-2 duration-300"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-[1px] bg-[#333] group-hover:bg-[var(--color-primary)] transition-colors duration-300"></div>
+                  <div className="flex items-center group-hover:translate-x-4 duration-300">
+                    <span className="text-[var(--color-primary)] font-medium transition-all">
+                      Read More
+                    </span>
+                    <svg
+                      className="w-3.5 h-3.5 text-[var(--color-primary)] transition-transform ml-1 group-hover:translate-x-2 duration-300"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </motion.div>
         ))}
       </div>
     </section>

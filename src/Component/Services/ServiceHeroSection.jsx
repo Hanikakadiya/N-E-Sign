@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../Icons/icons";
 import "../../index.css";
+import { motion } from "framer-motion";
 
 export default function ServiceHeroSection() {
   const services = [
@@ -16,7 +17,12 @@ export default function ServiceHeroSection() {
     <section className="bg-black min-h-screen w-full pt-[200px] pb-24 font-poppins">
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-10 xl:px-24 flex flex-col lg:flex-row items-start gap-10 xl:gap-16">
         {/* Left Column - Images */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-6">
+        <motion.div 
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="w-full lg:w-1/2 flex flex-col gap-6"
+        >
           {/* Top Coffee Image */}
           <div className="w-full h-[180px] xl:h-[200px] rounded-[32px] overflow-hidden">
             <img
@@ -61,10 +67,15 @@ export default function ServiceHeroSection() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Column - Content */}
-        <div className="w-full lg:w-1/2 flex flex-col">
+        <motion.div 
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="w-full lg:w-1/2 flex flex-col"
+        >
           {/* Section Subtitle */}
           <div className="flex items-center gap-2 text-[var(--color-primary)] mb-6">
             <span className="text-[13px] font-semibold tracking-[0.2em] uppercase">
@@ -97,7 +108,7 @@ export default function ServiceHeroSection() {
               </Link>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

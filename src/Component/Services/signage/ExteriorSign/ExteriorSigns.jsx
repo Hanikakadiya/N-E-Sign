@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from "react-router-dom";
 import { Icons } from "../../../Icons/icons";
 import SignageData from "../../../Data/SignageData.json";
 import Sidebar from "../../../Sidebar";
+import { motion } from "framer-motion";
 
 // --- EXTERIOR DETAIL COMPONENT (Dynamic View with Sidebar) ---
 export function ExteriorDetailView({ id }) {
@@ -72,8 +73,15 @@ export function ExteriorDetailView({ id }) {
 
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16 mt-12 lg:mt-0">
-            {pageData.content.map((section) => (
-              <div key={section.id} className="relative flex flex-col">
+            {pageData.content.map((section, sectionIdx) => (
+              <motion.div 
+                key={section.id} 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.7, delay: sectionIdx * 0.1 }}
+                className="relative flex flex-col"
+              >
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-12">
                   <div className="flex-1 max-w-4xl">
@@ -140,7 +148,7 @@ export function ExteriorDetailView({ id }) {
                     );
                   })}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -177,7 +185,13 @@ export default function ExteriorSigns() {
 
       <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
         {/* Header Section */}
-        <div className="flex flex-col items-start mb-16 relative">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-start mb-16 relative"
+        >
           <div className="flex items-center gap-4 mb-8">
             <Link
               to="/services/signage"
@@ -204,11 +218,17 @@ export default function ExteriorSigns() {
           <p className="text-[var(--color-gray)] text-sm md:text-base lg:text-[16px] max-w-xl font-normal">
             Signs mounted directly on the building for branding and visibility.
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards Section */}
         {cards.length > 0 ? (
-          <div className="flex flex-wrap gap-6 lg:gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="flex flex-wrap gap-6 lg:gap-8"
+          >
             {cards.map((card, idx) => (
               <Link
                 key={idx}
@@ -251,7 +271,7 @@ export default function ExteriorSigns() {
                 </div>
               </Link>
             ))}
-          </div>
+          </motion.div>
         ) : (
           <div className="text-[var(--color-gray)] text-[16px] italic pb-20">
             More content coming soon...

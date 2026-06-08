@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../Icons/icons";
+import { motion } from "framer-motion";
 
 export default function DirectMailDynamic({
   heroHeading,
@@ -35,7 +36,12 @@ export default function DirectMailDynamic({
         />
       </div>
       {/* Hero Header Section */}
-      <div className="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 flex flex-col items-center text-center z-10 px-4 ">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 flex flex-col items-center text-center z-10 px-4 "
+      >
         <h1 className="text-3xl md:text-5xl lg:text-[56px] mb-6 font-poppins font-bold leading-tight tracking-wide">
           {heroHeading || heading}
         </h1>
@@ -56,7 +62,7 @@ export default function DirectMailDynamic({
             {breadcrumbText}
           </span>
         </p>
-      </div>
+      </motion.div>
 
       {/* Primary Content Section */}
       <ContentBlock
@@ -88,7 +94,13 @@ export default function DirectMailDynamic({
 
       {/* Benefits Section (Top Heading, Overlapping Images, Bottom Text) */}
       {benefitsData && (
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+          className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10"
+        >
           <div className="mb-12">
             <h2 className="text-[32px] md:text-[40px] font-bold mb-4 leading-tight text-white">
               {benefitsData.heading}
@@ -146,7 +158,7 @@ export default function DirectMailDynamic({
               </p>
             </div>
           )}
-        </div>
+        </motion.div>
       )}
 
     </section>
@@ -203,7 +215,11 @@ export const ContentBlock = ({
         className={`flex flex-col ${imagePosition === "left" ? "lg:flex-row" : "lg:flex-row-reverse"} items-center lg:items-start gap-12 lg:gap-20`}
       >
         {/* Left/Right Image Section */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, x: imagePosition === "left" ? -40 : 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
           className={`w-full lg:w-5/12 relative flex justify-center ${imagePosition === "left" ? "lg:justify-start" : "lg:justify-end"}`}
         >
           {/* Sparkles (Only for Leaf Theme) */}
@@ -237,10 +253,16 @@ export const ContentBlock = ({
               />
             )}
           </div>
-        </div>
+        </motion.div>
 
         {/* Right/Left Text Section */}
-        <div className="w-full lg:w-7/12 flex flex-col pt-4 lg:pt-10">
+        <motion.div 
+          initial={{ opacity: 0, x: imagePosition === "left" ? 40 : -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="w-full lg:w-7/12 flex flex-col pt-4 lg:pt-10"
+        >
           <h2 className="text-[32px] md:text-4xl lg:text-[48px] font-bold leading-[1.2] mb-6 text-white font-poppins">
             {heading}
           </h2>
@@ -271,7 +293,7 @@ export const ContentBlock = ({
               ))}
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

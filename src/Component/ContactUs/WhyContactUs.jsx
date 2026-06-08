@@ -1,5 +1,6 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function WhyContactUs() {
   return (
@@ -11,7 +12,13 @@ export default function WhyContactUs() {
       <div className="w-full bg-transparent py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left Column */}
-          <div className="flex flex-col gap-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-col gap-8"
+          >
             {/* Card 1: Why Contact Us */}
             <div className="bg-white/[0.03] border border-white/[0.05] border-l-[4px] border-l-[var(--color-primary)] rounded-xl p-8 md:p-10 shadow-2xl backdrop-blur-sm">
               <h2 className="text-[24px] font-bold mb-8 text-white tracking-wide">
@@ -58,10 +65,16 @@ export default function WhyContactUs() {
                 business needs.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Form */}
-          <div className="bg-white/[0.03] border border-white/[0.05] rounded-[2rem] p-8 md:p-12 shadow-2xl backdrop-blur-md">
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="bg-white/[0.03] border border-white/[0.05] rounded-[2rem] p-8 md:p-12 shadow-2xl backdrop-blur-md"
+          >
             <h2 className="text-3xl md:text-[30px] font-bold mb-3 tracking-tight">
               Send Us a Message
             </h2>
@@ -164,7 +177,7 @@ export default function WhyContactUs() {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
