@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic from "./DirectMailDynamic";
 
-
 export default function EDDMServicesCard() {
   // Scroll to top when page loads
   useEffect(() => {
@@ -29,8 +28,9 @@ export default function EDDMServicesCard() {
           secondaryHeading={data.featureRight?.heading}
           secondaryDescription={data.featureRight?.subDescription}
           secondaryListItems={data.featureRight?.features}
-          benefitsData={data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft}
-
+          benefitsData={
+            data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft
+          }
         >
           {/* Section 3: Single Source for Powerful Direct Mail */}
           <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 text-white relative z-10">

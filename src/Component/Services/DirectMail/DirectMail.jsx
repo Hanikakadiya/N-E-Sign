@@ -52,7 +52,6 @@ const DIRECT_MAIL_DATA = [
 ];
 
 export default function DirectMail() {
-
   const cards = DirectMailData || DIRECT_MAIL_DATA;
 
   return (
@@ -116,9 +115,7 @@ export default function DirectMail() {
                     group-hover:opacity-100
                 "
               >
-                <p className="text-[14px] mb-4">
-                  {card.description}
-                </p>
+                <p className="text-[14px] mb-4">{card.description}</p>
 
                 <Link
                   to={`/services/direct-mailing/${card.title
