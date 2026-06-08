@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "./Icons/icons";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
     <footer className="bg-black font-poppins pt-16">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-        <div className="flex flex-col sm:flex-row justify-between items-center pb-8 border-b border-[#222222]">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col sm:flex-row justify-between items-center pb-8 border-b border-[#222222]"
+        >
           {/* Logo */}
           <Link to="/">
             <img
@@ -47,10 +54,16 @@ export default function Footer() {
               Linkedin
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Middle Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]"
+        >
           {/* Column 1: Let's Work Together */}
           <div className="md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0">
             <h2 className="text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">
@@ -213,10 +226,16 @@ export default function Footer() {
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Bottom Section */}
-        <div className="py-8 flex flex-col sm:flex-row justify-between justify-center items-center gap-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="py-8 flex flex-col sm:flex-row justify-between justify-center items-center gap-4"
+        >
           <p className="text-[13px] text-gray-500">
             ©2026{" "}
             <span className="text-[var(--color-primary)] font-semibold">
@@ -224,7 +243,7 @@ export default function Footer() {
             </span>{" "}
             All Rights Reserved
           </p>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

@@ -381,7 +381,7 @@
     "image": "/Image/Services/DirectMail/DirectMail-BoxPicked.png",
     "color": "#66a848",
     "pageType": "CustomerAndBusiness",
-    "heroHeading": "Targeted Mailing Lists (Consumer & B2B)",
+    "heroHeading": "Customer and business mailing list",
     "featureLeft": {
       "image": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirectMail-CustomerBusiness.png",
       "heading": "Targeted Mailing Lists (Consumer & B2B)",
@@ -511,7 +511,7 @@
     "image": "/Image/Services/DirectMail/DirectMail-Location.png",
     "color": "#a1194e",
     "pageType": "VariableData",
-    "heroHeading": "Variable Data Printing Services",
+    "heroHeading": "Variable Data",
     "featureLeft": {
       "image": "/Image/Services/DirectMail/VariableData/DirectMail-VariableData.png",
       "heading": "Variable data makes printing personal",

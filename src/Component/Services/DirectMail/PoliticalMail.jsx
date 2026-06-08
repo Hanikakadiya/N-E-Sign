@@ -3,6 +3,7 @@ import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic, { ContentBlock } from "./DirectMailDynamic";
 import { Icons } from "../../Icons/icons";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function PoliticalMail() {
   useEffect(() => {
@@ -32,7 +33,13 @@ export default function PoliticalMail() {
               <div className="max-w-[1200px] mx-auto">
                 {/* Timeline Section */}
                 <div className="mb-32">
-                  <div className="text-center mb-16">
+                  <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-16"
+                  >
                     <h2 className="text-[32px] md:text-[48px] font-bold mb-4">
                       How Direct Mail Drives Political Victory
                     </h2>
@@ -41,15 +48,26 @@ export default function PoliticalMail() {
                       printed collateral for our candidates. Each milestone
                       represents a competitive full-turn methodology.
                     </p>
-                  </div>
+                  </motion.div>
 
                   <div className="relative">
                     {/* The connecting line */}
                     <div className="hidden md:block absolute top-[20px] left-[0%] right-[0%] h-[1px] bg-white z-0"></div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+                    <motion.div 
+                      initial={{ opacity: 0, y: 40 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.7, staggerChildren: 0.2 }}
+                      className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10"
+                    >
                       {/* Step 1 */}
-                      <div className="flex flex-col items-center group cursor-pointer">
+                      <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="flex flex-col items-center group cursor-pointer"
+                      >
                         <div className="w-[56px] h-[56px] rounded-full py-4 px-4 bg-white text-black flex items-center justify-center font-bold text-[20px] mb-4 relative z-20 transition-all duration-300 group-hover:bg-[var(--color-primary,#F9A826)] group-hover:text-white group-hover:ring-2 group-hover:ring-white group-hover:ring-offset-4 group-hover:ring-offset-[#0a0a0a]">
                           1
                         </div>
@@ -77,10 +95,15 @@ export default function PoliticalMail() {
                             competition.
                           </p>
                         </div>
-                      </div>
+                      </motion.div>
 
                       {/* Step 2 */}
-                      <div className="flex flex-col items-center group cursor-pointer">
+                      <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="flex flex-col items-center group cursor-pointer"
+                      >
                         <div className="w-[56px] h-[56px] rounded-full py-4 px-4 bg-white text-black flex items-center justify-center font-bold text-[16px] mb-4 relative z-20 transition-all duration-300 group-hover:bg-[var(--color-primary,#F9A826)] group-hover:text-white group-hover:ring-2 group-hover:ring-white group-hover:ring-offset-4 group-hover:ring-offset-[#0a0a0a]">
                           2
                         </div>
@@ -106,10 +129,15 @@ export default function PoliticalMail() {
                             stretch every campaign dollar further.
                           </p>
                         </div>
-                      </div>
+                      </motion.div>
 
                       {/* Step 3 */}
-                      <div className="flex flex-col items-center group cursor-pointer">
+                      <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="flex flex-col items-center group cursor-pointer"
+                      >
                         <div className="w-[56px] h-[56px] rounded-full py-4 px-4 bg-white text-black flex items-center justify-center font-bold text-[16px] mb-4 relative z-20 transition-all duration-300 group-hover:bg-[var(--color-primary,#F9A826)] group-hover:text-white group-hover:ring-2 group-hover:ring-white group-hover:ring-offset-4 group-hover:ring-offset-[#0a0a0a]">
                           3
                         </div>
@@ -136,10 +164,15 @@ export default function PoliticalMail() {
                             viewing.
                           </p>
                         </div>
-                      </div>
+                      </motion.div>
 
                       {/* Step 4 */}
-                      <div className="flex flex-col items-center group cursor-pointer">
+                      <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="flex flex-col items-center group cursor-pointer"
+                      >
                         <div className="w-[56px] h-[56px] rounded-full py-4 px-4 bg-white text-black flex items-center justify-center font-bold text-[16px] mb-4 relative z-20 transition-all duration-300 group-hover:bg-[var(--color-primary,#F9A826)] group-hover:text-white group-hover:ring-2 group-hover:ring-white group-hover:ring-offset-4 group-hover:ring-offset-[#0a0a0a]">
                           4
                         </div>
@@ -166,13 +199,19 @@ export default function PoliticalMail() {
                             service.
                           </p>
                         </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                   </div>
                 </div>
 
                 {/* Benefits Section */}
-                <div className="text-center mb-16">
+                <motion.div 
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="text-center mb-16"
+                >
                   <p className="text-white/40 text-[11px] font-bold tracking-widest uppercase mb-4">
                     A Strategic Advantage
                   </p>
@@ -184,9 +223,15 @@ export default function PoliticalMail() {
                     campaigns across voting styles prioritize direct mail to
                     win.
                   </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <motion.div 
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7 }}
+                  className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                >
                   {/* Card 1: Red */}
                   <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#E53E3E] shadow-lg flex flex-col h-[264px]">
                     <div className="flex items-center gap-3 mb-4">
@@ -354,7 +399,7 @@ export default function PoliticalMail() {
                       <Icons.ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
 
@@ -373,7 +418,13 @@ export default function PoliticalMail() {
           {data.parties && (
             <div className="bg-[#111] text-white py-24 px-4 md:px-8 font-sans relative z-10 border-t border-white/5">
               <div className="max-w-[1200px] mx-auto">
-                <div className="text-center mb-20">
+                <motion.div 
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="text-center mb-20"
+                >
                   <h2 className="text-[32px] md:text-[40px] font-bold mb-4">
                     Serving All Political Parties and Offices
                   </h2>
@@ -382,9 +433,15 @@ export default function PoliticalMail() {
                     with expert direct mail strategies tailored for every point
                     on the political spectrum.
                   </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+                <motion.div 
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7 }}
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 "
+                >
                   {data.parties.map((party, idx) => {
                     const isLower = idx % 2 !== 0; // Alternating stagger effect
 
@@ -453,10 +510,16 @@ export default function PoliticalMail() {
                       </div>
                     );
                   })}
-                </div>
+                </motion.div>
 
                 {/* Bottom CTA Pill */}
-                <div className="mt-24 flex justify-center">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="mt-24 flex justify-center"
+                >
                   <div className="bg-white rounded-full py-4 px-8 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-black shadow-xl">
                     <span className="font-bold text-[15px] whitespace-nowrap">
                       Ready to start your journey?
@@ -468,7 +531,7 @@ export default function PoliticalMail() {
                       Contact our experts <span className="text-[18px]"><Icons.squareArrowRight/></span>
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           )}

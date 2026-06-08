@@ -36,7 +36,7 @@ export default function DirectMailDynamic({
         />
       </div>
       {/* Hero Header Section */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -94,7 +94,7 @@ export default function DirectMailDynamic({
 
       {/* Benefits Section (Top Heading, Overlapping Images, Bottom Text) */}
       {benefitsData && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
@@ -227,9 +227,7 @@ export const ContentBlock = ({
               src="/Image/Services/DirectMail/DirectMail-EDDM-Star-Vector.png"
               alt="Star Vector"
               className={`absolute z-20 w-[110px] h-[110px] object-contain pointer-events-none ${
-                imagePosition === "left"
-                  ? "-top-4 -left-4 lg:-left-6"
-                  : "-top-4 -right-4 lg:-right-6"
+                imagePosition === "left" ? " " : "-top-4 -right-4 lg:-right-6"
               }`}
             />
           )}
@@ -255,7 +253,7 @@ export const ContentBlock = ({
         </motion.div>
 
         {/* Right/Left Text Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: imagePosition === "left" ? 40 : -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}

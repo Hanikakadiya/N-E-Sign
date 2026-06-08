@@ -279,7 +279,13 @@ export default function DirectMailCard() {
         </section>
       )}
       {/* CTA Button Section */}
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10"
+      >
         <Link
           to="/contact"
           className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-3 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
@@ -289,7 +295,7 @@ export default function DirectMailCard() {
             <Icons.ArrowRight className="w-5 h-5" />
           </span>
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 }

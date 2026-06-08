@@ -3,6 +3,7 @@ import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic from "./DirectMailDynamic";
 import { Icons } from "../../../Component/Icons/icons";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function EDDMServicesCard() {
   // Scroll to top when page loads
@@ -35,7 +36,13 @@ export default function EDDMServicesCard() {
           }
         >
           {/* Section 3: Single Source for Powerful Direct Mail */}
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10"
+          >
             <div className="w-full mb-20 border-b border-white/10 pb-8 border-dashed">
               <h2 className="text-[32px] md:text-[40px] font-bold leading-[1.2] max-w-[800px]">
                 Your Single Source for Powerful Direct Mail Campaigns That Drive
@@ -118,11 +125,17 @@ export default function EDDMServicesCard() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </DirectMailDynamic>
       )}
       {/* CTA Button Section */}
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10"
+      >
         <Link
           to="/contact"
           className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-3 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
@@ -132,7 +145,7 @@ export default function EDDMServicesCard() {
             <Icons.ArrowRight className="w-5 h-5" />
           </span>
         </Link>
-      </div>
+      </motion.div>
     </>
   );
 }
