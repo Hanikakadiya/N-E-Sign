@@ -35,7 +35,7 @@ export function ExteriorDetailView({ id }) {
 
   if (!pageData || !pageData.content) {
     return (
-      <div className="w-full h-screen flex items-center justify-center font-poppins text-white bg-[#0a0a0a]">
+      <div className="w-full h-screen flex items-center justify-center font-poppins">
         Loading...
       </div>
     );
@@ -44,7 +44,7 @@ export function ExteriorDetailView({ id }) {
   const activeTab = tab || pageData.sidebar?.links?.[0]?.id;
 
   return (
-    <div className="w-full min-h-screen bg-[#0a0a0a] font-poppins pt-[100px] md:pt-[120px]">
+    <div className="w-full min-h-screen font-poppins pt-[100px] md:pt-[120px]">
       <div className="flex flex-col lg:flex-row w-full">
         {/* Left Sidebar */}
         {pageData.sidebar && (
@@ -211,7 +211,7 @@ export default function ExteriorSigns() {
             </div>
           </div>
 
-          <h1 className="text-white text-4xl md:text-5xl lg:text-[54px] font-medium mb-5 font-poppins">
+          <h1 className="text-4xl md:text-5xl lg:text-[54px] font-medium mb-5 font-poppins">
             {categoryData?.title}
           </h1>
 
@@ -261,7 +261,7 @@ export default function ExteriorSigns() {
                   </p>
                 </div>
 
-                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full bg-[#181818] flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
+                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
                   <div className="flex items-center justify-center gap-3 w-fit border border-white/20 rounded-full px-5 py-2 hover:bg-white/5 transition-all duration-300 group/btn">
                     <span className="text-[#c5a880] lg:text-[16px]">
                       View More

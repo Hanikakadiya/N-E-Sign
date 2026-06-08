@@ -25,7 +25,7 @@ export default function SignageHeroSection() {
       <div className="max-w-[98%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
@@ -56,7 +56,7 @@ export default function SignageHeroSection() {
           </motion.div>
 
           {/* Right Content - Gallery */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -72,7 +72,9 @@ export default function SignageHeroSection() {
                 return (
                   <div
                     key={index}
-                    onMouseEnter={() => window.innerWidth >= 1024 && setActiveCard(index)}
+                    onMouseEnter={() =>
+                      window.innerWidth >= 1024 && setActiveCard(index)
+                    }
                     className={`relative rounded-2xl overflow-hidden transition-all duration-500 group flex min-w-0 min-h-0 h-[250px] sm:h-[300px] lg:h-auto ${
                       isActive
                         ? "lg:flex-[5] shadow-2xl"
@@ -93,16 +95,17 @@ export default function SignageHeroSection() {
                     {/* Closed State Title */}
                     <div
                       className={`hidden lg:flex absolute inset-0 items-center justify-center p-4 transition-opacity duration-300 ${
-                        isActive ? "opacity-0 pointer-events-none" : "opacity-100"
+                        isActive
+                          ? "opacity-0 pointer-events-none"
+                          : "opacity-100"
                       }`}
-                    >
-                    </div>
+                    ></div>
 
                     {/* Card Content */}
                     <div
                       className={`absolute bottom-0 left-0 p-6 sm:p-8 w-full lg:w-[280px] xl:w-[350px] flex flex-col items-start transition-opacity duration-500 opacity-100 pointer-events-auto ${isActive ? "lg:opacity-100 lg:pointer-events-auto lg:delay-100" : "lg:opacity-0 lg:pointer-events-none"}`}
                     >
-                      <h3 className="text-white text-[22px] lg:text-[18px] xl:text-[22px] font-bold mb-4 whitespace-nowrap">
+                      <h3 className="text-[22px] lg:text-[18px] xl:text-[22px] font-bold mb-4 whitespace-nowrap">
                         {item.title}
                       </h3>
                       <button className="bg-[var(--color-dark-orange)] text-[12px] lg:text-[10px] xl:text-[12px] font-bold px-5 lg:px-4 xl:px-5 py-2.5 lg:py-2 xl:py-2.5 rounded-md uppercase tracking-[0.1em] flex items-center gap-2 transition-colors cursor-pointer w-fit">

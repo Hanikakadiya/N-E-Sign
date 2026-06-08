@@ -45,7 +45,7 @@ export default function DigitalSignage() {
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden pt-[120px] pb-[100px] px-4 md:px-8 lg:px-16 font-poppins">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -56,13 +56,13 @@ export default function DigitalSignage() {
           Digital Signage Solutions for Every
           <br className="hidden md:block" /> Industry
         </h1>
-        <p className="text-[var(--color-gray)] text-sm md:text-[16px] max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-400 text-sm md:text-[16px] max-w-4xl mx-auto leading-relaxed">
           Transform your space, engage your audience, and communicate with
           impact using our industry-leading LED and digital display solutions.
         </p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -76,7 +76,7 @@ export default function DigitalSignage() {
             className={`group block bg-white rounded-[20px] p-6 md:p-5 transition-all duration-300 cursor-pointer flex flex-col hover:-translate-y-2 hover:shadow-xl ${card.hoverBg || ""}`}
           >
             <div
-              className={`mb-6 h-[40px] flex items-center transition-colors duration-300 ${card.iconColor || "text-[var(--color-gray)]"} group-hover:text-white`}
+              className={`mb-6 h-[40px] flex items-center transition-colors duration-300 ${card.iconColor || "text-gray-500"} group-hover:text-white`}
             >
               {card.icon && Icons[card.icon] ? (
                 React.createElement(Icons[card.icon], { className: "w-9 h-9" })
@@ -89,11 +89,11 @@ export default function DigitalSignage() {
               {card.title}
             </h3>
 
-            <p className="text-[var(--color-gray)] group-hover:text-white/80 text-[12px] font-medium mb-4 transition-colors duration-300">
+            <p className="text-gray-400 group-hover:text-white/80 text-[12px] font-medium mb-4 transition-colors duration-300">
               {card.subtitle}
             </p>
 
-            <p className="text-[var(--color-gray)] group-hover:text-white text-[13px] leading-relaxed mb-8 transition-colors duration-300">
+            <p className="text-gray-500 group-hover:text-white text-[13px] leading-relaxed mb-8 transition-colors duration-300">
               {card.description}
             </p>
 
@@ -114,7 +114,7 @@ export default function DigitalSignage() {
             {/* Close Button */}
             <button
               onClick={handleCloseModal}
-              className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-[var(--color-gray)] transition-colors"
+              className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors"
             >
               <Icons.Close className="w-4 h-4" />
             </button>
@@ -161,7 +161,7 @@ export default function DigitalSignage() {
                   `Inspire, Inform & Grow Your ${selectedCard.title}.`}
               </h2>
 
-              <p className="text-[var(--color-gray)] text-[13px] leading-relaxed mb-5">
+              <p className="text-gray-500 text-[13px] leading-relaxed mb-5">
                 {selectedCard.modal?.description || selectedCard.description}
               </p>
 
@@ -198,7 +198,7 @@ export default function DigitalSignage() {
                             className="w-4 h-4 mt-0.5 shrink-0"
                             style={{ color: selectedCard.themeColor }}
                           />
-                          <span className="text-[var(--color-gray)] text-[13px]">
+                          <span className="text-gray-600 text-[13px]">
                             {feature}
                           </span>
                         </li>
@@ -231,7 +231,7 @@ export default function DigitalSignage() {
                       </div>
 
                       {opt.description && (
-                        <p className="text-[var(--color-gray)] text-[12px] leading-relaxed">
+                        <p className="text-gray-500 text-[12px] leading-relaxed">
                           {opt.description}
                         </p>
                       )}
@@ -244,7 +244,7 @@ export default function DigitalSignage() {
                                 className="w-4 h-4 mt-0.5 shrink-0"
                                 style={{ color: selectedCard.themeColor }}
                               />
-                              <span className="text-[var(--color-gray)] text-[13px]">
+                              <span className="text-gray-600 text-[13px]">
                                 {item}
                               </span>
                             </li>
@@ -266,7 +266,7 @@ export default function DigitalSignage() {
                 <Icons.ArrowRight className="w-4 h-4" />
               </button>
 
-              <p className="text-center text-[var(--color-gray)] text-[11px] mt-3">
+              <p className="text-center text-gray-400 text-[11px] mt-3">
                 {selectedCard.modal?.footerText ||
                   "Boost your engagement with vibrant LED displays."}
               </p>
