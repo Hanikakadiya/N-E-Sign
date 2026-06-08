@@ -195,8 +195,9 @@ export default function LEDNeonSigns() {
         className="flex-1 relative overflow-hidden flex flex-col"
         style={{
           backgroundImage: `url(${bgImage.url})`,
-          backgroundSize: "cover",
+          backgroundSize: "100% 100%",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           transition: "background-image 0.5s ease-in-out",
         }}
       >
