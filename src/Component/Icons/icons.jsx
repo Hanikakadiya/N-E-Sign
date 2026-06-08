@@ -22,6 +22,8 @@ export const Icons = {
   ArrowUpRight: createIcon("ph:arrow-up-right"),
   ChevronDown: createIcon("ph:caret-down"),
   ChevronRight: createIcon("ph:caret-right"),
+  UpDownArrow: createIcon("streamline:arrow-curvy-up-down-2"),
+  checkfilled: createIcon("lets-icons:check-fill"),
 
   // Contact & Social
   Phone: createIcon("ph:phone"),
@@ -99,4 +101,11 @@ export const Icons = {
   TimelineHandshake: createIcon("ph:handshake"),
   TimelineSealCheck: createIcon("ph:seal-check"),
   TimelineTrendingUp: createIcon("ph:trend-up"),
+  //Direct Mail
+  roundLocation:createIcon("fluent-mdl2:location-outline"),
+  Earth:createIcon("pajamas:earth"),
+  database:createIcon("material-symbols-light:database-outline"),
+  route:createIcon("ph:route"),
+  percent:createIcon("mdi:percent-outline"),
+  
 };

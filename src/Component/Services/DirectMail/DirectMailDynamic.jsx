@@ -160,7 +160,6 @@ export default function DirectMailDynamic({
           )}
         </motion.div>
       )}
-
     </section>
   );
 }
