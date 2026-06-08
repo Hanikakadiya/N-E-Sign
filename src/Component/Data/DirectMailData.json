@@ -286,7 +286,7 @@
       }
     ],
     "featureRight": {
-      "image": "/Image/Services/DirectMail/laptop-network.jpg",
+      "image": "/Image/Services/DirectMail/Political/DirectMail-DirectMAilCArd-Political-RightImage.png",
       "heading": "Why Choose NE Signs For Your Political Campaign?",
       "subDescription": "Backed by decades of industry expertise, NE Signs delivers cost-effective direct mail campaigns designed to drive your political message.",
       "features": [
@@ -413,7 +413,7 @@
       }
     ],
     "benefitsLeft": {
-      "image": "/Image/Services/DirectMail/trust-loyalty.jpg",
+      "image": "/Image/Services/DirectMail/CustomerAndBusinessCard/DirectMail-CustomerAndBusiness-RightImage.png",
       "heading": "Benefits of Using Targeted Direct Mailing Lists",
       "subDescription": "The right audience list is the foundation of any successful direct mail campaign. Don't waste money mailing to the wrong people.",
       "features": [
@@ -503,8 +503,8 @@
     "howItWorks": {
       "heading": "How does variable data printing work?",
       "subDescription": "Reconnect with past clients by understanding their needs, offering personalized outreach, exclusive deals, and improved services. Consistent follow-ups and strong customer support help rebuild trust and long-term relationships.",
-      "imageTop": "/Image/Services/DirectMail/variable-3.jpg",
-      "imageBottom": "/Image/Services/DirectMail/variable-4.jpg",
+      "imageTop": "/Image/Services/DirectMail/VariableData/DirectMail-VariableData-Norman.png",
+      "imageBottom": "/Image/Services/DirectMail/VariableData/DirectMail-VariableData-Allen.png",
       "features": [
         "Data from mailing lists connects to layout fields",
         "Personalized text and images for each customer",

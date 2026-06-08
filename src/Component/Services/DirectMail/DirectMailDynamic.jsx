@@ -154,7 +154,7 @@ export default function DirectMailDynamic({
 }
 
 // Reusable Content Block Component
-const ContentBlock = ({
+export const ContentBlock = ({
   imagePosition,
   image,
   heading,
