@@ -24,6 +24,7 @@ export const Icons = {
   ChevronRight: createIcon("ph:caret-right"),
   UpDownArrow: createIcon("streamline:arrow-curvy-up-down-2"),
   checkfilled: createIcon("lets-icons:check-fill"),
+  Rightsideaarow: createIcon("iconamoon:arrow-right-2-thin"),
 
   // Contact & Social
   Phone: createIcon("ph:phone"),

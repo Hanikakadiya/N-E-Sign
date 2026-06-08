@@ -140,7 +140,7 @@ export default function LEDNeonSigns() {
 
   return (
     <div
-      className="flex w-full bg-black overflow-hidden pt-[80px] md:pt-[100px] font-['Inter',sans-serif]"
+      className="flex w-full overflow-hidden pt-[80px] md:pt-[100px] font-['Inter',sans-serif]"
       style={{ height: "calc(100vh)" }}
     >
       <style>{`
@@ -204,7 +204,7 @@ export default function LEDNeonSigns() {
         <div className="absolute inset-0 z-0 pointer-events-none"></div>
 
         {/* Floating Left Thumbnails (Square Shape) */}
-        <div className="absolute left-6 top-1/2 -translate-y-1/2 z-20 bg-black/30 backdrop-blur-xl border border-white/20 rounded-2xl p-2 flex flex-col gap-2 max-h-[60vh] overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] shadow-2xl">
+        <div className="absolute left-6 top-1/2 -translate-y-1/2 z-20 backdrop-blur-xl border border-white/20 rounded-2xl p-2 flex flex-col gap-2 max-h-[60vh] overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] shadow-2xl">
           {BACKGROUNDS.map((bg) => (
             <button
               key={bg.id}
@@ -342,7 +342,7 @@ export default function LEDNeonSigns() {
               </div>
 
               {/* GLOW COLOR */}
-              <div className="bg-[#222222] border border-[#333] rounded-[24px] p-5 shadow-2xl">
+              <div className="bg-[#222222] border rounded-[24px] p-5 shadow-2xl">
                 <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span
                     className="w-2 h-2 rounded-full"
@@ -387,7 +387,7 @@ export default function LEDNeonSigns() {
               </div>
 
               {/* TYPOGRAPHIC SOUL */}
-              <div className="bg-[#222222] border border-[#333] rounded-[24px] p-5 shadow-2xl">
+              <div className="border border-[#333] rounded-[24px] p-5 shadow-2xl">
                 <h3 className="text-[10px] font-bold text-[var(--color-gray)] tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span className="w-2 h-2 rounded-full bg-gray-500"></span>
                   Typographic Soul

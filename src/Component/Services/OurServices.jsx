@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Icons } from "../Icons/icons";
 
 export default function OurServices() {
   const servicesData = [
@@ -37,7 +38,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="container mx-auto bg-black relative font-poppins">
+    <section className="container mx-auto relative font-poppins">
       {/* Right side background glow */}
 
       {/* Right side SVG Ring Graphic */}
@@ -59,7 +60,7 @@ export default function OurServices() {
         </svg>
       </div>
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8 md:px-16 lg:px-40 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -115,7 +116,7 @@ export default function OurServices() {
                   />
                 </div>
 
-                <h4 className="text-xl sm:text-[24px] font-bold text-white mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300">
+                <h4 className="text-xl sm:text-[24px] font-bold mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300">
                   {service.title}
                 </h4>
 
@@ -129,19 +130,7 @@ export default function OurServices() {
                     <span className="text-[var(--color-primary)] font-medium transition-all">
                       Read More
                     </span>
-                    <svg
-                      className="w-3.5 h-3.5 text-[var(--color-primary)] transition-transform ml-1 group-hover:translate-x-2 duration-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
+                    <Icons.Rightsideaarow className="w-5 h-5 ml-5 transition-colors duration-300" />
                   </div>
                 </div>
               </div>

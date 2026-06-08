@@ -25,7 +25,7 @@ export function InteriorDetailView({ id }) {
 
   if (!pageData || !pageData.content) {
     return (
-      <div className="w-full h-screen flex items-center justify-center font-poppins text-white bg-[#0a0a0a]">
+      <div className="w-full h-screen flex items-center justify-center font-poppins">
         Loading...
       </div>
     );
@@ -50,8 +50,8 @@ export function InteriorDetailView({ id }) {
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16 mt-12 lg:mt-0">
             {pageData.content.map((section, sectionIdx) => (
-              <motion.div 
-                key={section.id} 
+              <motion.div
+                key={section.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -142,7 +142,7 @@ export default function InteriorSigns() {
 
       <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -158,7 +158,7 @@ export default function InteriorSigns() {
               <Icons.ArrowRight className="w-5 h-5 rotate-180" />
             </Link>
 
-            <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-[#1a1a1a] w-fit shadow-lg border border-white/5">
+            <div className="flex items-center gap-3 px-4 py-2 rounded-full w-fit shadow-lg border border-white/5">
               <div className="w-3.5 h-3.5 flex items-center justify-center rounded-full border ">
                 <div className="w-[6px] h-[6px] rounded-full bg-[var(--color-gray)]"></div>
               </div>
@@ -180,7 +180,7 @@ export default function InteriorSigns() {
 
         {/* Cards Section */}
         {cards.length > 0 ? (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -219,7 +219,7 @@ export default function InteriorSigns() {
                   </p>
                 </div>
 
-                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full bg-[#181818] flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
+                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
                   <div className="flex items-center justify-center gap-3 w-fit border border-white/20 rounded-full px-5 py-2 hover:bg-white/5 transition-all duration-300 group/btn">
                     <span className="text-[#c5a880] lg:text-[16px]">
                       View More
@@ -231,7 +231,7 @@ export default function InteriorSigns() {
             ))}
           </motion.div>
         ) : (
-          <div className="text-[var(--color-gray)] text-[16px] italic pb-20">
+          <div className="text-gray-400 text-[16px] italic pb-20">
             More content coming soon...
           </div>
         )}

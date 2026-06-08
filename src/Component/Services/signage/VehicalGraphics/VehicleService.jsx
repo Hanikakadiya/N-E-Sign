@@ -53,7 +53,7 @@ export default function VehicleService() {
 
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-20">
             {/* Left Column: Text */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
@@ -83,7 +83,7 @@ export default function VehicleService() {
             </motion.div>
 
             {/* Right Column: Orbital Layout */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
@@ -133,7 +133,7 @@ export default function VehicleService() {
                   </div>
                 )}
               </div>
-              </motion.div>
+            </motion.div>
           </div>
         </div>
 
@@ -283,7 +283,7 @@ export default function VehicleService() {
                       className="flex items-center gap-4 bg-[#222] py-4 px-6 rounded-xl border border-[#333]"
                     >
                       <div className="w-2.5 h-2.5 rounded-full bg-[#EAB308] flex-shrink-0"></div>
-                      <span className="text-[var(--color-gray)] text-[14px] font-medium">
+                      <span className="text-gray-300 text-[14px] font-medium">
                         {feature}
                       </span>
                     </div>
@@ -314,7 +314,7 @@ export default function VehicleService() {
                         {option.list.map((item, i) => (
                           <li key={i} className="flex items-center gap-4">
                             <div className="w-2 h-2 rounded-full bg-[#EAB308] flex-shrink-0"></div>
-                            <span className="text-[var(--color-gray)] text-[14px]">
+                            <span className="text-gray-300 text-[14px]">
                               {item}
                             </span>
                           </li>
@@ -358,7 +358,7 @@ export default function VehicleService() {
     <section className="bg-[#121212] py-20 px-4 md:px-8 font-poppins text-white min-h-screen mt-12 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto relative z-10">
         {/* Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -368,14 +368,14 @@ export default function VehicleService() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
             {VehicleData.header.title}
           </h2>
-          <p className="text-[var(--color-gray)] text-[15px] md:text-[16px] max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-gray-300 text-[15px] md:text-[16px] max-w-3xl mx-auto leading-relaxed mb-6">
             {VehicleData.header.description}
           </p>
           <div className="w-20 h-1 bg-[#EAB308] rounded-full"></div>
         </motion.div>
 
         {/* Grid */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
