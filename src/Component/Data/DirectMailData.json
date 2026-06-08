@@ -75,7 +75,7 @@
     "image": "/Image/Services/DirectMail/DirectMail-PostInBox.png",
     "color": "#e6af41",
     "pageType": "DirectMail",
-    "heroHeading": "Comprehensive Direct Mail Solutions",
+    "heroHeading": "Direct Mail",
     "featureRight": {
       "image": "/Image/Services/DirectMail/Directmailcard/DirectMail-DirectMailCardBi-Fold.png",
       "heading": "Direct Mailing Lists Service",
@@ -93,11 +93,24 @@
         "Warehousing, inventory management, and on-demand fulfillment solutions."
       ]
     },
+    "bottomFeatureRight": {
+      "image": "/Image/Services/DirectMail/Political/DirectMail-DirectMAilCArd-Political-RightImage.png",
+      "heading": "Work With Top-Rated Direct Mail Professionals Near You",
+      "subDescription": "When you partner with N.E Signs, you gain the advantage of our extensive experience in planning and delivering high-performing direct mail campaigns. We collaborate only with trusted, long-established mailing list providers to ensure your message reaches the right audience every time.",
+      "features": [
+        "Create response-driven postcards",
+        "Strengthen customer relationships",
+        "Personalize every mail piece",
+        "Promote offers with targeted mail",
+        "Design brochures that convert",
+        "Maximize ROI with smart list management"
+      ]
+    },
     "benefitsLeft": {
       "imageTop": "/Image/Services/DirectMail/Directmailcard/DirectMail-MailCard-chees.png",
       "imageBottom": "/Image/Services/DirectMail/Directmailcard/DirectMail-MailCard-OnHandsHumans.png",
-      "heading": "Ways to Win Back Previous Clients",
-      "subDescription": "Win back previous clients using personalized marketing strategies, targeted email campaigns, direct mail outreach, and exclusive offers that rebuild trust, strengthen customer relationships, increase loyalty, and maximize long-term customer lifetime value and repeat revenue growth.",
+      "heading": "How Targeted Mailing Lists Can Benefit Your Business",
+      "subDescription": "With Targeted Direct Mailing Lists, your campaign is strategically focused on qualified prospects who fit your specific criteria. This approach reduces waste and increases response rates by delivering your message to the right businesses. We can target businesses by:",
       "bottomDescription": "With Targeted Direct Mailing Lists, your campaign is strategically focused on qualified prospects who fit your specific criteria. This approach reduces waste and increases response rates by deliveringConsumer targeting allows you to reach the right audience using detailed demographic, geographic, and lifestyle data. We can segment by age, gender, income, home value, marital status, presence of children, buying behavior, interests, location, and more—ensuring your message connects with those most likely to your message to the right businesses. We can target businesses by:",
       "features": [
         {
@@ -152,22 +165,22 @@
     "solutionsGrid": [
       {
         "title": "PREMIUM MAILING LISTS",
-        "desc": "Access high-quality mailing lists to target your ideal audience.",
+        "desc": "Our direct mail marketing lists set industry standards for freshness, reliability, and accuracy. We specialize in building custom, highly targeted mailing lists to reach your perfect audience and maximize response rates.",
         "icon": "ListBullets"
       },
       {
         "title": "CREATIVE DESIGN",
-        "desc": "Eye-catching graphic design for your mailers.",
+        "desc": "Our professional graphic designers will help you design a direct mail marketing piece that stands out from the clutter. Whether you need a new design or want to update an existing one, we deliver bold, attention- grabbing results.",
         "icon": "PenNib"
       },
       {
         "title": "QUALITY PRINTING",
-        "desc": "State-of-the-art printing facilities for vibrant results.",
+        "desc": "From matte to glossy, postcards to brochures, we do it all with precision. We navigate the technical complexities of printing to ensure that every final product looks exceptionally polished, professional, and high-impact.",
         "icon": "Printer"
       },
       {
         "title": "MAILING SERVICES",
-        "desc": "Complete sorting, prep, and USPS delivery.",
+        "desc": "We are experts at getting your mail delivered to the right audience at the right time. We guarantee the lowest possible postage pricing and execute your mail campaign with absolute punctuality and USPS compliance.",
         "icon": "Envelope"
       }
     ],
@@ -175,38 +188,56 @@
       {
         "step": "1",
         "title": "UNPARALLELED TARGETING",
-        "desc": "Pinpoint your perfect audience using advanced demographics.",
-        "align": "left"
+        "desc": "Our precise targeting capabilities are second to none, ensuring you reach your perfect target audience from day one.",
+        "align": "left",
+        "color": "#5c64f4",
+        "bgColor": "#eef2ff",
+        "icon": "TimelineTarget"
       },
       {
         "step": "2",
         "title": "CUSTOM SOLUTIONS",
-        "desc": "Tailor your message with variable data printing.",
-        "align": "right"
+        "desc": "US Data mailing lists are custom built to meet your specific needs to make sure you get maximum response rates.",
+        "align": "right",
+        "color": "#06b595",
+        "bgColor": "#ecfdf5",
+        "icon": "TimelineCompass"
       },
       {
         "step": "3",
-        "title": "SUPERIOR ENGAGEMENT",
-        "desc": "Drive action with personalized, high-quality mailers.",
-        "align": "left"
+        "title": "EXCELLENT DELIVERY RATES",
+        "desc": "The superior freshness and accuracy of our direct mail marketing data ensures off-the-charts delivery rates.",
+        "align": "left",
+        "color": "#6a46f9",
+        "bgColor": "#f5f3ff",
+        "icon": "TimelineRocket"
       },
       {
         "step": "4",
         "title": "QUALITY CUSTOMER SERVICE",
-        "desc": "Dedicated support throughout your campaign.",
-        "align": "right"
+        "desc": "When you succeed, we succeed. We like to think of ourselves as a helpful extension of your marketing team.",
+        "align": "right",
+        "color": "#06a3cd",
+        "bgColor": "#ecfeff",
+        "icon": "TimelineHandshake"
       },
       {
         "step": "5",
         "title": "ACCURACY GUARANTEE",
-        "desc": "Rigorous data cleansing for maximum deliverability.",
-        "align": "left"
+        "desc": "Never gamble again. If our data doesn't meet industry standards, we will replace the defective data 100%.",
+        "align": "left",
+        "color": "#0587d4",
+        "bgColor": "#f0f9ff",
+        "icon": "TimelineSealCheck"
       },
       {
         "step": "6",
         "title": "EXCEPTIONAL RESPONSE RATES",
-        "desc": "Achieve higher ROI with targeted direct mail.",
-        "align": "right"
+        "desc": "The superior freshness and accuracy of our mailing lists result in response rates that are through the roof.",
+        "align": "right",
+        "color": "#b43bf5",
+        "bgColor": "#fdf2f8",
+        "icon": "TimelineTrendingUp"
       }
     ]
   },

@@ -77,4 +77,26 @@ export const Icons = {
   neonBackground: createIcon("material-symbols:image-outline", "1em"),
   neonEffects: createIcon("octicon:light-bulb-24", "1em"),
   neonLedKit: createIcon("tabler:bulb-filled", "1em"),
+
+  // Direct Mail (Targeting Categories)
+  TargetingUsers: createIcon("feather:users"),
+  TargetingDollar: createIcon("feather:dollar-sign"),
+  TargetingHome: createIcon("feather:home"),
+  TargetingSmile: createIcon("feather:smile"),
+  TargetingBriefcase: createIcon("feather:briefcase"),
+  TargetingArrowRight: createIcon("feather:arrow-right"),
+
+  // Direct Mail (Expert Marketing Solutions)
+  ListBullets: createIcon("feather:target"),
+  PenNib: createIcon("feather:pen-tool"),
+  Printer: createIcon("feather:printer"),
+  Envelope: createIcon("feather:mail"),
+
+  // Direct Mail (Vertical Timeline)
+  TimelineTarget: createIcon("ph:target"),
+  TimelineCompass: createIcon("ph:compass"),
+  TimelineRocket: createIcon("ph:rocket-launch"),
+  TimelineHandshake: createIcon("ph:handshake"),
+  TimelineSealCheck: createIcon("ph:seal-check"),
+  TimelineTrendingUp: createIcon("ph:trend-up"),
 };
