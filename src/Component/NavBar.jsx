@@ -7,8 +7,13 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const location = useLocation();
+
+  useEffect(() => {
+    setSearchQuery("");
+  }, [location.pathname]);
 
   useEffect(() => {
     const preventScroll = (e) => {
@@ -118,6 +123,25 @@ export default function NavBar() {
     { name: "Our work", href: "/our-work" },
     { name: "Contact us", href: "/contact" },
   ];
+
+  const allLinks = [];
+  NavLinks.forEach((link) => {
+    allLinks.push({ name: link.name, href: link.href });
+    if (link.dropdown) {
+      link.dropdown.forEach((dropLink) => {
+        allLinks.push({ name: dropLink.name, href: dropLink.href });
+        if (dropLink.subItems) {
+          dropLink.subItems.forEach((subItem) => {
+            allLinks.push({ name: subItem.name, href: subItem.href, parent: dropLink.name });
+          });
+        }
+      });
+    }
+  });
+
+  const searchResults = searchQuery.trim() === "" 
+    ? [] 
+    : allLinks.filter(link => link.name.toLowerCase().includes(searchQuery.toLowerCase()));
 
   return (
     <>
@@ -230,14 +254,43 @@ export default function NavBar() {
 
           {/* Right: Search Bar & Badge (Desktop) */}
           <div className="hidden xl:flex items-center space-x-4 xl:space-x-8">
-            {/* Search Bar */}
-            <div className="flex items-center justify-between w-[160px] xl:w-[200px] h-[36px] px-4 border border-gray-400 rounded-full bg-transparent group focus-within:border-white transition-colors">
-              <input
-                type="text"
-                placeholder="Search here"
-                className="bg-transparent text-[#ffffff] w-full font-poppins font-normal text-[13px] outline-none placeholder-gray-400"
-              />
-              <Icons.Search color="white" className="ml-2" />
+            {/* Search Bar Wrapper */}
+            <div className="relative">
+              <div className="flex items-center justify-between w-[160px] xl:w-[200px] h-[36px] px-4 border border-gray-400 rounded-full bg-transparent group focus-within:border-white transition-colors">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="bg-transparent text-[#ffffff] w-full font-poppins font-normal text-[13px] outline-none placeholder-gray-400"
+                />
+                <Icons.Search color="white" className="ml-2" />
+              </div>
+
+              {/* Desktop Search Dropdown */}
+              {searchQuery && (
+                <div className="absolute top-[120%] w-[240px] right-0 bg-[#000000] border border-[#333] shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-2xl overflow-hidden z-50">
+                  {searchResults.length > 0 ? (
+                    <div className="max-h-[300px] overflow-y-auto">
+                      {searchResults.map((result, idx) => (
+                        <Link
+                          key={idx}
+                          to={result.href}
+                          onClick={() => setSearchQuery("")}
+                          className="block px-4 py-3 hover:bg-[#1a1a1a] transition-colors border-b border-[#222] last:border-0"
+                        >
+                          <div className="text-[14px] font-poppins text-white">{result.name}</div>
+                          {result.parent && <div className="text-[11px] text-[var(--color-gray)] uppercase tracking-wider mt-1">{result.parent}</div>}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="px-4 py-4 text-[13px] text-[var(--color-gray)] font-poppins text-center">
+                      No results found
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
             <Icons.Profile color="white" />
             {/* Lowest Price Badge */}
@@ -288,18 +341,46 @@ export default function NavBar() {
           }`}
         >
           <div className="px-6 py-8 flex flex-col space-y-6 min-h-full pb-24">
-            {/* Mobile Search Bar */}
-            <div className="flex items-center justify-between w-full h-[40px] px-4 border border-gray-400 rounded-full bg-transparent focus-within:border-white transition-colors mb-4">
-              <input
-                type="text"
-                placeholder="Search here"
-                className="bg-transparent  w-full font-poppins font-normal text-[14px] outline-none placeholder-gray-400"
-              />
-              <img
-                src="/Image/NavBar/coolicon.svg"
-                alt="Search"
-                className="w-[16px] h-[16px] ml-2 opacity-70"
-              />
+            {/* Mobile Search Wrapper */}
+            <div className="relative mb-4">
+              <div className="flex items-center justify-between w-full h-[40px] px-4 border border-gray-400 rounded-full bg-transparent focus-within:border-white transition-colors">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="bg-transparent text-white w-full font-poppins font-normal text-[14px] outline-none placeholder-gray-400"
+                />
+                <Icons.Search color="white" className="ml-2 opacity-70" />
+              </div>
+              
+              {/* Mobile Search Dropdown */}
+              {searchQuery && (
+                <div className="absolute top-[110%] w-full bg-[#111111] border border-[#333] rounded-xl overflow-hidden z-50">
+                  {searchResults.length > 0 ? (
+                    <div className="max-h-[250px] overflow-y-auto">
+                      {searchResults.map((result, idx) => (
+                        <Link
+                          key={idx}
+                          to={result.href}
+                          onClick={() => {
+                            setSearchQuery("");
+                            setIsOpen(false);
+                          }}
+                          className="block px-4 py-3 hover:bg-[#222] transition-colors border-b border-[#222] last:border-0"
+                        >
+                          <div className="text-[14px] font-poppins text-white">{result.name}</div>
+                          {result.parent && <div className="text-[11px] text-[var(--color-gray)] uppercase tracking-wider mt-1">{result.parent}</div>}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="px-4 py-4 text-[13px] text-[var(--color-gray)] font-poppins text-center">
+                      No results found
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Mobile Links */}
