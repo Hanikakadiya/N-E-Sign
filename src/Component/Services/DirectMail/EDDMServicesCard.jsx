@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic from "./DirectMailDynamic";
 import { Icons } from "../../../Component/Icons/icons";
+import { Link } from "react-router-dom";
 
 export default function EDDMServicesCard() {
   // Scroll to top when page loads
@@ -34,7 +35,7 @@ export default function EDDMServicesCard() {
           }
         >
           {/* Section 3: Single Source for Powerful Direct Mail */}
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 text-white relative z-10">
+          <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10">
             <div className="w-full mb-20 border-b border-white/10 pb-8 border-dashed">
               <h2 className="text-[32px] md:text-[40px] font-bold leading-[1.2] max-w-[800px]">
                 Your Single Source for Powerful Direct Mail Campaigns That Drive
@@ -42,21 +43,21 @@ export default function EDDMServicesCard() {
               </h2>
             </div>
 
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-25">
               {/* Left Side: Images */}
               <div className="w-full lg:w-1/2 relative flex justify-center items-center">
-                <div className="relative w-full max-w-[500px]">
+                <div className="relative w-full max-w-[600px]">
                   {/* Main Image */}
-                  <div className="bg-[#dcdcdc] rounded-[24px] p-8 w-full aspect-square flex items-center justify-center shadow-lg">
+                  <div className="rounded-[24px] p-8 w-full aspect-square flex items-center justify-center">
                     <img
                       src="/Image/Services/DirectMail/EDDM/EDDM-YourHealth.png"
                       alt="Direct Mail Campaigns"
-                      className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                      className="w-full h-auto object-contain "
                     />
                   </div>
 
                   {/* Floating Badge overlay */}
-                  <div className="absolute -bottom-10 -right-4 md:-right-10 w-[180px] h-[180px] md:w-[220px] md:h-[220px] rounded-[24px] overflow-hidden shadow-2xl z-10">
+                  <div className="absolute -bottom-10 -right-4 md:-right-32 w-[180px] h-[180px] md:w-[320px] md:h-[320px] rounded-[24px] overflow-hidden shadow-2xl z-10">
                     <img
                       src="/Image/Services/DirectMail/EDDM/EDDM-Source-Year.png"
                       alt="25+ Years Experience"
@@ -105,10 +106,10 @@ export default function EDDMServicesCard() {
                       </div>
                       {/* Text Content */}
                       <div className="pt-2">
-                        <h4 className="text-[18px] md:text-[20px] font-bold text-white mb-2 leading-snug">
+                        <h4 className="text-[18px] md:text-[20px] font-bold mb-2 leading-snug">
                           {feature.title}
                         </h4>
-                        <p className="text-[15px] md:text-[16px] text-white/70 leading-relaxed">
+                        <p className="text-[15px] md:text-[16px] leading-relaxed">
                           {feature.desc}
                         </p>
                       </div>
@@ -120,6 +121,18 @@ export default function EDDMServicesCard() {
           </div>
         </DirectMailDynamic>
       )}
+      {/* CTA Button Section */}
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10">
+        <Link
+          to="/contact"
+          className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-3 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
+        >
+          Contact Now
+          <span className="inline-block group-hover:translate-x-1 transition-transform">
+            <Icons.ArrowRight className="w-5 h-5" />
+          </span>
+        </Link>
+      </div>
     </>
   );
 }

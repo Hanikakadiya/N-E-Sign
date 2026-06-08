@@ -3,6 +3,7 @@ import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic, { ContentBlock } from "./DirectMailDynamic";
 import { Icons } from "../../Icons/icons";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const iconMap = {
   ListBullets: <Icons.ListBullets className="text-2xl text-white" />,
@@ -133,9 +134,18 @@ export default function DirectMailCard() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-16 flex justify-center"
           >
-            <button className="bg-[#f5a623] hover:bg-[#e09418] font-bold text-lg py-4 px-10 rounded-full flex items-center gap-3 transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(245,166,35,0.3)]">
-              Contact Now <Icons.TargetingArrowRight className="text-xl" />
-            </button>
+            {/* CTA Button Section */}
+            <div className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10">
+              <Link
+                to="/contact"
+                className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-3 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
+              >
+                Contact Now
+                <span className="inline-block group-hover:translate-x-1 transition-transform">
+                  <Icons.ArrowRight className="w-5 h-5" />
+                </span>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -268,6 +278,18 @@ export default function DirectMailCard() {
           </div>
         </section>
       )}
+      {/* CTA Button Section */}
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10">
+        <Link
+          to="/contact"
+          className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-3 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
+        >
+          Contact Now
+          <span className="inline-block group-hover:translate-x-1 transition-transform">
+            <Icons.ArrowRight className="w-5 h-5" />
+          </span>
+        </Link>
+      </div>
     </div>
   );
 }
