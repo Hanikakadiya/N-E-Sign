@@ -107,5 +107,11 @@ export const Icons = {
   database:createIcon("material-symbols-light:database-outline"),
   route:createIcon("ph:route"),
   percent:createIcon("mdi:percent-outline"),
-  
+  eye:createIcon("bytesize:eye"),
+  hand:createIcon("material-symbols:back-hand-outline"),
+  filllocation:createIcon("material-symbols:my-location-rounded"),
+  fillshapcheck:createIcon("ri:shield-check-line"),
+  flag: createIcon("ph:flag"),
+  fingerprint: createIcon("ph:fingerprint"),
+  squareArrowRight: createIcon("heroicons:arrow-top-right-on-square-20-solid"),
 };

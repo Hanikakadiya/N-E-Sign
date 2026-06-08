@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic, { ContentBlock } from "./DirectMailDynamic";
 import { Icons } from "../../Icons/icons";
+import { Link } from "react-router-dom";
 
 export default function PoliticalMail() {
   useEffect(() => {
@@ -122,7 +123,7 @@ export default function PoliticalMail() {
                         <div className="bg-[#1c1c1c] text-white border-t-4 border-transparent group-hover:bg-white group-hover:text-black group-hover:border-[var(--color-primary,#F9A826)] transition-all duration-300 rounded-xl p-6 w-full md:w-[264px] h-[263px] text-left shadow-xl flex flex-col mx-auto">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-8 h-8 rounded bg-white/10 group-hover:bg-[var(--color-primary,#F9A826)]/10 flex items-center justify-center transition-colors duration-300">
-                              <Icons.route className="w-4 h-4 text-white/70 group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
+                              <Icons.database className="w-4 h-4 text-white/70 group-hover:text-[var(--color-primary,#F9A826)] transition-colors duration-300" />
                             </div>
                             <span className="text-white group-hover:text-black font-bold text-[14px] uppercase tracking-wider transition-colors duration-300">
                               STEP 3
@@ -187,10 +188,10 @@ export default function PoliticalMail() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {/* Card 1: Red */}
-                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#E53E3E] shadow-lg flex flex-col">
+                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#E53E3E] shadow-lg flex flex-col h-[264px]">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-8 h-8 rounded bg-[#df5551]/10 flex items-center justify-center">
-                        <Icons.Search className="w-5 h-5 text-[#E53E3E]" />
+                      <div className="w-[48px] h-[48px] rounded-md bg-[#df5551]/10 flex items-center justify-center">
+                        <Icons.eye className="w-[30px] h-[30px] text-[#E53E3E]" />
                       </div>
                       <h4 className="font-bold text-[20px]">
                         Voters See Your Message
@@ -221,10 +222,10 @@ export default function PoliticalMail() {
                   </div>
 
                   {/* Card 2: Blue */}
-                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#1152D4] shadow-lg flex flex-col">
+                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#1152D4] shadow-lg flex flex-col h-[264px]">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-8 h-8 rounded bg-[#1152D4]/10 flex items-center justify-center">
-                        <Icons.Users className="w-5 h-5 text-[#1152D4]" />
+                      <div className="w-[48px] h-[48px] rounded-md bg-[#1152D4]/10 flex items-center justify-center">
+                        <Icons.hand className="w-[30px] h-[30px] text-[#1152D4]" />
                       </div>
                       <h4 className="font-bold text-[16px]">
                         Stays in the Home
@@ -250,10 +251,10 @@ export default function PoliticalMail() {
                   </div>
 
                   {/* Card 3: Red */}
-                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#df5551] shadow-lg flex flex-col">
+                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#df5551] shadow-lg flex flex-col h-[264px]">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-8 h-8 rounded bg-[#df5551]/10 flex items-center justify-center">
-                        <Icons.roundLocation className="w-5 h-5 text-[#E53E3E]" />
+                      <div className="w-[48px] h-[48px] rounded-md bg-[#df5551]/10 flex items-center justify-center">
+                        <Icons.filllocation className="w-[30px] h-[30px] text-[#E53E3E]" />
                       </div>
                       <h4 className="font-bold text-[16px]">
                         Target Specific Voters
@@ -277,10 +278,10 @@ export default function PoliticalMail() {
                   </div>
 
                   {/* Card 4: Blue */}
-                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#0f62bb] shadow-lg flex flex-col">
+                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#0f62bb] shadow-lg flex flex-col h-[264px]">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-8 h-8 rounded bg-[#0f62bb]/10 flex items-center justify-center">
-                        <Icons.Check className="w-5 h-5 text-[#1152D4]" />
+                      <div className="w-[48px] h-[48px] rounded-md bg-[#0f62bb]/10 flex items-center justify-center">
+                        <Icons.fillshapcheck className="w-[30px] h-[30px] text-[#1152D4]" />
                       </div>
                       <h4 className="font-bold text-[16px]">
                         Build Real Trust
@@ -305,10 +306,10 @@ export default function PoliticalMail() {
                   </div>
 
                   {/* Card 5: Green */}
-                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#059669] shadow-lg flex flex-col">
+                  <div className="bg-white text-black rounded-xl p-6 border-l-[6px] border-[#059669] shadow-lg flex flex-col h-[264px]">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-8 h-8 rounded bg-[#66a848]/10 flex items-center justify-center">
-                        <Icons.percent className="w-5 h-5 text-[#059669]" />
+                      <div className="w-[48px] h-[48px] rounded-md bg-[#66a848]/10 flex items-center justify-center">
+                        <Icons.percent className="w-[30px] h-[30px] text-[#059669]" />
                       </div>
                       <h4 className="font-bold text-[16px]">
                         Low-Budget Friendly
@@ -333,7 +334,7 @@ export default function PoliticalMail() {
                   </div>
 
                   {/* Card 6: Dark Blue */}
-                  <div className="bg-[#0f172a] text-white rounded-xl p-8 shadow-lg flex flex-col justify-center items-start relative overflow-hidden">
+                  <div className="bg-[#0f172a] text-white rounded-xl p-8 shadow-lg flex flex-col justify-center items-start relative overflow-hidden h-full">
                     {/* Decorative background element */}
                     <div className="absolute top-[-50px] right-[-50px] w-32 h-32 bg-[var(--color-primary,#F9A826)] opacity-10 rounded-full blur-2xl"></div>
 
@@ -383,81 +384,38 @@ export default function PoliticalMail() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
                   {data.parties.map((party, idx) => {
                     const isLower = idx % 2 !== 0; // Alternating stagger effect
 
                     // Helper function to pick SVG based on party title
                     const getPartyIcon = (title) => {
                       if (title === "Republican") {
-                        return (
-                          <svg
-                            className="w-5 h-5"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M7 4v16h2v-6h4a5 5 0 000-10H7zm2 2h4a3 3 0 010 6H9V6z" />
-                          </svg>
-                        );
+                        return <Icons.flag className="w-5 h-5" />;
                       } else if (title === "Democratic") {
-                        return (
-                          <svg
-                            className="w-5 h-5"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                          </svg>
-                        );
+                        return <Icons.Users className="w-5 h-5" />;
                       } else if (title === "Independent") {
-                        return (
-                          <svg
-                            className="w-5 h-5"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                            />
-                          </svg>
-                        );
+                        return <Icons.fingerprint className="w-5 h-5" />;
                       } else {
-                        return (
-                          <svg
-                            className="w-5 h-5"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                            />
-                          </svg>
-                        );
+                        return <Icons.fillshapcheck className="w-5 h-5" />;
                       }
                     };
 
                     return (
                       <div
                         key={idx}
-                        className={`relative flex flex-col items-center ${isLower ? "lg:mt-12" : "lg:-mt-4"}`}
+                        className={`relative flex flex-col items-center ${isLower ? "lg:mt-12" : "lg:-mt-4"} h-full animate-card-bounce`}
+                        style={{ animationDelay: isLower ? "-1s" : "0s" }}
                       >
                         {/* Top Dot for Lower Cards */}
                         {isLower && (
                           <div
-                            className="w-2 h-2 rounded-full mb-6 hidden lg:block"
+                            className="w-[16px] h-[16px] rounded-full mb-6 hidden lg:block"
                             style={{ backgroundColor: party.color }}
                           ></div>
                         )}
 
-                        <div className="bg-white rounded-3xl p-8 shadow-xl w-full flex flex-col items-start transition-transform hover:-translate-y-2 duration-300 h-full">
+                        <div className="bg-white rounded-3xl p-8 shadow-xl w-full flex flex-col items-start transition-all duration-300 h-full">
                           <div
                             className="w-12 h-12 rounded-xl mb-6 flex items-center justify-center"
                             style={{
@@ -476,19 +434,19 @@ export default function PoliticalMail() {
                           <p className="text-black/60 text-[13px] leading-relaxed mb-6 flex-grow">
                             {party.desc}
                           </p>
-                          <a
-                            href="#"
+                          <Link
+                            to="/contact"
                             className="text-[11px] font-bold uppercase tracking-wider flex items-center gap-2 transition-opacity hover:opacity-70"
                             style={{ color: party.color }}
                           >
-                            Contact Now <span className="text-[14px]">→</span>
-                          </a>
+                            Contact Now <span className="text-[14px]"><Icons.ArrowRight/></span>
+                          </Link>
                         </div>
 
                         {/* Bottom Dot for Higher Cards */}
                         {!isLower && (
                           <div
-                            className="w-2 h-2 rounded-full mt-6 hidden lg:block"
+                            className="w-[16px] h-[16px] rounded-full mt-6 hidden lg:block"
                             style={{ backgroundColor: party.color }}
                           ></div>
                         )}
@@ -499,16 +457,16 @@ export default function PoliticalMail() {
 
                 {/* Bottom CTA Pill */}
                 <div className="mt-24 flex justify-center">
-                  <div className="bg-white rounded-full py-4 px-8 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-black shadow-xl cursor-pointer hover:shadow-2xl transition-all hover:scale-105 duration-300">
+                  <div className="bg-white rounded-full py-4 px-8 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-black shadow-xl">
                     <span className="font-bold text-[15px] whitespace-nowrap">
                       Ready to start your journey?
                     </span>
-                    <a
-                      href="#"
-                      className="text-[var(--color-primary,#F9A826)] font-bold text-[15px] flex items-center gap-1 hover:underline whitespace-nowrap"
+                    <Link
+                      to="/contact"
+                      className="text-[#2563EB] font-bold text-[15px] flex items-center gap-1 hover:underline whitespace-nowrap"
                     >
-                      Contact our experts <span className="text-[18px]">↗</span>
-                    </a>
+                      Contact our experts <span className="text-[18px]"><Icons.squareArrowRight/></span>
+                    </Link>
                   </div>
                 </div>
               </div>

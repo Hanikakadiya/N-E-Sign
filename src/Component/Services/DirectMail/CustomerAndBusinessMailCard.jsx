@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import DirectMailData from "../../Data/DirectMailData.json";
 import DirectMailDynamic, { ContentBlock } from "./DirectMailDynamic";
 import { Icons } from "../../Icons/icons";
+import { Link } from "react-router-dom";
 
 export default function CustomerAndBusinessMailCard() {
   useEffect(() => {
@@ -452,12 +453,12 @@ export default function CustomerAndBusinessMailCard() {
                       <span className="text-white/40 text-[10px] font-bold tracking-widest">
                         IMPLEMENTATION
                       </span>
-                      <span className="text-[var(--color-primary,#F9A826)] text-[10px] font-bold">
+                      <span className="text-[var(--color-primary)] text-[10px] font-bold">
                         MAX
                       </span>
                     </div>
-                    <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full bg-[var(--color-primary,#F9A826)] w-[90%]"></div>
+                    <div className="h-1 w-full rounded-full overflow-hidden">
+                      <div className="h-full bg-[var(--color-primary)] w-[90%]"></div>
                     </div>
                   </div>
 
@@ -465,7 +466,7 @@ export default function CustomerAndBusinessMailCard() {
                   <div className="bg-[#1c1c1c] rounded-xl p-6 border border-white/5 flex flex-col">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 bg-[#111] rounded-lg border border-white/10 flex items-center justify-center">
-                        <svg
+                        {/* <svg
                           className="w-5 h-5 text-[var(--color-primary,#F9A826)]"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -477,7 +478,7 @@ export default function CustomerAndBusinessMailCard() {
                             strokeWidth={2}
                             d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                           />
-                        </svg>
+                        </svg> */}
                       </div>
                       <h4 className="text-[14px] font-bold uppercase tracking-wide">
                         Tracking & BI
@@ -501,16 +502,17 @@ export default function CustomerAndBusinessMailCard() {
                   </div>
                 </div>
               </div>
-
-              <div className="flex justify-center mt-12">
-                <button 
-                  className=" font-bold py-3 px-8 rounded-full transition-transform hover:scale-105 flex items-center gap-2"
-                  style={{ background: "linear-gradient(137.49deg, #EDBC5A 20.48%, #F79C29 79.52%)" }}
-                >
-                  Contact Now
-                  <Icons.ArrowRight className="w-4 h-4"/>
-                </button>
-              </div>
+               <div className="shrink-0 flex items-center justify-center lg:items-start">
+                    <Link
+                      to="/contact"
+                      className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-6 py-2.5 lg:px-8 lg:py-4 rounded-full text-[13px] lg:text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
+                    >
+                      Contact Now
+                      <span className="inline-block animate-bounce-x">
+                        <Icons.ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                </div>
             </div>
           </div>
         </div>

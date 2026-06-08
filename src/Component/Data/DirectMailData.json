@@ -353,22 +353,22 @@
     "parties": [
       {
         "title": "Republican",
-        "desc": "Targeted messaging for conservative platforms.",
+        "desc": "Crafting compelling conservative messages that resonate with core values and mobilize your base.",
         "color": "#df5551"
       },
       {
         "title": "Democratic",
-        "desc": "Targeted messaging for progressive platforms.",
+        "desc": "Connecting with progressive voters through impactful storytelling and community- focused outreach.",
         "color": "#0f62bb"
       },
       {
         "title": "Independent",
-        "desc": "Reach swing voters with tailored mailers.",
+        "desc": "Stand out in a crowded field with distinctive branding that highlights your unique platform.",
         "color": "#8b5cf6"
       },
       {
         "title": "Unified Trust",
-        "desc": "Non-partisan mailers for local elections.",
+        "desc": "Non-partisan, professional, and secure. We ensure every campaign is handled with the highest integrity.",
         "color": "#10b981"
       }
     ]
