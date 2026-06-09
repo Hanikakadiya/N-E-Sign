@@ -52,7 +52,7 @@
           "box-signs": [
             {
               "id": "box-signs",
-              "highlightTitle": "",
+              "": "",
               "mainTitle": "Box Signs",
               "description": "Custom sign boxes for versatile display.",
               "images": [
@@ -69,7 +69,7 @@
           "canopy-signs": [
             {
               "id": "canopy-signs",
-              "highlightTitle": "",
+              "": "",
               "mainTitle": "Canopy Signs",
               "description": "Signage integrated with awnings for added branding on metal, canvas and vinyl material.",
               "images": [
@@ -86,7 +86,7 @@
           "metal-plastic-signs": [
             {
               "id": "metal-plastic-signs",
-              "highlightTitle": "",
+              "": "",
               "mainTitle": "Metal & Plastic Signs",
               "description": "Durable, versatile materials for various branding needs.",
               "images": [
@@ -103,7 +103,7 @@
           "blade-signs": [
             {
               "id": "blade-signs",
-              "highlightTitle": "",
+              "": "",
               "mainTitle": "Blade Signs",
               "description": "Perpendicular signs that extend from the building to increase visibility, perfect for storefronts in high-traffic areas.",
               "images": [
@@ -120,7 +120,6 @@
           "outdoor-vestibule": [
             {
               "id": "outdoor-vestibule",
-              "highlightTitle": "",
               "mainTitle": "Outdoor winter vestibule",
               "description": "Enclosed entryway that blocks cold air and improves energy efficiency.",
               "images": [

@@ -76,7 +76,7 @@ export default function OurServices() {
             <span className="text-[var(--color-primary)]">
               Customized Solutions
             </span>{" "}
-            <span className="text-white">to Achieve Your Business Goals</span>
+            <span>to Achieve Your Business Goals</span>
           </h2>
 
           {/* Description Paragraph */}

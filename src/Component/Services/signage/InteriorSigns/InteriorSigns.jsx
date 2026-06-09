@@ -32,12 +32,12 @@ export function InteriorDetailView({ id }) {
   }
 
   return (
-    <div className="font-poppins pt-[100px] md:pt-[120px] max-w-[1630px] mx-[155px] xl:ml-[170px] 2xl:ml-[200px]">
+    <div className="font-poppins pt-[100px] md:pt-[120px] max-w-[1500px] mx-auto 2xl:ml-[200px]">
       <div className="flex flex-col lg:flex-row  mx-auto relative px-4 sm:px-8 lg:px-12 xl:px-20">
         {/* Main Content Area */}
         <div className="w-full py-8 lg:py-16">
           {/* Back Arrow */}
-          <div className="absolute z-20 top-0 sm:top-8 lg:top-16 left-0">
+          <div className="absolute z-20 top-0 left-40">
             <Link
               to="/services/signage/interior-sign"
               className="flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors"
@@ -62,11 +62,6 @@ export function InteriorDetailView({ id }) {
                 <div className="flex flex-col lg:flex-row lg:items-center text-center gap-16 mb-12 justify-around">
                   <div className="flex-1 max-w-5xl lg:pl-16">
                     <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[40px]">
-                      {section.highlightTitle && (
-                        <span className="text-[var(--color-primary)] mr-2">
-                          {section.highlightTitle}
-                        </span>
-                      )}
                       {section.mainTitle}
                     </h3>
                     <p className="text-[var(--color-gray)] leading-relaxed text-[10px] sm:text-[18px] font-semibold tracking-widest uppercase">
@@ -219,7 +214,7 @@ export default function InteriorSigns() {
                   </p>
                 </div>
 
-                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
+                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer bg-black/70">
                   <div className="flex items-center justify-center gap-3 w-fit border border-white/20 rounded-full px-5 py-2 hover:bg-white/5 transition-all duration-300 group/btn">
                     <span className="text-[#c5a880] lg:text-[16px]">
                       View More

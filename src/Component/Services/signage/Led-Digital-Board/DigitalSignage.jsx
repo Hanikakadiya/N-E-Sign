@@ -78,6 +78,7 @@ export default function DigitalSignage() {
             <div
               className={`mb-6 h-[40px] flex items-center transition-colors duration-300 ${card.iconColor || "text-gray-500"} group-hover:text-white`}
             >
+              
               {card.icon && Icons[card.icon] ? (
                 React.createElement(Icons[card.icon], { className: "w-9 h-9" })
               ) : (

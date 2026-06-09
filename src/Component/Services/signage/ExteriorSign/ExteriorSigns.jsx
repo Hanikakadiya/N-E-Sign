@@ -74,8 +74,8 @@ export function ExteriorDetailView({ id }) {
           {/* Dynamic Content Sections */}
           <div className="flex flex-col gap-16 mt-12 lg:mt-0">
             {pageData.content.map((section, sectionIdx) => (
-              <motion.div 
-                key={section.id} 
+              <motion.div
+                key={section.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -185,7 +185,7 @@ export default function ExteriorSigns() {
 
       <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -222,7 +222,7 @@ export default function ExteriorSigns() {
 
         {/* Cards Section */}
         {cards.length > 0 ? (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -249,7 +249,7 @@ export default function ExteriorSigns() {
                   className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-85 group-hover:opacity-0 mix-blend-multiply transition-opacity duration-500 z-10`}
                 ></div>
                 <div
-                  className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor} opacity-40 group-hover:opacity-0 transition-opacity duration-500 z-10`}
+                  className={`absolute inset-0 bg-gradient-to-b ${card.overlayColor}h opacity-40 group-hover:opacity-0 transition-opacity duration-500 z-10`}
                 ></div>
 
                 <div className="absolute top-0 left-0 p-6 lg:p-7 w-full z-20 flex flex-col transition-opacity duration-500">
@@ -261,7 +261,7 @@ export default function ExteriorSigns() {
                   </p>
                 </div>
 
-                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer">
+                <div className="absolute bottom-0 left-0 h-[70px] lg:h-[80px] w-full flex items-center px-6 lg:px-7 transition-all duration-500 z-20 cursor-pointer bg-black/80">
                   <div className="flex items-center justify-center gap-3 w-fit border border-white/20 rounded-full px-5 py-2 hover:bg-white/5 transition-all duration-300 group/btn">
                     <span className="text-[#c5a880] lg:text-[16px]">
                       View More
