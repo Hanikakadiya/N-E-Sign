@@ -417,7 +417,7 @@ export default function VehicleService() {
               {VehicleData.cta.description}
             </p>
             <Link
-              to={VehicleData.cta.buttonLink}
+              to="/contact"
               className="bg-black text-white font-bold py-3.5 px-8 rounded-full hover:bg-gray-900 transition-colors shadow-xl text-[14px]"
             >
               {VehicleData.cta.buttonText}

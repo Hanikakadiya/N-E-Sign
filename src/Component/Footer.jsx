@@ -65,7 +65,7 @@ export default function Footer() {
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]"
         >
           {/* Column 1: Let's Work Together */}
-          <div className="md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0">
+          <div className="col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0 w-full">
             <h2 className="text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">
               LET'S WORK
             </h2>
@@ -74,12 +74,12 @@ export default function Footer() {
             </h3>
             <a
               href="mailto:nesignsinc@gmail.com"
-              className="flex items-center gap-3 xl:gap-4 px-5 py-2.5 xl:px-6 xl:py-3 rounded-full border border-[#333] transition-colors group"
+              className="inline-flex items-center justify-center gap-3 xl:gap-4 px-6 py-3 xl:px-6 xl:py-3 rounded-full border border-[#333] transition-colors group hover:bg-white/5"
             >
-              <span className="text-[13px] text-[var(--color-gray)] group-hover:text-white transition-colors">
+              <span className="text-[14px] text-[var(--color-gray)] group-hover:text-white transition-colors whitespace-nowrap">
                 nesignsinc@gmail.com
               </span>
-              <Icons.ArrowUpRight className="w-4 h-4 transition-colors" />
+              <Icons.ArrowUpRight className="w-4 h-4 transition-colors shrink-0" />
             </a>
           </div>
 

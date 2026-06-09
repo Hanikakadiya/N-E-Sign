@@ -78,9 +78,12 @@ export default function DirectMail() {
       {/* Container for the cards */}
       <div className="flex flex-wrap justify-center gap-4 xl:gap-5 w-full pb-8 xl:pb-0">
         {cards.map((card) => (
-          <div
+          <Link
+            to={`/services/direct-mailing/${card.title
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")}`}
             key={card.id}
-            className="group relative bg-white p-3 rounded-[32px] min-w-[280px] max-w-[360px] flex flex-col gap-3 flex-1 h-[500px] overflow-hidden hover:overflow-visible"
+            className="group relative bg-white p-3 rounded-[32px] min-w-[280px] max-w-[360px] flex flex-col gap-3 flex-1 h-[500px] overflow-hidden hover:overflow-visible cursor-pointer block"
           >
             {/* Image */}
             <div className="w-full rounded-[24px] overflow-hidden h-[344px] group-hover:h-[120px] transition-all duration-500">
@@ -117,18 +120,15 @@ export default function DirectMail() {
               >
                 <p className="text-[14px] mb-4">{card.description}</p>
 
-                <Link
-                  to={`/services/direct-mailing/${card.title
-                    .toLowerCase()
-                    .replace(/[^a-z0-9]+/g, "-")}`}
-                  className="bg-black px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 w-max"
+                <div
+                  className="bg-black px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 w-max text-white"
                 >
                   {card.buttonText}
                   <Icons.ArrowRight className="w-4 h-4" />
-                </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
