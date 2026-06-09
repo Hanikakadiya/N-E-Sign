@@ -56,24 +56,24 @@ export default function TestimonialSection() {
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-16 z-10 mt-10 sm:mt-16 md:mt-24">
         <div className="w-full max-w-[1138px] mx-auto relative">
           {/* Top Left Quote */}
-          <div className="absolute -top-12 -left-2 md:-top-16 md:-left-8 lg:-top-24 lg:-left-12 xl:-top-35 xl:-left-20 z-0 pointer-events-none">
+          <div className="absolute -top-12 -left-2 md:-top-16 md:-left-8 lg:-top-24 lg:-left-12 xl:-top-35 xl:-left-35 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="#ffffff46"
-              className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 opacity-70 lg:opacity-90"
+              className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 opacity-70 lg:opacity-90"
             >
               <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
             </svg>
           </div>
 
           {/* Bottom Right Quote */}
-          <div className="absolute -bottom-10 -right-2 md:-bottom-12 md:-right-8 lg:-bottom-16 lg:-right-12 xl:-bottom-20 xl:-right-20 z-0 pointer-events-none">
+          <div className="absolute -bottom-10 -right-2 md:-bottom-12 md:-right-8 lg:-bottom-16 lg:-right-12 xl:-bottom-20 xl:-right-40 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="#ffffff46"
-              className="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 opacity-70 lg:opacity-90 rotate-180"
+              className="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-40 lg:h-40 opacity-70 lg:opacity-90 rotate-180"
             >
               <path d="M4 4h7l-3 16H4V4zm9 0h7l-3 16h-4V4z" />
             </svg>
