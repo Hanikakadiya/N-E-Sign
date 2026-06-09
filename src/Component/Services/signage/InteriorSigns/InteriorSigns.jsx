@@ -37,7 +37,7 @@ export function InteriorDetailView({ id }) {
         {/* Main Content Area */}
         <div className="w-full py-8 lg:py-16">
           {/* Back Arrow */}
-          <div className="absolute z-20 top-0 left-40">
+          <div className="absolute z-20 top-0">
             <Link
               to="/services/signage/interior-sign"
               className="flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors"
