@@ -73,7 +73,7 @@ export default function WhyContactUs() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="bg-white/[0.03] border border-white/[0.05] rounded-[2rem] p-8 md:p-12 shadow-2xl backdrop-blur-md"
+            className="bg-white/[0.03] border border-white/[0.05] rounded-[2rem] p-3 md:p-12 shadow-2xl backdrop-blur-md h-[700px]"
           >
             <h2 className="text-3xl md:text-[30px] font-bold mb-3 tracking-tight">
               Send Us a Message
@@ -158,7 +158,7 @@ export default function WhyContactUs() {
               </div>
 
               {/* Message */}
-              <div className="space-y-2.5">
+              <div className="space-y-">
                 <label className="text-[14px] font-medium tracking-wide">
                   Your Message
                 </label>

@@ -63,7 +63,7 @@ export default function AboutCompany() {
           <img
             src="/Image/AboutCompany/Wave.png"
             alt="Wave Pattern Bottom"
-            className="w-full h-full object-contain transform -scale-x-100"
+            className="w-full h-full object-contain transform -scale-x-100 hidden md:block"
           />
         </div>
       </div>

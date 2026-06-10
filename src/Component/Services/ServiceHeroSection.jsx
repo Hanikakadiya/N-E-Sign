@@ -85,7 +85,7 @@ export default function ServiceHeroSection() {
           </div>
 
           {/* Section Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[44px] xl:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-12 xl:mb-16 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-[44px] xl:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-12 xl:mb-16 tracking-tight">
             Professional Services <br />
             with{" "}
             <span className="text-[var(--color-primary)]">

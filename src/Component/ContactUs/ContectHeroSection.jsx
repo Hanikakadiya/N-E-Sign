@@ -18,7 +18,7 @@ export default function ContectHeroSection() {
             transition={{ duration: 0.7 }}
             className="space-y-8"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-[48px] font-bold leading-[1.1] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold leading-[1.1] tracking-tight">
               Get in Touch With <span className="text-[var(--color-primary)]">NE Signs</span>
             </h1>
 
@@ -46,13 +46,13 @@ export default function ContectHeroSection() {
             className="relative flex justify-center items-center"
           >
             {/* Dark circle behind the avatar to match the design */}
-            <div className="absolute w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] bg-white/[0.04] border border-white/[0.05] rounded-full z-0"></div>
+            <div className="absolute w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] bg-white/[0.04] border border-white/[0.05] rounded-full z-0"></div>
 
             {/* The avatar image */}
             <img
               src="/Image/ContactUs/HeroProfile.png"
               alt="Customer Support"
-              className="relative z-10 w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] object-cover rounded-[3rem] shadow-2xl shadow-black/60 border border-white/5"
+              className="relative z-10 w-[250px] h-[250px] sm:w-[360px] sm:h-[360px] object-cover rounded-[3rem] shadow-2xl shadow-black/60 border border-white/5"
             />
           </motion.div>
         </div>

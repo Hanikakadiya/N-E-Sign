@@ -90,11 +90,11 @@ export default function VehicleService() {
               className="w-full lg:w-[40%] relative flex flex-col justify-center items-center py-10 min-h-[350px] lg:min-h-[450px]"
             >
               {/* Main Image Card */}
-              <div className="relative lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-10 xl:-left-10 z-10 w-full max-w-[320px] h-auto lg:max-w-none lg:w-[320px] lg:h-[360px] xl:w-[350px] xl:h-[390px] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center p-6 mx-auto lg:mx-0">
+              <div className="relative lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-left-10 xl:-left-10 z-10 w-full max-w-[320px] aspect-[4/3] lg:aspect-auto h-auto lg:max-w-none lg:w-[320px] lg:h-[360px] xl:w-[350px] xl:h-[390px] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center p-0 lg:p-6 mx-auto lg:mx-0 bg-transparent lg:bg-transparent">
                 <img
                   src={mainImage}
                   alt={modal.title}
-                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  className="w-full h-full object-cover lg:h-auto lg:object-contain drop-shadow-2xl"
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.src =
@@ -104,7 +104,7 @@ export default function VehicleService() {
               </div>
 
               {/* The orbital circle / Mobile Grid Wrapper */}
-              <div className="w-full max-w-[500px] lg:max-w-none mt-8 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-[60%] xl:left-[55%] lg:-translate-x-1/2 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] lg:rounded-full lg:border lg:border-white z-0 flex flex-col sm:flex-row lg:block justify-center items-center gap-6">
+              <div className="w-full max-w-[500px] lg:max-w-none mt-6 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-[60%] xl:left-[55%] lg:-translate-x-1/2 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] lg:rounded-full lg:border lg:border-white z-0 flex flex-col lg:block justify-center items-center gap-6">
                 {/* Top Yellow Dot */}
                 <div className="hidden lg:block absolute top-0 left-1/2 w-7 h-7 rounded-full bg-[#EAB308] -translate-x-1/2 -translate-y-1/2 z-10 ring-8 ring-[#121212]"></div>
 
@@ -113,7 +113,7 @@ export default function VehicleService() {
 
                 {/* Top Right Small Image */}
                 {orbitalImage1 && (
-                  <div className="relative lg:absolute lg:top-[14.6%] lg:right-[14.6%] w-full sm:w-1/2 lg:w-[150px] lg:h-[100px] xl:w-[350px] xl:h-[130px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
+                  <div className="hidden lg:block relative lg:absolute lg:top-[14.6%] lg:right-[14.6%] w-full max-w-[320px] lg:max-w-none lg:w-[150px] lg:h-[100px] xl:w-[350px] xl:h-[130px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
                     <img
                       src={orbitalImage1}
                       alt="Orbital 1"
@@ -124,7 +124,7 @@ export default function VehicleService() {
 
                 {/* Bottom Right Small Image */}
                 {orbitalImage2 && (
-                  <div className="relative lg:absolute lg:top-[80%] lg:right-[14.6%] w-full sm:w-1/2 lg:w-[150px] lg:h-[180px] xl:w-[180px] xl:h-[220px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
+                  <div className="relative lg:absolute lg:top-[80%] lg:right-[14.6%] w-full max-w-[320px] lg:max-w-none lg:w-[150px] lg:h-[180px] xl:w-[180px] xl:h-[220px] aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden shadow-2xl z-20 lg:translate-x-1/2 lg:-translate-y-1/2">
                     <img
                       src={orbitalImage2}
                       alt="Orbital 2"
@@ -140,7 +140,7 @@ export default function VehicleService() {
         {/* Dynamic Content Sections */}
         {modal.whiteCards ? (
           <>
-            <div className="max-w-[1000px] mx-auto px-4 md:px-8 space-y-12 relative z-10 mt-10">
+            <div className="max-w-[1000px] mx-auto px-4 md:px-8 space-y-8 md:space-y-12 relative z-10 mt-10">
               {modal.whiteCards.map((card, idx) => {
                 const IconComponent = Icons[card.icon];
 
@@ -156,7 +156,7 @@ export default function VehicleService() {
                     className="bg-white rounded-[32px] overflow-hidden flex flex-col md:flex-row shadow-2xl"
                   >
                     {isImageLeft && (
-                      <div className="w-full md:w-[45%] min-h-[300px] order-2 md:order-1">
+                      <div className="w-full md:w-[45%] h-[200px] md:h-auto md:min-h-[300px] order-2 md:order-1">
                         <img
                           src={card.image}
                           alt={card.title}
@@ -166,7 +166,7 @@ export default function VehicleService() {
                     )}
 
                     <div
-                      className={`w-full md:w-[55%] p-8 md:p-12 flex flex-col justify-center ${isImageLeft ? "order-1 md:order-2" : ""}`}
+                      className={`w-full md:w-[55%] p-6 md:p-12 flex flex-col justify-center ${isImageLeft ? "order-1 md:order-2" : ""}`}
                     >
                       <div className="flex items-center gap-4 mb-6">
                         {card.icon === "Grid" ? (
@@ -222,7 +222,7 @@ export default function VehicleService() {
                     </div>
 
                     {!isImageLeft && (
-                      <div className="w-full md:w-[45%] min-h-[300px]">
+                      <div className="w-full md:w-[45%] h-[200px] md:h-auto md:min-h-[300px]">
                         <img
                           src={card.image}
                           alt={card.title}

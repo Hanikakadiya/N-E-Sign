@@ -56,7 +56,7 @@ export default function TestimonialSection() {
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-16 z-10 mt-10 sm:mt-16 md:mt-24">
         <div className="w-full max-w-[1138px] mx-auto relative">
           {/* Top Left Quote */}
-          <div className="absolute -top-12 -left-2 md:-top-16 md:-left-8 lg:-top-24 lg:-left-12 xl:-top-35 xl:-left-35 z-0 pointer-events-none">
+          <div className="absolute -top-20 -left-2 md:-top-16 md:-left-8 lg:-top-24 lg:-left-12 xl:-top-35 xl:-left-35 z-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -98,16 +98,16 @@ export default function TestimonialSection() {
                 className="flex flex-col lg:flex-row items-center justify-center relative w-full px-4 sm:px-8 md:px-12 lg:px-0"
               >
                 {/* Left Image */}
-                <div className="w-[280px] sm:w-[320px] md:w-[350px] lg:w-[320px] xl:w-[350px] flex-shrink-0 flex items-center justify-center z-10 relative mb-[-20px] lg:mb-0">
+                <div className="w-[200px] sm:w-[320px] md:w-[350px] lg:w-[320px] xl:w-[350px] flex-shrink-0 flex items-center justify-center z-10 relative mb-[-20px] lg:mb-0">
                   <img
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
-                    className="w-full h-[350px] sm:h-[400px] lg:h-[450px] object-cover rounded-2xl lg:rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)] relative z-10"
+                    className="w-full h-[250px] sm:h-[400px] lg:h-[450px] object-cover rounded-2xl lg:rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)] relative z-10"
                   />
                 </div>
 
                 {/* Right Content */}
-                <div className="w-full sm:w-[80%] md:w-[70%] lg:w-auto lg:flex-1 h-auto lg:h-[350px] xl:h-[380px] flex flex-col justify-center p-8 sm:p-10 lg:p-12 xl:p-16 bg-[#1a1a1a] border border-[#333] lg:border-l-0 rounded-2xl lg:rounded-l-none lg:rounded-r-2xl shadow-2xl relative z-0 pt-12 lg:pt-12">
+                <div className="w-[300px] sm:w-[80%] md:w-[70%] lg:w-auto lg:flex-1 h-[300px] lg:h-[350px] xl:h-[380px] flex flex-col justify-center p-8 sm:p-10 lg:p-12 xl:p-16 bg-[#1a1a1a] border border-[#333] lg:border-l-0 rounded-2xl lg:rounded-l-none lg:rounded-r-2xl shadow-2xl relative z-0 pt-12 lg:pt-12">
                   {/* Grey Tab below the text box */}
                   <div className="absolute top-full left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-16 w-[120px] sm:w-[150px] h-[30px] sm:h-[45px] bg-[#4d4d4d] rounded-b-xl border-x border-b border-[#333] border-t-0 hidden sm:block"></div>
 
@@ -126,7 +126,7 @@ export default function TestimonialSection() {
                   </div>
 
                   {/* Testimonial Text */}
-                  <p className="text-base sm:text-lg lg:text-[18px] leading-[1.6] max-w-[650px] mb-4 sm:mb-6 font-light tracking-wide">
+                  <p className="text-sm sm:text-lg lg:text-[18px] leading-[1.6] max-w-[650px] mb-1 sm:mb-6 font-light tracking-wide">
                     {testimonials[currentIndex].text}
                   </p>
 

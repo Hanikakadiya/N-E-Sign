@@ -193,7 +193,7 @@ export default function LookAtOurServices() {
     >
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8">
         {/* Header Section */}
-        <div className="flex flex-wrap flex-col items-center justify-center gap-3 sm:gap-5 text-[32px] sm:text-4xl md:text-5xl lg:text-[55px] font-bold  mb-20 md:mb-32">
+        <div className="flex flex-wrap flex-col items-center justify-center gap-3 sm:gap-5 text-[28px] sm:text-4xl md:text-5xl lg:text-[55px] font-bold  mb-20 md:mb-32">
           <div className="flex gap-6 md:gap-10 items-center justify-center">
             <span>Look at</span>
             <div className="w-24 md:w-48 xl:w-[220px] h-10 md:h-14 bg-gray-300 rounded-full shrink-0"></div>

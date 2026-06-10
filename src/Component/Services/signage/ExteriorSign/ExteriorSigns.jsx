@@ -211,7 +211,7 @@ export default function ExteriorSigns() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-[54px] font-medium mb-5 font-poppins">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-medium mb-5 font-poppins">
             {categoryData?.title}
           </h1>
 

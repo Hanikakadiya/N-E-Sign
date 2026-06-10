@@ -66,10 +66,10 @@ export default function Footer() {
         >
           {/* Column 1: Let's Work Together */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0 w-full">
-            <h2 className="text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">
+            <h2 className="text-3xl md:text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">
               LET'S WORK
             </h2>
-            <h3 className="text-[22px] font-medium tracking-[0.1em] uppercase mb-8 text-center lg:text-left">
+            <h3 className="text-lg md:text-[22px] font-medium tracking-[0.1em] uppercase mb-8 text-center lg:text-left">
               Together
             </h3>
             <a

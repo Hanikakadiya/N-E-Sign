@@ -13,7 +13,7 @@ export default function SignageCategorySection() {
     <section className="w-full pb-20 pt-32 overflow-hidden">
       <div className="max-w-[83%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         {/* Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -26,7 +26,7 @@ export default function SignageCategorySection() {
               Category
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold max-w-xl leading-tight font-poppins">
+          <h2 className="text-3xl md:text-5xl font-bold max-w-xl leading-tight font-poppins">
             Find the Right Signage for Your Business
           </h2>
         </motion.div>
@@ -48,7 +48,7 @@ export default function SignageCategorySection() {
                 onMouseEnter={() =>
                   window.innerWidth >= 1024 && setActiveCard(idx)
                 }
-                className={`relative rounded-xl overflow-hidden transition-all duration-700 ease-in-out flex flex-col items-center justify-between min-w-0 min-h-0 h-[400px] lg:h-full ${
+                className={`relative rounded-xl overflow-hidden transition-all duration-700 ease-in-out flex flex-col items-center justify-between min-w-0 min-h-0 h-[320px] lg:h-full ${
                   isActive
                     ? "lg:flex-[4] shadow-2xl"
                     : "lg:flex-[1] shadow-lg lg:opacity-80 lg:hover:opacity-100 lg:cursor-pointer"

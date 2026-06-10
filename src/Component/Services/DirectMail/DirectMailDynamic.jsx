@@ -57,7 +57,9 @@ export default function DirectMailDynamic({
             </span>
             <span className="text-[12px] md:text-[13px] font-light">Home</span>
           </Link>
-          <span className="text-[12px] md:text-[13px] text-[var(--color-gray)]">•</span>
+          <span className="text-[12px] md:text-[13px] text-[var(--color-gray)]">
+            •
+          </span>
           <span className="text-[12px] md:text-[13px] font-light">
             {breadcrumbText}
           </span>

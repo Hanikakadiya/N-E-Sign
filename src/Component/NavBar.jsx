@@ -395,7 +395,7 @@ export default function NavBar() {
                     onClick={() => {
                       if (!link.dropdown) setIsOpen(false);
                     }}
-                    className={`font-poppins font-normal text-[18px] transition duration-300 ${
+                    className={`font-poppins font-normal text-base md:text-[18px] transition duration-300 ${
                       location.pathname === link.href ||
                       (link.dropdown &&
                         link.dropdown.some((d) => location.pathname === d.href))
@@ -424,7 +424,7 @@ export default function NavBar() {
                             onClick={() => {
                               if (!dropLink.subItems) setIsOpen(false);
                             }}
-                            className={`font-poppins text-[16px] transition duration-300 ${
+                            className={`font-poppins text-sm md:text-[16px] transition duration-300 ${
                               location.pathname === dropLink.href
                                 ? "text-[var(--color-primary)]"
                                 : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"
@@ -451,7 +451,7 @@ export default function NavBar() {
                                   key={subItem.name}
                                   to={subItem.href}
                                   onClick={() => setIsOpen(false)}
-                                  className={`font-poppins text-[14px] transition duration-300 ${
+                                  className={`font-poppins text-sm md:text-[14px] transition duration-300 ${
                                     location.pathname === subItem.href
                                       ? "text-[var(--color-primary)]"
                                       : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"

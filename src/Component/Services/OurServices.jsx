@@ -71,8 +71,7 @@ export default function OurServices() {
           <h3 className="text-[var(--color-primary)] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6 flex items-center gap-2">
             Our Services
           </h3>
-          {/* Main Title */}
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-[50px] font-bold leading-[1.15] tracking-wide mb-8">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[50px] font-bold leading-[1.15] tracking-wide mb-8">
             <span className="text-[var(--color-primary)]">
               Customized Solutions
             </span>{" "}
