@@ -684,8 +684,8 @@ export default function LEDNeonSigns() {
             {SIDEBAR_TABS.map((tab) => {
               const Icon = tab.icon;
               const isGroup1 =
-                ["TEXT", "COLOR", "FONT"].includes(activeTab) &&
-                ["TEXT", "COLOR", "FONT"].includes(tab.id);
+                ["COLOR", "FONT"].includes(tab.id) &&
+                ["COLOR", "FONT"].includes(activeTab);
               const isGroup2 =
                 ["BACKBOARD", "BACKGROUND"].includes(activeTab) &&
                 ["BACKBOARD", "BACKGROUND"].includes(tab.id);
