@@ -353,9 +353,9 @@ export default function NavBar() {
         {/* Mobile Menu Full Screen */}
         <div
           data-lenis-prevent
-          className={`mobile-menu-scroll-container xl:hidden fixed top-[100px] left-0 w-full bg-[#000000] transition-all duration-500 ease-in-out z-40 overflow-y-auto overscroll-none ${
+          className={`mobile-menu-scroll-container xl:hidden fixed top-[80px] md:top-[100px] left-0 w-full bg-[#000000] transition-all duration-500 ease-in-out z-40 overflow-y-auto overscroll-none ${
             isOpen
-              ? "h-[calc(100vh-100px)] opacity-100 visible"
+              ? "h-[calc(100vh-80px)] md:h-[calc(100vh-100px)] opacity-100 visible"
               : "h-0 opacity-0 invisible"
           }`}
         >
@@ -417,9 +417,7 @@ export default function NavBar() {
                 <div className="flex justify-between items-center pb-3">
                   <Link
                     to={link.href}
-                    onClick={() => {
-                      if (!link.dropdown) setIsOpen(false);
-                    }}
+                    onClick={closeMobileMenu}
                     className={`font-poppins font-normal text-[18px] transition duration-300 ${
                       location.pathname === link.href ||
                       (link.dropdown &&
@@ -446,9 +444,7 @@ export default function NavBar() {
                         <div className="flex justify-between items-center">
                           <Link
                             to={dropLink.href}
-                            onClick={() => {
-                              if (!dropLink.subItems) setIsOpen(false);
-                            }}
+                            onClick={closeMobileMenu}
                             className={`font-poppins text-[16px] transition duration-300 ${
                               location.pathname === dropLink.href
                                 ? "text-[var(--color-primary)]"
@@ -475,7 +471,7 @@ export default function NavBar() {
                                 <Link
                                   key={subItem.name}
                                   to={subItem.href}
-                                  onClick={() => setIsOpen(false)}
+                                  onClick={closeMobileMenu}
                                   className={`font-poppins text-[14px] transition duration-300 ${
                                     location.pathname === subItem.href
                                       ? "text-[var(--color-primary)]"
