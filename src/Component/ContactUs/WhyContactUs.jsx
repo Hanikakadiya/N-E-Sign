@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 export default function WhyContactUs() {
   return (
     <div
-      className="relative overflow-hidden lg:pt-32 lg:pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
+      className="relative overflow-hidden lg:pt-32 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/Image/ContactUs/WhyContactUs.png')" }}
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none"></div>
-      <div className="w-full bg-transparent lg:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="w-full bg-transparent px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Column */}
           <motion.div
