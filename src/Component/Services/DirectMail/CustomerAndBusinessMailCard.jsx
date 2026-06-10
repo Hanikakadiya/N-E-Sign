@@ -27,7 +27,7 @@ export default function CustomerAndBusinessMailCard() {
             data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft
           }
         >
-          <div className=" py-20 px-4 md:px-8 font-sans relative z-10">
+          <div className=" py-10 px-4 md:px-8 font-sans relative z-10">
             <div className="max-w-[1200px] mx-auto">
               {/* Header Section */}
               <div className="text-center mb-16">
@@ -102,7 +102,7 @@ export default function CustomerAndBusinessMailCard() {
               </div>
 
               {/* Compare Benefits Section */}
-              <div className="mb-32">
+              <div className="lg:mb-32 mb-5">
                 <h3 className="text-center text-[20px] font-semibold mb-8">
                   Compare the strategic benefits
                 </h3>
@@ -317,7 +317,7 @@ export default function CustomerAndBusinessMailCard() {
         <div className=" text-white pb-20 px-4 md:px-8 font-sans relative z-10">
           <div className="max-w-[1400px] mx-auto">
             {/* What's Included Section */}
-            <div className="mt-32 border-t border-white/10 pt-20">
+            <div className="mt-5 lg:mt-32 border-t border-white/10 pt-20">
              <div className="pl-6 border-l-4 border-[var(--color-primary,#F9A826)] mb-4">
                     <p className="text-[var(--color-primary,#F9A826)] text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
                       What's Included In Service

@@ -41,7 +41,7 @@ export default function EDDMServicesCard() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6 }}
-            className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10"
+            className="max-w-[1400px] mx-auto px-4 md:px-8 py-10 relative z-10"
           >
             <div className="w-full mb-20 border-b border-white/10 pb-8 border-dashed">
               <h2 className="text-[32px] md:text-[40px] font-bold leading-[1.2] max-w-[800px]">
@@ -55,7 +55,7 @@ export default function EDDMServicesCard() {
               <div className="w-full lg:w-1/2 relative flex justify-center items-center">
                 <div className="relative w-full max-w-[600px]">
                   {/* Main Image */}
-                  <div className="rounded-[24px] p-8 w-full aspect-square flex items-center justify-center">
+                  <div className="rounded-[24px] w-full aspect-square flex items-center justify-center">
                     <img
                       src="/Image/Services/DirectMail/EDDM/EDDM-YourHealth.png"
                       alt="Direct Mail Campaigns"

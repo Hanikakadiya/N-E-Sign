@@ -29,7 +29,7 @@ export default function PoliticalMail() {
               data.stackedFeatureLeft || data.howItWorks || data.benefitsLeft
             }
           >
-            <div className="py-20 px-4 md:px-8 font-sans relative z-10">
+            <div className="py-10 px-4 md:px-8 font-sans relative z-10">
               <div className="max-w-[1200px] mx-auto">
                 {/* Timeline Section */}
                 <div className="mb-32">
@@ -416,7 +416,7 @@ export default function PoliticalMail() {
 
           {/* Serving All Political Parties Section */}
           {data.parties && (
-            <div className="bg-[#111] text-white py-24 px-4 md:px-8 font-sans relative z-10 border-t border-white/5">
+            <div className="bg-[#111] text-white py-15 px-4 md:px-8 font-sans relative z-10 border-t border-white/5">
               <div className="max-w-[1200px] mx-auto">
                 <motion.div 
                   initial={{ opacity: 0, y: 30 }}

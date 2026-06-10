@@ -40,7 +40,8 @@ export default function DirectMailDynamic({
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative w-full pt-5 md:pt-16 md:pb-32 flex flex-col items-center text-center z-10 px-4 "
+        // className="relative w-full pt-5 md:pt-16 md:pb-32 flex flex-col items-center text-center z-10 px-4 "
+        className="relative w-full pt-10 mb-12  md:pt-16 md:pb-32 flex flex-col items-center text-center z-10 px-4 "
       >
         <h1 className="text-3xl md:text-5xl lg:text-[56px] mb-6 font-poppins font-bold leading-tight tracking-wide">
           {heroHeading || heading}
@@ -92,7 +93,7 @@ export default function DirectMailDynamic({
       )}
 
       {/* Custom Page Sections */}
-      {children && <div className="relative z-10 w-full mt-20">{children}</div>}
+      {children && <div className="relative z-10 w-full">{children}</div>}
 
       {/* Benefits Section (Top Heading, Overlapping Images, Bottom Text) */}
       {benefitsData && (
@@ -101,10 +102,10 @@ export default function DirectMailDynamic({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6 }}
-          className="max-w-[1400px] mx-auto px-4 md:px-8 py-20 mt-10 relative z-10"
+          className="max-w-[1400px] mx-auto px-4 md:px-8 relative z-10"
         >
-          <div className="mb-12">
-            <h2 className="text-[32px] md:text-[40px] font-bold mb-4 leading-tight text-white">
+          <div className="">
+            <h2 className="text-[32px] md:text-[40px] font-bold leading-tight text-white">
               {benefitsData.heading}
             </h2>
             <p className="text-[15px] md:text-[16px] text-white/80 leading-relaxed">
@@ -211,7 +212,7 @@ export const ContentBlock = ({
   }
 
   return (
-    <div className="relative z-10 container mx-auto px-4 md:px-8 pb-20 pt-16 top-30">
+    <div className="relative z-10 container mx-auto px-4 md:px-8 pb-10 xl:pb-20 xl:pt-30">
       <div
         className={`flex flex-col ${imagePosition === "left" ? "lg:flex-row" : "lg:flex-row-reverse"} items-center lg:items-start gap-12 lg:gap-20`}
       >
@@ -228,15 +229,15 @@ export const ContentBlock = ({
             <img
               src="/Image/Services/DirectMail/DirectMail-EDDM-Star-Vector.png"
               alt="Star Vector"
-              className={`absolute z-20 w-[110px] h-[110px] object-contain pointer-events-none ${
-                imagePosition === "left" ? " " : "-top-4 -right-4 lg:-right-6"
+              className={`absolute z-20 w-[80px] h-[80px] lg:w-[110px] lg:h-[110px] object-contain pointer-events-none ${
+                imagePosition === "left" ? "-top-4 -left-4 lg:-left-6" : "-top-4 -right-4 lg:-right-6"
               }`}
             />
           )}
 
           {/* Colored Corner Triangle */}
           <div
-            className={`absolute w-[110px] h-[110px] bg-[var(--color-primary)] z-20 pointer-events-none rounded-[5px] ${trianglePos}`}
+            className={`absolute w-[80px] h-[80px] lg:w-[110px] lg:h-[110px] bg-[var(--color-primary)] z-20 pointer-events-none rounded-[5px] ${trianglePos}`}
             style={{ clipPath: triangleClip }}
           ></div>
 

@@ -135,7 +135,7 @@ export default function DirectMailCard() {
             className="mt-16 flex justify-center"
           >
             {/* CTA Button Section */}
-            <div className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10">
+            <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-10 flex justify-center relative z-10">
               <Link
                 to="/contact"
                 className="bg-gradient-to-l from-[var(--color-dark-orange)] to-[var(--color-primary)] px-8 py-4 rounded-full text-[16px] font-semibold hover:opacity-90 transition-all flex items-center gap-3 shadow-[0_0_15px_rgba(247,156,41,0.3)] group text-white"
@@ -166,7 +166,7 @@ export default function DirectMailCard() {
 
       {/* Expert Marketing Solutions Section */}
       {data.solutionsGrid && (
-        <section className="bg-black py-24 px-4 sm:px-6 lg:px-8 font-sans">
+        <section className="bg-black py- px-4 sm:px-6 lg:px-8 font-sans">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -209,12 +209,12 @@ export default function DirectMailCard() {
 
       {/* Vertical Timeline Section */}
       {data.verticalTimeline && (
-        <section className="py-20 px-4 sm:px-6 lg:px-8 font-sans relative overflow-hidden">
+        <section className=" sm:px-6 lg:px-8 font-sans relative overflow-hidden">
           <div className="max-w-5xl mx-auto relative">
             {/* Center Line */}
             <div className="absolute left-[30px] md:left-1/2 top-0 bottom-0 w-[1px] bg-white/20 transform md:-translate-x-1/2 z-0"></div>
 
-            <div className="relative z-10 flex flex-col gap-10 md:gap-16">
+            <div className="relative z-10 flex flex-col px-5 py-10 gap-10 md:gap-16">
               {data.verticalTimeline.map((item, index) => {
                 const isLeft = item.align === "left";
                 const IconComponent = Icons[item.icon] || Icons.ListBullets;
@@ -284,7 +284,7 @@ export default function DirectMailCard() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10"
+        className="max-w-[1400px] mx-auto px-4 md:px-8 pt-10 flex justify-center relative z-10"
       >
         <Link
           to="/contact"
