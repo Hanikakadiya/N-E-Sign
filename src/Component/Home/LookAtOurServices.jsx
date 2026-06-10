@@ -235,7 +235,7 @@ export default function LookAtOurServices() {
                 {/* Icon Circle */}
                 <div className="relative flex justify-center w-full">
                   {service.svg}
-                  <div className="group relative w-16 h-16 md:w-20 md:h-20 bg-white rounded-full  border-[var(--color-primary)] flex items-center justify-center mb-6 overflow-hidden transition-all duration-500 hover:scale-110 hover:bg-[var(--color-primary)] shrink-0">
+                  <div className="group relative w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center mb-6 overflow-hidden transition-all duration-500 hover:scale-110 hover:bg-[var(--color-primary)] shrink-0">
                     {/* Pale orange accent circle inside */}
                     <div className="absolute top-1/2 left-1/2 w-full h-full bg-[var(--color-primary)] opacity-20 rounded-full transition-opacity duration-300 group-hover:opacity-0"></div>
 

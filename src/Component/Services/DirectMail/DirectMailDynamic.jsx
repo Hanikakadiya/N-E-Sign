@@ -40,7 +40,7 @@ export default function DirectMailDynamic({
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative w-full pt-10 pb-24 md:pt-16 md:pb-32 flex flex-col items-center text-center z-10 px-4 "
+        className="relative w-full pt-5 md:pt-16 md:pb-32 flex flex-col items-center text-center z-10 px-4 "
       >
         <h1 className="text-3xl md:text-5xl lg:text-[56px] mb-6 font-poppins font-bold leading-tight tracking-wide">
           {heroHeading || heading}
