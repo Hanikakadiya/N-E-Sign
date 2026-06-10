@@ -37,7 +37,7 @@ export default function VehicleService() {
     const orbitalImage2 = modal.images?.[2];
 
     return (
-      <section className="min-h-screen font-poppins pb-20 pt-20 mt-12 relative overflow-hidden">
+      <section className="min-h-screen font-poppins pb-20 relative overflow-hidden">
         {/* Subtle Glow Background */}
         <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#EAB308] opacity-[0.03] blur-[120px] rounded-full pointer-events-none"></div>
 

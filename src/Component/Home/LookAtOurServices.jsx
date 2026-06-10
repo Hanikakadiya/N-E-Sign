@@ -188,12 +188,12 @@ export default function LookAtOurServices() {
 
   return (
     <section
-      className="relative w-full py-20 lg:py-32 bg-transparent font-poppins"
+      className="relative w-full bg-transparent font-poppins"
       style={{ "--zigzag": zigzagGap }}
     >
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8">
         {/* Header Section */}
-        <div className="flex flex-wrap flex-col items-center justify-center gap-3 sm:gap-5 text-[28px] sm:text-4xl md:text-5xl lg:text-[55px] font-bold  mb-20 md:mb-32">
+        <div className="flex flex-wrap flex-col items-center justify-center gap-3 sm:gap-5 text-[28px] sm:text-4xl md:text-5xl lg:text-[55px] font-bold mb-5 md:mb-32">
           <div className="flex gap-6 md:gap-10 items-center justify-center">
             <span>Look at</span>
             <div className="w-24 md:w-48 xl:w-[220px] h-10 md:h-14 bg-gray-300 rounded-full shrink-0"></div>
@@ -216,7 +216,7 @@ export default function LookAtOurServices() {
 
           {/* Grid of Nodes */}
           <motion.div
-            className="flex flex-col md:flex-row flex-wrap xl:flex-nowrap justify-center items-center md:items-start gap-12 md:gap-4 lg:gap-6 xl:gap-8 relative z-10"
+            className="flex flex-col md:flex-row flex-wrap xl:flex-nowrap justify-center items-center md:items-start gap-5 md:gap-4 lg:gap-6 xl:gap-8 relative z-10"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"

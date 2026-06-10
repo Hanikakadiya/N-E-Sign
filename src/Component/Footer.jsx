@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-black font-poppins pt-30">
+    <footer className="bg-black font-poppins pt-15">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <motion.div
@@ -62,7 +62,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-16 border-b border-[#222222]"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-6 border-b border-[#222222]"
         >
           {/* Column 1: Let's Work Together */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0 w-full">

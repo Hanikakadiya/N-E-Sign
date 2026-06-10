@@ -55,7 +55,7 @@ export default function DirectMail() {
   const cards = DirectMailData || DIRECT_MAIL_DATA;
 
   return (
-    <div className="min-h-screen container mx-auto flex flex-col pt-40 pb-20 px-4 md:px-8 font-['Inter',sans-serif]">
+    <div className="min-h-screen container mx-auto flex flex-col pt-10 pb-20 px-4 md:px-8 font-['Inter',sans-serif]">
       {/* Header Section */}
       <div className="mb-12 flex flex-col items-center">
         <div className="flex items-center gap-2 mb-4">

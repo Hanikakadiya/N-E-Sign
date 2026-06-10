@@ -61,6 +61,12 @@ export default function NavBar() {
     }
   };
 
+  const closeMobileMenu = () => {
+    setIsOpen(false);
+    setActiveDropdown(null);
+    setActiveSubDropdown(null);
+  };
+
   const NavLinks = [
     { name: "Home", href: "/" },
     {
@@ -132,16 +138,23 @@ export default function NavBar() {
         allLinks.push({ name: dropLink.name, href: dropLink.href });
         if (dropLink.subItems) {
           dropLink.subItems.forEach((subItem) => {
-            allLinks.push({ name: subItem.name, href: subItem.href, parent: dropLink.name });
+            allLinks.push({
+              name: subItem.name,
+              href: subItem.href,
+              parent: dropLink.name,
+            });
           });
         }
       });
     }
   });
 
-  const searchResults = searchQuery.trim() === "" 
-    ? [] 
-    : allLinks.filter(link => link.name.toLowerCase().includes(searchQuery.toLowerCase()));
+  const searchResults =
+    searchQuery.trim() === ""
+      ? []
+      : allLinks.filter((link) =>
+          link.name.toLowerCase().includes(searchQuery.toLowerCase()),
+        );
 
   return (
     <>
@@ -149,7 +162,7 @@ export default function NavBar() {
         <div className=" container flex items-center justify-between max-w-[1720px] mx-auto w-full h-full">
           {/* Left: Logo */}
           <div className=" z-50">
-            <Link to="/">
+            <Link to="/" onClick={closeMobileMenu}>
               <img
                 src="/Image/NavBar/NE_Sign_Logo.png"
                 alt="NE-Sign Logo"
@@ -279,8 +292,14 @@ export default function NavBar() {
                           onClick={() => setSearchQuery("")}
                           className="block px-4 py-3 hover:bg-[#1a1a1a] transition-colors border-b border-[#222] last:border-0"
                         >
-                          <div className="text-[14px] font-poppins text-white">{result.name}</div>
-                          {result.parent && <div className="text-[11px] text-[var(--color-gray)] uppercase tracking-wider mt-1">{result.parent}</div>}
+                          <div className="text-[14px] font-poppins text-white">
+                            {result.name}
+                          </div>
+                          {result.parent && (
+                            <div className="text-[11px] text-[var(--color-gray)] uppercase tracking-wider mt-1">
+                              {result.parent}
+                            </div>
+                          )}
                         </Link>
                       ))}
                     </div>
@@ -340,7 +359,7 @@ export default function NavBar() {
               : "h-0 opacity-0 invisible"
           }`}
         >
-          <div className="px-6 py-8 flex flex-col space-y-6 min-h-full pb-24">
+          <div className="px-6 flex flex-col space-y-6 min-h-full pb-24">
             {/* Mobile Search Wrapper */}
             <div className="relative mb-4">
               <div className="flex items-center justify-between w-full h-[40px] px-4 border border-gray-400 rounded-full bg-transparent focus-within:border-white transition-colors">
@@ -353,7 +372,7 @@ export default function NavBar() {
                 />
                 <Icons.Search color="white" className="ml-2 opacity-70" />
               </div>
-              
+
               {/* Mobile Search Dropdown */}
               {searchQuery && (
                 <div className="absolute top-[110%] w-full bg-[#111111] border border-[#333] rounded-xl overflow-hidden z-50">
@@ -365,12 +384,18 @@ export default function NavBar() {
                           to={result.href}
                           onClick={() => {
                             setSearchQuery("");
-                            setIsOpen(false);
+                            closeMobileMenu();
                           }}
                           className="block px-4 py-3 hover:bg-[#222] transition-colors border-b border-[#222] last:border-0"
                         >
-                          <div className="text-[14px] font-poppins text-white">{result.name}</div>
-                          {result.parent && <div className="text-[11px] text-[var(--color-gray)] uppercase tracking-wider mt-1">{result.parent}</div>}
+                          <div className="text-[14px] font-poppins text-white">
+                            {result.name}
+                          </div>
+                          {result.parent && (
+                            <div className="text-[11px] text-[var(--color-gray)] uppercase tracking-wider mt-1">
+                              {result.parent}
+                            </div>
+                          )}
                         </Link>
                       ))}
                     </div>
@@ -395,7 +420,7 @@ export default function NavBar() {
                     onClick={() => {
                       if (!link.dropdown) setIsOpen(false);
                     }}
-                    className={`font-poppins font-normal text-base md:text-[18px] transition duration-300 ${
+                    className={`font-poppins font-normal text-[18px] transition duration-300 ${
                       location.pathname === link.href ||
                       (link.dropdown &&
                         link.dropdown.some((d) => location.pathname === d.href))
@@ -424,7 +449,7 @@ export default function NavBar() {
                             onClick={() => {
                               if (!dropLink.subItems) setIsOpen(false);
                             }}
-                            className={`font-poppins text-sm md:text-[16px] transition duration-300 ${
+                            className={`font-poppins text-[16px] transition duration-300 ${
                               location.pathname === dropLink.href
                                 ? "text-[var(--color-primary)]"
                                 : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"
@@ -451,7 +476,7 @@ export default function NavBar() {
                                   key={subItem.name}
                                   to={subItem.href}
                                   onClick={() => setIsOpen(false)}
-                                  className={`font-poppins text-sm md:text-[14px] transition duration-300 ${
+                                  className={`font-poppins text-[14px] transition duration-300 ${
                                     location.pathname === subItem.href
                                       ? "text-[var(--color-primary)]"
                                       : "text-[var(--color-gray)] hover:text-[var(--color-primary)]"

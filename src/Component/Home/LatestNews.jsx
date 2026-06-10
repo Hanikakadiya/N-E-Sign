@@ -46,7 +46,7 @@ export default function LatestNews() {
   };
 
   return (
-    <section className="container mx-auto font-poppins relative py-16 sm:py-24 ">
+    <section className="container mx-auto font-poppins relative py-5 sm:py-24 ">
       {/* Section Header */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center gap-2 mb-4">

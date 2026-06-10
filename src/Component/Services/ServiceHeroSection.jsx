@@ -14,10 +14,10 @@ export default function ServiceHeroSection() {
   ];
 
   return (
-    <section className="bg-black min-h-screen w-full pt-[200px] pb-24 font-poppins">
+    <section className="w-full font-poppins mt-5">
       <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-10 xl:px-24 flex flex-col lg:flex-row items-start gap-10 xl:gap-16">
         {/* Left Column - Images */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -70,7 +70,7 @@ export default function ServiceHeroSection() {
         </motion.div>
 
         {/* Right Column - Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -85,7 +85,7 @@ export default function ServiceHeroSection() {
           </div>
 
           {/* Section Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-[44px] xl:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-12 xl:mb-16 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-[44px] xl:text-[52px] font-poppins font-bold text-white leading-[1.15] mb-12 xl:mb-16 tracking-tight">
             Professional Services <br />
             with{" "}
             <span className="text-[var(--color-primary)]">

@@ -10,6 +10,7 @@ export function ExteriorDetailView({ id }) {
   const [searchParams] = useSearchParams();
   const tab = searchParams.get("tab");
   const [pageData, setPageData] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,24 +43,106 @@ export function ExteriorDetailView({ id }) {
   }
 
   const activeTab = tab || pageData.sidebar?.links?.[0]?.id;
+  const currentLink =
+    pageData.sidebar?.links?.find((link) => link.id === activeTab) ||
+    pageData.sidebar?.links?.[0];
 
   return (
-    <div className="w-full min-h-screen font-poppins pt-[100px] md:pt-[120px]">
+    <div className="w-full min-h-screen font-poppins">
       <div className="flex flex-col lg:flex-row w-full">
         {/* Left Sidebar */}
         {pageData.sidebar && (
-          <Sidebar
-            title={pageData.sidebar.title}
-            links={pageData.sidebar.links?.map((link) => ({
-              ...link,
-              href: `?tab=${link.id}`,
-            }))}
-            activeId={activeTab}
-          />
+          <>
+            <style>{`
+              @media (max-width: 768px) {
+                .normal-sidebar { display: none !important; }
+                .dropdown-sidebar { display: block !important; }
+              }
+              @media (min-width: 768.01px) {
+                .normal-sidebar { display: block !important; }
+                .dropdown-sidebar { display: none !important; }
+              }
+            `}</style>
+
+            <div className="normal-sidebar">
+              <Sidebar
+                title={pageData.sidebar.title}
+                links={pageData.sidebar.links?.map((link) => ({
+                  ...link,
+                  href: `?tab=${link.id}`,
+                }))}
+                activeId={activeTab}
+              />
+            </div>
+
+            {/* Dropdown for screen width <= 768px */}
+            <div className="dropdown-sidebar w-full px-4 py-4 bg-[#0a0a0a] border-b border-[#222] relative z-50">
+              <div className="max-w-md mx-auto">
+                {pageData.sidebar.title && (
+                  <div className="text-[var(--color-primary)] text-sm font-bold tracking-wider mb-2 uppercase">
+                    {pageData.sidebar.title}
+                  </div>
+                )}
+
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className="w-full flex items-center justify-between bg-[#161616] border border-[#333] hover:border-[#444] px-4 py-3 rounded-2xl text-white transition-all active:scale-[0.98] outline-none"
+                >
+                  <span className="text-[15px] font-medium text-left">
+                    {currentLink?.name}
+                  </span>
+                  <svg
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : "rotate-0"}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                {isDropdownOpen && (
+                  <>
+                    <div
+                      className="fixed inset-0 z-40"
+                      onClick={() => setIsDropdownOpen(false)}
+                    />
+
+                    <div className="absolute left-4 right-4 mt-2 bg-[#161616] border border-[#333] rounded-2xl shadow-2xl z-50 overflow-hidden max-h-[250px] overflow-y-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-white/20">
+                      {pageData.sidebar.links?.map((link) => {
+                        const isActive = link.id === activeTab;
+                        return (
+                          <Link
+                            key={link.id}
+                            to={`?tab=${link.id}`}
+                            onClick={() => setIsDropdownOpen(false)}
+                            className={`w-full flex items-center px-4 py-3.5 text-left transition-colors border-b border-white/5 last:border-b-0 hover:bg-[#222] ${
+                              isActive
+                                ? "bg-[#222] text-[var(--color-primary)] font-semibold"
+                                : "text-[#a3a3a3]"
+                            }`}
+                          >
+                            <span className="text-[15px] font-medium">
+                              {link.name}
+                            </span>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </>
         )}
 
         {/* Main Content Area */}
-        <div className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-20 py-8 lg:py-16 relative">
+        <div className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-20 py-10 lg:py-16 relative">
           {/* Back Arrow */}
           <div className="absolute z-20 top-4 sm:top-8 left-4 sm:left-8">
             <Link
@@ -72,7 +155,7 @@ export function ExteriorDetailView({ id }) {
           </div>
 
           {/* Dynamic Content Sections */}
-          <div className="flex flex-col gap-16 mt-12 lg:mt-0">
+          <div className="flex flex-col gap-10 mt-5 lg:mt-0">
             {pageData.content.map((section, sectionIdx) => (
               <motion.div
                 key={section.id}
@@ -83,7 +166,7 @@ export function ExteriorDetailView({ id }) {
                 className="relative flex flex-col"
               >
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-12">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-5">
                   <div className="flex-1 max-w-4xl">
                     <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[48px]">
                       {section.highlightTitle && (
@@ -183,16 +266,16 @@ export default function ExteriorSigns() {
         className="absolute right-0 opacity-20 w-[400px] md:w-[450px] object-cover mix-blend-screen pointer-events-none z-0"
       />
 
-      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
+      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-5 md:pt-[120px]">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-start mb-16 relative"
+          className="flex flex-col items-start mb-5 relative"
         >
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-4 mb-5">
             <Link
               to="/services/signage"
               className="flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors"

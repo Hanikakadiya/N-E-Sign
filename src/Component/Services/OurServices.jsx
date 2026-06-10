@@ -38,7 +38,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="container mx-auto relative font-poppins">
+    <section className="container mx-auto relative font-poppins pt-5">
       {/* Right side background glow */}
 
       {/* Right side SVG Ring Graphic */}
@@ -71,7 +71,8 @@ export default function OurServices() {
           <h3 className="text-[var(--color-primary)] text-[13px] font-semibold tracking-[0.2em] uppercase mb-6 flex items-center gap-2">
             Our Services
           </h3>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[50px] font-bold leading-[1.15] tracking-wide mb-8">
+          {/* Main Title */}
+          <h2 className="text-2xl sm:text-6xl md:text-7xl lg:text-[50px] font-bold leading-[1.15] tracking-wide mb-8">
             <span className="text-[var(--color-primary)]">
               Customized Solutions
             </span>{" "}
@@ -92,7 +93,7 @@ export default function OurServices() {
       </div>
 
       {/* Services Cards Grid */}
-      <div className="mt-20 flex flex-wrap justify-center gap-6">
+      <div className="mt-5 flex flex-wrap justify-center gap-6">
         {servicesData.map((service, index) => (
           <motion.div
             key={index}

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function ContectHeroSection() {
   return (
     <div
-      className="relative min-h-screen overflow-hidden pt-32 pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen overflow-hidden pt-10 pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/Image/ContactUs/HeroSectionimg.png')" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">

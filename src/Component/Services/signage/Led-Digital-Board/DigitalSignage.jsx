@@ -45,7 +45,7 @@ export default function DigitalSignage() {
   }, [selectedCard]);
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden pt-[120px] pb-[100px] px-4 md:px-8 lg:px-16 font-poppins">
+    <section className="relative w-full min-h-screen overflow-hidden pb-[100px] px-4 md:px-8 lg:px-16 font-poppins">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

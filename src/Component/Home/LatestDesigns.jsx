@@ -31,7 +31,7 @@ export default function LatestDesigns() {
   ];
 
   return (
-    <section className="relative container mx-auto w-full py-16 sm:py-24 font-poppins">
+    <section className="relative container mx-auto w-full py-5 sm:py-24 font-poppins">
       <div className="w-full px-4 sm:px-8 lg:px-0 mx-auto relative z-10">
         {/* Section Header */}
         <div className="mb-12 flex flex-col items-center md:items-start max-w-4xl mx-auto xl:mx-0 xl:pl-[312px] text-center md:text-left">

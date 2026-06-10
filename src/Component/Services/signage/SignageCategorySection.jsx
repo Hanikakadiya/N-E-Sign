@@ -10,7 +10,7 @@ export default function SignageCategorySection() {
   const categories = SignageData;
 
   return (
-    <section className="w-full pb-20 pt-32 overflow-hidden">
+    <section className="w-full pt-10 overflow-hidden">
       <div className="max-w-[83%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         {/* Header */}
         <motion.div

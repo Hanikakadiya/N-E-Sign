@@ -32,7 +32,7 @@ export function InteriorDetailView({ id }) {
   }
 
   return (
-    <div className="font-poppins pt-[100px] md:pt-[120px] max-w-[1500px] mx-auto 2xl:ml-[200px]">
+    <div className="font-poppins max-w-[1500px] mx-auto 2xl:ml-[200px]">
       <div className="flex flex-col lg:flex-row  mx-auto relative px-4 sm:px-8 lg:px-12 xl:px-20">
         {/* Main Content Area */}
         <div className="w-full py-8 lg:py-16">

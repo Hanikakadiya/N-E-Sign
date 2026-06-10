@@ -536,7 +536,7 @@ export default function LEDNeonSigns() {
   };
 
   return (
-    <div className="flex flex-col w-full overflow-hidden pt-[80px] md:pt-[100px] font-['Inter',sans-serif] min-h-screen">
+    <div className="flex flex-col w-full overflow-hidden font-['Inter',sans-serif] min-h-screen">
       <style>{`
         @keyframes neonRgb { 0% { filter: hue-rotate(0deg); } 100% { filter: hue-rotate(360deg); } }
         .animate-neon-rgb { animation: neonRgb 4s infinite linear; }

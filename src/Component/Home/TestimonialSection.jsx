@@ -49,7 +49,7 @@ export default function TestimonialSection() {
   }, [currentIndex]);
 
   return (
-    <section className="relative container mx-auto py-16 sm:py-24 flex flex-col items-center font-poppins">
+    <section className="relative container mx-auto py-5 sm:py-24 flex flex-col items-center font-poppins">
       {/* Background Glow */}
       <div className="absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[var(--color-primary)]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 

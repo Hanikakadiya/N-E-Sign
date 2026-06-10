@@ -29,7 +29,7 @@ function Counter({ from = 0, to, duration = 2, suffix = "" }) {
 export default function OurWork() {
   return (
     <>
-      <section className="relative w-full py-16 container mx-auto">
+      <section className="relative w-full py-5 container mx-auto">
         <div className="absolute top-1/2 right-[-20%] md:right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/50 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none z-0"></div>
 
         <div className="w-full p-2 relative z-10 max-w-[1720px] mx-auto">

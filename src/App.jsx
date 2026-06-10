@@ -62,77 +62,79 @@ export default function App() {
     <>
       <ScrollToTop />
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/Apparel" element={<Apparel />} />
-        <Route path="/promotional-products" element={<PromotionalProducts />} />
-        <Route path="/our-work" element={<OurWork />} />
-        <Route 
-          path="/contact" 
-          element={
-            <div className="min-h-screen">
-              <ContectHeroSection />
-              <WhyContactUs />
-            </div>
-          } 
-        />
-        <Route path="/services/signage" element={<Signage />} />
-        <Route
-          path="/services/signage/exterior-sign"
-          element={<ExteriorSigns />}
-        />
-        <Route
-          path="/services/signage/exterior-sign/:id"
-          element={<ExteriorSigns />}
-        />
-        <Route
-          path="/services/signage/digital-board"
-          element={<DigitalSignage />}
-        />
-        <Route
-          path="/services/signage/digital-board/:subCategory"
-          element={<DigitalSignage />}
-        />
-        <Route
-          path="/services/signage/interior-sign"
-          element={<InteriorSigns />}
-        />
-        <Route
-          path="/services/signage/interior-sign/:id"
-          element={<InteriorSigns />}
-        />
-        <Route path="/services/signage/neon-sign" element={<LEDNeonSigns />} />
-        <Route
-          path="/services/signage/vehicle-graphics"
-          element={<VehicleService />}
-        />
-        <Route
-          path="/services/signage/vehicle-graphics/:subCategory"
-          element={<VehicleService />}
-        />
-        <Route path="/services/direct-mailing" element={<DirectMail />} />
-        <Route
-          path="/services/direct-mailing/eddm-service-every-door-direct-mail-"
-          element={<EDDMServicesCard />}
-        />
-        <Route
-          path="/services/direct-mailing/direct-mail"
-          element={<DirectMailCard />}
-        />
-        <Route
-          path="/services/direct-mailing/political-mail"
-          element={<PoliticalMail />}
-        />
-        <Route
-          path="/services/direct-mailing/customer-and-business-mailing-list"
-          element={<CustomerAndBusinessMailCard />}
-        />
-        <Route
-          path="/services/direct-mailing/variable-data"
-          element={<VariableDataCard />}
-        />
-      </Routes>
+      <main className="pt-[80px] md:pt-[100px] w-full min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/Apparel" element={<Apparel />} />
+          <Route path="/promotional-products" element={<PromotionalProducts />} />
+          <Route path="/our-work" element={<OurWork />} />
+          <Route 
+            path="/contact" 
+            element={
+              <div className="min-h-screen">
+                <ContectHeroSection />
+                <WhyContactUs />
+              </div>
+            } 
+          />
+          <Route path="/services/signage" element={<Signage />} />
+          <Route
+            path="/services/signage/exterior-sign"
+            element={<ExteriorSigns />}
+          />
+          <Route
+            path="/services/signage/exterior-sign/:id"
+            element={<ExteriorSigns />}
+          />
+          <Route
+            path="/services/signage/digital-board"
+            element={<DigitalSignage />}
+          />
+          <Route
+            path="/services/signage/digital-board/:subCategory"
+            element={<DigitalSignage />}
+          />
+          <Route
+            path="/services/signage/interior-sign"
+            element={<InteriorSigns />}
+          />
+          <Route
+            path="/services/signage/interior-sign/:id"
+            element={<InteriorSigns />}
+          />
+          <Route path="/services/signage/neon-sign" element={<LEDNeonSigns />} />
+          <Route
+            path="/services/signage/vehicle-graphics"
+            element={<VehicleService />}
+          />
+          <Route
+            path="/services/signage/vehicle-graphics/:subCategory"
+            element={<VehicleService />}
+          />
+          <Route path="/services/direct-mailing" element={<DirectMail />} />
+          <Route
+            path="/services/direct-mailing/eddm-service-every-door-direct-mail-"
+            element={<EDDMServicesCard />}
+          />
+          <Route
+            path="/services/direct-mailing/direct-mail"
+            element={<DirectMailCard />}
+          />
+          <Route
+            path="/services/direct-mailing/political-mail"
+            element={<PoliticalMail />}
+          />
+          <Route
+            path="/services/direct-mailing/customer-and-business-mailing-list"
+            element={<CustomerAndBusinessMailCard />}
+          />
+          <Route
+            path="/services/direct-mailing/variable-data"
+            element={<VariableDataCard />}
+          />
+        </Routes>
+      </main>
 
       <Footer />
     </>

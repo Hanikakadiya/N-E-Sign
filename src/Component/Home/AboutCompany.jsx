@@ -23,7 +23,7 @@ export default function AboutCompany() {
   };
 
   return (
-    <section className="relative py-20 sm:py-28 lg:py-40 flex items-center justify-center">
+    <section className="relative py-10 sm:py-28 lg:py-40 flex items-center justify-center">
       {/* Background Glow */}
       {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-[var(--color-primary)]/20 blur-[130px] rounded-full pointer-events-none z-0"></div> */}
 

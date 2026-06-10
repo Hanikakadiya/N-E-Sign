@@ -21,9 +21,9 @@ export default function SignageHeroSection() {
   const [activeCard, setActiveCard] = useState(0);
 
   return (
-    <section className="min-h-[90vh] w-full flex items-center justify-center pb-20 pt-32 overflow-hidden">
+    <section className="min-h-[90vh] w-full flex items-center justify-center overflow-hidden">
       <div className="max-w-[98%] w-full mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
