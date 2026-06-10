@@ -158,7 +158,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed w-full md:h-[100px] h-[80px]  z-50 top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
+      <nav className="fixed w-full md:h-[100px] h-[80px] z-[100] top-0 left-0 border-b border-[#333333] backdrop-blur-sm">
         <div className=" container flex items-center justify-between max-w-[1720px] mx-auto w-full h-full">
           {/* Left: Logo */}
           <div className=" z-50">
@@ -353,7 +353,7 @@ export default function NavBar() {
         {/* Mobile Menu Full Screen */}
         <div
           data-lenis-prevent
-          className={`mobile-menu-scroll-container xl:hidden fixed top-[80px] md:top-[100px] left-0 w-full bg-[#000000] transition-all duration-500 ease-in-out z-40 overflow-y-auto overscroll-none ${
+          className={`mobile-menu-scroll-container xl:hidden fixed top-[80px] md:top-[100px] left-0 w-full bg-[#000000] transition-all duration-500 ease-in-out z-[90] overflow-y-auto overscroll-none ${
             isOpen
               ? "h-[calc(100vh-80px)] md:h-[calc(100vh-100px)] opacity-100 visible"
               : "h-0 opacity-0 invisible"

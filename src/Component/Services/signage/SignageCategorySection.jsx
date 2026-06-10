@@ -78,7 +78,7 @@ export default function SignageCategorySection() {
                     <div className="flex flex-col items-center gap-1">
                       <div className="w-[1px] h-20 bg-white/50"></div>
                       <div
-                        className="text-xl tracking-wider font-medium whitespace-nowrap mt-2"
+                        className="text-[10px] tracking-wider font-medium whitespace-nowrap mt-2"
                         style={{ writingMode: "vertical-rl" }}
                       >
                         {cat.title}
@@ -103,10 +103,10 @@ export default function SignageCategorySection() {
                         Signage
                       </span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl lg:text-2xl xl:text-4xl font-bold mb-3 xl:mb-5 whitespace-nowrap">
+                    <h3 className="text-1xl md:text-3xl lg:text-2xl xl:text-4xl font-bold mb-3 xl:mb-5 whitespace-nowrap">
                       {cat.title}
                     </h3>
-                    <p className="text-sm lg:text-xs xl:text-base font-normal leading-relaxed mb-6 lg:mb-4 xl:mb-8 max-w-[280px] lg:max-w-full">
+                    <p className="text-[10px] lg:text-xs xl:text-base font-normal leading-relaxed mb-6 lg:mb-4 xl:mb-8 max-w-[280px] lg:max-w-full">
                       {cat.description}
                     </p>
                     <Link
