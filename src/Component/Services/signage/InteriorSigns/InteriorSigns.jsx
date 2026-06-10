@@ -35,7 +35,7 @@ export function InteriorDetailView({ id }) {
     <div className="font-poppins max-w-[1500px] mx-auto 2xl:ml-[200px]">
       <div className="flex flex-col lg:flex-row  mx-auto relative px-4 sm:px-8 lg:px-12 xl:px-20">
         {/* Main Content Area */}
-        <div className="w-full py-8 lg:py-16">
+        <div className="w-full lg:py-16">
           {/* Back Arrow */}
           <div className="absolute z-20 top-0">
             <Link
@@ -48,7 +48,7 @@ export function InteriorDetailView({ id }) {
           </div>
 
           {/* Dynamic Content Sections */}
-          <div className="flex flex-col gap-16 mt-12 lg:mt-0">
+          <div className="flex flex-col gap-16 mt-5 lg:mt-0">
             {pageData.content.map((section, sectionIdx) => (
               <motion.div
                 key={section.id}
@@ -59,9 +59,9 @@ export function InteriorDetailView({ id }) {
                 className="relative flex flex-col"
               >
                 {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-center text-center gap-16 mb-12 justify-around">
+                <div className="flex flex-col lg:flex-row lg:items-center text-center gap-8 mb-5 justify-around">
                   <div className="flex-1 max-w-5xl lg:pl-16">
-                    <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[40px]">
+                    <h3 className="font-bold my-4 tracking-wide text-3xl lg:text-[40px]">
                       {section.mainTitle}
                     </h3>
                     <p className="text-[var(--color-gray)] leading-relaxed text-[10px] sm:text-[18px] font-semibold tracking-widest uppercase">
@@ -135,16 +135,16 @@ export default function InteriorSigns() {
       {/* Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] sm:w-[600px] h-[600px] sm:h-[600px] bg-[var(--color-primary)]/40 blur-[150px] sm:blur-[250px] rounded-full pointer-events-none"></div>
 
-      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-[80px] md:pt-[120px]">
+      <div className="w-full xl:max-w-[85%] 2xl:max-w-[75%] mx-auto px-4 md:px-8 lg:px-10 xl:px-8 relative z-10 pt-3 md:pt-[120px]">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-start mb-16 relative"
+          className="flex flex-col items-start mb-5 relative"
         >
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-4">
             <Link
               to="/services/signage"
               className="flex items-center justify-center text-[var(--color-gray)] hover:text-white transition-colors"
@@ -163,7 +163,7 @@ export default function InteriorSigns() {
             </div>
           </div>
 
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-medium mb-5 font-poppins">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-medium mb-4 font-poppins">
             {categoryData?.title}
           </h1>
 

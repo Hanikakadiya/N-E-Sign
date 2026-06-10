@@ -13,7 +13,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col sm:flex-row justify-between items-center pb-8 border-b border-[#222222]"
+          className="flex flex-col sm:flex-row justify-between items-center pb-5 border-b border-[#222222]"
         >
           {/* Logo */}
           <Link to="/">
@@ -65,11 +65,11 @@ export default function Footer() {
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-5 gap-8 lg:gap-6 xl:gap-12 py-6 border-b border-[#222222]"
         >
           {/* Column 1: Let's Work Together */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] mb-10 lg:mb-0 w-full">
+          <div className="col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-1 flex flex-col items-center lg:items-start pr-0 lg:pr-6 xl:pr-8 lg:border-r border-[#222222] lg:mb-0 w-full">
             <h2 className="text-3xl md:text-[40px] lg:text-[32px] xl:text-[40px] font-bold leading-none mb-2 tracking-wide text-center lg:text-left">
               LET'S WORK
             </h2>
-            <h3 className="text-lg md:text-[22px] font-medium tracking-[0.1em] uppercase mb-8 text-center lg:text-left">
+            <h3 className="text-lg md:text-[22px] font-medium tracking-[0.1em] uppercase mb-3 text-center lg:text-left">
               Together
             </h3>
             <a
@@ -234,7 +234,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="py-8 flex flex-col sm:flex-row justify-between justify-center items-center gap-4"
+          className="py-3 flex flex-col sm:flex-row justify-between justify-center items-center"
         >
           <p className="text-[13px] text-[var(--color-gray)]">
             ©2026{" "}

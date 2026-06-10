@@ -536,7 +536,7 @@ export default function LEDNeonSigns() {
   };
 
   return (
-    <div className="flex flex-col w-full overflow-hidden font-['Inter',sans-serif] min-h-screen">
+    <div className="flex flex-col w-full overflow-hidden font-['Inter',sans-serif]">
       <style>{`
         @keyframes neonRgb { 0% { filter: hue-rotate(0deg); } 100% { filter: hue-rotate(360deg); } }
         .animate-neon-rgb { animation: neonRgb 4s infinite linear; }
@@ -800,7 +800,7 @@ export default function LEDNeonSigns() {
         </div>
 
         {/* Options panel — scrollable area below canvas */}
-        <div className="flex-1 overflow-y-auto px-4 pb-6 pt-3">
+        <div className="flex-1 overflow-y-auto px-4 pt-3">
           {renderPanel()}
         </div>
       </div>

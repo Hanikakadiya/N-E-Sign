@@ -45,15 +45,15 @@ export default function DigitalSignage() {
   }, [selectedCard]);
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden pb-[100px] px-4 md:px-8 lg:px-16 font-poppins">
+    <section className="relative w-full min-h-screen overflow-hidden px-4 md:px-8 lg:px-16 font-poppins">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="max-w-4xl mx-auto text-center mb-16 relative z-10"
+        className="max-w-4xl mx-auto text-center mb-5 relative z-10"
       >
-        <h1 className="text-3xl md:text-[48px] leading-tight font-bold mb-6">
+        <h1 className="text-3xl md:text-[48px] leading-tight font-bold my-3">
           Digital Signage Solutions for Every
           <br className="hidden md:block" /> Industry
         </h1>

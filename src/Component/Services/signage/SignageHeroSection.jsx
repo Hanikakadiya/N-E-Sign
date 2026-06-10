@@ -29,7 +29,7 @@ export default function SignageHeroSection() {
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col items-start max-w-[700px]"
+            className="flex flex-col items-start max-w-[700px] mt-5"
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[1px] w-20 bg-[var(--color-primary)]"></div>

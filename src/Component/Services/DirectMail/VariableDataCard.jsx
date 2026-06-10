@@ -39,7 +39,7 @@ export default function VariableDataCard() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="max-w-[1400px] mx-auto px-4 md:px-8 pb-20 pt-10 flex justify-center relative z-10"
+        className="max-w-[1400px] mx-auto px-4 md:px-8 pt-10 flex justify-center relative z-10"
       >
         <Link
           to="/contact"

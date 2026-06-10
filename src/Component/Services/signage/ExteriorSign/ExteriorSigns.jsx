@@ -142,7 +142,7 @@ export function ExteriorDetailView({ id }) {
         )}
 
         {/* Main Content Area */}
-        <div className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-20 py-10 lg:py-16 relative">
+        <div className="flex-1 px-4 sm:px-8 lg:px-12 xl:px-20 pt-10 lg:py-16 relative">
           {/* Back Arrow */}
           <div className="absolute z-20 top-4 sm:top-8 left-4 sm:left-8">
             <Link

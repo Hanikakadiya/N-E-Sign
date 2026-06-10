@@ -55,11 +55,11 @@ export default function DirectMail() {
   const cards = DirectMailData || DIRECT_MAIL_DATA;
 
   return (
-    <div className="min-h-screen container mx-auto flex flex-col pt-10 pb-20 px-4 md:px-8 font-['Inter',sans-serif]">
+    <div className="min-h-screen container mx-auto flex flex-col pt-10 px-4 md:px-8 font-['Inter',sans-serif]">
       {/* Header Section */}
-      <div className="mb-12 flex flex-col items-center">
+      <div className="mb-5 flex flex-col items-center">
         <div className="flex items-center gap-2 mb-4">
-          <span className="text-[var(--color-primary)] text-[16px] tracking-[0.2em] uppercase">
+          <span className="text-[var(--color-primary)] text-[14px] tracking-[0.2em] uppercase">
             OUR TECHNIQUES
           </span>
           <Icons.ArrowDownRight
@@ -68,7 +68,7 @@ export default function DirectMail() {
             height="16"
           />
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-[50px] font-bold leading-[1.1] ">
+        <h2 className="text-2xl md:text-4xl lg:text-[50px] font-bold leading-[1.1] ">
           Results-Oriented Direct
           <br />
           Mailing Approaches
@@ -76,7 +76,7 @@ export default function DirectMail() {
       </div>
 
       {/* Container for the cards */}
-      <div className="flex flex-wrap justify-center gap-4 xl:gap-5 w-full pb-8 xl:pb-0">
+      <div className="flex flex-wrap justify-center gap-4 xl:gap-5 w-full xl:pb-0">
         {cards.map((card) => (
           <Link
             to={`/services/direct-mailing/${card.title
@@ -120,9 +120,7 @@ export default function DirectMail() {
               >
                 <p className="text-[14px] mb-4">{card.description}</p>
 
-                <div
-                  className="bg-black px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 w-max text-white"
-                >
+                <div className="bg-black px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2 w-max text-white">
                   {card.buttonText}
                   <Icons.ArrowRight className="w-4 h-4" />
                 </div>

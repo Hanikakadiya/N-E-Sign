@@ -71,7 +71,7 @@ export default function DirectMailCard() {
       )}
 
       {/* Targeting Categories Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 font-sans">
+      <section className="px-4 sm:px-6 lg:px-8 font-sans">
         <div className="max-w-[90rem] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

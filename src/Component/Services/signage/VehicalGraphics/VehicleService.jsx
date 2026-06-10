@@ -355,7 +355,7 @@ export default function VehicleService() {
 
   // Parent Category Page rendering
   return (
-    <section className="bg-[#121212] py-20 px-4 md:px-8 font-poppins text-white min-h-screen mt-12 relative overflow-hidden">
+    <section className="bg-[#121212] px-4 md:px-8 font-poppins text-white min-h-screen mt-12 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto relative z-10">
         {/* Header */}
         <motion.div
@@ -363,9 +363,9 @@ export default function VehicleService() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 flex flex-col items-center"
+          className="text-center lg:mb-16 mb-5 flex flex-col items-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold mb-5 tracking-tight">
             {VehicleData.header.title}
           </h2>
           <p className="text-gray-300 text-[15px] md:text-[16px] max-w-3xl mx-auto leading-relaxed mb-6">
@@ -409,7 +409,7 @@ export default function VehicleService() {
           ))}
 
           {/* CTA Box */}
-          <div className="bg-[#EAB308] rounded-2xl lg:col-span-2 flex flex-col items-center justify-center p-8 sm:p-10 text-center shadow-lg h-[340px]">
+          <div className="bg-[#EAB308] rounded-2xl lg:col-span-2 flex flex-col items-center justify-center sm:p-10 text-center shadow-lg lg:h-[340px] h-[200px]">
             <h3 className="text-2xl md:text-3xl font-bold mb-3 text-black">
               {VehicleData.cta.title}
             </h3>
