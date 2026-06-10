@@ -5,21 +5,22 @@ import { motion } from "framer-motion";
 export default function ContectHeroSection() {
   return (
     <div
-      className="relative min-h-screen overflow-hidden pt-10 pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[70vh] lg:min-h-screen overflow-hidden pt-10 pb-10 lg:pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/Image/ContactUs/HeroSectionimg.png')" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         {/* Top Section: Text and Image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 mb-5 items-center lg:mb-24">
           {/* Left: Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             className="space-y-8"
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold leading-[1.1] tracking-tight">
-              Get in Touch With <span className="text-[var(--color-primary)]">NE Signs</span>
+              Get in Touch With{" "}
+              <span className="text-[var(--color-primary)]">NE Signs</span>
             </h1>
 
             <div className="space-y-6 text-[var(--color-gray)] text-base md:text-lg max-w-xl leading-relaxed">
@@ -39,7 +40,7 @@ export default function ContectHeroSection() {
           </motion.div>
 
           {/* Right: Image */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -58,7 +59,7 @@ export default function ContectHeroSection() {
         </div>
 
         {/* Bottom Section: Contact Info Cards */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
@@ -67,7 +68,9 @@ export default function ContectHeroSection() {
           {/* Card 1 */}
           <div className="bg-gradient-to-b from-white/[0.06] to-transparent border border-white/[0.05] rounded-2xl p-10 flex flex-col items-center text-center transition-all hover:border-white/[0.1] hover:bg-white/[0.05] duration-300 shadow-2xl shadow-black/40 backdrop-blur-sm group">
             <FiPhoneCall className="text-[var(--color-primary)] text-[2.5rem] mb-6 transition-transform group-hover:scale-110 duration-300" />
-            <p className="text-[var(--color-gray)] text-[20px] mb-3 tracking-wide">Call Us</p>
+            <p className="text-[var(--color-gray)] text-[20px] mb-3 tracking-wide">
+              Call Us
+            </p>
             <p className="font-semibold text-lg md:text-[24px] tracking-wide">
               +1 (123) 456-7890
             </p>
@@ -91,8 +94,7 @@ export default function ContectHeroSection() {
               Visit Our Office
             </p>
             <p className="font-semibold text-base md:text-[24px] leading-snug">
-              2220 Ogden avenue, Unit B,
-              Downers grove, IL 60515
+              2220 Ogden avenue, Unit B, Downers grove, IL 60515
             </p>
           </div>
         </motion.div>

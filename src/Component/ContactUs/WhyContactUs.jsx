@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 export default function WhyContactUs() {
   return (
     <div
-      className="relative min-h-screen overflow-hidden pt-32 pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
+      className="relative overflow-hidden lg:pt-32 lg:pb-24 flex flex-col justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/Image/ContactUs/WhyContactUs.png')" }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-black/40 -z-10 pointer-events-none"></div>
-      <div className="w-full bg-transparent py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+      <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none"></div>
+      <div className="w-full bg-transparent lg:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Column */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -59,8 +59,11 @@ export default function WhyContactUs() {
                 Customer Support You Can Trust
               </h3>
               <p className="text-[var(--color-gray)] text-[14px] leading-relaxed max-w-[95%] mx-auto">
-                At <span className="text-[var(--color-primary)] font-medium">NE Signs</span>,
-                customer satisfaction is our priority. We deliver responsive,
+                At{" "}
+                <span className="text-[var(--color-primary)] font-medium">
+                  NE Signs
+                </span>
+                , customer satisfaction is our priority. We deliver responsive,
                 transparent, and reliable printing services tailored to your
                 business needs.
               </p>
@@ -68,12 +71,12 @@ export default function WhyContactUs() {
           </motion.div>
 
           {/* Right Column: Form */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="bg-white/[0.03] border border-white/[0.05] rounded-[2rem] p-3 md:p-12 shadow-2xl backdrop-blur-md h-[700px]"
+            className="bg-white/[0.03] border border-white/[0.05] rounded-[2rem] p-6 md:p-12 shadow-2xl backdrop-blur-md h-auto lg:h-[700px]"
           >
             <h2 className="text-3xl md:text-[30px] font-bold mb-3 tracking-tight">
               Send Us a Message
@@ -86,7 +89,7 @@ export default function WhyContactUs() {
             <form className="space-y-7">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Name */}
-                <div className="space-y-2.5">
+                <div>
                   <label className="text-[14px] font-medium tracking-wide">
                     Your Name
                   </label>
@@ -120,7 +123,11 @@ export default function WhyContactUs() {
                     className="w-full bg-[#1A1410]/60 border border-white/5 rounded-xl px-5 py-4 text-sm appearance-none focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-[#1A1410]/80 transition-all cursor-pointer"
                     defaultValue=""
                   >
-                    <option value="" disabled className="text-[var(--color-gray)]">
+                    <option
+                      value=""
+                      disabled
+                      className="text-[var(--color-gray)]"
+                    >
                       Select Category
                     </option>
                     <option value="signage" className="bg-[#1A1410]">
@@ -158,7 +165,7 @@ export default function WhyContactUs() {
               </div>
 
               {/* Message */}
-              <div className="space-y-">
+              <div className="">
                 <label className="text-[14px] font-medium tracking-wide">
                   Your Message
                 </label>

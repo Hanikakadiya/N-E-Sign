@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-black font-poppins pt-15">
+    <footer className="font-poppins pt-15">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <motion.div
@@ -215,14 +215,13 @@ export default function Footer() {
             <div className="flex items-start justify-center lg:justify-start gap-4">
               <Icons.Location className="w-5 h-5 mt-1 flex-shrink-0" />
               <span className="text-[14px] leading-relaxed uppercase">
-                2223 OGDEN AVE #B <br className="hidden lg:block xl:hidden" />{" "}
-                LISLE, IL 60515
+                2223 OGDEN AVE #B LISLE, IL 60515
               </span>
             </div>
             <div className="flex items-center justify-center lg:justify-start gap-4">
               <Icons.Phone className="w-5 h-5 flex-shrink-0" />
               <span className="text-[14px] uppercase leading-relaxed">
-                630-454-SIGN <br className="hidden lg:block xl:hidden" /> (7446)
+                630-454-SIGN (7446)
               </span>
             </div>
           </div>
