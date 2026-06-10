@@ -55,7 +55,7 @@ export default function LatestNews() {
           </span>
           <Icons.ArrowDownRight className="w-5 h-5 animate-bounce-x text-[var(--color-primary)]" />
         </div>
-        <h2 className="text-3xl sm:text-4xl md:text-[50px] font-bold leading-tight max-w-[800px] mx-auto">
+        <h2 className="text-xl sm:text-4xl md:text-[50px] font-bold leading-tight max-w-[800px] mx-auto">
           Our Latest News & Blog Get
           <br className="hidden md:block" /> Every Updates
         </h2>

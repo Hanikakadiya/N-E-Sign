@@ -41,7 +41,7 @@ export default function LatestDesigns() {
             </span>
             <Icons.ArrowDownRight className="w-5 h-5 text-[var(--color-primary)] animate-bounce-x" />
           </div>
-          <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-bold leading-tight text-white max-w-xl">
+          <h2 className="text-[24px] sm:text-[40px] md:text-[48px] font-bold leading-tight text-white max-w-xl">
             Our latest Awesome Designs
           </h2>
         </div>
@@ -86,7 +86,7 @@ export default function LatestDesigns() {
                   <span className="text-[var(--color-gray)] text-xs tracking-wider uppercase">
                     {design.category}
                   </span>
-                  <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wide">
+                  <h3 className="text-base md:text-2xl font-bold uppercase tracking-wide">
                     {design.title}
                   </h3>
                 </div>

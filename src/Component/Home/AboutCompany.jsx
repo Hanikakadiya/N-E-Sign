@@ -93,13 +93,13 @@ export default function AboutCompany() {
           {/* Main Heading */}
           <motion.h2
             variants={itemVariants}
-            className="text-[32px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-poppins font-bold leading-[1.1] mb-2 text-white tracking-tight"
+            className="text-[24px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-poppins font-bold leading-[1.1] mb-2 text-white tracking-tight"
           >
             Customized Printing to
           </motion.h2>
           <motion.h2
             variants={itemVariants}
-            className="text-[32px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-poppins font-bold leading-[1.1] mb-8 sm:mb-10 text-[var(--color-dark-orange)] tracking-tight"
+            className="text-[24px] sm:text-[40px] md:text-[44px] lg:text-[50px] font-poppins font-bold leading-[1.1] mb-8 sm:mb-10 text-[var(--color-dark-orange)] tracking-tight"
           >
             Achieve Your Business Goals
           </motion.h2>

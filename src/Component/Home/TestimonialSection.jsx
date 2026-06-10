@@ -49,7 +49,7 @@ export default function TestimonialSection() {
   }, [currentIndex]);
 
   return (
-    <section className="relative container mx-auto py-5 sm:py-24 flex flex-col items-center font-poppins">
+    <section className="relative container mx-auto py-5 flex flex-col items-center font-poppins">
       {/* Background Glow */}
       <div className="absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[var(--color-primary)]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
@@ -112,11 +112,11 @@ export default function TestimonialSection() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-16 w-[120px] sm:w-[150px] h-[30px] sm:h-[45px] bg-[#4d4d4d] rounded-b-xl border-x border-b border-[#333] border-t-0 hidden sm:block"></div>
 
                   {/* Stars */}
-                  <div className="flex gap-2 mb-10">
+                  <div className="flex gap-2 md:mb-10">
                     {[...Array(5)].map((_, i) => (
                       <svg
                         key={i}
-                        className={`w-5 h-5 ${i < testimonials[currentIndex].rating ? "text-white" : "text-[var(--color-gray)]"}`}
+                        className={`w-5 h-5 ${i < testimonials[currentIndex].rating ? "text-white" : "text-[var(--color-gray)] "}`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >

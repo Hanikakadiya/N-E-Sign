@@ -168,7 +168,7 @@ export function ExteriorDetailView({ id }) {
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-5">
                   <div className="flex-1 max-w-4xl">
-                    <h3 className="font-bold mb-4 tracking-wide text-3xl lg:text-[48px]">
+                    <h3 className="font-bold mb-4 tracking-wide text-[24px] md:text-[30px] lg:text-[48px]">
                       {section.highlightTitle && (
                         <span className="text-[var(--color-primary)] mr-2">
                           {section.highlightTitle}

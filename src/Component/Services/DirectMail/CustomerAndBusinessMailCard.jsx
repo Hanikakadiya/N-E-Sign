@@ -108,14 +108,14 @@ export default function CustomerAndBusinessMailCard() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* EDDM Card */}
-                  <div className="bg-[#1c1c1c] rounded-2xl p-8 md:p-10 border border-white/5">
+                  <div className="bg-[#1c1c1c] rounded-2xl p-2 md:p-10 border border-white/5 lg:h-full h-[373px]">
                     <div className="bg-[var(--color-primary)] text-[12px] font-bold px-3 py-1 rounded inline-block mb-6 uppercase tracking-wider">
                       EDDM
                     </div>
-                    <h3 className="text-[24px] font-bold mb-4">
+                    <h3 className="text-[24px] font-bold mb-4 lg:mb-8">
                       Every Door Direct Mail
                     </h3>
-                    <p className="text-[var(--color-gray)] mb-8 text-[15px] leading-relaxed">
+                    <p className="text-[var(--color-gray)] mb-4 text-[10px] md:text-[14px] lg:text-[15px] leading-relaxed">
                       Best for high-volume local awareness where "Current
                       Resident" messaging is effective.
                     </p>
@@ -146,18 +146,18 @@ export default function CustomerAndBusinessMailCard() {
                   </div>
 
                   {/* Targeted Card */}
-                  <div className="bg-[#1c1c1c] rounded-2xl p-8 md:p-10 border border-white/5">
+                  <div className="bg-[#1c1c1c] rounded-2xl p-2 md:p-10 border border-white/5 lg:h-full h-[373px]">
                     <div className="bg-[var(--color-primary)] text-[12px] font-bold px-3 py-1 rounded inline-block mb-6 uppercase tracking-wider">
                       TARGETED
                     </div>
-                    <h3 className="text-[24px] font-bold mb-4">
+                    <h3 className="text-[24px] font-bold mb-4 lg:mb-8">
                       Targeted Mailing Lists
                     </h3>
-                    <p className="text-[var(--color-gray)] mb-8 text-[15px] leading-relaxed">
+                    <p className="text-[var(--color-gray)] mb-4 text-[10px] md:text-[14px] lg:text-[15px] leading-relaxed">
                       Best for data-driven campaigns targeting specific ages,
                       incomes, or consumer behaviors.
                     </p>
-                    <ul className="space-y-6">
+                    <ul className="lg:space-y-6 space-y-2">
                       {[
                         {
                           title: "Named Delivery:",
@@ -209,7 +209,7 @@ export default function CustomerAndBusinessMailCard() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Card 1 */}
-                <div className="bg-[#0a0a0a] rounded-2xl p-8 border border-white/5 flex flex-col h-full">
+                <div className="bg-[#0a0a0a] rounded-2xl lg:p-8 md:p-6 p-4 border border-white/5 flex flex-col">
                   <div className="w-12 h-12  bg-[var(--color-primary)] rounded-xl flex items-center justify-center mb-8">
                     {/* <svg className="w-6 h-6 text-[var(--color-primary,#F9A826)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -240,7 +240,7 @@ export default function CustomerAndBusinessMailCard() {
                 </div>
 
                 {/* Card 2 */}
-                <div className="bg-[#0a0a0a] rounded-2xl p-8 border border-white/5 flex flex-col h-full">
+                <div className="bg-[#0a0a0a] rounded-2xl lg:p-8 md:p-6 p-4 border border-white/5 flex flex-col">
                   <div className="w-12 h-12  bg-[var(--color-primary)] rounded-xl flex items-center justify-center mb-8">
                     {/* <svg className="w-6 h-6 text-[var(--color-primary,#F9A826)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -250,7 +250,7 @@ export default function CustomerAndBusinessMailCard() {
                   <div className="text-[var(--color-gray)] text-[10px] font-bold tracking-[0.2em] mb-3 uppercase opacity-90">
                     Tier 02 // Regional Coverage
                   </div>
-                  <h3 className="text-[24px] font-bold mb-4">
+                  <h3 className="text-[24px] font-bold mb-4 ">
                     City, County & State
                   </h3>
                   <p className="text-[var(--color-gray)] text-[16px] leading-relaxed mb-8 flex-grow">
@@ -270,7 +270,7 @@ export default function CustomerAndBusinessMailCard() {
                 </div>
 
                 {/* Card 3 */}
-                <div className="bg-[#0a0a0a] rounded-2xl p-8 border border-white/5 flex flex-col h-full">
+                <div className="bg-[#0a0a0a] rounded-2xl lg:p-8 md:p-6 p-4 border border-white/5 flex flex-col">
                   <div className="w-12 h-12 bg-[var(--color-primary)] rounded-xl flex items-center justify-center mb-8">
                     {/* <svg className="w-6 h-6 text-[var(--color-primary,#F9A826)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -318,11 +318,11 @@ export default function CustomerAndBusinessMailCard() {
           <div className="max-w-[1400px] mx-auto">
             {/* What's Included Section */}
             <div className="mt-5 lg:mt-32 border-t border-white/10 pt-20">
-             <div className="pl-6 border-l-4 border-[var(--color-primary,#F9A826)] mb-4">
+             <div className="pl-6 border-l-4 border-[var(--color-primary,#F9A826)] mb-10">
                     <p className="text-[var(--color-primary,#F9A826)] text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
                       What's Included In Service
                     </p>
-                    <h2 className="text-[32px] md:text-[48px] font-bold leading-tight">
+                    <h2 className="text-[20px] md:text-[48px] font-bold leading-tight">
                       WHAT'S INCLUDED WITH OUR <br />
                       <span className="text-[var(--color-primary,#F9A826)]">
                         TARGETED MAILING SERVICE
@@ -334,11 +334,11 @@ export default function CustomerAndBusinessMailCard() {
                 <div className="lg:w-5/12 flex flex-col gap-8">
                  
 
-                  <div className="w-full h-full min-h-[400px] bg-[#1a232c] rounded-[24px] relative overflow-hidden shadow-xl">
+                  <div className="w-full lg:min-h-[400px] min-h-[200px] bg-[#1a232c] rounded-[24px] relative overflow-hidden shadow-xl">
                     <img
                       src="/Image/Services/DirectMail/targeted_mail_mailbox.png"
                       alt="Mailbox Illustration"
-                      className="w-full h-full object-cover absolute inset-0"
+                      className="w-full object-cover absolute inset-0"
                     />
                   </div>
 

@@ -26,7 +26,7 @@ export default function SignageCategorySection() {
               Category
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold max-w-xl leading-tight font-poppins">
+          <h2 className="text-[24px] md:text-5xl font-bold max-w-xl leading-tight font-poppins">
             Find the Right Signage for Your Business
           </h2>
         </motion.div>

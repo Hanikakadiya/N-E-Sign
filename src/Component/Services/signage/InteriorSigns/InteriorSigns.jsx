@@ -61,7 +61,7 @@ export function InteriorDetailView({ id }) {
                 {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:items-center text-center gap-8 mb-5 justify-around">
                   <div className="flex-1 max-w-5xl lg:pl-16">
-                    <h3 className="font-bold my-4 tracking-wide text-3xl lg:text-[40px]">
+                    <h3 className="font-bold my-4 tracking-wide text-[24px] md:text-[30px] lg:text-[40px]">
                       {section.mainTitle}
                     </h3>
                     <p className="text-[var(--color-gray)] leading-relaxed text-[10px] sm:text-[18px] font-semibold tracking-widest uppercase">

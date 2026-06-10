@@ -38,7 +38,7 @@ export default function SignageHeroSection() {
               </span>
             </div>
 
-            <h1 className="text-[40px] sm:text-[48px] lg:text-[50px] xl:text-[52px] font-medium font-poppins leading-[1.2] mb-8">
+            <h1 className="text-[24px] sm:text-[48px] lg:text-[50px] xl:text-[52px] font-medium font-poppins leading-[1.2] mb-8">
               Get your Business Signage in Best Price.
             </h1>
 
