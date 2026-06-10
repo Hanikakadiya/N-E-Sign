@@ -74,7 +74,7 @@ export default function VehicleService() {
                 <div className="mt-8">
                   <Link
                     to="/contact-us"
-                    className="inline-block bg-[#EAB308] text-white font-bold py-3.5 px-8 rounded-full hover:bg-[#d9a007] transition-colors shadow-md text-[14px]"
+                    className="inline-block bg-[#EAB308] font-bold py-3.5 px-8 rounded-full hover:bg-[#d9a007] transition-colors shadow-md text-[14px]"
                   >
                     {modal.buttonText}
                   </Link>
@@ -252,8 +252,8 @@ export default function VehicleService() {
                       {modal.ctaBanner.phone}
                     </span>
                     <Link
-                      to="/contact-us"
-                      className="bg-[#EAB308] text-white font-bold py-3.5 px-8 rounded-full hover:bg-[#d9a007] transition-colors shadow-md text-[14px] whitespace-nowrap"
+                      to="/contact"
+                      className="bg-[#EAB308] font-bold py-3.5 px-8 rounded-full hover:bg-[#d9a007] transition-colors shadow-md text-[14px] whitespace-nowrap"
                     >
                       {modal.ctaBanner.buttonText}
                     </Link>

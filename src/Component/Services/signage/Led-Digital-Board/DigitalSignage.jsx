@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Icons } from "../../../Icons/icons";
 import DigitalSignageData from "../../../Data/DigitalSignageData.json";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function DigitalSignage() {
   const { subCategory } = useParams();
@@ -258,14 +259,15 @@ export default function DigitalSignage() {
               </div>
 
               {/* Action Button */}
-              <button
+              <Link
+                to="/contact"
                 className="w-full text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-black/10 text-[14px]"
                 style={{ backgroundColor: selectedCard.themeColor }}
               >
                 {selectedCard.modal?.buttonText ||
                   `Get a custom ${selectedCard.title.toLowerCase()} LED sign quote`}
                 <Icons.ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
 
               <p className="text-center text-gray-400 text-[11px] mt-3">
                 {selectedCard.modal?.footerText ||
